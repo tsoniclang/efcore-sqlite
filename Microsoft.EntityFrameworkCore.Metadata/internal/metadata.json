@@ -1,0 +1,54 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Metadata",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore",
+    "Microsoft.EntityFrameworkCore.Relational",
+    "Microsoft.EntityFrameworkCore.Sqlite"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
+      "clrName": "Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
+      "tsEmitName": "SqliteValueGenerationStrategy",
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy::NoneMicrosoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "normalizedSignature": "None|Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy::AutoincrementMicrosoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
+          "clrName": "Autoincrement",
+          "tsEmitName": "autoincrement",
+          "normalizedSignature": "Autoincrement|Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

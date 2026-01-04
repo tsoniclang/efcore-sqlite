@@ -1,0 +1,267 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Diagnostics",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore",
+    "Microsoft.EntityFrameworkCore.Abstractions",
+    "Microsoft.EntityFrameworkCore.Relational",
+    "Microsoft.EntityFrameworkCore.Sqlite"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+      "clrName": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+      "tsEmitName": "ConflictingValueGenerationStrategiesEventData",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData::SqliteValueGenerationStrategy:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
+          "clrName": "SqliteValueGenerationStrategy",
+          "tsEmitName": "sqliteValueGenerationStrategy",
+          "normalizedSignature": "SqliteValueGenerationStrategy|:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData::OtherValueGenerationStrategy:System.String",
+          "clrName": "OtherValueGenerationStrategy",
+          "tsEmitName": "otherValueGenerationStrategy",
+          "normalizedSignature": "OtherValueGenerationStrategy|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData::Property:Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty",
+          "clrName": "Property",
+          "tsEmitName": "property",
+          "normalizedSignature": "Property|:Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,System.Func_3[[Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.EntityFrameworkCore.Diagnostics.EventData,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy,System.String,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId",
+      "clrName": "Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId",
+      "tsEmitName": "SqliteEventId",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::SchemaConfiguredWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "SchemaConfiguredWarning",
+          "tsEmitName": "schemaConfiguredWarning",
+          "normalizedSignature": "SchemaConfiguredWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::SequenceConfiguredWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "SequenceConfiguredWarning",
+          "tsEmitName": "sequenceConfiguredWarning",
+          "normalizedSignature": "SequenceConfiguredWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::CompositeKeyWithValueGenerationMicrosoft.Extensions.Logging.EventId",
+          "clrName": "CompositeKeyWithValueGeneration",
+          "tsEmitName": "compositeKeyWithValueGeneration",
+          "normalizedSignature": "CompositeKeyWithValueGeneration|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::ConflictingValueGenerationStrategiesWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ConflictingValueGenerationStrategiesWarning",
+          "tsEmitName": "conflictingValueGenerationStrategiesWarning",
+          "normalizedSignature": "ConflictingValueGenerationStrategiesWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::UnexpectedConnectionTypeWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "UnexpectedConnectionTypeWarning",
+          "tsEmitName": "unexpectedConnectionTypeWarning",
+          "normalizedSignature": "UnexpectedConnectionTypeWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::TableRebuildPendingWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "TableRebuildPendingWarning",
+          "tsEmitName": "tableRebuildPendingWarning",
+          "normalizedSignature": "TableRebuildPendingWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::ColumnFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ColumnFound",
+          "tsEmitName": "columnFound",
+          "normalizedSignature": "ColumnFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::SchemasNotSupportedWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "SchemasNotSupportedWarning",
+          "tsEmitName": "schemasNotSupportedWarning",
+          "normalizedSignature": "SchemasNotSupportedWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::ForeignKeyReferencesMissingTableWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ForeignKeyReferencesMissingTableWarning",
+          "tsEmitName": "foreignKeyReferencesMissingTableWarning",
+          "normalizedSignature": "ForeignKeyReferencesMissingTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::TableFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "TableFound",
+          "tsEmitName": "tableFound",
+          "normalizedSignature": "TableFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::MissingTableWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "MissingTableWarning",
+          "tsEmitName": "missingTableWarning",
+          "normalizedSignature": "MissingTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::ForeignKeyPrincipalColumnMissingWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ForeignKeyPrincipalColumnMissingWarning",
+          "tsEmitName": "foreignKeyPrincipalColumnMissingWarning",
+          "normalizedSignature": "ForeignKeyPrincipalColumnMissingWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::IndexFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "IndexFound",
+          "tsEmitName": "indexFound",
+          "normalizedSignature": "IndexFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::ForeignKeyFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ForeignKeyFound",
+          "tsEmitName": "foreignKeyFound",
+          "normalizedSignature": "ForeignKeyFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::PrimaryKeyFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "PrimaryKeyFound",
+          "tsEmitName": "primaryKeyFound",
+          "normalizedSignature": "PrimaryKeyFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::UniqueConstraintFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "UniqueConstraintFound",
+          "tsEmitName": "uniqueConstraintFound",
+          "normalizedSignature": "UniqueConstraintFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::InferringTypesMicrosoft.Extensions.Logging.EventId",
+          "clrName": "InferringTypes",
+          "tsEmitName": "inferringTypes",
+          "normalizedSignature": "InferringTypes|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::OutOfRangeWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "OutOfRangeWarning",
+          "tsEmitName": "outOfRangeWarning",
+          "normalizedSignature": "OutOfRangeWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Diagnostics.SqliteEventId::FormatWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "FormatWarning",
+          "tsEmitName": "formatWarning",
+          "normalizedSignature": "FormatWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        }
+      ],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

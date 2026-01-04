@@ -1,0 +1,293 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore.Sqlite"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions",
+      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions",
+      "tsEmitName": "SqliteLoggingDefinitions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogSchemaConfiguredMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogSchemaConfigured",
+          "tsEmitName": "logSchemaConfigured",
+          "normalizedSignature": "LogSchemaConfigured|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogSequenceConfiguredMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogSequenceConfigured",
+          "tsEmitName": "logSequenceConfigured",
+          "normalizedSignature": "LogSequenceConfigured|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogUsingSchemaSelectionsWarningMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogUsingSchemaSelectionsWarning",
+          "tsEmitName": "logUsingSchemaSelectionsWarning",
+          "normalizedSignature": "LogUsingSchemaSelectionsWarning|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogFoundColumnMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundColumn",
+          "tsEmitName": "logFoundColumn",
+          "normalizedSignature": "LogFoundColumn|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogFoundForeignKeyMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundForeignKey",
+          "tsEmitName": "logFoundForeignKey",
+          "normalizedSignature": "LogFoundForeignKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogForeignKeyScaffoldErrorPrincipalTableNotFoundMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogForeignKeyScaffoldErrorPrincipalTableNotFound",
+          "tsEmitName": "logForeignKeyScaffoldErrorPrincipalTableNotFound",
+          "normalizedSignature": "LogForeignKeyScaffoldErrorPrincipalTableNotFound|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogFoundTableMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundTable",
+          "tsEmitName": "logFoundTable",
+          "normalizedSignature": "LogFoundTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogMissingTableMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogMissingTable",
+          "tsEmitName": "logMissingTable",
+          "normalizedSignature": "LogMissingTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogPrincipalColumnNotFoundMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogPrincipalColumnNotFound",
+          "tsEmitName": "logPrincipalColumnNotFound",
+          "normalizedSignature": "LogPrincipalColumnNotFound|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogFoundIndexMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundIndex",
+          "tsEmitName": "logFoundIndex",
+          "normalizedSignature": "LogFoundIndex|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogFoundPrimaryKeyMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundPrimaryKey",
+          "tsEmitName": "logFoundPrimaryKey",
+          "normalizedSignature": "LogFoundPrimaryKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogFoundUniqueConstraintMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundUniqueConstraint",
+          "tsEmitName": "logFoundUniqueConstraint",
+          "normalizedSignature": "LogFoundUniqueConstraint|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogUnexpectedConnectionTypeMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogUnexpectedConnectionType",
+          "tsEmitName": "logUnexpectedConnectionType",
+          "normalizedSignature": "LogUnexpectedConnectionType|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogTableRebuildPendingWarningMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogTableRebuildPendingWarning",
+          "tsEmitName": "logTableRebuildPendingWarning",
+          "normalizedSignature": "LogTableRebuildPendingWarning|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogCompositeKeyWithValueGenerationMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogCompositeKeyWithValueGeneration",
+          "tsEmitName": "logCompositeKeyWithValueGeneration",
+          "normalizedSignature": "LogCompositeKeyWithValueGeneration|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogConflictingValueGenerationStrategiesMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogConflictingValueGenerationStrategies",
+          "tsEmitName": "logConflictingValueGenerationStrategies",
+          "normalizedSignature": "LogConflictingValueGenerationStrategies|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogInferringTypesMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogInferringTypes",
+          "tsEmitName": "logInferringTypes",
+          "normalizedSignature": "LogInferringTypes|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogOutOfRangeWarningMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogOutOfRangeWarning",
+          "tsEmitName": "logOutOfRangeWarning",
+          "normalizedSignature": "LogOutOfRangeWarning|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.SqliteLoggingDefinitions::LogFormatWarningMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFormatWarning",
+          "tsEmitName": "logFormatWarning",
+          "normalizedSignature": "LogFormatWarning|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.TableRebuildEventData",
+      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.TableRebuildEventData",
+      "tsEmitName": "TableRebuildEventData",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.TableRebuildEventData::OperationType:System.Type",
+          "clrName": "OperationType",
+          "tsEmitName": "operationType",
+          "normalizedSignature": "OperationType|:System.Type|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.TableRebuildEventData::TableName:System.String",
+          "clrName": "TableName",
+          "tsEmitName": "tableName",
+          "normalizedSignature": "TableName|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,System.Func_3[[Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.EntityFrameworkCore.Diagnostics.EventData,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Type,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.UnexpectedConnectionTypeEventData",
+      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.UnexpectedConnectionTypeEventData",
+      "tsEmitName": "UnexpectedConnectionTypeEventData",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal.UnexpectedConnectionTypeEventData::ConnectionType:System.Type",
+          "clrName": "ConnectionType",
+          "tsEmitName": "connectionType",
+          "normalizedSignature": "ConnectionType|:System.Type|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,System.Func_3[[Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.EntityFrameworkCore.Diagnostics.EventData,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Type):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    }
+  ]
+}

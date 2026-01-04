@@ -1,0 +1,2871 @@
+{
+  "namespace": "Microsoft.Extensions.DependencyModel",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.IDependencyContextReader",
+      "clrName": "Microsoft.Extensions.DependencyModel.IDependencyContextReader",
+      "tsEmitName": "IDependencyContextReader",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.IDependencyContextReader::Read(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "clrName": "Read",
+          "tsEmitName": "read",
+          "metadataToken": 100663484,
+          "canonicalSignature": "(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "normalizedSignature": "Read|(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.IDependencyContextReader",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "read",
+          "isStatic": false,
+          "tsSignatureId": "Read|(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.IDependencyContextReader",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663484
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Dependency",
+      "clrName": "Microsoft.Extensions.DependencyModel.Dependency",
+      "tsEmitName": "Dependency",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Dependency::Equals(Microsoft.Extensions.DependencyModel.Dependency):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100663366,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.Dependency):System.Boolean",
+          "normalizedSignature": "Equals|(Microsoft.Extensions.DependencyModel.Dependency):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Dependency::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100663367,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Dependency::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "metadataToken": 100663368,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Dependency::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385875995,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Dependency::Version:System.String",
+          "clrName": "Version",
+          "tsEmitName": "version",
+          "metadataToken": 385875996,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Version|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Dependency::.ctor(System.String,System.String):void",
+          "metadataToken": 100663363,
+          "canonicalSignature": "(System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(Microsoft.Extensions.DependencyModel.Dependency):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663366
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663367
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663368
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875995
+          }
+        },
+        {
+          "tsName": "version",
+          "isStatic": false,
+          "tsSignatureId": "Version|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875996
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663363
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationLibrary",
+      "clrName": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+      "tsEmitName": "CompilationLibrary",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationLibrary::ResolveReferencePaths():System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ResolveReferencePaths",
+          "tsEmitName": "resolveReferencePaths",
+          "metadataToken": 100663344,
+          "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ResolveReferencePaths|():System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationLibrary::ResolveReferencePaths(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ResolveReferencePaths",
+          "tsEmitName": "resolveReferencePaths",
+          "metadataToken": 100663345,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ResolveReferencePaths|(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationLibrary::Assemblies:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Assemblies",
+          "tsEmitName": "assemblies",
+          "metadataToken": 385875980,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Assemblies|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationLibrary::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "metadataToken": 100663340,
+          "canonicalSignature": "(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 7,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationLibrary::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void",
+          "metadataToken": 100663341,
+          "canonicalSignature": "(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 9,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "resolveReferencePaths",
+          "isStatic": false,
+          "tsSignatureId": "ResolveReferencePaths|():System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663344
+          }
+        },
+        {
+          "tsName": "resolveReferencePaths",
+          "isStatic": false,
+          "tsSignatureId": "ResolveReferencePaths|(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663345
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "assemblies",
+          "isStatic": false,
+          "tsSignatureId": "Assemblies|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875980
+          }
+        },
+        {
+          "tsName": "type_",
+          "isStatic": false,
+          "tsSignatureId": "Type|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876014
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876015
+          }
+        },
+        {
+          "tsName": "version",
+          "isStatic": false,
+          "tsSignatureId": "Version|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876016
+          }
+        },
+        {
+          "tsName": "hash",
+          "isStatic": false,
+          "tsSignatureId": "Hash|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876017
+          }
+        },
+        {
+          "tsName": "dependencies",
+          "isStatic": false,
+          "tsSignatureId": "Dependencies|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876018
+          }
+        },
+        {
+          "tsName": "serviceable",
+          "isStatic": false,
+          "tsSignatureId": "Serviceable|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876019
+          }
+        },
+        {
+          "tsName": "path",
+          "isStatic": false,
+          "tsSignatureId": "Path|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876020
+          }
+        },
+        {
+          "tsName": "hashPath",
+          "isStatic": false,
+          "tsSignatureId": "HashPath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876021
+          }
+        },
+        {
+          "tsName": "runtimeStoreManifestName",
+          "isStatic": false,
+          "tsSignatureId": "RuntimeStoreManifestName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876022
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663340
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663341
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions",
+      "clrName": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+      "tsEmitName": "CompilationOptions",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::Defines:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Defines",
+          "tsEmitName": "defines",
+          "metadataToken": 385875982,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Defines|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::LanguageVersion:System.String",
+          "clrName": "LanguageVersion",
+          "tsEmitName": "languageVersion",
+          "metadataToken": 385875983,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "LanguageVersion|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::Platform:System.String",
+          "clrName": "Platform",
+          "tsEmitName": "platform",
+          "metadataToken": 385875984,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Platform|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::AllowUnsafe:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "AllowUnsafe",
+          "tsEmitName": "allowUnsafe",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "AllowUnsafe|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::WarningsAsErrors:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "WarningsAsErrors",
+          "tsEmitName": "warningsAsErrors",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "WarningsAsErrors|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::Optimize:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Optimize",
+          "tsEmitName": "optimize",
+          "metadataToken": 385875987,
+          "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Optimize|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::KeyFile:System.String",
+          "clrName": "KeyFile",
+          "tsEmitName": "keyFile",
+          "metadataToken": 385875988,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "KeyFile|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::DelaySign:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "DelaySign",
+          "tsEmitName": "delaySign",
+          "metadataToken": 385875989,
+          "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "DelaySign|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::PublicSign:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "PublicSign",
+          "tsEmitName": "publicSign",
+          "metadataToken": 385875990,
+          "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "PublicSign|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::DebugType:System.String",
+          "clrName": "DebugType",
+          "tsEmitName": "debugType",
+          "metadataToken": 385875991,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "DebugType|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::EmitEntryPoint:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "EmitEntryPoint",
+          "tsEmitName": "emitEntryPoint",
+          "metadataToken": 385875992,
+          "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "EmitEntryPoint|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::GenerateXmlDocumentation:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GenerateXmlDocumentation",
+          "tsEmitName": "generateXmlDocumentation",
+          "metadataToken": 385875993,
+          "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GenerateXmlDocumentation|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::Default:Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385875994,
+          "canonicalSignature": ":Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "normalizedSignature": "Default|:Microsoft.Extensions.DependencyModel.CompilationOptions|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::.ctor(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663361,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 12,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "defines",
+          "isStatic": false,
+          "tsSignatureId": "Defines|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875982
+          }
+        },
+        {
+          "tsName": "languageVersion",
+          "isStatic": false,
+          "tsSignatureId": "LanguageVersion|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875983
+          }
+        },
+        {
+          "tsName": "platform",
+          "isStatic": false,
+          "tsSignatureId": "Platform|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875984
+          }
+        },
+        {
+          "tsName": "allowUnsafe",
+          "isStatic": false,
+          "tsSignatureId": "AllowUnsafe|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875985
+          }
+        },
+        {
+          "tsName": "warningsAsErrors",
+          "isStatic": false,
+          "tsSignatureId": "WarningsAsErrors|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875986
+          }
+        },
+        {
+          "tsName": "optimize",
+          "isStatic": false,
+          "tsSignatureId": "Optimize|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875987
+          }
+        },
+        {
+          "tsName": "keyFile",
+          "isStatic": false,
+          "tsSignatureId": "KeyFile|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875988
+          }
+        },
+        {
+          "tsName": "delaySign",
+          "isStatic": false,
+          "tsSignatureId": "DelaySign|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875989
+          }
+        },
+        {
+          "tsName": "publicSign",
+          "isStatic": false,
+          "tsSignatureId": "PublicSign|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875990
+          }
+        },
+        {
+          "tsName": "debugType",
+          "isStatic": false,
+          "tsSignatureId": "DebugType|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875991
+          }
+        },
+        {
+          "tsName": "emitEntryPoint",
+          "isStatic": false,
+          "tsSignatureId": "EmitEntryPoint|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875992
+          }
+        },
+        {
+          "tsName": "generateXmlDocumentation",
+          "isStatic": false,
+          "tsSignatureId": "GenerateXmlDocumentation|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875993
+          }
+        },
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.Extensions.DependencyModel.CompilationOptions|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875994
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663361
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext",
+      "clrName": "Microsoft.Extensions.DependencyModel.DependencyContext",
+      "tsEmitName": "DependencyContext",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::Merge(Microsoft.Extensions.DependencyModel.DependencyContext):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "clrName": "Merge",
+          "tsEmitName": "merge",
+          "metadataToken": 100663376,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.DependencyContext):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "normalizedSignature": "Merge|(Microsoft.Extensions.DependencyModel.DependencyContext):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::Load(System.Reflection.Assembly):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "clrName": "Load",
+          "tsEmitName": "load",
+          "metadataToken": 100663378,
+          "canonicalSignature": "(System.Reflection.Assembly):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "normalizedSignature": "Load|(System.Reflection.Assembly):Microsoft.Extensions.DependencyModel.DependencyContext|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::Default:Microsoft.Extensions.DependencyModel.DependencyContext",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385875997,
+          "canonicalSignature": ":Microsoft.Extensions.DependencyModel.DependencyContext",
+          "normalizedSignature": "Default|:Microsoft.Extensions.DependencyModel.DependencyContext|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::Target:Microsoft.Extensions.DependencyModel.TargetInfo",
+          "clrName": "Target",
+          "tsEmitName": "target",
+          "metadataToken": 385875998,
+          "canonicalSignature": ":Microsoft.Extensions.DependencyModel.TargetInfo",
+          "normalizedSignature": "Target|:Microsoft.Extensions.DependencyModel.TargetInfo|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::CompilationOptions:Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "clrName": "CompilationOptions",
+          "tsEmitName": "compilationOptions",
+          "metadataToken": 385875999,
+          "canonicalSignature": ":Microsoft.Extensions.DependencyModel.CompilationOptions",
+          "normalizedSignature": "CompilationOptions|:Microsoft.Extensions.DependencyModel.CompilationOptions|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::CompileLibraries:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.CompilationLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "CompileLibraries",
+          "tsEmitName": "compileLibraries",
+          "metadataToken": 385876000,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.CompilationLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "CompileLibraries|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.CompilationLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::RuntimeLibraries:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "RuntimeLibraries",
+          "tsEmitName": "runtimeLibraries",
+          "metadataToken": 385876001,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "RuntimeLibraries|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::RuntimeGraph:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeFallbacks,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "RuntimeGraph",
+          "tsEmitName": "runtimeGraph",
+          "metadataToken": 385876002,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeFallbacks,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "RuntimeGraph|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeFallbacks,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::.ctor(Microsoft.Extensions.DependencyModel.TargetInfo,Microsoft.Extensions.DependencyModel.CompilationOptions,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.CompilationLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFallbacks,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "metadataToken": 100663369,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.TargetInfo,Microsoft.Extensions.DependencyModel.CompilationOptions,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.CompilationLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFallbacks,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.DependencyModel.TargetInfo,Microsoft.Extensions.DependencyModel.CompilationOptions,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.CompilationLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFallbacks,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "merge",
+          "isStatic": false,
+          "tsSignatureId": "Merge|(Microsoft.Extensions.DependencyModel.DependencyContext):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663376
+          }
+        },
+        {
+          "tsName": "load",
+          "isStatic": true,
+          "tsSignatureId": "Load|(System.Reflection.Assembly):Microsoft.Extensions.DependencyModel.DependencyContext|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663378
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.Extensions.DependencyModel.DependencyContext|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875997
+          }
+        },
+        {
+          "tsName": "target",
+          "isStatic": false,
+          "tsSignatureId": "Target|:Microsoft.Extensions.DependencyModel.TargetInfo|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875998
+          }
+        },
+        {
+          "tsName": "compilationOptions",
+          "isStatic": false,
+          "tsSignatureId": "CompilationOptions|:Microsoft.Extensions.DependencyModel.CompilationOptions|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385875999
+          }
+        },
+        {
+          "tsName": "compileLibraries",
+          "isStatic": false,
+          "tsSignatureId": "CompileLibraries|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.CompilationLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876000
+          }
+        },
+        {
+          "tsName": "runtimeLibraries",
+          "isStatic": false,
+          "tsSignatureId": "RuntimeLibraries|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876001
+          }
+        },
+        {
+          "tsName": "runtimeGraph",
+          "isStatic": false,
+          "tsSignatureId": "RuntimeGraph|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeFallbacks,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876002
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.DependencyModel.TargetInfo,Microsoft.Extensions.DependencyModel.CompilationOptions,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.CompilationLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFallbacks,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663369
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
+      "clrName": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
+      "tsEmitName": "DependencyContextJsonReader",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader::Read(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "clrName": "Read",
+          "tsEmitName": "read",
+          "metadataToken": 100663398,
+          "canonicalSignature": "(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "normalizedSignature": "Read|(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100663400,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.IDependencyContextReader::Read(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "clrName": "Read",
+          "tsEmitName": "read$view",
+          "metadataToken": 100663484,
+          "canonicalSignature": "(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "normalizedSignature": "Read|(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.IDependencyContextReader",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader::.ctor():void",
+          "metadataToken": 100663421,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "read",
+          "isStatic": false,
+          "tsSignatureId": "Read|(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663398
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663400
+          }
+        },
+        {
+          "tsName": "read$view",
+          "isStatic": false,
+          "tsSignatureId": "Read|(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.IDependencyContextReader",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663484
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663421
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+      "clrName": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+      "tsEmitName": "DependencyContextLoader",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextLoader::Load(System.Reflection.Assembly):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "clrName": "Load",
+          "tsEmitName": "load",
+          "metadataToken": 100663428,
+          "canonicalSignature": "(System.Reflection.Assembly):Microsoft.Extensions.DependencyModel.DependencyContext",
+          "normalizedSignature": "Load|(System.Reflection.Assembly):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextLoader::Default:Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876004,
+          "canonicalSignature": ":Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+          "normalizedSignature": "Default|:Microsoft.Extensions.DependencyModel.DependencyContextLoader|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextLoader::.ctor():void",
+          "metadataToken": 100663423,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "load",
+          "isStatic": false,
+          "tsSignatureId": "Load|(System.Reflection.Assembly):Microsoft.Extensions.DependencyModel.DependencyContext|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663428
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.Extensions.DependencyModel.DependencyContextLoader|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876004
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663423
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextWriter",
+      "clrName": "Microsoft.Extensions.DependencyModel.DependencyContextWriter",
+      "tsEmitName": "DependencyContextWriter",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextWriter::Write(Microsoft.Extensions.DependencyModel.DependencyContext,System.IO.Stream):System.Void",
+          "clrName": "Write",
+          "tsEmitName": "write",
+          "metadataToken": 100663443,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.DependencyContext,System.IO.Stream):System.Void",
+          "normalizedSignature": "Write|(Microsoft.Extensions.DependencyModel.DependencyContext,System.IO.Stream):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextWriter",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextWriter::.ctor():void",
+          "metadataToken": 100663465,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextWriter",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "write",
+          "isStatic": false,
+          "tsSignatureId": "Write|(Microsoft.Extensions.DependencyModel.DependencyContext,System.IO.Stream):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextWriter",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663443
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextWriter",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663465
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library",
+      "clrName": "Microsoft.Extensions.DependencyModel.Library",
+      "tsEmitName": "Library",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::Type:System.String",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "metadataToken": 385876014,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Type|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876015,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::Version:System.String",
+          "clrName": "Version",
+          "tsEmitName": "version",
+          "metadataToken": 385876016,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Version|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::Hash:System.String",
+          "clrName": "Hash",
+          "tsEmitName": "hash",
+          "metadataToken": 385876017,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Hash|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::Dependencies:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Dependencies",
+          "tsEmitName": "dependencies",
+          "metadataToken": 385876018,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Dependencies|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::Serviceable:System.Boolean",
+          "clrName": "Serviceable",
+          "tsEmitName": "serviceable",
+          "metadataToken": 385876019,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "Serviceable|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::Path:System.String",
+          "clrName": "Path",
+          "tsEmitName": "path",
+          "metadataToken": 385876020,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Path|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::HashPath:System.String",
+          "clrName": "HashPath",
+          "tsEmitName": "hashPath",
+          "metadataToken": 385876021,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "HashPath|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::RuntimeStoreManifestName:System.String",
+          "clrName": "RuntimeStoreManifestName",
+          "tsEmitName": "runtimeStoreManifestName",
+          "metadataToken": 385876022,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RuntimeStoreManifestName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "metadataToken": 100663496,
+          "canonicalSignature": "(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 6,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void",
+          "metadataToken": 100663497,
+          "canonicalSignature": "(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 8,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void",
+          "metadataToken": 100663498,
+          "canonicalSignature": "(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 9,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "type_",
+          "isStatic": false,
+          "tsSignatureId": "Type|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876014
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876015
+          }
+        },
+        {
+          "tsName": "version",
+          "isStatic": false,
+          "tsSignatureId": "Version|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876016
+          }
+        },
+        {
+          "tsName": "hash",
+          "isStatic": false,
+          "tsSignatureId": "Hash|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876017
+          }
+        },
+        {
+          "tsName": "dependencies",
+          "isStatic": false,
+          "tsSignatureId": "Dependencies|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876018
+          }
+        },
+        {
+          "tsName": "serviceable",
+          "isStatic": false,
+          "tsSignatureId": "Serviceable|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876019
+          }
+        },
+        {
+          "tsName": "path",
+          "isStatic": false,
+          "tsSignatureId": "Path|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876020
+          }
+        },
+        {
+          "tsName": "hashPath",
+          "isStatic": false,
+          "tsSignatureId": "HashPath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876021
+          }
+        },
+        {
+          "tsName": "runtimeStoreManifestName",
+          "isStatic": false,
+          "tsSignatureId": "RuntimeStoreManifestName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876022
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663496
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663497
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663498
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.ResourceAssembly",
+      "clrName": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+      "tsEmitName": "ResourceAssembly",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.ResourceAssembly::Locale:System.String",
+          "clrName": "Locale",
+          "tsEmitName": "locale",
+          "metadataToken": 385876023,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Locale|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.ResourceAssembly::Path:System.String",
+          "clrName": "Path",
+          "tsEmitName": "path",
+          "metadataToken": 385876024,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Path|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.ResourceAssembly::LocalPath:System.String",
+          "clrName": "LocalPath",
+          "tsEmitName": "localPath",
+          "metadataToken": 385876025,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "LocalPath|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.ResourceAssembly::.ctor(System.String,System.String):void",
+          "metadataToken": 100663510,
+          "canonicalSignature": "(System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.ResourceAssembly::.ctor(System.String,System.String,System.String):void",
+          "metadataToken": 100663511,
+          "canonicalSignature": "(System.String,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "locale",
+          "isStatic": false,
+          "tsSignatureId": "Locale|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876023
+          }
+        },
+        {
+          "tsName": "path",
+          "isStatic": false,
+          "tsSignatureId": "Path|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876024
+          }
+        },
+        {
+          "tsName": "localPath",
+          "isStatic": false,
+          "tsSignatureId": "LocalPath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876025
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663510
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663511
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+      "clrName": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+      "tsEmitName": "RuntimeAssembly",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssembly::Create(System.String):Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663520,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+          "normalizedSignature": "Create|(System.String):Microsoft.Extensions.DependencyModel.RuntimeAssembly|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssembly::Name:System.Reflection.AssemblyName",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876026,
+          "canonicalSignature": ":System.Reflection.AssemblyName",
+          "normalizedSignature": "Name|:System.Reflection.AssemblyName|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssembly::Path:System.String",
+          "clrName": "Path",
+          "tsEmitName": "path",
+          "metadataToken": 385876027,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Path|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssembly::.ctor(System.String,System.String):void",
+          "metadataToken": 100663517,
+          "canonicalSignature": "(System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": true,
+          "tsSignatureId": "Create|(System.String):Microsoft.Extensions.DependencyModel.RuntimeAssembly|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663520
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.Reflection.AssemblyName|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876026
+          }
+        },
+        {
+          "tsName": "path",
+          "isStatic": false,
+          "tsSignatureId": "Path|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876027
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663517
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+      "clrName": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+      "tsEmitName": "RuntimeAssetGroup",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssetGroup::Runtime:System.String",
+          "clrName": "Runtime",
+          "tsEmitName": "runtime",
+          "metadataToken": 385876028,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Runtime|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssetGroup::AssetPaths:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "AssetPaths",
+          "tsEmitName": "assetPaths",
+          "metadataToken": 385876029,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "AssetPaths|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssetGroup::RuntimeFiles:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "RuntimeFiles",
+          "tsEmitName": "runtimeFiles",
+          "metadataToken": 385876030,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "RuntimeFiles|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssetGroup::.ctor(System.String,System.String[]):void",
+          "metadataToken": 100663521,
+          "canonicalSignature": "(System.String,System.String[]):void",
+          "normalizedSignature": "constructor|(System.String,System.String[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssetGroup::.ctor(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663522,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssetGroup::.ctor(System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "metadataToken": 100663523,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "runtime",
+          "isStatic": false,
+          "tsSignatureId": "Runtime|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876028
+          }
+        },
+        {
+          "tsName": "assetPaths",
+          "isStatic": false,
+          "tsSignatureId": "AssetPaths|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876029
+          }
+        },
+        {
+          "tsName": "runtimeFiles",
+          "isStatic": false,
+          "tsSignatureId": "RuntimeFiles|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876030
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String[]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663521
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663522
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663523
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+      "clrName": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+      "tsEmitName": "RuntimeFallbacks",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFallbacks::Runtime:System.String",
+          "clrName": "Runtime",
+          "tsEmitName": "runtime",
+          "metadataToken": 385876031,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Runtime|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFallbacks::Fallbacks:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Fallbacks",
+          "tsEmitName": "fallbacks",
+          "metadataToken": 385876032,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Fallbacks|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFallbacks::.ctor(System.String,System.String[]):void",
+          "metadataToken": 100663531,
+          "canonicalSignature": "(System.String,System.String[]):void",
+          "normalizedSignature": "constructor|(System.String,System.String[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFallbacks::.ctor(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663532,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "runtime",
+          "isStatic": false,
+          "tsSignatureId": "Runtime|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876031
+          }
+        },
+        {
+          "tsName": "fallbacks",
+          "isStatic": false,
+          "tsSignatureId": "Fallbacks|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876032
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String[]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663531
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663532
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFile",
+      "clrName": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+      "tsEmitName": "RuntimeFile",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFile::Path:System.String",
+          "clrName": "Path",
+          "tsEmitName": "path",
+          "metadataToken": 385876033,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Path|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFile::AssemblyVersion:System.String",
+          "clrName": "AssemblyVersion",
+          "tsEmitName": "assemblyVersion",
+          "metadataToken": 385876034,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "AssemblyVersion|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFile::FileVersion:System.String",
+          "clrName": "FileVersion",
+          "tsEmitName": "fileVersion",
+          "metadataToken": 385876035,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "FileVersion|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFile::LocalPath:System.String",
+          "clrName": "LocalPath",
+          "tsEmitName": "localPath",
+          "metadataToken": 385876036,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "LocalPath|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFile::.ctor(System.String,System.String,System.String):void",
+          "metadataToken": 100663533,
+          "canonicalSignature": "(System.String,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeFile::.ctor(System.String,System.String,System.String,System.String):void",
+          "metadataToken": 100663534,
+          "canonicalSignature": "(System.String,System.String,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "path",
+          "isStatic": false,
+          "tsSignatureId": "Path|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876033
+          }
+        },
+        {
+          "tsName": "assemblyVersion",
+          "isStatic": false,
+          "tsSignatureId": "AssemblyVersion|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876034
+          }
+        },
+        {
+          "tsName": "fileVersion",
+          "isStatic": false,
+          "tsSignatureId": "FileVersion|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876035
+          }
+        },
+        {
+          "tsName": "localPath",
+          "isStatic": false,
+          "tsSignatureId": "LocalPath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876036
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663533
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663534
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+      "clrName": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+      "tsEmitName": "RuntimeLibrary",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeLibrary::RuntimeAssemblyGroups:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "RuntimeAssemblyGroups",
+          "tsEmitName": "runtimeAssemblyGroups",
+          "metadataToken": 385876037,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "RuntimeAssemblyGroups|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeLibrary::NativeLibraryGroups:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "NativeLibraryGroups",
+          "tsEmitName": "nativeLibraryGroups",
+          "metadataToken": 385876038,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "NativeLibraryGroups|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeLibrary::ResourceAssemblies:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ResourceAssemblies",
+          "tsEmitName": "resourceAssemblies",
+          "metadataToken": 385876039,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ResourceAssemblies|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeLibrary::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "metadataToken": 100663539,
+          "canonicalSignature": "(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 9,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeLibrary::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void",
+          "metadataToken": 100663540,
+          "canonicalSignature": "(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 11,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeLibrary::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void",
+          "metadataToken": 100663541,
+          "canonicalSignature": "(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 12,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "runtimeAssemblyGroups",
+          "isStatic": false,
+          "tsSignatureId": "RuntimeAssemblyGroups|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876037
+          }
+        },
+        {
+          "tsName": "nativeLibraryGroups",
+          "isStatic": false,
+          "tsSignatureId": "NativeLibraryGroups|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876038
+          }
+        },
+        {
+          "tsName": "resourceAssemblies",
+          "isStatic": false,
+          "tsSignatureId": "ResourceAssemblies|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876039
+          }
+        },
+        {
+          "tsName": "type_",
+          "isStatic": false,
+          "tsSignatureId": "Type|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876014
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876015
+          }
+        },
+        {
+          "tsName": "version",
+          "isStatic": false,
+          "tsSignatureId": "Version|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876016
+          }
+        },
+        {
+          "tsName": "hash",
+          "isStatic": false,
+          "tsSignatureId": "Hash|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876017
+          }
+        },
+        {
+          "tsName": "dependencies",
+          "isStatic": false,
+          "tsSignatureId": "Dependencies|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876018
+          }
+        },
+        {
+          "tsName": "serviceable",
+          "isStatic": false,
+          "tsSignatureId": "Serviceable|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876019
+          }
+        },
+        {
+          "tsName": "path",
+          "isStatic": false,
+          "tsSignatureId": "Path|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876020
+          }
+        },
+        {
+          "tsName": "hashPath",
+          "isStatic": false,
+          "tsSignatureId": "HashPath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876021
+          }
+        },
+        {
+          "tsName": "runtimeStoreManifestName",
+          "isStatic": false,
+          "tsSignatureId": "RuntimeStoreManifestName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876022
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663539
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663540
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663541
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.TargetInfo",
+      "clrName": "Microsoft.Extensions.DependencyModel.TargetInfo",
+      "tsEmitName": "TargetInfo",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.TargetInfo::Framework:System.String",
+          "clrName": "Framework",
+          "tsEmitName": "framework",
+          "metadataToken": 385876040,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Framework|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.TargetInfo::Runtime:System.String",
+          "clrName": "Runtime",
+          "tsEmitName": "runtime",
+          "metadataToken": 385876041,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Runtime|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.TargetInfo::RuntimeSignature:System.String",
+          "clrName": "RuntimeSignature",
+          "tsEmitName": "runtimeSignature",
+          "metadataToken": 385876042,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RuntimeSignature|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.TargetInfo::IsPortable:System.Boolean",
+          "clrName": "IsPortable",
+          "tsEmitName": "isPortable",
+          "metadataToken": 385876043,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsPortable|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.TargetInfo::.ctor(System.String,System.String,System.String,System.Boolean):void",
+          "metadataToken": 100663545,
+          "canonicalSignature": "(System.String,System.String,System.String,System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "framework",
+          "isStatic": false,
+          "tsSignatureId": "Framework|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876040
+          }
+        },
+        {
+          "tsName": "runtime",
+          "isStatic": false,
+          "tsSignatureId": "Runtime|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876041
+          }
+        },
+        {
+          "tsName": "runtimeSignature",
+          "isStatic": false,
+          "tsSignatureId": "RuntimeSignature|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876042
+          }
+        },
+        {
+          "tsName": "isPortable",
+          "isStatic": false,
+          "tsSignatureId": "IsPortable|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 385876043
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.Boolean):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663545
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+      "clrName": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+      "tsEmitName": "DependencyContextExtensions",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetDefaultNativeAssets(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetDefaultNativeAssets",
+          "tsEmitName": "getDefaultNativeAssets",
+          "metadataToken": 100663380,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetDefaultNativeAssets|(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetDefaultNativeRuntimeFileAssets(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetDefaultNativeRuntimeFileAssets",
+          "tsEmitName": "getDefaultNativeRuntimeFileAssets",
+          "metadataToken": 100663381,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetDefaultNativeRuntimeFileAssets|(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetRuntimeNativeAssets(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetRuntimeNativeAssets",
+          "tsEmitName": "getRuntimeNativeAssets",
+          "metadataToken": 100663382,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetRuntimeNativeAssets|(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetRuntimeNativeRuntimeFileAssets(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetRuntimeNativeRuntimeFileAssets",
+          "tsEmitName": "getRuntimeNativeRuntimeFileAssets",
+          "metadataToken": 100663383,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetRuntimeNativeRuntimeFileAssets|(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetDefaultNativeAssets(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetDefaultNativeAssets",
+          "tsEmitName": "getDefaultNativeAssets",
+          "metadataToken": 100663384,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetDefaultNativeAssets|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetDefaultNativeRuntimeFileAssets(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetDefaultNativeRuntimeFileAssets",
+          "tsEmitName": "getDefaultNativeRuntimeFileAssets",
+          "metadataToken": 100663385,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetDefaultNativeRuntimeFileAssets|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetRuntimeNativeAssets(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetRuntimeNativeAssets",
+          "tsEmitName": "getRuntimeNativeAssets",
+          "metadataToken": 100663386,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetRuntimeNativeAssets|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetRuntimeNativeRuntimeFileAssets(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetRuntimeNativeRuntimeFileAssets",
+          "tsEmitName": "getRuntimeNativeRuntimeFileAssets",
+          "metadataToken": 100663387,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetRuntimeNativeRuntimeFileAssets|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetDefaultAssemblyNames(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetDefaultAssemblyNames",
+          "tsEmitName": "getDefaultAssemblyNames",
+          "metadataToken": 100663388,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetDefaultAssemblyNames|(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetRuntimeAssemblyNames(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetRuntimeAssemblyNames",
+          "tsEmitName": "getRuntimeAssemblyNames",
+          "metadataToken": 100663389,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetRuntimeAssemblyNames|(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetDefaultAssemblyNames(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetDefaultAssemblyNames",
+          "tsEmitName": "getDefaultAssemblyNames",
+          "metadataToken": 100663390,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetDefaultAssemblyNames|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetRuntimeAssemblyNames(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetRuntimeAssemblyNames",
+          "tsEmitName": "getRuntimeAssemblyNames",
+          "metadataToken": 100663391,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetRuntimeAssemblyNames|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getDefaultNativeAssets",
+          "isStatic": true,
+          "tsSignatureId": "GetDefaultNativeAssets|(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663380
+          }
+        },
+        {
+          "tsName": "getDefaultNativeRuntimeFileAssets",
+          "isStatic": true,
+          "tsSignatureId": "GetDefaultNativeRuntimeFileAssets|(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663381
+          }
+        },
+        {
+          "tsName": "getRuntimeNativeAssets",
+          "isStatic": true,
+          "tsSignatureId": "GetRuntimeNativeAssets|(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663382
+          }
+        },
+        {
+          "tsName": "getRuntimeNativeRuntimeFileAssets",
+          "isStatic": true,
+          "tsSignatureId": "GetRuntimeNativeRuntimeFileAssets|(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663383
+          }
+        },
+        {
+          "tsName": "getDefaultNativeAssets",
+          "isStatic": true,
+          "tsSignatureId": "GetDefaultNativeAssets|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663384
+          }
+        },
+        {
+          "tsName": "getDefaultNativeRuntimeFileAssets",
+          "isStatic": true,
+          "tsSignatureId": "GetDefaultNativeRuntimeFileAssets|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663385
+          }
+        },
+        {
+          "tsName": "getRuntimeNativeAssets",
+          "isStatic": true,
+          "tsSignatureId": "GetRuntimeNativeAssets|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663386
+          }
+        },
+        {
+          "tsName": "getRuntimeNativeRuntimeFileAssets",
+          "isStatic": true,
+          "tsSignatureId": "GetRuntimeNativeRuntimeFileAssets|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663387
+          }
+        },
+        {
+          "tsName": "getDefaultAssemblyNames",
+          "isStatic": true,
+          "tsSignatureId": "GetDefaultAssemblyNames|(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663388
+          }
+        },
+        {
+          "tsName": "getRuntimeAssemblyNames",
+          "isStatic": true,
+          "tsSignatureId": "GetRuntimeAssemblyNames|(Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663389
+          }
+        },
+        {
+          "tsName": "getDefaultAssemblyNames",
+          "isStatic": true,
+          "tsSignatureId": "GetDefaultAssemblyNames|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663390
+          }
+        },
+        {
+          "tsName": "getRuntimeAssemblyNames",
+          "isStatic": true,
+          "tsSignatureId": "GetRuntimeAssemblyNames|(Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel.DependencyContext,System.String):System.Collections.Generic.IEnumerable_1[[System.Reflection.AssemblyName,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663391
+          }
+        }
+      ]
+    }
+  ]
+}
