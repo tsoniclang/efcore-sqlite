@@ -1,0 +1,102 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Infrastructure",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder",
+      "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder",
+      "tsEmitName": "SqliteDbContextOptionsBuilder",
+      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder::.ctor(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "metadataToken": 100663732,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+            "metadataToken": 100663732
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader",
+      "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader",
+      "tsEmitName": "SpatialiteLoader",
+      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader::TryLoad(System.Data.Common.DbConnection):System.Boolean",
+          "clrName": "TryLoad",
+          "tsEmitName": "tryLoad",
+          "metadataToken": 100663729,
+          "canonicalSignature": "(System.Data.Common.DbConnection):System.Boolean",
+          "normalizedSignature": "TryLoad|(System.Data.Common.DbConnection):System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader::Load(System.Data.Common.DbConnection):System.Void",
+          "clrName": "Load",
+          "tsEmitName": "load",
+          "metadataToken": 100663730,
+          "canonicalSignature": "(System.Data.Common.DbConnection):System.Void",
+          "normalizedSignature": "Load|(System.Data.Common.DbConnection):System.Void|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "tryLoad",
+          "isStatic": true,
+          "tsSignatureId": "TryLoad|(System.Data.Common.DbConnection):System.Boolean|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+            "metadataToken": 100663729
+          }
+        },
+        {
+          "tsName": "load",
+          "isStatic": true,
+          "tsSignatureId": "Load|(System.Data.Common.DbConnection):System.Void|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+            "metadataToken": 100663730
+          }
+        }
+      ]
+    }
+  ]
+}

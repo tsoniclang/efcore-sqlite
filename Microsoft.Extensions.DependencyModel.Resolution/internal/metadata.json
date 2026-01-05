@@ -1,0 +1,329 @@
+{
+  "namespace": "Microsoft.Extensions.DependencyModel.Resolution",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.DependencyModel"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+      "tsEmitName": "ICompilationAssemblyResolver",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+      "tsEmitName": "AppBaseCompilationAssemblyResolver",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths$view",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "sourceInterface": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver",
+      "tsEmitName": "CompositeCompilationAssemblyResolver",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths$view",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "sourceInterface": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+      "tsEmitName": "DotNetReferenceAssembliesPathResolver",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver::Resolve():System.String",
+          "clrName": "Resolve",
+          "tsEmitName": "resolve",
+          "normalizedSignature": "Resolve|():System.String|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver::DotNetReferenceAssembliesPathEnvSystem.String",
+          "clrName": "DotNetReferenceAssembliesPathEnv",
+          "tsEmitName": "dotNetReferenceAssembliesPathEnv",
+          "normalizedSignature": "DotNetReferenceAssembliesPathEnv|System.String|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+      "tsEmitName": "PackageCompilationAssemblyResolver",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths$view",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "sourceInterface": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+      "tsEmitName": "ReferenceAssemblyPathResolver",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths$view",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "sourceInterface": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.String,System.String[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    }
+  ]
+}

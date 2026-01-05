@@ -1,0 +1,526 @@
+{
+  "namespace": "Microsoft.Extensions.DependencyModel.Resolution",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+      "tsEmitName": "ICompilationAssemblyResolver",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "metadataToken": 100663572,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "tryResolveAssemblyPaths",
+          "isStatic": false,
+          "tsSignatureId": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663572
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+      "tsEmitName": "AppBaseCompilationAssemblyResolver",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "metadataToken": 100663564,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths$view",
+          "metadataToken": 100663572,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver::.ctor():void",
+          "metadataToken": 100663560,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver::.ctor(System.String):void",
+          "metadataToken": 100663561,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "tryResolveAssemblyPaths",
+          "isStatic": false,
+          "tsSignatureId": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663564
+          }
+        },
+        {
+          "tsName": "tryResolveAssemblyPaths$view",
+          "isStatic": false,
+          "tsSignatureId": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663572
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663560
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663561
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver",
+      "tsEmitName": "CompositeCompilationAssemblyResolver",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "metadataToken": 100663566,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths$view",
+          "metadataToken": 100663572,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver::.ctor(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[]):void",
+          "metadataToken": 100663565,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[]):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "tryResolveAssemblyPaths",
+          "isStatic": false,
+          "tsSignatureId": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663566
+          }
+        },
+        {
+          "tsName": "tryResolveAssemblyPaths$view",
+          "isStatic": false,
+          "tsSignatureId": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663572
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663565
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+      "tsEmitName": "DotNetReferenceAssembliesPathResolver",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver::Resolve():System.String",
+          "clrName": "Resolve",
+          "tsEmitName": "resolve",
+          "metadataToken": 100663568,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "Resolve|():System.String|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver::DotNetReferenceAssembliesPathEnvSystem.String",
+          "clrName": "DotNetReferenceAssembliesPathEnv",
+          "tsEmitName": "dotNetReferenceAssembliesPathEnv",
+          "metadataToken": 67108989,
+          "normalizedSignature": "DotNetReferenceAssembliesPathEnv|System.String|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver::.ctor():void",
+          "metadataToken": 100663570,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "resolve",
+          "isStatic": true,
+          "tsSignatureId": "Resolve|():System.String|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663568
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "dotNetReferenceAssembliesPathEnv",
+          "isStatic": true,
+          "tsSignatureId": "DotNetReferenceAssembliesPathEnv|System.String|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 67108989
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663570
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+      "tsEmitName": "PackageCompilationAssemblyResolver",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "metadataToken": 100663578,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths$view",
+          "metadataToken": 100663572,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver::.ctor():void",
+          "metadataToken": 100663573,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver::.ctor(System.String):void",
+          "metadataToken": 100663574,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "tryResolveAssemblyPaths",
+          "isStatic": false,
+          "tsSignatureId": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663578
+          }
+        },
+        {
+          "tsName": "tryResolveAssemblyPaths$view",
+          "isStatic": false,
+          "tsSignatureId": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663572
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663573
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663574
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+      "clrName": "Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+      "tsEmitName": "ReferenceAssemblyPathResolver",
+      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths",
+          "metadataToken": 100663584,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver::TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "clrName": "TryResolveAssemblyPaths",
+          "tsEmitName": "tryResolveAssemblyPaths$view",
+          "metadataToken": 100663572,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
+          "normalizedSignature": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver::.ctor():void",
+          "metadataToken": 100663580,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver::.ctor(System.String,System.String[]):void",
+          "metadataToken": 100663581,
+          "canonicalSignature": "(System.String,System.String[]):void",
+          "normalizedSignature": "constructor|(System.String,System.String[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "tryResolveAssemblyPaths",
+          "isStatic": false,
+          "tsSignatureId": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663584
+          }
+        },
+        {
+          "tsName": "tryResolveAssemblyPaths$view",
+          "isStatic": false,
+          "tsSignatureId": "TryResolveAssemblyPaths|(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663572
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663580
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String[]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver",
+            "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+            "metadataToken": 100663581
+          }
+        }
+      ]
+    }
+  ]
+}
