@@ -24,7 +24,7 @@
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCacheMode::DefaultMicrosoft.Data.Sqlite.SqliteCacheMode",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108872,
           "normalizedSignature": "Default|Microsoft.Data.Sqlite.SqliteCacheMode|static=true|const=true",
           "isStatic": true,
@@ -35,7 +35,7 @@
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCacheMode::PrivateMicrosoft.Data.Sqlite.SqliteCacheMode",
           "clrName": "Private",
-          "tsEmitName": "private_",
+          "tsEmitName": "private",
           "metadataToken": 67108873,
           "normalizedSignature": "Private|Microsoft.Data.Sqlite.SqliteCacheMode|static=true|const=true",
           "isStatic": true,
@@ -69,7 +69,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.Data.Sqlite.SqliteCacheMode|static=true|const=true",
           "target": {
@@ -79,7 +79,7 @@
           }
         },
         {
-          "tsName": "private_",
+          "tsName": "private",
           "isStatic": true,
           "tsSignatureId": "Private|Microsoft.Data.Sqlite.SqliteCacheMode|static=true|const=true",
           "target": {

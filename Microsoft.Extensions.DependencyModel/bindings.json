@@ -310,7 +310,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=get",
           "target": {
@@ -600,7 +600,7 @@
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::Default:Microsoft.Extensions.DependencyModel.CompilationOptions",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385875994,
           "canonicalSignature": ":Microsoft.Extensions.DependencyModel.CompilationOptions",
           "normalizedSignature": "Default|:Microsoft.Extensions.DependencyModel.CompilationOptions|static=true|accessor=get",
@@ -748,7 +748,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.Extensions.DependencyModel.CompilationOptions|static=true|accessor=get",
           "target": {
@@ -810,7 +810,7 @@
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::Default:Microsoft.Extensions.DependencyModel.DependencyContext",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385875997,
           "canonicalSignature": ":Microsoft.Extensions.DependencyModel.DependencyContext",
           "normalizedSignature": "Default|:Microsoft.Extensions.DependencyModel.DependencyContext|static=true|accessor=get",
@@ -930,7 +930,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.Extensions.DependencyModel.DependencyContext|static=true|accessor=get",
           "target": {
@@ -1137,7 +1137,7 @@
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextLoader::Default:Microsoft.Extensions.DependencyModel.DependencyContextLoader",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876004,
           "canonicalSignature": ":Microsoft.Extensions.DependencyModel.DependencyContextLoader",
           "normalizedSignature": "Default|:Microsoft.Extensions.DependencyModel.DependencyContextLoader|static=true|accessor=get",
@@ -1177,7 +1177,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.Extensions.DependencyModel.DependencyContextLoader|static=true|accessor=get",
           "target": {
@@ -1271,7 +1271,7 @@
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876014,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=get",
@@ -1431,7 +1431,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=get",
           "target": {
@@ -2311,7 +2311,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=get",
           "target": {

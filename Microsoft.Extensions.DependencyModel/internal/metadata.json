@@ -410,7 +410,7 @@
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationOptions::Default:Microsoft.Extensions.DependencyModel.CompilationOptions",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Microsoft.Extensions.DependencyModel.CompilationOptions|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -481,7 +481,7 @@
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::Default:Microsoft.Extensions.DependencyModel.DependencyContext",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Microsoft.Extensions.DependencyModel.DependencyContext|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -683,7 +683,7 @@
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextLoader::Default:Microsoft.Extensions.DependencyModel.DependencyContextLoader",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Microsoft.Extensions.DependencyModel.DependencyContextLoader|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -760,7 +760,7 @@
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

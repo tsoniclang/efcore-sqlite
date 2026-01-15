@@ -20,11 +20,11 @@ export abstract class SqliteLoggerExtensions$instance {
     static foreignKeyFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string, id: long, principalTableName: string, deleteAction: string): void;
     static foreignKeyPrincipalColumnMissingWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalColumnName: string, principalTableName: string): void;
     static foreignKeyReferencesMissingTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, id: string, tableName: string, principalTableName: string): void;
-    static formatWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string, tableName: string, type_: string): void;
+    static formatWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string, tableName: string, type: string): void;
     static indexFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string, unique: Nullable<System_Internal.Boolean>): void;
     static inferringTypes(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
     static missingTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
-    static outOfRangeWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string, tableName: string, type_: string): void;
+    static outOfRangeWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string, tableName: string, type: string): void;
     static primaryKeyFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, primaryKeyName: string, tableName: string): void;
     static schemaConfiguredWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, entityType: IEntityType, schema: string): void;
     static schemasNotSupportedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>): void;
@@ -69,11 +69,11 @@ export abstract class SqliteStrings$instance {
     static readonly executeUpdateJsonPartialUpdateDoesNotSupportUlong: string;
     static readonly migrationScriptGenerationNotSupported: string;
     static readonly sequencesNotSupported: string;
-    static aggregateOperationNotSupported(aggregateOperator: unknown, type_: unknown): string;
+    static aggregateOperationNotSupported(aggregateOperator: unknown, type: unknown): string;
     static duplicateColumnNameSridMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
     static incompatibleSqlReturningClauseMismatch(table: unknown, entityType: unknown, otherEntityType: unknown, entityTypeWithSqlReturningClause: unknown, entityTypeWithoutSqlReturningClause: unknown): string;
     static invalidMigrationOperation(operation: unknown): string;
-    static orderByNotSupported(type_: unknown): string;
+    static orderByNotSupported(type: unknown): string;
     static queryingIntoJsonCollectionsNotSupported(sqliteVersion: unknown): string;
     static storedProceduresNotSupported(entityType: unknown): string;
 }

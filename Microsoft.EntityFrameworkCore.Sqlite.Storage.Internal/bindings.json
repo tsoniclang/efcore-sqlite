@@ -51,7 +51,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876088,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping|static=true|accessor=get",
@@ -79,7 +79,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping|static=true|accessor=get",
           "target": {
@@ -153,7 +153,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator::Delete():System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 100663835,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Delete|():System.Void|static=false",
@@ -212,7 +212,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": false,
           "tsSignatureId": "Delete|():System.Void|static=false",
           "target": {
@@ -245,7 +245,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876089,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping|static=true|accessor=get",
@@ -273,7 +273,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping|static=true|accessor=get",
           "target": {
@@ -306,7 +306,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876091,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping|static=true|accessor=get",
@@ -334,7 +334,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping|static=true|accessor=get",
           "target": {
@@ -367,7 +367,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876093,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping|static=true|accessor=get",
@@ -395,7 +395,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping|static=true|accessor=get",
           "target": {
@@ -428,7 +428,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876095,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping|static=true|accessor=get",
@@ -456,7 +456,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping|static=true|accessor=get",
           "target": {
@@ -489,7 +489,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876097,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping|static=true|accessor=get",
@@ -517,7 +517,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping|static=true|accessor=get",
           "target": {
@@ -579,7 +579,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876098,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping|static=true|accessor=get",
@@ -629,7 +629,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping|static=true|accessor=get",
           "target": {
@@ -859,7 +859,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876100,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping|static=true|accessor=get",
@@ -887,7 +887,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping|static=true|accessor=get",
           "target": {
@@ -920,7 +920,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876101,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping|static=true|accessor=get",
@@ -948,7 +948,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping|static=true|accessor=get",
           "target": {
@@ -1042,7 +1042,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876102,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping|static=true|accessor=get",
@@ -1070,7 +1070,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping|static=true|accessor=get",
           "target": {

@@ -44,8 +44,8 @@ export interface CompilationLibrary$instance extends Library {
 
 
 export const CompilationLibrary: {
-    new(type_: string, name: string, version: string, hash: string, assemblies: IEnumerable<System_Internal.String>, dependencies: IEnumerable<Dependency>, serviceable: boolean): CompilationLibrary;
-    new(type_: string, name: string, version: string, hash: string, assemblies: IEnumerable<System_Internal.String>, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string): CompilationLibrary;
+    new(type: string, name: string, version: string, hash: string, assemblies: IEnumerable<System_Internal.String>, dependencies: IEnumerable<Dependency>, serviceable: boolean): CompilationLibrary;
+    new(type: string, name: string, version: string, hash: string, assemblies: IEnumerable<System_Internal.String>, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string): CompilationLibrary;
 };
 
 
@@ -69,7 +69,7 @@ export interface CompilationOptions$instance {
 
 export const CompilationOptions: {
     new(defines: IEnumerable<System_Internal.String>, languageVersion: string, platform: string, allowUnsafe: Nullable<System_Internal.Boolean>, warningsAsErrors: Nullable<System_Internal.Boolean>, optimize: Nullable<System_Internal.Boolean>, keyFile: string, delaySign: Nullable<System_Internal.Boolean>, publicSign: Nullable<System_Internal.Boolean>, debugType: string, emitEntryPoint: Nullable<System_Internal.Boolean>, generateXmlDocumentation: Nullable<System_Internal.Boolean>): CompilationOptions;
-    readonly default_: CompilationOptions;
+    readonly default: CompilationOptions;
 };
 
 
@@ -87,7 +87,7 @@ export interface DependencyContext$instance {
 
 export const DependencyContext: {
     new(target: TargetInfo, compilationOptions: CompilationOptions, compileLibraries: IEnumerable<CompilationLibrary>, runtimeLibraries: IEnumerable<RuntimeLibrary>, runtimeGraph: IEnumerable<RuntimeFallbacks>): DependencyContext;
-    readonly default_: DependencyContext | undefined;
+    readonly default: DependencyContext | undefined;
     load(assembly: Assembly): DependencyContext | undefined;
 };
 
@@ -121,7 +121,7 @@ export interface DependencyContextLoader$instance {
 
 export const DependencyContextLoader: {
     new(): DependencyContextLoader;
-    readonly default_: DependencyContextLoader;
+    readonly default: DependencyContextLoader;
 };
 
 
@@ -147,15 +147,15 @@ export interface Library$instance {
     readonly path: string;
     readonly runtimeStoreManifestName: string | undefined;
     readonly serviceable: boolean;
-    readonly type_: string;
+    readonly type: string;
     readonly version: string;
 }
 
 
 export const Library: {
-    new(type_: string, name: string, version: string, hash: string, dependencies: IEnumerable<Dependency>, serviceable: boolean): Library;
-    new(type_: string, name: string, version: string, hash: string, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string): Library;
-    new(type_: string, name: string, version: string, hash: string, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string, runtimeStoreManifestName: string): Library;
+    new(type: string, name: string, version: string, hash: string, dependencies: IEnumerable<Dependency>, serviceable: boolean): Library;
+    new(type: string, name: string, version: string, hash: string, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string): Library;
+    new(type: string, name: string, version: string, hash: string, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string, runtimeStoreManifestName: string): Library;
 };
 
 
@@ -244,9 +244,9 @@ export interface RuntimeLibrary$instance extends Library {
 
 
 export const RuntimeLibrary: {
-    new(type_: string, name: string, version: string, hash: string, runtimeAssemblyGroups: IReadOnlyList<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList<RuntimeAssetGroup>, resourceAssemblies: IEnumerable<ResourceAssembly>, dependencies: IEnumerable<Dependency>, serviceable: boolean): RuntimeLibrary;
-    new(type_: string, name: string, version: string, hash: string, runtimeAssemblyGroups: IReadOnlyList<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList<RuntimeAssetGroup>, resourceAssemblies: IEnumerable<ResourceAssembly>, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string): RuntimeLibrary;
-    new(type_: string, name: string, version: string, hash: string, runtimeAssemblyGroups: IReadOnlyList<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList<RuntimeAssetGroup>, resourceAssemblies: IEnumerable<ResourceAssembly>, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string, runtimeStoreManifestName: string): RuntimeLibrary;
+    new(type: string, name: string, version: string, hash: string, runtimeAssemblyGroups: IReadOnlyList<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList<RuntimeAssetGroup>, resourceAssemblies: IEnumerable<ResourceAssembly>, dependencies: IEnumerable<Dependency>, serviceable: boolean): RuntimeLibrary;
+    new(type: string, name: string, version: string, hash: string, runtimeAssemblyGroups: IReadOnlyList<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList<RuntimeAssetGroup>, resourceAssemblies: IEnumerable<ResourceAssembly>, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string): RuntimeLibrary;
+    new(type: string, name: string, version: string, hash: string, runtimeAssemblyGroups: IReadOnlyList<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList<RuntimeAssetGroup>, resourceAssemblies: IEnumerable<ResourceAssembly>, dependencies: IEnumerable<Dependency>, serviceable: boolean, path: string, hashPath: string, runtimeStoreManifestName: string): RuntimeLibrary;
 };
 
 
