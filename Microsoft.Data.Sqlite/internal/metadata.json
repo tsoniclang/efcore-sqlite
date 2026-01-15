@@ -29,7 +29,7 @@
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCacheMode::DefaultMicrosoft.Data.Sqlite.SqliteCacheMode",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Microsoft.Data.Sqlite.SqliteCacheMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -38,7 +38,7 @@
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCacheMode::PrivateMicrosoft.Data.Sqlite.SqliteCacheMode",
           "clrName": "Private",
-          "tsEmitName": "private_",
+          "tsEmitName": "private",
           "normalizedSignature": "Private|Microsoft.Data.Sqlite.SqliteCacheMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

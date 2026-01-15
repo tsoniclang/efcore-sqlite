@@ -6514,7 +6514,7 @@
         {
           "stableId": "SQLitePCLRaw.core:SQLitePCL.sqlite3_backup::From(System.IntPtr):SQLitePCL.sqlite3_backup",
           "clrName": "From",
-          "tsEmitName": "from_",
+          "tsEmitName": "from",
           "metadataToken": 100663522,
           "canonicalSignature": "(System.IntPtr):SQLitePCL.sqlite3_backup",
           "normalizedSignature": "From|(System.IntPtr):SQLitePCL.sqlite3_backup|static=true",
@@ -6561,7 +6561,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "from_",
+          "tsName": "from",
           "isStatic": true,
           "tsSignatureId": "From|(System.IntPtr):SQLitePCL.sqlite3_backup|static=true",
           "target": {

@@ -295,16 +295,16 @@ export interface SqliteQueryCompilationContext$instance extends RelationalQueryC
 
 
 export const SqliteQueryCompilationContext: {
-    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async_: boolean): SqliteQueryCompilationContext;
-    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async_: boolean, precompiling: boolean): SqliteQueryCompilationContext;
+    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async: boolean): SqliteQueryCompilationContext;
+    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async: boolean, precompiling: boolean): SqliteQueryCompilationContext;
 };
 
 
 export type SqliteQueryCompilationContext = SqliteQueryCompilationContext$instance;
 
 export interface SqliteQueryCompilationContextFactory$instance {
-    create(async_: boolean): QueryCompilationContext;
-    createPrecompiled(async_: boolean): QueryCompilationContext;
+    create(async: boolean): QueryCompilationContext;
+    createPrecompiled(async: boolean): QueryCompilationContext;
 }
 
 

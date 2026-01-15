@@ -29,8 +29,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum SqliteCacheMode {
-    default_ = 0,
-    private_ = 1,
+    default = 0,
+    private = 1,
     shared = 2
 }
 
@@ -360,9 +360,9 @@ export interface SqliteParameter$instance extends DbParameter {
 export const SqliteParameter: {
     new(): SqliteParameter;
     new(name: string, value: unknown): SqliteParameter;
-    new(name: string, type_: SqliteType): SqliteParameter;
-    new(name: string, type_: SqliteType, size: int): SqliteParameter;
-    new(name: string, type_: SqliteType, size: int, sourceColumn: string): SqliteParameter;
+    new(name: string, type: SqliteType): SqliteParameter;
+    new(name: string, type: SqliteType, size: int): SqliteParameter;
+    new(name: string, type: SqliteType, size: int, sourceColumn: string): SqliteParameter;
 };
 
 
@@ -373,9 +373,9 @@ export interface SqliteParameterCollection$instance extends DbParameterCollectio
     readonly syncRoot: unknown;
     add(value: unknown): int;
     add(value: SqliteParameter): SqliteParameter;
-    add(parameterName: string, type_: SqliteType): SqliteParameter;
-    add(parameterName: string, type_: SqliteType, size: int): SqliteParameter;
-    add(parameterName: string, type_: SqliteType, size: int, sourceColumn: string): SqliteParameter;
+    add(parameterName: string, type: SqliteType): SqliteParameter;
+    add(parameterName: string, type: SqliteType, size: int): SqliteParameter;
+    add(parameterName: string, type: SqliteType, size: int, sourceColumn: string): SqliteParameter;
     addRange(values: ClrArray): void;
     addRange(values: IEnumerable__System_Collections_Generic<SqliteParameter>): void;
     addWithValue(parameterName: string, value: unknown): SqliteParameter;

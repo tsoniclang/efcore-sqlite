@@ -52,7 +52,7 @@ export type delegate_rollback = (user_data: unknown) => void;
 export type delegate_trace = (user_data: unknown, statement: utf8z) => void;
 
 
-export type delegate_update = (user_data: unknown, type_: int, database: utf8z, table: utf8z, rowid: long) => void;
+export type delegate_update = (user_data: unknown, type: int, database: utf8z, table: utf8z, rowid: long) => void;
 
 
 export type strdelegate_authorizer = (user_data: unknown, action_code: int, param0: string, param1: string, dbName: string, inner_most_trigger_or_view: string) => int;
@@ -73,7 +73,7 @@ export type strdelegate_profile = (user_data: unknown, statement: string, ns: lo
 export type strdelegate_trace = (user_data: unknown, s: string) => void;
 
 
-export type strdelegate_update = (user_data: unknown, type_: int, database: string, table: string, rowid: long) => void;
+export type strdelegate_update = (user_data: unknown, type: int, database: string, table: string, rowid: long) => void;
 
 
 export interface IGetFunctionPointer$instance {
@@ -432,7 +432,7 @@ export interface sqlite3_backup$instance extends SafeHandle {
 
 export const sqlite3_backup: {
     new(): sqlite3_backup;
-    from_(p: nint): sqlite3_backup;
+    from(p: nint): sqlite3_backup;
 };
 
 
