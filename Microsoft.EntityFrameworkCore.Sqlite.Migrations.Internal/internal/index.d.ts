@@ -15,13 +15,13 @@ import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryReposito
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface SqliteHistoryRepository$instance extends HistoryRepository {
-    readonly lockReleaseBehavior: LockReleaseBehavior;
-    acquireDatabaseLock(): IMigrationsDatabaseLock;
-    acquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
-    getBeginIfExistsScript(migrationId: string): string;
-    getBeginIfNotExistsScript(migrationId: string): string;
-    getCreateIfNotExistsScript(): string;
-    getEndIfScript(): string;
+    readonly LockReleaseBehavior: LockReleaseBehavior;
+    AcquireDatabaseLock(): IMigrationsDatabaseLock;
+    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
+    GetBeginIfExistsScript(migrationId: string): string;
+    GetBeginIfNotExistsScript(migrationId: string): string;
+    GetCreateIfNotExistsScript(): string;
+    GetEndIfScript(): string;
 }
 
 
@@ -33,9 +33,9 @@ export const SqliteHistoryRepository: {
 export type SqliteHistoryRepository = SqliteHistoryRepository$instance;
 
 export interface SqliteMigrationDatabaseLock$instance {
-    readonly historyRepository: IHistoryRepository;
-    dispose(): void;
-    disposeAsync(): ValueTask;
+    readonly HistoryRepository: IHistoryRepository;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
 }
 
 

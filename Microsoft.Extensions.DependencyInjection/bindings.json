@@ -1,23 +1,42 @@
 {
   "namespace": "Microsoft.Extensions.DependencyInjection",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore",
+    "Microsoft.EntityFrameworkCore.Sqlite",
+    "Microsoft.Extensions.Caching.Memory",
+    "Microsoft.Extensions.DependencyInjection",
+    "Microsoft.Extensions.DependencyInjection.Abstractions",
+    "Microsoft.Extensions.Logging",
+    "Microsoft.Extensions.Options"
+  ],
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions",
       "clrName": "Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions",
-      "tsEmitName": "SqliteServiceCollectionExtensions",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions::AddSqlite(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "AddSqlite",
-          "tsEmitName": "addSqlite",
           "metadataToken": 100663377,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "AddSqlite|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": true
@@ -25,13 +44,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions::AddEntityFrameworkSqlite(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "AddEntityFrameworkSqlite",
-          "tsEmitName": "addEntityFrameworkSqlite",
           "metadataToken": 100663378,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "AddEntityFrameworkSqlite|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": true
@@ -40,29 +64,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "addSqlite",
-          "isStatic": true,
-          "tsSignatureId": "AddSqlite|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663377
-          }
-        },
-        {
-          "tsName": "addEntityFrameworkSqlite",
-          "isStatic": true,
-          "tsSignatureId": "AddEntityFrameworkSqlite|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663378
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

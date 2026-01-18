@@ -27,8 +27,8 @@ export const SqliteDbContextOptionsBuilder: {
 export type SqliteDbContextOptionsBuilder = SqliteDbContextOptionsBuilder$instance;
 
 export abstract class SpatialiteLoader$instance {
-    static load(connection: DbConnection): void;
-    static tryLoad(connection: DbConnection): boolean;
+    static Load(connection: DbConnection): void;
+    static TryLoad(connection: DbConnection): boolean;
 }
 
 

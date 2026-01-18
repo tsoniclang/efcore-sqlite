@@ -77,14 +77,14 @@ export type strdelegate_update = (user_data: unknown, type: int, database: strin
 
 
 export interface IGetFunctionPointer$instance {
-    getFunctionPointer(name: string): nint;
+    GetFunctionPointer(name: string): nint;
 }
 
 
 export type IGetFunctionPointer = IGetFunctionPointer$instance;
 
 export interface ISQLite3Provider$instance {
-    getNativeLibraryName(): string;
+    GetNativeLibraryName(): string;
     sqlite3__vfs__delete(vfs: utf8z, pathname: utf8z, syncDir: int): int;
     sqlite3_backup_init(destDb: sqlite3, destName: utf8z, sourceDb: sqlite3, sourceName: utf8z): sqlite3_backup;
     sqlite3_backup_remaining(backup: sqlite3_backup): int;
@@ -183,19 +183,19 @@ export interface ISQLite3Provider$instance {
 export type ISQLite3Provider = ISQLite3Provider$instance;
 
 export interface utf8z$instance {
-    getPinnableReference(): byte;
+    GetPinnableReference(): byte;
     utf8_to_string(): string;
 }
 
 
 export const utf8z: {
     new(): utf8z;
-    fromIntPtr(p: nint): utf8z;
-    fromPtr(p: ptr<byte>): utf8z;
-    fromPtrLen(p: ptr<byte>, len: int): utf8z;
-    fromSpan(span: ReadOnlySpan<System_Internal.Byte>): utf8z;
-    fromString(s: string): utf8z;
-    getZeroTerminatedUTF8Bytes(value: string): byte[];
+    FromIntPtr(p: nint): utf8z;
+    FromPtr(p: ptr<byte>): utf8z;
+    FromPtrLen(p: ptr<byte>, len: int): utf8z;
+    FromSpan(span: ReadOnlySpan<System_Internal.Byte>): utf8z;
+    FromString(s: string): utf8z;
+    GetZeroTerminatedUTF8Bytes(value: string): byte[];
 };
 
 
@@ -243,7 +243,7 @@ export const commit_hook_info: {
 export type commit_hook_info = commit_hook_info$instance;
 
 export interface EntryPointAttribute$instance extends Attribute {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
@@ -284,7 +284,7 @@ export const function_hook_info: {
 export type function_hook_info = function_hook_info$instance;
 
 export interface hook_handle$instance extends SafeGCHandle {
-    forDispose(): IDisposable;
+    ForDispose(): IDisposable;
 }
 
 
@@ -303,13 +303,13 @@ export interface hook_handles$instance {
     profile: IDisposable;
     progress: IDisposable;
     authorizer: IDisposable;
-    addAggFunction(name: byte[], nargs: int, d: IDisposable): void;
-    addCollation(name: byte[], d: IDisposable): void;
-    addScalarFunction(name: byte[], nargs: int, d: IDisposable): void;
-    dispose(): void;
-    removeAggFunction(name: byte[], nargs: int): boolean;
-    removeCollation(name: byte[]): boolean;
-    removeScalarFunction(name: byte[], nargs: int): boolean;
+    AddAggFunction(name: byte[], nargs: int, d: IDisposable): void;
+    AddCollation(name: byte[], d: IDisposable): void;
+    AddScalarFunction(name: byte[], nargs: int, d: IDisposable): void;
+    Dispose(): void;
+    RemoveAggFunction(name: byte[], nargs: int): boolean;
+    RemoveCollation(name: byte[]): boolean;
+    RemoveScalarFunction(name: byte[], nargs: int): boolean;
 }
 
 
@@ -345,8 +345,8 @@ export const MonoPInvokeCallbackAttribute: {
 export type MonoPInvokeCallbackAttribute = MonoPInvokeCallbackAttribute$instance;
 
 export interface PreserveAttribute$instance extends Attribute {
-    allMembers: boolean;
-    conditional: boolean;
+    AllMembers: boolean;
+    Conditional: boolean;
 }
 
 
@@ -397,7 +397,7 @@ export const rollback_hook_info: {
 export type rollback_hook_info = rollback_hook_info$instance;
 
 export interface SafeGCHandle$instance extends SafeHandle {
-    readonly isInvalid: boolean;
+    readonly IsInvalid: boolean;
 }
 
 
@@ -409,9 +409,9 @@ export const SafeGCHandle: {
 export type SafeGCHandle = SafeGCHandle$instance;
 
 export interface sqlite3$instance extends SafeHandle {
-    readonly isInvalid: boolean;
+    readonly IsInvalid: boolean;
     enable_sqlite3_next_stmt(enabled: boolean): void;
-    getOrCreateExtra<T extends IDisposable>(f: Func<T>): T;
+    GetOrCreateExtra<T extends IDisposable>(f: Func<T>): T;
     manual_close(): int;
     manual_close_v2(): int;
 }
@@ -425,21 +425,21 @@ export const sqlite3: {
 export type sqlite3 = sqlite3$instance;
 
 export interface sqlite3_backup$instance extends SafeHandle {
-    readonly isInvalid: boolean;
+    readonly IsInvalid: boolean;
     manual_close(): int;
 }
 
 
 export const sqlite3_backup: {
     new(): sqlite3_backup;
-    from(p: nint): sqlite3_backup;
+    From(p: nint): sqlite3_backup;
 };
 
 
 export type sqlite3_backup = sqlite3_backup$instance;
 
 export interface sqlite3_blob$instance extends SafeHandle {
-    readonly isInvalid: boolean;
+    readonly IsInvalid: boolean;
     manual_close(): int;
 }
 
@@ -464,7 +464,7 @@ export const sqlite3_context: {
 export type sqlite3_context = sqlite3_context$instance;
 
 export interface sqlite3_snapshot$instance extends SafeHandle {
-    readonly isInvalid: boolean;
+    readonly IsInvalid: boolean;
     manual_close(): void;
 }
 
@@ -477,7 +477,7 @@ export const sqlite3_snapshot: {
 export type sqlite3_snapshot = sqlite3_snapshot$instance;
 
 export interface sqlite3_stmt$instance extends SafeHandle {
-    readonly isInvalid: boolean;
+    readonly IsInvalid: boolean;
     manual_close(): int;
 }
 
@@ -545,14 +545,14 @@ export const update_hook_info: {
 export type update_hook_info = update_hook_info$instance;
 
 export abstract class Batteries$instance {
-    static init(): void;
+    static Init(): void;
 }
 
 
 export type Batteries = Batteries$instance;
 
 export abstract class Batteries_V2$instance {
-    static init(): void;
+    static Init(): void;
 }
 
 
@@ -801,10 +801,10 @@ export abstract class raw$instance {
     static readonly SQLITE_DESERIALIZE_FREEONCLOSE: int;
     static readonly SQLITE_DESERIALIZE_RESIZEABLE: int;
     static readonly SQLITE_DESERIALIZE_READONLY: int;
-    static freezeProvider(b?: boolean): void;
-    static getNativeLibraryName(): string;
+    static FreezeProvider(b?: boolean): void;
+    static GetNativeLibraryName(): string;
     static internal_sqlite3_finalize(stmt: nint): int;
-    static setProvider(imp: ISQLite3Provider): void;
+    static SetProvider(imp: ISQLite3Provider): void;
     static sqlite3__create_collation_utf8(db: sqlite3, name: string, v: unknown, f: delegate_collation): int;
     static sqlite3__vfs__delete(vfs: utf8z, pathname: utf8z, syncdir: int): int;
     static sqlite3__vfs__delete(vfs: string, pathname: string, syncdir: int): int;

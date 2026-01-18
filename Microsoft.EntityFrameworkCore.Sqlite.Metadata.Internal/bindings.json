@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore.Sqlite"
+  ],
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider",
-      "tsEmitName": "SqliteAnnotationProvider",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "For",
-          "tsEmitName": "for",
           "metadataToken": 100664144,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "For",
-          "tsEmitName": "for",
           "metadataToken": 100664145,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -51,244 +69,124 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "for",
-          "isStatic": false,
-          "tsSignatureId": "For|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664144
-          }
-        },
-        {
-          "tsName": "for",
-          "isStatic": false,
-          "tsSignatureId": "For|(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664145
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Metadata.RelationalAnnotationProviderDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationProvider",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664143
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-      "tsEmitName": "SqliteAnnotationNames",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames::PrefixSystem.String",
           "clrName": "Prefix",
-          "tsEmitName": "prefix",
           "metadataToken": 67109195,
           "normalizedSignature": "Prefix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames::LegacyAutoincrementSystem.String",
           "clrName": "LegacyAutoincrement",
-          "tsEmitName": "legacyAutoincrement",
           "metadataToken": 67109196,
           "normalizedSignature": "LegacyAutoincrement|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames::AutoincrementSystem.String",
           "clrName": "Autoincrement",
-          "tsEmitName": "autoincrement",
           "metadataToken": 67109197,
           "normalizedSignature": "Autoincrement|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames::InlinePrimaryKeySystem.String",
           "clrName": "InlinePrimaryKey",
-          "tsEmitName": "inlinePrimaryKey",
           "metadataToken": 67109198,
           "normalizedSignature": "InlinePrimaryKey|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames::InlinePrimaryKeyNameSystem.String",
           "clrName": "InlinePrimaryKeyName",
-          "tsEmitName": "inlinePrimaryKeyName",
           "metadataToken": 67109199,
           "normalizedSignature": "InlinePrimaryKeyName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames::InitSpatialMetaDataSystem.String",
           "clrName": "InitSpatialMetaData",
-          "tsEmitName": "initSpatialMetaData",
           "metadataToken": 67109200,
           "normalizedSignature": "InitSpatialMetaData|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames::SridSystem.String",
           "clrName": "Srid",
-          "tsEmitName": "srid",
           "metadataToken": 67109201,
           "normalizedSignature": "Srid|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames::UseSqlReturningClauseSystem.String",
           "clrName": "UseSqlReturningClause",
-          "tsEmitName": "useSqlReturningClause",
           "metadataToken": 67109202,
           "normalizedSignature": "UseSqlReturningClause|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames::ValueGenerationStrategySystem.String",
           "clrName": "ValueGenerationStrategy",
-          "tsEmitName": "valueGenerationStrategy",
           "metadataToken": 67109203,
           "normalizedSignature": "ValueGenerationStrategy|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "prefix",
-          "isStatic": true,
-          "tsSignatureId": "Prefix|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109195
-          }
-        },
-        {
-          "tsName": "legacyAutoincrement",
-          "isStatic": true,
-          "tsSignatureId": "LegacyAutoincrement|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109196
-          }
-        },
-        {
-          "tsName": "autoincrement",
-          "isStatic": true,
-          "tsSignatureId": "Autoincrement|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109197
-          }
-        },
-        {
-          "tsName": "inlinePrimaryKey",
-          "isStatic": true,
-          "tsSignatureId": "InlinePrimaryKey|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109198
-          }
-        },
-        {
-          "tsName": "inlinePrimaryKeyName",
-          "isStatic": true,
-          "tsSignatureId": "InlinePrimaryKeyName|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109199
-          }
-        },
-        {
-          "tsName": "initSpatialMetaData",
-          "isStatic": true,
-          "tsSignatureId": "InitSpatialMetaData|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109200
-          }
-        },
-        {
-          "tsName": "srid",
-          "isStatic": true,
-          "tsSignatureId": "Srid|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109201
-          }
-        },
-        {
-          "tsName": "useSqlReturningClause",
-          "isStatic": true,
-          "tsSignatureId": "UseSqlReturningClause|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109202
-          }
-        },
-        {
-          "tsName": "valueGenerationStrategy",
-          "isStatic": true,
-          "tsSignatureId": "ValueGenerationStrategy|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Metadata.Internal.SqliteAnnotationNames",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109203
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

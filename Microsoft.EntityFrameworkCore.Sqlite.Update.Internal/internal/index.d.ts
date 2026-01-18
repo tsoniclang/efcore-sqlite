@@ -39,7 +39,7 @@ export const SqliteModificationCommand: {
 export type SqliteModificationCommand = SqliteModificationCommand$instance;
 
 export interface SqliteModificationCommandBatchFactory$instance {
-    create(): ModificationCommandBatch;
+    Create(): ModificationCommandBatch;
 }
 
 
@@ -51,8 +51,8 @@ export const SqliteModificationCommandBatchFactory: {
 export type SqliteModificationCommandBatchFactory = SqliteModificationCommandBatchFactory$instance;
 
 export interface SqliteModificationCommandFactory$instance {
-    createModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
-    createNonTrackedModificationCommand(modificationCommandParameters: NonTrackedModificationCommandParameters): INonTrackedModificationCommand;
+    CreateModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
+    CreateNonTrackedModificationCommand(modificationCommandParameters: NonTrackedModificationCommandParameters): INonTrackedModificationCommand;
 }
 
 
@@ -64,10 +64,10 @@ export const SqliteModificationCommandFactory: {
 export type SqliteModificationCommandFactory = SqliteModificationCommandFactory$instance;
 
 export interface SqliteUpdateSqlGenerator$instance extends UpdateAndSelectSqlGenerator {
-    appendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    generateNextSequenceValueOperation(name: string, schema: string): string;
+    AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    GenerateNextSequenceValueOperation(name: string, schema: string): string;
 }
 
 

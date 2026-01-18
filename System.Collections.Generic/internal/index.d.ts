@@ -12,12 +12,12 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export abstract class CollectionExtensions$instance {
-    static getDefaultAssets(self: IEnumerable<RuntimeAssetGroup>): IEnumerable<System_Internal.String>;
-    static getDefaultGroup(self: IEnumerable<RuntimeAssetGroup>): RuntimeAssetGroup | undefined;
-    static getDefaultRuntimeFileAssets(self: IEnumerable<RuntimeAssetGroup>): IEnumerable<RuntimeFile>;
-    static getRuntimeAssets(self: IEnumerable<RuntimeAssetGroup>, runtime: string): IEnumerable<System_Internal.String>;
-    static getRuntimeFileAssets(self: IEnumerable<RuntimeAssetGroup>, runtime: string): IEnumerable<RuntimeFile>;
-    static getRuntimeGroup(self: IEnumerable<RuntimeAssetGroup>, runtime: string): RuntimeAssetGroup | undefined;
+    static GetDefaultAssets(self: IEnumerable<RuntimeAssetGroup>): IEnumerable<System_Internal.String>;
+    static GetDefaultGroup(self: IEnumerable<RuntimeAssetGroup>): RuntimeAssetGroup | undefined;
+    static GetDefaultRuntimeFileAssets(self: IEnumerable<RuntimeAssetGroup>): IEnumerable<RuntimeFile>;
+    static GetRuntimeAssets(self: IEnumerable<RuntimeAssetGroup>, runtime: string): IEnumerable<System_Internal.String>;
+    static GetRuntimeFileAssets(self: IEnumerable<RuntimeAssetGroup>, runtime: string): IEnumerable<RuntimeFile>;
+    static GetRuntimeGroup(self: IEnumerable<RuntimeAssetGroup>, runtime: string): RuntimeAssetGroup | undefined;
 }
 
 

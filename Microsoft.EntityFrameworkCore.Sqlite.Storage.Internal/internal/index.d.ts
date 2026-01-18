@@ -20,7 +20,7 @@ import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/
 import type { ByteArrayTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, GuidTypeMapping, IDatabaseCreator, IDbContextTransactionManager, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, StringTypeMapping, TimeOnlyTypeMapping, TypeMappingSourceDependencies, ULongTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface ISqliteRelationalConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
-    createReadOnlyConnection(): ISqliteRelationalConnection;
+    CreateReadOnlyConnection(): ISqliteRelationalConnection;
 }
 
 
@@ -32,17 +32,17 @@ export interface SqliteByteArrayTypeMapping$instance extends ByteArrayTypeMappin
 
 export const SqliteByteArrayTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteByteArrayTypeMapping;
-    readonly default: SqliteByteArrayTypeMapping;
+    readonly Default: SqliteByteArrayTypeMapping;
 };
 
 
 export type SqliteByteArrayTypeMapping = SqliteByteArrayTypeMapping$instance;
 
 export interface SqliteDatabaseCreator$instance extends RelationalDatabaseCreator {
-    create(): void;
-    delete(): void;
-    exists(): boolean;
-    hasTables(): boolean;
+    Create(): void;
+    Delete(): void;
+    Exists(): boolean;
+    HasTables(): boolean;
 }
 
 
@@ -59,7 +59,7 @@ export interface SqliteDateOnlyTypeMapping$instance extends DateOnlyTypeMapping 
 
 export const SqliteDateOnlyTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteDateOnlyTypeMapping;
-    readonly default: SqliteDateOnlyTypeMapping;
+    readonly Default: SqliteDateOnlyTypeMapping;
 };
 
 
@@ -71,7 +71,7 @@ export interface SqliteDateTimeOffsetTypeMapping$instance extends DateTimeOffset
 
 export const SqliteDateTimeOffsetTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteDateTimeOffsetTypeMapping;
-    readonly default: SqliteDateTimeOffsetTypeMapping;
+    readonly Default: SqliteDateTimeOffsetTypeMapping;
 };
 
 
@@ -83,7 +83,7 @@ export interface SqliteDateTimeTypeMapping$instance extends DateTimeTypeMapping 
 
 export const SqliteDateTimeTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteDateTimeTypeMapping;
-    readonly default: SqliteDateTimeTypeMapping;
+    readonly Default: SqliteDateTimeTypeMapping;
 };
 
 
@@ -95,7 +95,7 @@ export interface SqliteDecimalTypeMapping$instance extends DecimalTypeMapping {
 
 export const SqliteDecimalTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteDecimalTypeMapping;
-    readonly default: SqliteDecimalTypeMapping;
+    readonly Default: SqliteDecimalTypeMapping;
 };
 
 
@@ -107,28 +107,28 @@ export interface SqliteGuidTypeMapping$instance extends GuidTypeMapping {
 
 export const SqliteGuidTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteGuidTypeMapping;
-    readonly default: SqliteGuidTypeMapping;
+    readonly Default: SqliteGuidTypeMapping;
 };
 
 
 export type SqliteGuidTypeMapping = SqliteGuidTypeMapping$instance;
 
 export interface SqliteJsonTypeMapping$instance extends JsonTypeMapping {
-    customizeDataReaderExpression(expression: Expression): Expression;
-    getDataReaderMethod(): MethodInfo;
+    CustomizeDataReaderExpression(expression: Expression): Expression;
+    GetDataReaderMethod(): MethodInfo;
 }
 
 
 export const SqliteJsonTypeMapping: {
     new(storeType: string): SqliteJsonTypeMapping;
-    readonly default: SqliteJsonTypeMapping;
+    readonly Default: SqliteJsonTypeMapping;
 };
 
 
 export type SqliteJsonTypeMapping = SqliteJsonTypeMapping$instance;
 
 export interface SqliteRelationalConnection$instance extends RelationalConnection {
-    createReadOnlyConnection(): ISqliteRelationalConnection;
+    CreateReadOnlyConnection(): ISqliteRelationalConnection;
 }
 
 
@@ -147,9 +147,9 @@ export type SqliteRelationalConnection = SqliteRelationalConnection$instance & _
 
 
 export interface SqliteSqlGenerationHelper$instance extends RelationalSqlGenerationHelper {
-    readonly startTransactionStatement: string;
-    delimitIdentifier(name: string, schema: string): string;
-    delimitIdentifier(builder: StringBuilder, name: string, schema: string): void;
+    readonly StartTransactionStatement: string;
+    DelimitIdentifier(name: string, schema: string): string;
+    DelimitIdentifier(builder: StringBuilder, name: string, schema: string): void;
 }
 
 
@@ -166,7 +166,7 @@ export interface SqliteStringTypeMapping$instance extends StringTypeMapping {
 
 export const SqliteStringTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, unicode: boolean, size: Nullable<System_Internal.Int32>): SqliteStringTypeMapping;
-    readonly default: SqliteStringTypeMapping;
+    readonly Default: SqliteStringTypeMapping;
 };
 
 
@@ -178,7 +178,7 @@ export interface SqliteTimeOnlyTypeMapping$instance extends TimeOnlyTypeMapping 
 
 export const SqliteTimeOnlyTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteTimeOnlyTypeMapping;
-    readonly default: SqliteTimeOnlyTypeMapping;
+    readonly Default: SqliteTimeOnlyTypeMapping;
 };
 
 
@@ -190,7 +190,7 @@ export interface SqliteTypeMappingSource$instance extends RelationalTypeMappingS
 
 export const SqliteTypeMappingSource: {
     new(dependencies: TypeMappingSourceDependencies, relationalDependencies: RelationalTypeMappingSourceDependencies): SqliteTypeMappingSource;
-    isSpatialiteType(columnType: string): boolean;
+    IsSpatialiteType(columnType: string): boolean;
 };
 
 
@@ -202,7 +202,7 @@ export interface SqliteULongTypeMapping$instance extends ULongTypeMapping {
 
 export const SqliteULongTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteULongTypeMapping;
-    readonly default: SqliteULongTypeMapping;
+    readonly Default: SqliteULongTypeMapping;
 };
 
 

@@ -10,8 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable } from "@tsonic/dotnet/System.js";
 
 export enum SqliteValueGenerationStrategy {
-    none = 0,
-    autoincrement = 1
+    None = 0,
+    Autoincrement = 1
 }
 
 

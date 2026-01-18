@@ -20,135 +20,135 @@ import type { ColumnBuilder, ComplexTypePropertyBuilder, IConventionEntityTypeBu
 import type { ConfigurationSource, IConventionEntityType, IConventionEntityTypeMappingFragment, IConventionProperty, IConventionRelationalPropertyOverrides, IMutableEntityType, IMutableEntityTypeMappingFragment, IMutableProperty, IMutableRelationalPropertyOverrides, IReadOnlyEntityType, IReadOnlyEntityTypeMappingFragment, IReadOnlyProperty, IReadOnlyRelationalPropertyOverrides, ITable, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export abstract class SqliteComplexTypePropertyBuilderExtensions$instance {
-    static hasSrid<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>, srid: int): ComplexTypePropertyBuilder<TProperty>;
-    static hasSrid(propertyBuilder: ComplexTypePropertyBuilder, srid: int): ComplexTypePropertyBuilder;
-    static useAutoincrement<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>): ComplexTypePropertyBuilder<TProperty>;
-    static useAutoincrement(propertyBuilder: ComplexTypePropertyBuilder): ComplexTypePropertyBuilder;
+    static HasSrid<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>, srid: int): ComplexTypePropertyBuilder<TProperty>;
+    static HasSrid(propertyBuilder: ComplexTypePropertyBuilder, srid: int): ComplexTypePropertyBuilder;
+    static UseAutoincrement<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>): ComplexTypePropertyBuilder<TProperty>;
+    static UseAutoincrement(propertyBuilder: ComplexTypePropertyBuilder): ComplexTypePropertyBuilder;
 }
 
 
 export type SqliteComplexTypePropertyBuilderExtensions = SqliteComplexTypePropertyBuilderExtensions$instance;
 
 export abstract class SqliteDatabaseFacadeExtensions$instance {
-    static isSqlite(database: DatabaseFacade): boolean;
+    static IsSqlite(database: DatabaseFacade): boolean;
 }
 
 
 export type SqliteDatabaseFacadeExtensions = SqliteDatabaseFacadeExtensions$instance;
 
 export abstract class SqliteDbContextOptionsBuilderExtensions$instance {
-    static useSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static useSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static useSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static useSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connectionString: string, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static useSqlite(optionsBuilder: DbContextOptionsBuilder, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static useSqlite(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static useSqlite(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static useSqlite(optionsBuilder: DbContextOptionsBuilder, connectionString: string, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
+    static UseSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
+    static UseSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
+    static UseSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connectionString: string, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
+    static UseSqlite(optionsBuilder: DbContextOptionsBuilder, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseSqlite(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseSqlite(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseSqlite(optionsBuilder: DbContextOptionsBuilder, connectionString: string, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>): DbContextOptionsBuilder;
 }
 
 
 export type SqliteDbContextOptionsBuilderExtensions = SqliteDbContextOptionsBuilderExtensions$instance;
 
 export abstract class SqliteDbFunctionsExtensions$instance {
-    static glob(_: DbFunctions, matchExpression: string, pattern: string): boolean;
-    static hex(_: DbFunctions, bytes: byte[]): string;
-    static substr(_: DbFunctions, bytes: byte[], startIndex: int, length: int): byte[];
-    static substr(_: DbFunctions, bytes: byte[], startIndex: int): byte[];
-    static unhex(_: DbFunctions, value: string, ignoreChars: string): byte[] | undefined;
-    static unhex(_: DbFunctions, value: string): byte[] | undefined;
+    static Glob(_: DbFunctions, matchExpression: string, pattern: string): boolean;
+    static Hex(_: DbFunctions, bytes: byte[]): string;
+    static Substr(_: DbFunctions, bytes: byte[], startIndex: int, length: int): byte[];
+    static Substr(_: DbFunctions, bytes: byte[], startIndex: int): byte[];
+    static Unhex(_: DbFunctions, value: string, ignoreChars: string): byte[] | undefined;
+    static Unhex(_: DbFunctions, value: string): byte[] | undefined;
 }
 
 
 export type SqliteDbFunctionsExtensions = SqliteDbFunctionsExtensions$instance;
 
 export abstract class SqliteEntityTypeBuilderExtensions$instance {
-    static canUseSqlReturningClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlReturningClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
-    static canUseSqlReturningClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlReturningClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
-    static useSqlReturningClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlReturningClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
-    static useSqlReturningClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlReturningClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
+    static CanUseSqlReturningClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlReturningClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
+    static CanUseSqlReturningClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlReturningClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
+    static UseSqlReturningClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlReturningClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
+    static UseSqlReturningClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlReturningClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
 }
 
 
 export type SqliteEntityTypeBuilderExtensions = SqliteEntityTypeBuilderExtensions$instance;
 
 export abstract class SqliteEntityTypeExtensions$instance {
-    static getUseSqlReturningClauseConfigurationSource(entityType: IConventionEntityType, storeObject: StoreObjectIdentifier): Nullable<ConfigurationSource>;
-    static getUseSqlReturningClauseConfigurationSource(entityType: IConventionEntityType): Nullable<ConfigurationSource>;
-    static isSqlReturningClauseUsed(entityType: IReadOnlyEntityType, storeObject: StoreObjectIdentifier): boolean;
-    static isSqlReturningClauseUsed(entityType: IReadOnlyEntityType): boolean;
-    static useSqlReturningClause(entityType: IConventionEntityType, useSqlReturningClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static useSqlReturningClause(entityType: IConventionEntityType, useSqlReturningClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static useSqlReturningClause(entityType: IMutableEntityType, useSqlReturningClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier): void;
-    static useSqlReturningClause(entityType: IMutableEntityType, useSqlReturningClause: Nullable<System_Internal.Boolean>): void;
+    static GetUseSqlReturningClauseConfigurationSource(entityType: IConventionEntityType, storeObject: StoreObjectIdentifier): Nullable<ConfigurationSource>;
+    static GetUseSqlReturningClauseConfigurationSource(entityType: IConventionEntityType): Nullable<ConfigurationSource>;
+    static IsSqlReturningClauseUsed(entityType: IReadOnlyEntityType, storeObject: StoreObjectIdentifier): boolean;
+    static IsSqlReturningClauseUsed(entityType: IReadOnlyEntityType): boolean;
+    static UseSqlReturningClause(entityType: IConventionEntityType, useSqlReturningClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
+    static UseSqlReturningClause(entityType: IConventionEntityType, useSqlReturningClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
+    static UseSqlReturningClause(entityType: IMutableEntityType, useSqlReturningClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier): void;
+    static UseSqlReturningClause(entityType: IMutableEntityType, useSqlReturningClause: Nullable<System_Internal.Boolean>): void;
 }
 
 
 export type SqliteEntityTypeExtensions = SqliteEntityTypeExtensions$instance;
 
 export abstract class SqliteEntityTypeMappingFragmentExtensions$instance {
-    static getUseSqlReturningClauseConfigurationSource(fragment: IConventionEntityTypeMappingFragment): Nullable<ConfigurationSource>;
-    static isSqlReturningClauseUsed(fragment: IReadOnlyEntityTypeMappingFragment): boolean;
-    static useSqlReturningClause(fragment: IConventionEntityTypeMappingFragment, useSqlReturningClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static useSqlReturningClause(fragment: IMutableEntityTypeMappingFragment, useSqlReturningClause: Nullable<System_Internal.Boolean>): void;
+    static GetUseSqlReturningClauseConfigurationSource(fragment: IConventionEntityTypeMappingFragment): Nullable<ConfigurationSource>;
+    static IsSqlReturningClauseUsed(fragment: IReadOnlyEntityTypeMappingFragment): boolean;
+    static UseSqlReturningClause(fragment: IConventionEntityTypeMappingFragment, useSqlReturningClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
+    static UseSqlReturningClause(fragment: IMutableEntityTypeMappingFragment, useSqlReturningClause: Nullable<System_Internal.Boolean>): void;
 }
 
 
 export type SqliteEntityTypeMappingFragmentExtensions = SqliteEntityTypeMappingFragmentExtensions$instance;
 
 export abstract class SqlitePropertyBuilderExtensions$instance {
-    static canSetSrid(propertyBuilder: IConventionPropertyBuilder, srid: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
-    static canSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, strategy: Nullable<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
-    static hasSrid(propertyBuilder: IConventionPropertyBuilder, srid: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static hasSrid(propertyBuilder: PropertyBuilder, srid: int): PropertyBuilder;
-    static hasSrid<TProperty>(propertyBuilder: PropertyBuilder<TProperty>, srid: int): PropertyBuilder<TProperty>;
-    static hasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, strategy: Nullable<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static useAutoincrement(columnBuilder: ColumnBuilder): ColumnBuilder;
-    static useAutoincrement(propertyBuilder: PropertyBuilder): PropertyBuilder;
-    static useAutoincrement<TProperty>(propertyBuilder: PropertyBuilder<TProperty>): PropertyBuilder<TProperty>;
+    static CanSetSrid(propertyBuilder: IConventionPropertyBuilder, srid: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
+    static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, strategy: Nullable<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
+    static HasSrid(propertyBuilder: IConventionPropertyBuilder, srid: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static HasSrid(propertyBuilder: PropertyBuilder, srid: int): PropertyBuilder;
+    static HasSrid<TProperty>(propertyBuilder: PropertyBuilder<TProperty>, srid: int): PropertyBuilder<TProperty>;
+    static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, strategy: Nullable<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static UseAutoincrement(columnBuilder: ColumnBuilder): ColumnBuilder;
+    static UseAutoincrement(propertyBuilder: PropertyBuilder): PropertyBuilder;
+    static UseAutoincrement<TProperty>(propertyBuilder: PropertyBuilder<TProperty>): PropertyBuilder<TProperty>;
 }
 
 
 export type SqlitePropertyBuilderExtensions = SqlitePropertyBuilderExtensions$instance;
 
 export abstract class SqlitePropertyExtensions$instance {
-    static getDefaultValueGenerationStrategy(property: IReadOnlyProperty): SqliteValueGenerationStrategy;
-    static getSrid(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Int32>;
-    static getSrid(property: IReadOnlyProperty): Nullable<System_Internal.Int32>;
-    static getSridConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
-    static getValueGenerationStrategy(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): SqliteValueGenerationStrategy;
-    static getValueGenerationStrategy(property: IReadOnlyProperty): SqliteValueGenerationStrategy;
-    static getValueGenerationStrategy(overrides: IReadOnlyRelationalPropertyOverrides): Nullable<SqliteValueGenerationStrategy>;
-    static getValueGenerationStrategyConfigurationSource(property: IConventionProperty, storeObject: StoreObjectIdentifier): Nullable<ConfigurationSource>;
-    static getValueGenerationStrategyConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
-    static getValueGenerationStrategyConfigurationSource(overrides: IConventionRelationalPropertyOverrides): Nullable<ConfigurationSource>;
-    static setSrid(property: IConventionProperty, value: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int32>;
-    static setSrid(property: IMutableProperty, value: Nullable<System_Internal.Int32>): void;
-    static setValueGenerationStrategy(property: IConventionProperty, value: Nullable<SqliteValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable<SqliteValueGenerationStrategy>;
-    static setValueGenerationStrategy(property: IConventionProperty, value: Nullable<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable<SqliteValueGenerationStrategy>;
-    static setValueGenerationStrategy(overrides: IConventionRelationalPropertyOverrides, value: Nullable<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable<SqliteValueGenerationStrategy>;
-    static setValueGenerationStrategy(property: IMutableProperty, value: Nullable<SqliteValueGenerationStrategy>, storeObject: StoreObjectIdentifier): void;
-    static setValueGenerationStrategy(property: IMutableProperty, value: Nullable<SqliteValueGenerationStrategy>): void;
-    static setValueGenerationStrategy(overrides: IMutableRelationalPropertyOverrides, value: Nullable<SqliteValueGenerationStrategy>): void;
+    static GetDefaultValueGenerationStrategy(property: IReadOnlyProperty): SqliteValueGenerationStrategy;
+    static GetSrid(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Int32>;
+    static GetSrid(property: IReadOnlyProperty): Nullable<System_Internal.Int32>;
+    static GetSridConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
+    static GetValueGenerationStrategy(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): SqliteValueGenerationStrategy;
+    static GetValueGenerationStrategy(property: IReadOnlyProperty): SqliteValueGenerationStrategy;
+    static GetValueGenerationStrategy(overrides: IReadOnlyRelationalPropertyOverrides): Nullable<SqliteValueGenerationStrategy>;
+    static GetValueGenerationStrategyConfigurationSource(property: IConventionProperty, storeObject: StoreObjectIdentifier): Nullable<ConfigurationSource>;
+    static GetValueGenerationStrategyConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
+    static GetValueGenerationStrategyConfigurationSource(overrides: IConventionRelationalPropertyOverrides): Nullable<ConfigurationSource>;
+    static SetSrid(property: IConventionProperty, value: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int32>;
+    static SetSrid(property: IMutableProperty, value: Nullable<System_Internal.Int32>): void;
+    static SetValueGenerationStrategy(property: IConventionProperty, value: Nullable<SqliteValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable<SqliteValueGenerationStrategy>;
+    static SetValueGenerationStrategy(property: IConventionProperty, value: Nullable<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable<SqliteValueGenerationStrategy>;
+    static SetValueGenerationStrategy(overrides: IConventionRelationalPropertyOverrides, value: Nullable<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable<SqliteValueGenerationStrategy>;
+    static SetValueGenerationStrategy(property: IMutableProperty, value: Nullable<SqliteValueGenerationStrategy>, storeObject: StoreObjectIdentifier): void;
+    static SetValueGenerationStrategy(property: IMutableProperty, value: Nullable<SqliteValueGenerationStrategy>): void;
+    static SetValueGenerationStrategy(overrides: IMutableRelationalPropertyOverrides, value: Nullable<SqliteValueGenerationStrategy>): void;
 }
 
 
 export type SqlitePropertyExtensions = SqlitePropertyExtensions$instance;
 
 export abstract class SqliteTableBuilderExtensions$instance {
-    static useSqlReturningClause(tableBuilder: OwnedNavigationTableBuilder, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder;
-    static useSqlReturningClause(tableBuilder: SplitTableBuilder, useSqlReturningClause?: boolean): SplitTableBuilder;
-    static useSqlReturningClause(tableBuilder: TableBuilder, useSqlReturningClause?: boolean): TableBuilder;
-    static useSqlReturningClause<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>;
-    static useSqlReturningClause<TEntity>(tableBuilder: SplitTableBuilder<TEntity>, useSqlReturningClause?: boolean): SplitTableBuilder<TEntity>;
-    static useSqlReturningClause<TEntity>(tableBuilder: TableBuilder<TEntity>, useSqlReturningClause?: boolean): TableBuilder<TEntity>;
+    static UseSqlReturningClause(tableBuilder: OwnedNavigationTableBuilder, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder;
+    static UseSqlReturningClause(tableBuilder: SplitTableBuilder, useSqlReturningClause?: boolean): SplitTableBuilder;
+    static UseSqlReturningClause(tableBuilder: TableBuilder, useSqlReturningClause?: boolean): TableBuilder;
+    static UseSqlReturningClause<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>;
+    static UseSqlReturningClause<TEntity>(tableBuilder: SplitTableBuilder<TEntity>, useSqlReturningClause?: boolean): SplitTableBuilder<TEntity>;
+    static UseSqlReturningClause<TEntity>(tableBuilder: TableBuilder<TEntity>, useSqlReturningClause?: boolean): TableBuilder<TEntity>;
 }
 
 
 export type SqliteTableBuilderExtensions = SqliteTableBuilderExtensions$instance;
 
 export abstract class SqliteTableExtensions$instance {
-    static isSqlReturningClauseUsed(table: ITable): boolean;
+    static IsSqlReturningClauseUsed(table: ITable): boolean;
 }
 
 

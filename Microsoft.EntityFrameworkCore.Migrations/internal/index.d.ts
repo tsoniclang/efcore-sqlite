@@ -15,7 +15,7 @@ import type { IMigrationsSqlGenerator, MigrationBuilder, MigrationCommand, Migra
 import type { MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
 
 export interface SqliteMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
-    generate(operations: IReadOnlyList<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList<MigrationCommand>;
+    Generate(operations: IReadOnlyList<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList<MigrationCommand>;
 }
 
 
@@ -27,7 +27,7 @@ export const SqliteMigrationsSqlGenerator: {
 export type SqliteMigrationsSqlGenerator = SqliteMigrationsSqlGenerator$instance;
 
 export abstract class SqliteMigrationBuilderExtensions$instance {
-    static isSqlite(migrationBuilder: MigrationBuilder): boolean;
+    static IsSqlite(migrationBuilder: MigrationBuilder): boolean;
 }
 
 

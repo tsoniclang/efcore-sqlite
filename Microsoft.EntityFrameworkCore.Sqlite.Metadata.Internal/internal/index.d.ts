@@ -14,8 +14,8 @@ import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore
 import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export interface SqliteAnnotationProvider$instance extends RelationalAnnotationProvider {
-    for(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
-    for(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
+    For(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
+    For(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
 }
 
 
@@ -27,15 +27,15 @@ export const SqliteAnnotationProvider: {
 export type SqliteAnnotationProvider = SqliteAnnotationProvider$instance;
 
 export abstract class SqliteAnnotationNames$instance {
-    static readonly prefix: string;
-    static readonly legacyAutoincrement: string;
-    static readonly autoincrement: string;
-    static readonly inlinePrimaryKey: string;
-    static readonly inlinePrimaryKeyName: string;
-    static readonly initSpatialMetaData: string;
-    static readonly srid: string;
-    static readonly useSqlReturningClause: string;
-    static readonly valueGenerationStrategy: string;
+    static readonly Prefix: string;
+    static readonly LegacyAutoincrement: string;
+    static readonly Autoincrement: string;
+    static readonly InlinePrimaryKey: string;
+    static readonly InlinePrimaryKeyName: string;
+    static readonly InitSpatialMetaData: string;
+    static readonly Srid: string;
+    static readonly UseSqlReturningClause: string;
+    static readonly ValueGenerationStrategy: string;
 }
 
 

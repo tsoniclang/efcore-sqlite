@@ -16,21 +16,21 @@ import * as System_Internal from "../../System/internal/index.js";
 import type { ptr } from '@tsonic/core/types.js';
 
 export interface __Ext_Microsoft_Extensions_DependencyModel_DependencyContext {
-  getDefaultNativeAssets(): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
-  getDefaultNativeRuntimeFileAssets(): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
-  getRuntimeNativeAssets(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
-  getRuntimeNativeRuntimeFileAssets(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
-  getDefaultAssemblyNames(): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
-  getRuntimeAssemblyNames(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
+  GetDefaultNativeAssets(): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
+  GetDefaultNativeRuntimeFileAssets(): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+  GetRuntimeNativeAssets(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
+  GetRuntimeNativeRuntimeFileAssets(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+  GetDefaultAssemblyNames(): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
+  GetRuntimeAssemblyNames(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
 }
 
 export interface __Ext_Microsoft_Extensions_DependencyModel_RuntimeLibrary {
-  getDefaultNativeAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
-  getDefaultNativeRuntimeFileAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
-  getRuntimeNativeAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
-  getRuntimeNativeRuntimeFileAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
-  getDefaultAssemblyNames(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
-  getRuntimeAssemblyNames(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
+  GetDefaultNativeAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
+  GetDefaultNativeRuntimeFileAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+  GetRuntimeNativeAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
+  GetRuntimeNativeRuntimeFileAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+  GetDefaultAssemblyNames(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
+  GetRuntimeAssemblyNames(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyModel

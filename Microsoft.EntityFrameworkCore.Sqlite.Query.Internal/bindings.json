@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore.Sqlite"
+  ],
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
-      "tsEmitName": "GlobExpression",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression::Update(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "clrName": "Update",
-          "tsEmitName": "update",
           "metadataToken": 100663935,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "normalizedSignature": "Update|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression::Quote():System.Linq.Expressions.Expression",
           "clrName": "Quote",
-          "tsEmitName": "quote",
           "metadataToken": 100663936,
           "canonicalSignature": "():System.Linq.Expressions.Expression",
           "normalizedSignature": "Quote|():System.Linq.Expressions.Expression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -39,13 +57,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
-          "tsEmitName": "equals",
           "metadataToken": 100663938,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -53,13 +76,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
-          "tsEmitName": "getHashCode",
           "metadataToken": 100663940,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -69,42 +97,54 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression::TypeMapping:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
           "clrName": "TypeMapping",
-          "tsEmitName": "typeMapping",
           "metadataToken": 385876103,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
           "normalizedSignature": "TypeMapping|:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression::Match:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Match",
-          "tsEmitName": "match",
           "metadataToken": 385876104,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Match|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression::Pattern:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Pattern",
-          "tsEmitName": "pattern",
           "metadataToken": 385876105,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Pattern|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -122,110 +162,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "update",
-          "isStatic": false,
-          "tsSignatureId": "Update|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663935
-          }
-        },
-        {
-          "tsName": "quote",
-          "isStatic": false,
-          "tsSignatureId": "Quote|():System.Linq.Expressions.Expression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663936
-          }
-        },
-        {
-          "tsName": "equals",
-          "isStatic": false,
-          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663938
-          }
-        },
-        {
-          "tsName": "getHashCode",
-          "isStatic": false,
-          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663940
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "typeMapping",
-          "isStatic": false,
-          "tsSignatureId": "TypeMapping|:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876103
-          }
-        },
-        {
-          "tsName": "match",
-          "isStatic": false,
-          "tsSignatureId": "Match|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876104
-          }
-        },
-        {
-          "tsName": "pattern",
-          "isStatic": false,
-          "tsSignatureId": "Pattern|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876105
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663930
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-      "tsEmitName": "JsonEachExpression",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression::Update(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "clrName": "Update",
-          "tsEmitName": "update",
           "metadataToken": 100663945,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "normalizedSignature": "Update|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -233,13 +198,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression::Clone(System.String,System.Linq.Expressions.ExpressionVisitor):Microsoft.EntityFrameworkCore.Query.SqlExpressions.TableExpressionBase",
           "clrName": "Clone",
-          "tsEmitName": "clone",
           "metadataToken": 100663946,
           "canonicalSignature": "(System.String,System.Linq.Expressions.ExpressionVisitor):Microsoft.EntityFrameworkCore.Query.SqlExpressions.TableExpressionBase",
           "normalizedSignature": "Clone|(System.String,System.Linq.Expressions.ExpressionVisitor):Microsoft.EntityFrameworkCore.Query.SqlExpressions.TableExpressionBase|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -247,13 +217,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression::WithAlias(System.String):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "clrName": "WithAlias",
-          "tsEmitName": "withAlias",
           "metadataToken": 100663947,
           "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "normalizedSignature": "WithAlias|(System.String):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -261,13 +236,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression::Quote():System.Linq.Expressions.Expression",
           "clrName": "Quote",
-          "tsEmitName": "quote",
           "metadataToken": 100663948,
           "canonicalSignature": "():System.Linq.Expressions.Expression",
           "normalizedSignature": "Quote|():System.Linq.Expressions.Expression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -275,13 +255,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
-          "tsEmitName": "equals",
           "metadataToken": 100663950,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -289,13 +274,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
-          "tsEmitName": "getHashCode",
           "metadataToken": 100663952,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -305,28 +295,36 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression::JsonExpression:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "JsonExpression",
-          "tsEmitName": "jsonExpression",
           "metadataToken": 385876106,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "JsonExpression|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression::Path:System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Path",
-          "tsEmitName": "path",
           "metadataToken": 385876107,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Path|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -344,120 +342,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "update",
-          "isStatic": false,
-          "tsSignatureId": "Update|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663945
-          }
-        },
-        {
-          "tsName": "clone",
-          "isStatic": false,
-          "tsSignatureId": "Clone|(System.String,System.Linq.Expressions.ExpressionVisitor):Microsoft.EntityFrameworkCore.Query.SqlExpressions.TableExpressionBase|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663946
-          }
-        },
-        {
-          "tsName": "withAlias",
-          "isStatic": false,
-          "tsSignatureId": "WithAlias|(System.String):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663947
-          }
-        },
-        {
-          "tsName": "quote",
-          "isStatic": false,
-          "tsSignatureId": "Quote|():System.Linq.Expressions.Expression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663948
-          }
-        },
-        {
-          "tsName": "equals",
-          "isStatic": false,
-          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663950
-          }
-        },
-        {
-          "tsName": "getHashCode",
-          "isStatic": false,
-          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663952
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "jsonExpression",
-          "isStatic": false,
-          "tsSignatureId": "JsonExpression|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876106
-          }
-        },
-        {
-          "tsName": "path",
-          "isStatic": false,
-          "tsSignatureId": "Path|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876107
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.JsonEachExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663943
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
-      "tsEmitName": "RegexpExpression",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression::Update(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "clrName": "Update",
-          "tsEmitName": "update",
           "metadataToken": 100663958,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "normalizedSignature": "Update|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -465,13 +378,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression::Quote():System.Linq.Expressions.Expression",
           "clrName": "Quote",
-          "tsEmitName": "quote",
           "metadataToken": 100663959,
           "canonicalSignature": "():System.Linq.Expressions.Expression",
           "normalizedSignature": "Quote|():System.Linq.Expressions.Expression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -479,13 +397,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
-          "tsEmitName": "equals",
           "metadataToken": 100663961,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -493,13 +416,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
-          "tsEmitName": "getHashCode",
           "metadataToken": 100663963,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -509,42 +437,54 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression::TypeMapping:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
           "clrName": "TypeMapping",
-          "tsEmitName": "typeMapping",
           "metadataToken": 385876108,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
           "normalizedSignature": "TypeMapping|:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression::Match:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Match",
-          "tsEmitName": "match",
           "metadataToken": 385876109,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Match|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression::Pattern:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Pattern",
-          "tsEmitName": "pattern",
           "metadataToken": 385876110,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Pattern|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -562,99 +502,19 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "update",
-          "isStatic": false,
-          "tsSignatureId": "Update|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663958
-          }
-        },
-        {
-          "tsName": "quote",
-          "isStatic": false,
-          "tsSignatureId": "Quote|():System.Linq.Expressions.Expression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663959
-          }
-        },
-        {
-          "tsName": "equals",
-          "isStatic": false,
-          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663961
-          }
-        },
-        {
-          "tsName": "getHashCode",
-          "isStatic": false,
-          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663963
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "typeMapping",
-          "isStatic": false,
-          "tsSignatureId": "TypeMapping|:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876108
-          }
-        },
-        {
-          "tsName": "match",
-          "isStatic": false,
-          "tsSignatureId": "Match|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876109
-          }
-        },
-        {
-          "tsName": "pattern",
-          "isStatic": false,
-          "tsSignatureId": "Pattern|:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876110
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663953
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteAggregateMethodCallTranslatorProvider",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteAggregateMethodCallTranslatorProvider",
-      "tsEmitName": "SqliteAggregateMethodCallTranslatorProvider",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -670,36 +530,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteAggregateMethodCallTranslatorProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalAggregateMethodCallTranslatorProviderDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteAggregateMethodCallTranslatorProvider",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663964
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteByteArrayMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteByteArrayMethodTranslator",
-      "tsEmitName": "SqliteByteArrayMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteByteArrayMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664069,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteByteArrayMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -719,48 +578,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteByteArrayMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteByteArrayMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664069
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteByteArrayMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664068
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteCharMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteCharMethodTranslator",
-      "tsEmitName": "SqliteCharMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteCharMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664071,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteCharMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -780,48 +626,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteCharMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteCharMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664071
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteCharMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664070
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMemberTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMemberTranslator",
-      "tsEmitName": "SqliteDateOnlyMemberTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMemberTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664074,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMemberTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -841,48 +674,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMemberTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMemberTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664074
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMemberTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664073
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMethodTranslator",
-      "tsEmitName": "SqliteDateOnlyMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664078,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -902,48 +722,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664078
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateOnlyMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664077
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMemberTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMemberTranslator",
-      "tsEmitName": "SqliteDateTimeMemberTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMemberTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664080,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMemberTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -963,48 +770,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMemberTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMemberTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664080
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMemberTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664079
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMethodTranslator",
-      "tsEmitName": "SqliteDateTimeMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664083,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1024,48 +818,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664083
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteDateTimeMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664082
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteGlobMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteGlobMethodTranslator",
-      "tsEmitName": "SqliteGlobMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteGlobMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664088,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteGlobMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1085,48 +866,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteGlobMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteGlobMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664088
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteGlobMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664087
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteHexMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteHexMethodTranslator",
-      "tsEmitName": "SqliteHexMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteHexMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664091,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteHexMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1146,48 +914,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteHexMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteHexMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664091
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteHexMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664090
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMathTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMathTranslator",
-      "tsEmitName": "SqliteMathTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMathTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664094,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMathTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1207,37 +962,19 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMathTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMathTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664094
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMathTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664093
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMemberTranslatorProvider",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMemberTranslatorProvider",
-      "tsEmitName": "SqliteMemberTranslatorProvider",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1253,25 +990,19 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMemberTranslatorProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalMemberTranslatorProviderDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMemberTranslatorProvider",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663965
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMethodCallTranslatorProvider",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMethodCallTranslatorProvider",
-      "tsEmitName": "SqliteMethodCallTranslatorProvider",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1287,36 +1018,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMethodCallTranslatorProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalMethodCallTranslatorProviderDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteMethodCallTranslatorProvider",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663966
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteObjectToStringTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteObjectToStringTranslator",
-      "tsEmitName": "SqliteObjectToStringTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteObjectToStringTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664097,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteObjectToStringTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1336,37 +1066,19 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteObjectToStringTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteObjectToStringTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664097
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteObjectToStringTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664096
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessor",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessor",
-      "tsEmitName": "SqliteParameterBasedSqlProcessor",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1382,36 +1094,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663967
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessorFactory",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessorFactory",
-      "tsEmitName": "SqliteParameterBasedSqlProcessorFactory",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessorFactory::Create(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessor",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663970,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessor",
           "normalizedSignature": "Create|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessor|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1431,48 +1142,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessor|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663970
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteParameterBasedSqlProcessorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663969
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableAggregateMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableAggregateMethodTranslator",
-      "tsEmitName": "SqliteQueryableAggregateMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableAggregateMethodTranslator::Translate(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664100,
           "canonicalSignature": "(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableAggregateMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1492,48 +1190,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableAggregateMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableAggregateMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664100
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableAggregateMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664099
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
-      "tsEmitName": "SqliteQueryableMethodTranslatingExpressionVisitor",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor::ApplyJsonSqlConversion(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Boolean):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "ApplyJsonSqlConversion",
-          "tsEmitName": "applyJsonSqlConversion",
           "metadataToken": 100663985,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Boolean):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "ApplyJsonSqlConversion|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Boolean):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1544,22 +1229,22 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor::JsonEachKeyColumnNameSystem.String",
           "clrName": "JsonEachKeyColumnName",
-          "tsEmitName": "jsonEachKeyColumnName",
           "metadataToken": 67109102,
           "normalizedSignature": "JsonEachKeyColumnName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor::JsonEachValueColumnNameSystem.String",
           "clrName": "JsonEachValueColumnName",
-          "tsEmitName": "jsonEachValueColumnName",
           "metadataToken": 67109103,
           "normalizedSignature": "JsonEachValueColumnName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -1576,70 +1261,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "applyJsonSqlConversion",
-          "isStatic": true,
-          "tsSignatureId": "ApplyJsonSqlConversion|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Boolean):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663985
-          }
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "jsonEachKeyColumnName",
-          "isStatic": true,
-          "tsSignatureId": "JsonEachKeyColumnName|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109102
-          }
-        },
-        {
-          "tsName": "jsonEachValueColumnName",
-          "isStatic": true,
-          "tsSignatureId": "JsonEachValueColumnName|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67109103
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663971
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitorFactory",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitorFactory",
-      "tsEmitName": "SqliteQueryableMethodTranslatingExpressionVisitorFactory",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitorFactory::Create(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663991,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor",
           "normalizedSignature": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1659,50 +1309,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663991
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryableMethodTranslatingExpressionVisitorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663988
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContext",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContext",
-      "tsEmitName": "SqliteQueryCompilationContext",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContext::SupportsPrecompiledQuery:System.Boolean",
           "clrName": "SupportsPrecompiledQuery",
-          "tsEmitName": "supportsPrecompiledQuery",
           "metadataToken": 385876113,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "SupportsPrecompiledQuery|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContext",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -1730,57 +1366,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContext",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "supportsPrecompiledQuery",
-          "isStatic": false,
-          "tsSignatureId": "SupportsPrecompiledQuery|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContext",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876113
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContext",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663992
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean,System.Boolean):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContext",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663993
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory",
-      "tsEmitName": "SqliteQueryCompilationContextFactory",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory::Create(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663998,
           "canonicalSignature": "(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext",
           "normalizedSignature": "Create|(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1788,13 +1402,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory::CreatePrecompiled(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext",
           "clrName": "CreatePrecompiled",
-          "tsEmitName": "createPrecompiled",
           "metadataToken": 100663999,
           "canonicalSignature": "(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext",
           "normalizedSignature": "CreatePrecompiled|(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1814,47 +1433,19 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663998
-          }
-        },
-        {
-          "tsName": "createPrecompiled",
-          "isStatic": false,
-          "tsSignatureId": "CreatePrecompiled|(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663999
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryCompilationContextFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663995
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGenerator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGenerator",
-      "tsEmitName": "SqliteQuerySqlGenerator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1870,36 +1461,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGenerator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664000
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGeneratorFactory",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGeneratorFactory",
-      "tsEmitName": "SqliteQuerySqlGeneratorFactory",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGeneratorFactory::Create():Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100664016,
           "canonicalSignature": "():Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator",
           "normalizedSignature": "Create|():Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGeneratorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1919,48 +1509,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGeneratorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGeneratorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664016
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQuerySqlGeneratorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664014
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryStringFactory",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryStringFactory",
-      "tsEmitName": "SqliteQueryStringFactory",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryStringFactory::Create(System.Data.Common.DbCommand):System.String",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100664018,
           "canonicalSignature": "(System.Data.Common.DbCommand):System.String",
           "normalizedSignature": "Create|(System.Data.Common.DbCommand):System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryStringFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1980,48 +1557,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryStringFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|(System.Data.Common.DbCommand):System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryStringFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664018
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryStringFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664017
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessor",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessor",
-      "tsEmitName": "SqliteQueryTranslationPostprocessor",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessor::Process(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
           "clrName": "Process",
-          "tsEmitName": "process",
           "metadataToken": 100664020,
           "canonicalSignature": "(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
           "normalizedSignature": "Process|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2041,48 +1605,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "process",
-          "isStatic": false,
-          "tsSignatureId": "Process|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664020
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664019
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessorFactory",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessorFactory",
-      "tsEmitName": "SqliteQueryTranslationPostprocessorFactory",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessorFactory::Create(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessor",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100664025,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessor",
           "normalizedSignature": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessor|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2102,48 +1653,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessor|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664025
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteQueryTranslationPostprocessorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664022
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRandomTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRandomTranslator",
-      "tsEmitName": "SqliteRandomTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRandomTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664104,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRandomTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2163,48 +1701,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRandomTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRandomTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664104
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRandomTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664103
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRegexMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRegexMethodTranslator",
-      "tsEmitName": "SqliteRegexMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRegexMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664107,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRegexMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2224,48 +1749,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRegexMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRegexMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664107
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteRegexMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664106
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
-      "tsEmitName": "SqliteSqlExpressionFactory",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory::Strftime(System.Type,System.String,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Strftime",
-          "tsEmitName": "strftime",
           "metadataToken": 100664027,
           "canonicalSignature": "(System.Type,System.String,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Strftime|(System.Type,System.String,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 5,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2273,13 +1785,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory::Date(System.Type,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Date",
-          "tsEmitName": "date",
           "metadataToken": 100664028,
           "canonicalSignature": "(System.Type,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Date|(System.Type,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2287,13 +1804,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory::Glob(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "clrName": "Glob",
-          "tsEmitName": "glob",
           "metadataToken": 100664029,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression",
           "normalizedSignature": "Glob|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2301,13 +1823,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory::Regexp(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "clrName": "Regexp",
-          "tsEmitName": "regexp",
           "metadataToken": 100664030,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression",
           "normalizedSignature": "Regexp|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2315,13 +1842,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory::ApplyTypeMapping(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "ApplyTypeMapping",
-          "tsEmitName": "applyTypeMapping",
           "metadataToken": 100664031,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "ApplyTypeMapping|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2341,77 +1873,19 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "strftime",
-          "isStatic": false,
-          "tsSignatureId": "Strftime|(System.Type,System.String,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664027
-          }
-        },
-        {
-          "tsName": "date",
-          "isStatic": false,
-          "tsSignatureId": "Date|(System.Type,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664028
-          }
-        },
-        {
-          "tsName": "glob",
-          "isStatic": false,
-          "tsSignatureId": "Glob|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.GlobExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664029
-          }
-        },
-        {
-          "tsName": "regexp",
-          "isStatic": false,
-          "tsSignatureId": "Regexp|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.RegexpExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664030
-          }
-        },
-        {
-          "tsName": "applyTypeMapping",
-          "isStatic": false,
-          "tsSignatureId": "ApplyTypeMapping|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664031
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.SqlExpressionFactoryDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlExpressionFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664026
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlNullabilityProcessor",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlNullabilityProcessor",
-      "tsEmitName": "SqliteSqlNullabilityProcessor",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -2427,36 +1901,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlNullabilityProcessor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlNullabilityProcessor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664034
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
-      "tsEmitName": "SqliteSqlTranslatingExpressionVisitor",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor::ConstructLikePatternParameter(Microsoft.EntityFrameworkCore.Query.QueryContext,System.String,System.Boolean):System.String",
           "clrName": "ConstructLikePatternParameter",
-          "tsEmitName": "constructLikePatternParameter",
           "metadataToken": 100664045,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryContext,System.String,System.Boolean):System.String",
           "normalizedSignature": "ConstructLikePatternParameter|(Microsoft.EntityFrameworkCore.Query.QueryContext,System.String,System.Boolean):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2464,13 +1937,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor::GenerateGreatest(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "GenerateGreatest",
-          "tsEmitName": "generateGreatest",
           "metadataToken": 100664048,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "GenerateGreatest|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2478,13 +1956,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor::GenerateLeast(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "GenerateLeast",
-          "tsEmitName": "generateLeast",
           "metadataToken": 100664049,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "GenerateLeast|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2504,68 +1987,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "constructLikePatternParameter",
-          "isStatic": true,
-          "tsSignatureId": "ConstructLikePatternParameter|(Microsoft.EntityFrameworkCore.Query.QueryContext,System.String,System.Boolean):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664045
-          }
-        },
-        {
-          "tsName": "generateGreatest",
-          "isStatic": false,
-          "tsSignatureId": "GenerateGreatest|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664048
-          }
-        },
-        {
-          "tsName": "generateLeast",
-          "isStatic": false,
-          "tsSignatureId": "GenerateLeast|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664049
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664041
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitorFactory",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitorFactory",
-      "tsEmitName": "SqliteSqlTranslatingExpressionVisitorFactory",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitorFactory::Create(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100664064,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor",
           "normalizedSignature": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2585,48 +2035,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664064
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSqlTranslatingExpressionVisitorFactory",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664062
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringAggregateMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringAggregateMethodTranslator",
-      "tsEmitName": "SqliteStringAggregateMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringAggregateMethodTranslator::Translate(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664110,
           "canonicalSignature": "(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringAggregateMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2646,48 +2083,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringAggregateMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringAggregateMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664110
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringAggregateMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664109
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringLengthTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringLengthTranslator",
-      "tsEmitName": "SqliteStringLengthTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringLengthTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664113,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringLengthTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2707,48 +2131,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringLengthTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringLengthTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664113
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringLengthTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664112
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringMethodTranslator",
-      "tsEmitName": "SqliteStringMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664115,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2768,48 +2179,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664115
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteStringMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664114
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSubstrMethodTranslator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSubstrMethodTranslator",
-      "tsEmitName": "SqliteSubstrMethodTranslator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSubstrMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "clrName": "Translate",
-          "tsEmitName": "translate",
           "metadataToken": 100664119,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSubstrMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -2829,37 +2227,19 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSubstrMethodTranslator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "translate",
-          "isStatic": false,
-          "tsSignatureId": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSubstrMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664119
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.ISqlExpressionFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteSubstrMethodTranslator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664118
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteTypeMappingPostprocessor",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteTypeMappingPostprocessor",
-      "tsEmitName": "SqliteTypeMappingPostprocessor",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -2874,17 +2254,6 @@
           "parameterCount": 3,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteTypeMappingPostprocessor",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Query.Internal.SqliteTypeMappingPostprocessor",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100664065
-          }
         }
       ]
     }

@@ -12,14 +12,14 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface ICompilationAssemblyResolver$instance {
-    tryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 
 
 export type ICompilationAssemblyResolver = ICompilationAssemblyResolver$instance;
 
 export interface AppBaseCompilationAssemblyResolver$instance {
-    tryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 
 
@@ -39,7 +39,7 @@ export type AppBaseCompilationAssemblyResolver = AppBaseCompilationAssemblyResol
 
 
 export interface CompositeCompilationAssemblyResolver$instance {
-    tryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 
 
@@ -63,15 +63,15 @@ export interface DotNetReferenceAssembliesPathResolver$instance {
 
 export const DotNetReferenceAssembliesPathResolver: {
     new(): DotNetReferenceAssembliesPathResolver;
-    readonly dotNetReferenceAssembliesPathEnv: string;
-    resolve(): string | undefined;
+    readonly DotNetReferenceAssembliesPathEnv: string;
+    Resolve(): string | undefined;
 };
 
 
 export type DotNetReferenceAssembliesPathResolver = DotNetReferenceAssembliesPathResolver$instance;
 
 export interface PackageCompilationAssemblyResolver$instance {
-    tryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 
 
@@ -91,7 +91,7 @@ export type PackageCompilationAssemblyResolver = PackageCompilationAssemblyResol
 
 
 export interface ReferenceAssemblyPathResolver$instance {
-    tryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 
 

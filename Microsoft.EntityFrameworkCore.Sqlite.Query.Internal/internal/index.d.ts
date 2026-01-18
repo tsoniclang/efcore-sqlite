@@ -21,13 +21,13 @@ import type { ITableBasedExpression, SqlExpression, TableExpressionBase, TableVa
 import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface GlobExpression$instance extends SqlExpression {
-    readonly match: SqlExpression;
-    readonly pattern: SqlExpression;
-    readonly typeMapping: RelationalTypeMapping;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    update(match: SqlExpression, pattern: SqlExpression): GlobExpression;
+    readonly Match: SqlExpression;
+    readonly Pattern: SqlExpression;
+    readonly TypeMapping: RelationalTypeMapping;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    Update(match: SqlExpression, pattern: SqlExpression): GlobExpression;
 }
 
 
@@ -39,14 +39,14 @@ export const GlobExpression: {
 export type GlobExpression = GlobExpression$instance;
 
 export interface JsonEachExpression$instance extends TableValuedFunctionExpression {
-    readonly jsonExpression: SqlExpression;
-    readonly path: IReadOnlyList<PathSegment> | undefined;
-    clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    update(jsonExpression: SqlExpression, path: IReadOnlyList<PathSegment>): JsonEachExpression;
-    withAlias(newAlias: string): JsonEachExpression;
+    readonly JsonExpression: SqlExpression;
+    readonly Path: IReadOnlyList<PathSegment> | undefined;
+    Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    Update(jsonExpression: SqlExpression, path: IReadOnlyList<PathSegment>): JsonEachExpression;
+    WithAlias(newAlias: string): JsonEachExpression;
 }
 
 
@@ -58,13 +58,13 @@ export const JsonEachExpression: {
 export type JsonEachExpression = JsonEachExpression$instance;
 
 export interface RegexpExpression$instance extends SqlExpression {
-    readonly match: SqlExpression;
-    readonly pattern: SqlExpression;
-    readonly typeMapping: RelationalTypeMapping;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    update(match: SqlExpression, pattern: SqlExpression): RegexpExpression;
+    readonly Match: SqlExpression;
+    readonly Pattern: SqlExpression;
+    readonly TypeMapping: RelationalTypeMapping;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    Update(match: SqlExpression, pattern: SqlExpression): RegexpExpression;
 }
 
 
@@ -87,7 +87,7 @@ export const SqliteAggregateMethodCallTranslatorProvider: {
 export type SqliteAggregateMethodCallTranslatorProvider = SqliteAggregateMethodCallTranslatorProvider$instance;
 
 export interface SqliteByteArrayMethodTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -99,7 +99,7 @@ export const SqliteByteArrayMethodTranslator: {
 export type SqliteByteArrayMethodTranslator = SqliteByteArrayMethodTranslator$instance;
 
 export interface SqliteCharMethodTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -111,7 +111,7 @@ export const SqliteCharMethodTranslator: {
 export type SqliteCharMethodTranslator = SqliteCharMethodTranslator$instance;
 
 export interface SqliteDateOnlyMemberTranslator$instance {
-    translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -123,7 +123,7 @@ export const SqliteDateOnlyMemberTranslator: {
 export type SqliteDateOnlyMemberTranslator = SqliteDateOnlyMemberTranslator$instance;
 
 export interface SqliteDateOnlyMethodTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -135,7 +135,7 @@ export const SqliteDateOnlyMethodTranslator: {
 export type SqliteDateOnlyMethodTranslator = SqliteDateOnlyMethodTranslator$instance;
 
 export interface SqliteDateTimeMemberTranslator$instance {
-    translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -147,7 +147,7 @@ export const SqliteDateTimeMemberTranslator: {
 export type SqliteDateTimeMemberTranslator = SqliteDateTimeMemberTranslator$instance;
 
 export interface SqliteDateTimeMethodTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -159,7 +159,7 @@ export const SqliteDateTimeMethodTranslator: {
 export type SqliteDateTimeMethodTranslator = SqliteDateTimeMethodTranslator$instance;
 
 export interface SqliteGlobMethodTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -171,7 +171,7 @@ export const SqliteGlobMethodTranslator: {
 export type SqliteGlobMethodTranslator = SqliteGlobMethodTranslator$instance;
 
 export interface SqliteHexMethodTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -183,7 +183,7 @@ export const SqliteHexMethodTranslator: {
 export type SqliteHexMethodTranslator = SqliteHexMethodTranslator$instance;
 
 export interface SqliteMathTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -217,7 +217,7 @@ export const SqliteMethodCallTranslatorProvider: {
 export type SqliteMethodCallTranslatorProvider = SqliteMethodCallTranslatorProvider$instance;
 
 export interface SqliteObjectToStringTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -240,7 +240,7 @@ export const SqliteParameterBasedSqlProcessor: {
 export type SqliteParameterBasedSqlProcessor = SqliteParameterBasedSqlProcessor$instance;
 
 export interface SqliteParameterBasedSqlProcessorFactory$instance {
-    create(parameters: RelationalParameterBasedSqlProcessorParameters): RelationalParameterBasedSqlProcessor;
+    Create(parameters: RelationalParameterBasedSqlProcessorParameters): RelationalParameterBasedSqlProcessor;
 }
 
 
@@ -252,7 +252,7 @@ export const SqliteParameterBasedSqlProcessorFactory: {
 export type SqliteParameterBasedSqlProcessorFactory = SqliteParameterBasedSqlProcessorFactory$instance;
 
 export interface SqliteQueryableAggregateMethodTranslator$instance {
-    translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -269,16 +269,16 @@ export interface SqliteQueryableMethodTranslatingExpressionVisitor$instance exte
 
 export const SqliteQueryableMethodTranslatingExpressionVisitor: {
     new(dependencies: QueryableMethodTranslatingExpressionVisitorDependencies, relationalDependencies: RelationalQueryableMethodTranslatingExpressionVisitorDependencies, queryCompilationContext: RelationalQueryCompilationContext): SqliteQueryableMethodTranslatingExpressionVisitor;
-    readonly jsonEachKeyColumnName: string;
-    readonly jsonEachValueColumnName: string;
-    applyJsonSqlConversion(expression: SqlExpression, sqlExpressionFactory: SqliteSqlExpressionFactory, typeMapping: RelationalTypeMapping, isNullable: boolean): SqlExpression;
+    readonly JsonEachKeyColumnName: string;
+    readonly JsonEachValueColumnName: string;
+    ApplyJsonSqlConversion(expression: SqlExpression, sqlExpressionFactory: SqliteSqlExpressionFactory, typeMapping: RelationalTypeMapping, isNullable: boolean): SqlExpression;
 };
 
 
 export type SqliteQueryableMethodTranslatingExpressionVisitor = SqliteQueryableMethodTranslatingExpressionVisitor$instance;
 
 export interface SqliteQueryableMethodTranslatingExpressionVisitorFactory$instance {
-    create(queryCompilationContext: QueryCompilationContext): QueryableMethodTranslatingExpressionVisitor;
+    Create(queryCompilationContext: QueryCompilationContext): QueryableMethodTranslatingExpressionVisitor;
 }
 
 
@@ -290,7 +290,7 @@ export const SqliteQueryableMethodTranslatingExpressionVisitorFactory: {
 export type SqliteQueryableMethodTranslatingExpressionVisitorFactory = SqliteQueryableMethodTranslatingExpressionVisitorFactory$instance;
 
 export interface SqliteQueryCompilationContext$instance extends RelationalQueryCompilationContext {
-    readonly supportsPrecompiledQuery: boolean;
+    readonly SupportsPrecompiledQuery: boolean;
 }
 
 
@@ -303,8 +303,8 @@ export const SqliteQueryCompilationContext: {
 export type SqliteQueryCompilationContext = SqliteQueryCompilationContext$instance;
 
 export interface SqliteQueryCompilationContextFactory$instance {
-    create(async: boolean): QueryCompilationContext;
-    createPrecompiled(async: boolean): QueryCompilationContext;
+    Create(async: boolean): QueryCompilationContext;
+    CreatePrecompiled(async: boolean): QueryCompilationContext;
 }
 
 
@@ -327,7 +327,7 @@ export const SqliteQuerySqlGenerator: {
 export type SqliteQuerySqlGenerator = SqliteQuerySqlGenerator$instance;
 
 export interface SqliteQuerySqlGeneratorFactory$instance {
-    create(): QuerySqlGenerator;
+    Create(): QuerySqlGenerator;
 }
 
 
@@ -339,7 +339,7 @@ export const SqliteQuerySqlGeneratorFactory: {
 export type SqliteQuerySqlGeneratorFactory = SqliteQuerySqlGeneratorFactory$instance;
 
 export interface SqliteQueryStringFactory$instance {
-    create(command: DbCommand): string;
+    Create(command: DbCommand): string;
 }
 
 
@@ -351,7 +351,7 @@ export const SqliteQueryStringFactory: {
 export type SqliteQueryStringFactory = SqliteQueryStringFactory$instance;
 
 export interface SqliteQueryTranslationPostprocessor$instance extends RelationalQueryTranslationPostprocessor {
-    process(query: Expression): Expression;
+    Process(query: Expression): Expression;
 }
 
 
@@ -363,7 +363,7 @@ export const SqliteQueryTranslationPostprocessor: {
 export type SqliteQueryTranslationPostprocessor = SqliteQueryTranslationPostprocessor$instance;
 
 export interface SqliteQueryTranslationPostprocessorFactory$instance {
-    create(queryCompilationContext: QueryCompilationContext): QueryTranslationPostprocessor;
+    Create(queryCompilationContext: QueryCompilationContext): QueryTranslationPostprocessor;
 }
 
 
@@ -375,7 +375,7 @@ export const SqliteQueryTranslationPostprocessorFactory: {
 export type SqliteQueryTranslationPostprocessorFactory = SqliteQueryTranslationPostprocessorFactory$instance;
 
 export interface SqliteRandomTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -387,7 +387,7 @@ export const SqliteRandomTranslator: {
 export type SqliteRandomTranslator = SqliteRandomTranslator$instance;
 
 export interface SqliteRegexMethodTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -399,11 +399,11 @@ export const SqliteRegexMethodTranslator: {
 export type SqliteRegexMethodTranslator = SqliteRegexMethodTranslator$instance;
 
 export interface SqliteSqlExpressionFactory$instance extends SqlExpressionFactory {
-    applyTypeMapping(sqlExpression: SqlExpression, typeMapping: RelationalTypeMapping): SqlExpression | undefined;
-    date(returnType: Type, timestring: SqlExpression, modifiers?: IEnumerable<SqlExpression>, typeMapping?: RelationalTypeMapping): SqlExpression;
-    glob(match: SqlExpression, pattern: SqlExpression): GlobExpression;
-    regexp(match: SqlExpression, pattern: SqlExpression): RegexpExpression;
-    strftime(returnType: Type, format: string, timestring: SqlExpression, modifiers?: IEnumerable<SqlExpression>, typeMapping?: RelationalTypeMapping): SqlExpression;
+    ApplyTypeMapping(sqlExpression: SqlExpression, typeMapping: RelationalTypeMapping): SqlExpression | undefined;
+    Date(returnType: Type, timestring: SqlExpression, modifiers?: IEnumerable<SqlExpression>, typeMapping?: RelationalTypeMapping): SqlExpression;
+    Glob(match: SqlExpression, pattern: SqlExpression): GlobExpression;
+    Regexp(match: SqlExpression, pattern: SqlExpression): RegexpExpression;
+    Strftime(returnType: Type, format: string, timestring: SqlExpression, modifiers?: IEnumerable<SqlExpression>, typeMapping?: RelationalTypeMapping): SqlExpression;
 }
 
 
@@ -426,21 +426,21 @@ export const SqliteSqlNullabilityProcessor: {
 export type SqliteSqlNullabilityProcessor = SqliteSqlNullabilityProcessor$instance;
 
 export interface SqliteSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
-    generateGreatest(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
-    generateLeast(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
+    GenerateGreatest(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
+    GenerateLeast(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
 }
 
 
 export const SqliteSqlTranslatingExpressionVisitor: {
     new(dependencies: RelationalSqlTranslatingExpressionVisitorDependencies, queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): SqliteSqlTranslatingExpressionVisitor;
-    constructLikePatternParameter(queryContext: QueryContext, baseParameterName: string, startsWith: boolean): string | undefined;
+    ConstructLikePatternParameter(queryContext: QueryContext, baseParameterName: string, startsWith: boolean): string | undefined;
 };
 
 
 export type SqliteSqlTranslatingExpressionVisitor = SqliteSqlTranslatingExpressionVisitor$instance;
 
 export interface SqliteSqlTranslatingExpressionVisitorFactory$instance {
-    create(queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): RelationalSqlTranslatingExpressionVisitor;
+    Create(queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): RelationalSqlTranslatingExpressionVisitor;
 }
 
 
@@ -452,7 +452,7 @@ export const SqliteSqlTranslatingExpressionVisitorFactory: {
 export type SqliteSqlTranslatingExpressionVisitorFactory = SqliteSqlTranslatingExpressionVisitorFactory$instance;
 
 export interface SqliteStringAggregateMethodTranslator$instance {
-    translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -464,7 +464,7 @@ export const SqliteStringAggregateMethodTranslator: {
 export type SqliteStringAggregateMethodTranslator = SqliteStringAggregateMethodTranslator$instance;
 
 export interface SqliteStringLengthTranslator$instance {
-    translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -476,7 +476,7 @@ export const SqliteStringLengthTranslator: {
 export type SqliteStringLengthTranslator = SqliteStringLengthTranslator$instance;
 
 export interface SqliteStringMethodTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -488,7 +488,7 @@ export const SqliteStringMethodTranslator: {
 export type SqliteStringMethodTranslator = SqliteStringMethodTranslator$instance;
 
 export interface SqliteSubstrMethodTranslator$instance {
-    translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 

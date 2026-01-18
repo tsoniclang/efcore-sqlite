@@ -17,75 +17,75 @@ import * as Microsoft_EntityFrameworkCore_Storage_Json_Internal from "@tsonic/ef
 import type { JsonValueReaderWriter, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json.js";
 
 export interface SqliteJsonByteArrayReaderWriter$instance extends JsonValueReaderWriter<byte[]> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): byte[];
-    toJsonTyped(writer: Utf8JsonWriter, value: byte[]): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): byte[];
+    ToJsonTyped(writer: Utf8JsonWriter, value: byte[]): void;
 }
 
 
 export const SqliteJsonByteArrayReaderWriter: {
     new(): SqliteJsonByteArrayReaderWriter;
-    readonly instance: SqliteJsonByteArrayReaderWriter;
+    readonly Instance: SqliteJsonByteArrayReaderWriter;
 };
 
 
 export type SqliteJsonByteArrayReaderWriter = SqliteJsonByteArrayReaderWriter$instance;
 
 export interface SqliteJsonDateTimeOffsetReaderWriter$instance extends JsonValueReaderWriter<DateTimeOffset> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTimeOffset;
-    toJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTimeOffset;
+    ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
 }
 
 
 export const SqliteJsonDateTimeOffsetReaderWriter: {
     new(): SqliteJsonDateTimeOffsetReaderWriter;
-    readonly instance: SqliteJsonDateTimeOffsetReaderWriter;
+    readonly Instance: SqliteJsonDateTimeOffsetReaderWriter;
 };
 
 
 export type SqliteJsonDateTimeOffsetReaderWriter = SqliteJsonDateTimeOffsetReaderWriter$instance;
 
 export interface SqliteJsonDateTimeReaderWriter$instance extends JsonValueReaderWriter<DateTime> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
-    toJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
+    ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
 }
 
 
 export const SqliteJsonDateTimeReaderWriter: {
     new(): SqliteJsonDateTimeReaderWriter;
-    readonly instance: SqliteJsonDateTimeReaderWriter;
+    readonly Instance: SqliteJsonDateTimeReaderWriter;
 };
 
 
 export type SqliteJsonDateTimeReaderWriter = SqliteJsonDateTimeReaderWriter$instance;
 
 export interface SqliteJsonDecimalReaderWriter$instance extends JsonValueReaderWriter<System_Internal.Decimal> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): decimal;
-    toJsonTyped(writer: Utf8JsonWriter, value: decimal): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): decimal;
+    ToJsonTyped(writer: Utf8JsonWriter, value: decimal): void;
 }
 
 
 export const SqliteJsonDecimalReaderWriter: {
     new(): SqliteJsonDecimalReaderWriter;
-    readonly instance: SqliteJsonDecimalReaderWriter;
+    readonly Instance: SqliteJsonDecimalReaderWriter;
 };
 
 
 export type SqliteJsonDecimalReaderWriter = SqliteJsonDecimalReaderWriter$instance;
 
 export interface SqliteJsonGuidReaderWriter$instance extends JsonValueReaderWriter<Guid> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): Guid;
-    toJsonTyped(writer: Utf8JsonWriter, value: Guid): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): Guid;
+    ToJsonTyped(writer: Utf8JsonWriter, value: Guid): void;
 }
 
 
 export const SqliteJsonGuidReaderWriter: {
     new(): SqliteJsonGuidReaderWriter;
-    readonly instance: SqliteJsonGuidReaderWriter;
+    readonly Instance: SqliteJsonGuidReaderWriter;
 };
 
 

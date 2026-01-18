@@ -14,68 +14,68 @@ import type { DbLoggerCategory$Infrastructure, DbLoggerCategory$Migrations, DbLo
 import type { IEntityType, IKey, IReadOnlyProperty, IReadOnlySequence } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export abstract class SqliteLoggerExtensions$instance {
-    static columnFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string, columnName: string, dataTypeName: string, notNull: boolean, defaultValue: string): void;
-    static compositeKeyWithValueGeneration(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, key: IKey): void;
-    static conflictingValueGenerationStrategiesWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, sqliteValueGenerationStrategy: SqliteValueGenerationStrategy, otherValueGenerationStrategy: string, property: IReadOnlyProperty): void;
-    static foreignKeyFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string, id: long, principalTableName: string, deleteAction: string): void;
-    static foreignKeyPrincipalColumnMissingWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalColumnName: string, principalTableName: string): void;
-    static foreignKeyReferencesMissingTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, id: string, tableName: string, principalTableName: string): void;
-    static formatWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string, tableName: string, type: string): void;
-    static indexFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string, unique: Nullable<System_Internal.Boolean>): void;
-    static inferringTypes(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
-    static missingTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
-    static outOfRangeWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string, tableName: string, type: string): void;
-    static primaryKeyFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, primaryKeyName: string, tableName: string): void;
-    static schemaConfiguredWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, entityType: IEntityType, schema: string): void;
-    static schemasNotSupportedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>): void;
-    static sequenceConfiguredWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, sequence: IReadOnlySequence): void;
-    static tableFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
-    static tableRebuildPendingWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Migrations>, operationType: Type, tableName: string): void;
-    static unexpectedConnectionTypeWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Infrastructure>, connectionType: Type): void;
-    static uniqueConstraintFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, uniqueConstraintName: string, tableName: string): void;
+    static ColumnFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string, columnName: string, dataTypeName: string, notNull: boolean, defaultValue: string): void;
+    static CompositeKeyWithValueGeneration(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, key: IKey): void;
+    static ConflictingValueGenerationStrategiesWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, sqliteValueGenerationStrategy: SqliteValueGenerationStrategy, otherValueGenerationStrategy: string, property: IReadOnlyProperty): void;
+    static ForeignKeyFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string, id: long, principalTableName: string, deleteAction: string): void;
+    static ForeignKeyPrincipalColumnMissingWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalColumnName: string, principalTableName: string): void;
+    static ForeignKeyReferencesMissingTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, id: string, tableName: string, principalTableName: string): void;
+    static FormatWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string, tableName: string, type: string): void;
+    static IndexFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string, unique: Nullable<System_Internal.Boolean>): void;
+    static InferringTypes(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
+    static MissingTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
+    static OutOfRangeWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string, tableName: string, type: string): void;
+    static PrimaryKeyFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, primaryKeyName: string, tableName: string): void;
+    static SchemaConfiguredWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, entityType: IEntityType, schema: string): void;
+    static SchemasNotSupportedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>): void;
+    static SequenceConfiguredWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, sequence: IReadOnlySequence): void;
+    static TableFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
+    static TableRebuildPendingWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Migrations>, operationType: Type, tableName: string): void;
+    static UnexpectedConnectionTypeWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Infrastructure>, connectionType: Type): void;
+    static UniqueConstraintFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, uniqueConstraintName: string, tableName: string): void;
 }
 
 
 export type SqliteLoggerExtensions = SqliteLoggerExtensions$instance;
 
 export abstract class SqliteResources$instance {
-    static logCompositeKeyWithValueGeneration(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined>;
-    static logConflictingValueGenerationStrategies(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
-    static logForeignKeyScaffoldErrorPrincipalTableNotFound(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined>;
-    static logFormatWarning(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined>;
-    static logFoundColumn(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined, System_Internal.Boolean, string | undefined>;
-    static logFoundForeignKey(logger: IDiagnosticsLogger): EventDefinition<string | undefined, System_Internal.Int64, string | undefined, string | undefined>;
-    static logFoundIndex(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, Nullable<System_Internal.Boolean>>;
-    static logFoundPrimaryKey(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined>;
-    static logFoundTable(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
-    static logFoundUniqueConstraint(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined>;
-    static logInferringTypes(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
-    static logMissingTable(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
-    static logOutOfRangeWarning(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined>;
-    static logPrincipalColumnNotFound(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined, string | undefined>;
-    static logSchemaConfigured(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static logSequenceConfigured(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
-    static logTableRebuildPendingWarning(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static logUnexpectedConnectionType(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
-    static logUsingSchemaSelectionsWarning(logger: IDiagnosticsLogger): EventDefinition;
+    static LogCompositeKeyWithValueGeneration(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined>;
+    static LogConflictingValueGenerationStrategies(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
+    static LogForeignKeyScaffoldErrorPrincipalTableNotFound(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined>;
+    static LogFormatWarning(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined>;
+    static LogFoundColumn(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined, System_Internal.Boolean, string | undefined>;
+    static LogFoundForeignKey(logger: IDiagnosticsLogger): EventDefinition<string | undefined, System_Internal.Int64, string | undefined, string | undefined>;
+    static LogFoundIndex(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, Nullable<System_Internal.Boolean>>;
+    static LogFoundPrimaryKey(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined>;
+    static LogFoundTable(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
+    static LogFoundUniqueConstraint(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined>;
+    static LogInferringTypes(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
+    static LogMissingTable(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
+    static LogOutOfRangeWarning(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined>;
+    static LogPrincipalColumnNotFound(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined, string | undefined>;
+    static LogSchemaConfigured(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
+    static LogSequenceConfigured(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
+    static LogTableRebuildPendingWarning(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
+    static LogUnexpectedConnectionType(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
+    static LogUsingSchemaSelectionsWarning(logger: IDiagnosticsLogger): EventDefinition;
 }
 
 
 export type SqliteResources = SqliteResources$instance;
 
 export abstract class SqliteStrings$instance {
-    static readonly applyNotSupported: string;
-    static readonly defaultNotSupported: string;
-    static readonly executeUpdateJsonPartialUpdateDoesNotSupportUlong: string;
-    static readonly migrationScriptGenerationNotSupported: string;
-    static readonly sequencesNotSupported: string;
-    static aggregateOperationNotSupported(aggregateOperator: unknown, type: unknown): string;
-    static duplicateColumnNameSridMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
-    static incompatibleSqlReturningClauseMismatch(table: unknown, entityType: unknown, otherEntityType: unknown, entityTypeWithSqlReturningClause: unknown, entityTypeWithoutSqlReturningClause: unknown): string;
-    static invalidMigrationOperation(operation: unknown): string;
-    static orderByNotSupported(type: unknown): string;
-    static queryingIntoJsonCollectionsNotSupported(sqliteVersion: unknown): string;
-    static storedProceduresNotSupported(entityType: unknown): string;
+    static readonly ApplyNotSupported: string;
+    static readonly DefaultNotSupported: string;
+    static readonly ExecuteUpdateJsonPartialUpdateDoesNotSupportUlong: string;
+    static readonly MigrationScriptGenerationNotSupported: string;
+    static readonly SequencesNotSupported: string;
+    static AggregateOperationNotSupported(aggregateOperator: unknown, type: unknown): string;
+    static DuplicateColumnNameSridMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
+    static IncompatibleSqlReturningClauseMismatch(table: unknown, entityType: unknown, otherEntityType: unknown, entityTypeWithSqlReturningClause: unknown, entityTypeWithoutSqlReturningClause: unknown): string;
+    static InvalidMigrationOperation(operation: unknown): string;
+    static OrderByNotSupported(type: unknown): string;
+    static QueryingIntoJsonCollectionsNotSupported(sqliteVersion: unknown): string;
+    static StoredProceduresNotSupported(entityType: unknown): string;
 }
 
 
