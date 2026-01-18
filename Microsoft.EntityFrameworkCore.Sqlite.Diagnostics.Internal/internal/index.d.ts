@@ -12,25 +12,25 @@ import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efc
 import type { EventData, EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
 
 export interface SqliteLoggingDefinitions$instance extends RelationalLoggingDefinitions {
-    logSchemaConfigured: EventDefinitionBase | undefined;
-    logSequenceConfigured: EventDefinitionBase | undefined;
-    logUsingSchemaSelectionsWarning: EventDefinitionBase | undefined;
-    logFoundColumn: EventDefinitionBase | undefined;
-    logFoundForeignKey: EventDefinitionBase | undefined;
-    logForeignKeyScaffoldErrorPrincipalTableNotFound: EventDefinitionBase | undefined;
-    logFoundTable: EventDefinitionBase | undefined;
-    logMissingTable: EventDefinitionBase | undefined;
-    logPrincipalColumnNotFound: EventDefinitionBase | undefined;
-    logFoundIndex: EventDefinitionBase | undefined;
-    logFoundPrimaryKey: EventDefinitionBase | undefined;
-    logFoundUniqueConstraint: EventDefinitionBase | undefined;
-    logUnexpectedConnectionType: EventDefinitionBase | undefined;
-    logTableRebuildPendingWarning: EventDefinitionBase | undefined;
-    logCompositeKeyWithValueGeneration: EventDefinitionBase | undefined;
-    logConflictingValueGenerationStrategies: EventDefinitionBase | undefined;
-    logInferringTypes: EventDefinitionBase | undefined;
-    logOutOfRangeWarning: EventDefinitionBase | undefined;
-    logFormatWarning: EventDefinitionBase | undefined;
+    LogSchemaConfigured: EventDefinitionBase | undefined;
+    LogSequenceConfigured: EventDefinitionBase | undefined;
+    LogUsingSchemaSelectionsWarning: EventDefinitionBase | undefined;
+    LogFoundColumn: EventDefinitionBase | undefined;
+    LogFoundForeignKey: EventDefinitionBase | undefined;
+    LogForeignKeyScaffoldErrorPrincipalTableNotFound: EventDefinitionBase | undefined;
+    LogFoundTable: EventDefinitionBase | undefined;
+    LogMissingTable: EventDefinitionBase | undefined;
+    LogPrincipalColumnNotFound: EventDefinitionBase | undefined;
+    LogFoundIndex: EventDefinitionBase | undefined;
+    LogFoundPrimaryKey: EventDefinitionBase | undefined;
+    LogFoundUniqueConstraint: EventDefinitionBase | undefined;
+    LogUnexpectedConnectionType: EventDefinitionBase | undefined;
+    LogTableRebuildPendingWarning: EventDefinitionBase | undefined;
+    LogCompositeKeyWithValueGeneration: EventDefinitionBase | undefined;
+    LogConflictingValueGenerationStrategies: EventDefinitionBase | undefined;
+    LogInferringTypes: EventDefinitionBase | undefined;
+    LogOutOfRangeWarning: EventDefinitionBase | undefined;
+    LogFormatWarning: EventDefinitionBase | undefined;
 }
 
 
@@ -42,8 +42,8 @@ export const SqliteLoggingDefinitions: {
 export type SqliteLoggingDefinitions = SqliteLoggingDefinitions$instance;
 
 export interface TableRebuildEventData$instance extends EventData {
-    readonly operationType: Type;
-    readonly tableName: string | undefined;
+    readonly OperationType: Type;
+    readonly TableName: string | undefined;
 }
 
 
@@ -55,7 +55,7 @@ export const TableRebuildEventData: {
 export type TableRebuildEventData = TableRebuildEventData$instance;
 
 export interface UnexpectedConnectionTypeEventData$instance extends EventData {
-    readonly connectionType: Type;
+    readonly ConnectionType: Type;
 }
 
 

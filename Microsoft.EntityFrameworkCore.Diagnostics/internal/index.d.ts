@@ -15,9 +15,9 @@ import type { IReadOnlyProperty } from "@tsonic/efcore/Microsoft.EntityFramework
 import type { EventId } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface ConflictingValueGenerationStrategiesEventData$instance extends EventData {
-    readonly otherValueGenerationStrategy: string;
-    readonly property: IReadOnlyProperty;
-    readonly sqliteValueGenerationStrategy: SqliteValueGenerationStrategy;
+    readonly OtherValueGenerationStrategy: string;
+    readonly Property: IReadOnlyProperty;
+    readonly SqliteValueGenerationStrategy: SqliteValueGenerationStrategy;
 }
 
 
@@ -29,25 +29,25 @@ export const ConflictingValueGenerationStrategiesEventData: {
 export type ConflictingValueGenerationStrategiesEventData = ConflictingValueGenerationStrategiesEventData$instance;
 
 export abstract class SqliteEventId$instance {
-    static readonly schemaConfiguredWarning: EventId;
-    static readonly sequenceConfiguredWarning: EventId;
-    static readonly compositeKeyWithValueGeneration: EventId;
-    static readonly conflictingValueGenerationStrategiesWarning: EventId;
-    static readonly unexpectedConnectionTypeWarning: EventId;
-    static readonly tableRebuildPendingWarning: EventId;
-    static readonly columnFound: EventId;
-    static readonly schemasNotSupportedWarning: EventId;
-    static readonly foreignKeyReferencesMissingTableWarning: EventId;
-    static readonly tableFound: EventId;
-    static readonly missingTableWarning: EventId;
-    static readonly foreignKeyPrincipalColumnMissingWarning: EventId;
-    static readonly indexFound: EventId;
-    static readonly foreignKeyFound: EventId;
-    static readonly primaryKeyFound: EventId;
-    static readonly uniqueConstraintFound: EventId;
-    static readonly inferringTypes: EventId;
-    static readonly outOfRangeWarning: EventId;
-    static readonly formatWarning: EventId;
+    static readonly SchemaConfiguredWarning: EventId;
+    static readonly SequenceConfiguredWarning: EventId;
+    static readonly CompositeKeyWithValueGeneration: EventId;
+    static readonly ConflictingValueGenerationStrategiesWarning: EventId;
+    static readonly UnexpectedConnectionTypeWarning: EventId;
+    static readonly TableRebuildPendingWarning: EventId;
+    static readonly ColumnFound: EventId;
+    static readonly SchemasNotSupportedWarning: EventId;
+    static readonly ForeignKeyReferencesMissingTableWarning: EventId;
+    static readonly TableFound: EventId;
+    static readonly MissingTableWarning: EventId;
+    static readonly ForeignKeyPrincipalColumnMissingWarning: EventId;
+    static readonly IndexFound: EventId;
+    static readonly ForeignKeyFound: EventId;
+    static readonly PrimaryKeyFound: EventId;
+    static readonly UniqueConstraintFound: EventId;
+    static readonly InferringTypes: EventId;
+    static readonly OutOfRangeWarning: EventId;
+    static readonly FormatWarning: EventId;
 }
 
 

@@ -18,7 +18,7 @@ import type { DatabaseModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface SqliteCodeGenerator$instance extends ProviderCodeGenerator {
-    generateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
+    GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
 }
 
 
@@ -30,8 +30,8 @@ export const SqliteCodeGenerator: {
 export type SqliteCodeGenerator = SqliteCodeGenerator$instance;
 
 export interface SqliteDatabaseModelFactory$instance extends DatabaseModelFactory {
-    create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
-    create(connection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
+    Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
+    Create(connection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
 }
 
 

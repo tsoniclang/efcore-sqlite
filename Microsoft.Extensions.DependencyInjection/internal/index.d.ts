@@ -13,8 +13,8 @@ import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsof
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export abstract class SqliteServiceCollectionExtensions$instance {
-    static addEntityFrameworkSqlite(serviceCollection: IServiceCollection): IServiceCollection;
-    static addSqlite<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
+    static AddEntityFrameworkSqlite(serviceCollection: IServiceCollection): IServiceCollection;
+    static AddSqlite<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
 }
 
 

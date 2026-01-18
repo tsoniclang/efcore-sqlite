@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore.Sqlite"
+  ],
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
-      "tsEmitName": "ISqliteRelationalConnection",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection::CreateReadOnlyConnection():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
           "clrName": "CreateReadOnlyConnection",
-          "tsEmitName": "createReadOnlyConnection",
           "metadataToken": 100663825,
           "canonicalSignature": "():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
           "normalizedSignature": "CreateReadOnlyConnection|():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -26,39 +39,36 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "createReadOnlyConnection",
-          "isStatic": false,
-          "tsSignatureId": "CreateReadOnlyConnection|():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663825
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
-      "tsEmitName": "SqliteByteArrayTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876088,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -76,48 +86,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876088
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663827
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
-      "tsEmitName": "SqliteDatabaseCreator",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator::Create():System.Void",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663832,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Create|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -125,13 +122,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator::Exists():System.Boolean",
           "clrName": "Exists",
-          "tsEmitName": "exists",
           "metadataToken": 100663833,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Exists|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -139,13 +141,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator::HasTables():System.Boolean",
           "clrName": "HasTables",
-          "tsEmitName": "hasTables",
           "metadataToken": 100663834,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "HasTables|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -153,13 +160,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator::Delete():System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete",
           "metadataToken": 100663835,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Delete|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -179,80 +191,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663832
-          }
-        },
-        {
-          "tsName": "exists",
-          "isStatic": false,
-          "tsSignatureId": "Exists|():System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663833
-          }
-        },
-        {
-          "tsName": "hasTables",
-          "isStatic": false,
-          "tsSignatureId": "HasTables|():System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663834
-          }
-        },
-        {
-          "tsName": "delete",
-          "isStatic": false,
-          "tsSignatureId": "Delete|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663835
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreatorDependencies,Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663831
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
-      "tsEmitName": "SqliteDateOnlyTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876089,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -270,50 +238,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876089
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663837
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
-      "tsEmitName": "SqliteDateTimeOffsetTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876091,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -331,50 +285,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876091
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663843
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
-      "tsEmitName": "SqliteDateTimeTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876093,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -392,50 +332,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876093
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663849
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
-      "tsEmitName": "SqliteDecimalTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876095,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -453,50 +379,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876095
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663855
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
-      "tsEmitName": "SqliteGuidTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876097,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -514,48 +426,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876097
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663861
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
-      "tsEmitName": "SqliteJsonTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping::GetDataReaderMethod():System.Reflection.MethodInfo",
           "clrName": "GetDataReaderMethod",
-          "tsEmitName": "getDataReaderMethod",
           "metadataToken": 100663869,
           "canonicalSignature": "():System.Reflection.MethodInfo",
           "normalizedSignature": "GetDataReaderMethod|():System.Reflection.MethodInfo|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -563,13 +462,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping::CustomizeDataReaderExpression(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
           "clrName": "CustomizeDataReaderExpression",
-          "tsEmitName": "customizeDataReaderExpression",
           "metadataToken": 100663870,
           "canonicalSignature": "(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
           "normalizedSignature": "CustomizeDataReaderExpression|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -579,14 +483,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876098,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -604,70 +512,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "getDataReaderMethod",
-          "isStatic": false,
-          "tsSignatureId": "GetDataReaderMethod|():System.Reflection.MethodInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663869
-          }
-        },
-        {
-          "tsName": "customizeDataReaderExpression",
-          "isStatic": false,
-          "tsSignatureId": "CustomizeDataReaderExpression|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663870
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876098
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663867
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection",
-      "tsEmitName": "SqliteRelationalConnection",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection::CreateReadOnlyConnection():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
           "clrName": "CreateReadOnlyConnection",
-          "tsEmitName": "createReadOnlyConnection",
           "metadataToken": 100663877,
           "canonicalSignature": "():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
           "normalizedSignature": "CreateReadOnlyConnection|():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -675,16 +548,22 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection::CreateReadOnlyConnection():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
           "clrName": "CreateReadOnlyConnection",
-          "tsEmitName": "createReadOnlyConnection$view",
           "metadataToken": 100663825,
           "canonicalSignature": "():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
           "normalizedSignature": "CreateReadOnlyConnection|():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection"
         }
       ],
       "properties": [],
@@ -701,58 +580,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "createReadOnlyConnection",
-          "isStatic": false,
-          "tsSignatureId": "CreateReadOnlyConnection|():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663877
-          }
-        },
-        {
-          "tsName": "createReadOnlyConnection$view",
-          "isStatic": false,
-          "tsSignatureId": "CreateReadOnlyConnection|():Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.ISqliteRelationalConnection",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663825
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BInfrastructure,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663875
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
-      "tsEmitName": "SqliteSqlGenerationHelper",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper::DelimitIdentifier(System.String,System.String):System.String",
           "clrName": "DelimitIdentifier",
-          "tsEmitName": "delimitIdentifier",
           "metadataToken": 100663881,
           "canonicalSignature": "(System.String,System.String):System.String",
           "normalizedSignature": "DelimitIdentifier|(System.String,System.String):System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -760,13 +616,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper::DelimitIdentifier(System.Text.StringBuilder,System.String,System.String):System.Void",
           "clrName": "DelimitIdentifier",
-          "tsEmitName": "delimitIdentifier",
           "metadataToken": 100663882,
           "canonicalSignature": "(System.Text.StringBuilder,System.String,System.String):System.Void",
           "normalizedSignature": "DelimitIdentifier|(System.Text.StringBuilder,System.String,System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -776,14 +637,18 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper::StartTransactionStatement:System.String",
           "clrName": "StartTransactionStatement",
-          "tsEmitName": "startTransactionStatement",
           "metadataToken": 385876099,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "StartTransactionStatement|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -801,72 +666,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "delimitIdentifier",
-          "isStatic": false,
-          "tsSignatureId": "DelimitIdentifier|(System.String,System.String):System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663881
-          }
-        },
-        {
-          "tsName": "delimitIdentifier",
-          "isStatic": false,
-          "tsSignatureId": "DelimitIdentifier|(System.Text.StringBuilder,System.String,System.String):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663882
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "startTransactionStatement",
-          "isStatic": false,
-          "tsSignatureId": "StartTransactionStatement|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876099
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalSqlGenerationHelperDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteSqlGenerationHelper",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663879
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
-      "tsEmitName": "SqliteStringTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876100,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -884,50 +713,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876100
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663884
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
-      "tsEmitName": "SqliteTimeOnlyTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876101,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -945,48 +760,35 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876101
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663891
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTypeMappingSource",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTypeMappingSource",
-      "tsEmitName": "SqliteTypeMappingSource",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTypeMappingSource::IsSpatialiteType(System.String):System.Boolean",
           "clrName": "IsSpatialiteType",
-          "tsEmitName": "isSpatialiteType",
           "metadataToken": 100663897,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "IsSpatialiteType|(System.String):System.Boolean|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTypeMappingSource",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -1006,50 +808,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTypeMappingSource",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "isSpatialiteType",
-          "isStatic": true,
-          "tsSignatureId": "IsSpatialiteType|(System.String):System.Boolean|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTypeMappingSource",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663897
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSourceDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTypeMappingSource",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663896
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
       "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
-      "tsEmitName": "SqliteULongTypeMapping",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping::Default:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 385876102,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -1066,29 +854,6 @@
           "parameterCount": 2,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 385876102
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 100663903
-          }
         }
       ]
     }

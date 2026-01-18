@@ -16,7 +16,7 @@ import type { IModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metada
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface SqliteModelValidator$instance extends RelationalModelValidator {
-    validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
 }
 
 
@@ -28,10 +28,10 @@ export const SqliteModelValidator: {
 export type SqliteModelValidator = SqliteModelValidator$instance;
 
 export interface SqliteOptionsExtension$instance extends RelationalOptionsExtension {
-    readonly info: DbContextOptionsExtensionInfo;
-    readonly loadSpatialite: boolean;
-    applyServices(services: IServiceCollection): void;
-    withLoadSpatialite(loadSpatialite: boolean): SqliteOptionsExtension;
+    readonly Info: DbContextOptionsExtensionInfo;
+    readonly LoadSpatialite: boolean;
+    ApplyServices(services: IServiceCollection): void;
+    WithLoadSpatialite(loadSpatialite: boolean): SqliteOptionsExtension;
 }
 
 

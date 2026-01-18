@@ -17,14 +17,14 @@ import type { ConventionSet, IConvention, IConventionContext, IEntityTypeAnnotat
 import type { IConventionAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export interface SqliteConventionSetBuilder$instance extends RelationalConventionSetBuilder {
-    createConventionSet(): ConventionSet;
+    CreateConventionSet(): ConventionSet;
 }
 
 
 export const SqliteConventionSetBuilder: {
     new(dependencies: ProviderConventionSetBuilderDependencies, relationalDependencies: RelationalConventionSetBuilderDependencies): SqliteConventionSetBuilder;
-    build(): ConventionSet;
-    createModelBuilder(): ModelBuilder;
+    Build(): ConventionSet;
+    CreateModelBuilder(): ModelBuilder;
 };
 
 
@@ -53,7 +53,7 @@ export const SqliteSharedTableConvention: {
 export type SqliteSharedTableConvention = SqliteSharedTableConvention$instance;
 
 export interface SqliteStoreGenerationConvention$instance extends StoreGenerationConvention {
-    processPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 
 
@@ -65,7 +65,7 @@ export const SqliteStoreGenerationConvention: {
 export type SqliteStoreGenerationConvention = SqliteStoreGenerationConvention$instance;
 
 export interface SqliteValueGenerationConvention$instance extends RelationalValueGenerationConvention {
-    processPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 
 

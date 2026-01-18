@@ -18,7 +18,7 @@ import type { IColumn, IProperty, IRelationalModel } from "@tsonic/efcore/Micros
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface SqliteAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
-    generateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
+    GenerateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
 }
 
 
@@ -30,9 +30,9 @@ export const SqliteAnnotationCodeGenerator: {
 export type SqliteAnnotationCodeGenerator = SqliteAnnotationCodeGenerator$instance;
 
 export interface SqliteCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
-    generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
 }
 
 
@@ -44,7 +44,7 @@ export const SqliteCSharpRuntimeAnnotationCodeGenerator: {
 export type SqliteCSharpRuntimeAnnotationCodeGenerator = SqliteCSharpRuntimeAnnotationCodeGenerator$instance;
 
 export interface SqliteDesignTimeServices$instance {
-    configureDesignTimeServices(serviceCollection: IServiceCollection): void;
+    ConfigureDesignTimeServices(serviceCollection: IServiceCollection): void;
 }
 
 

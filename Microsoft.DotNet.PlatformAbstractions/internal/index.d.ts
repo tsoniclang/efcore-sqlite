@@ -11,17 +11,17 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface HashCodeCombiner$instance {
-    readonly combinedHash: int;
-    add(i: int): void;
-    add(s: string): void;
-    add(o: unknown): void;
-    add<TValue>(value: TValue, comparer: IEqualityComparer<TValue>): void;
+    readonly CombinedHash: int;
+    Add(i: int): void;
+    Add(s: string): void;
+    Add(o: unknown): void;
+    Add<TValue>(value: TValue, comparer: IEqualityComparer<TValue>): void;
 }
 
 
 export const HashCodeCombiner: {
     new(): HashCodeCombiner;
-    start(): HashCodeCombiner;
+    Start(): HashCodeCombiner;
 };
 
 

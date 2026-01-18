@@ -1,83 +1,61 @@
 {
   "namespace": "Microsoft.EntityFrameworkCore.Metadata",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore",
+    "Microsoft.EntityFrameworkCore.Relational",
+    "Microsoft.EntityFrameworkCore.Sqlite"
+  ],
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
       "clrName": "Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
-      "tsEmitName": "SqliteValueGenerationStrategy",
       "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy::value__System.Int32",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67108990,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy::NoneMicrosoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
           "clrName": "None",
-          "tsEmitName": "none",
           "metadataToken": 67108991,
           "normalizedSignature": "None|Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy::AutoincrementMicrosoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
           "clrName": "Autoincrement",
-          "tsEmitName": "autoincrement",
           "metadataToken": 67108992,
           "normalizedSignature": "Autoincrement|Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int32|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67108990
-          }
-        },
-        {
-          "tsName": "none",
-          "isStatic": true,
-          "tsSignatureId": "None|Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67108991
-          }
-        },
-        {
-          "tsName": "autoincrement",
-          "isStatic": true,
-          "tsSignatureId": "Autoincrement|Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqliteValueGenerationStrategy",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
-            "metadataToken": 67108992
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }
