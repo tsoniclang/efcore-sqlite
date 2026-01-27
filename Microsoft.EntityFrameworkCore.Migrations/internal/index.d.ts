@@ -8,13 +8,44 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { IModel, IRelationalAnnotationProvider } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
-import type { IMigrationsSqlGenerator, MigrationBuilder, MigrationCommand, MigrationsSqlGenerationOptions, MigrationsSqlGenerator, MigrationsSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
-import type { MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
+import type { IMigrationsSqlGenerator, MigrationBuilder, MigrationCommand, MigrationCommandListBuilder, MigrationsSqlGenerationOptions, MigrationsSqlGenerator, MigrationsSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
+import type { AddCheckConstraintOperation, AddColumnOperation, AddForeignKeyOperation, AddPrimaryKeyOperation, AddUniqueConstraintOperation, AlterColumnOperation, AlterDatabaseOperation, AlterSequenceOperation, ColumnOperation, CreateSequenceOperation, CreateTableOperation, DropCheckConstraintOperation, DropColumnOperation, DropForeignKeyOperation, DropIndexOperation, DropPrimaryKeyOperation, DropSchemaOperation, DropSequenceOperation, DropUniqueConstraintOperation, EnsureSchemaOperation, MigrationOperation, RenameColumnOperation, RenameIndexOperation, RenameSequenceOperation, RenameTableOperation, RestartSequenceOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
 
-export interface SqliteMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
+export abstract class SqliteMigrationsSqlGenerator$protected {
+    protected ColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected ComputedColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected CreateTableColumns(operation: CreateTableOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: RenameIndexOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: RenameTableOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: RenameColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: AddUniqueConstraintOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: AddCheckConstraintOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: DropUniqueConstraintOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: DropCheckConstraintOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: AlterColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: EnsureSchemaOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: DropSchemaOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: RestartSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: CreateSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: RenameSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: AlterSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: DropSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    protected Generate(operation: AddColumnOperation, model: IModel, builder: MigrationCommandListBuilder, terminate: boolean): void;
+    protected Generate(operation: DropIndexOperation, model: IModel, builder: MigrationCommandListBuilder, terminate: boolean): void;
+    protected Generate(operation: CreateTableOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    protected Generate(operation: AddForeignKeyOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    protected Generate(operation: AddPrimaryKeyOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    protected Generate(operation: DropColumnOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    protected Generate(operation: DropForeignKeyOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    protected Generate(operation: DropPrimaryKeyOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+}
+
+
+export interface SqliteMigrationsSqlGenerator$instance extends SqliteMigrationsSqlGenerator$protected, MigrationsSqlGenerator {
     Generate(operations: IReadOnlyList<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList<MigrationCommand>;
 }
 

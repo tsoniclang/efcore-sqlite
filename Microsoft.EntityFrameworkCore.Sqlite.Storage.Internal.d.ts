@@ -6,15 +6,16 @@
 import * as Internal from './Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal/internal/index.js';
 
 // Cross-namespace type imports for constraints
+import type { DbConnection } from '@tsonic/dotnet/System.Data.Common.js';
 import type { DbType } from '@tsonic/dotnet/System.Data.js';
-import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int32, Nullable, String as ClrString, Void } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { Expression } from '@tsonic/dotnet/System.Linq.Expressions.js';
 import type { MethodInfo } from '@tsonic/dotnet/System.Reflection.js';
 import type { StringBuilder } from '@tsonic/dotnet/System.Text.js';
 import type { IDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
 import type { IResettableService } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
 import type { DbLoggerCategory$Infrastructure } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
-import type { ByteArrayTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, GuidTypeMapping, IDatabaseCreator, IDbContextTransactionManager, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, StringTypeMapping, TimeOnlyTypeMapping, TypeMappingSourceDependencies, ULongTypeMapping } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
+import type { ByteArrayTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, GuidTypeMapping, IDatabaseCreator, IDbContextTransactionManager, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, StringTypeMapping, TimeOnlyTypeMapping, TypeMappingSourceDependencies, ULongTypeMapping } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export type ISqliteRelationalConnection = Internal.ISqliteRelationalConnection;

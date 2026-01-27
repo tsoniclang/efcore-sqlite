@@ -5,16 +5,20 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { Dictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { Boolean as ClrBoolean, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 import type { IConventionPropertyBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js";
 import * as Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.js";
 import type { IProviderConventionSetBuilder, ProviderConventionSetBuilderDependencies, RelationalConventionSetBuilder, RelationalConventionSetBuilderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.js";
 import * as Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.js";
 import type { ConventionSet, IConvention, IConventionContext, IEntityTypeAnnotationChangedConvention, IEntityTypeBaseTypeChangedConvention, IEntityTypePrimaryKeyChangedConvention, IForeignKeyAddedConvention, IForeignKeyOwnershipChangedConvention, IForeignKeyPropertiesChangedConvention, IForeignKeyRemovedConvention, IModelFinalizedConvention, IModelFinalizingConvention, IPropertyAnnotationChangedConvention, RelationalRuntimeModelConvention, RelationalValueGenerationConvention, SharedTableConvention, StoreGenerationConvention } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.js";
-import type { IConventionAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { IConventionAnnotation, IConventionProperty, IProperty, RuntimeProperty, StoreObjectIdentifier, ValueGenerated } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export interface SqliteConventionSetBuilder$instance extends RelationalConventionSetBuilder {
     CreateConventionSet(): ConventionSet;
@@ -30,7 +34,12 @@ export const SqliteConventionSetBuilder: {
 
 export type SqliteConventionSetBuilder = SqliteConventionSetBuilder$instance;
 
-export interface SqliteRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+export abstract class SqliteRuntimeModelConvention$protected {
+    protected ProcessPropertyAnnotations(annotations: Dictionary<System_Internal.String, unknown>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
+}
+
+
+export interface SqliteRuntimeModelConvention$instance extends SqliteRuntimeModelConvention$protected, RelationalRuntimeModelConvention {
 }
 
 
@@ -41,7 +50,12 @@ export const SqliteRuntimeModelConvention: {
 
 export type SqliteRuntimeModelConvention = SqliteRuntimeModelConvention$instance;
 
-export interface SqliteSharedTableConvention$instance extends SharedTableConvention {
+export abstract class SqliteSharedTableConvention$protected {
+    protected readonly CheckConstraintsUniqueAcrossTables: boolean;
+}
+
+
+export interface SqliteSharedTableConvention$instance extends SqliteSharedTableConvention$protected, SharedTableConvention {
 }
 
 
@@ -52,7 +66,12 @@ export const SqliteSharedTableConvention: {
 
 export type SqliteSharedTableConvention = SqliteSharedTableConvention$instance;
 
-export interface SqliteStoreGenerationConvention$instance extends StoreGenerationConvention {
+export abstract class SqliteStoreGenerationConvention$protected {
+    protected Validate(property: IConventionProperty, storeObject: StoreObjectIdentifier): void;
+}
+
+
+export interface SqliteStoreGenerationConvention$instance extends SqliteStoreGenerationConvention$protected, StoreGenerationConvention {
     ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 
@@ -64,7 +83,12 @@ export const SqliteStoreGenerationConvention: {
 
 export type SqliteStoreGenerationConvention = SqliteStoreGenerationConvention$instance;
 
-export interface SqliteValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+export abstract class SqliteValueGenerationConvention$protected {
+    protected GetValueGenerated(property: IConventionProperty): Nullable<ValueGenerated>;
+}
+
+
+export interface SqliteValueGenerationConvention$instance extends SqliteValueGenerationConvention$protected, RelationalValueGenerationConvention {
     ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 

@@ -6,9 +6,10 @@
 import * as Internal from './Microsoft.EntityFrameworkCore.Sqlite.Update.Internal/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { StringBuilder } from '@tsonic/dotnet/System.Text.js';
-import type { IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js';
+import type { ISqlGenerationHelper } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
+import type { ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { SqliteLegacyUpdateSqlGenerator as SqliteLegacyUpdateSqlGenerator } from './Microsoft.EntityFrameworkCore.Sqlite.Update.Internal/internal/index.js';

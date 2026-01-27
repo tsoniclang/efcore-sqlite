@@ -15,6 +15,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.IDependencyContextReader::Read(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext",
@@ -31,6 +37,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.IDependencyContextReader",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -52,6 +59,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "Dependency"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Dependency::Equals(Microsoft.Extensions.DependencyModel.Dependency):System.Boolean",
@@ -68,6 +88,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -87,6 +108,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -106,6 +128,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -127,6 +150,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -145,6 +169,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -159,6 +184,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Dependency",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -175,6 +201,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library",
+        "clrName": "Microsoft.Extensions.DependencyModel.Library"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.CompilationLibrary::ResolveReferencePaths():System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -191,6 +221,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -210,6 +241,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -231,6 +263,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -245,6 +278,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 7,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -255,6 +289,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 9,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -271,6 +306,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -288,6 +327,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -306,6 +346,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -324,6 +365,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -342,6 +384,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -360,6 +403,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -378,6 +422,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -396,6 +441,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -414,6 +460,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -432,6 +479,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -450,6 +498,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -468,6 +517,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -486,6 +536,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -504,6 +555,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -518,6 +570,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 12,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.CompilationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -534,6 +587,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContext::Merge(Microsoft.Extensions.DependencyModel.DependencyContext):Microsoft.Extensions.DependencyModel.DependencyContext",
@@ -550,6 +607,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -569,6 +627,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -590,6 +649,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -608,6 +668,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -626,6 +687,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -644,6 +706,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -662,6 +725,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -680,6 +744,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -694,6 +759,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.DependencyModel.TargetInfo,Microsoft.Extensions.DependencyModel.CompilationOptions,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.CompilationLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeLibrary,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFallbacks,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContext",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -710,6 +776,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.IDependencyContextReader",
+          "clrName": "Microsoft.Extensions.DependencyModel.IDependencyContextReader"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader::Read(System.IO.Stream):Microsoft.Extensions.DependencyModel.DependencyContext",
@@ -726,6 +806,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
+          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663399,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -745,6 +846,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -764,6 +866,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.IDependencyContextReader",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false,
@@ -781,6 +884,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextJsonReader",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -797,6 +901,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextLoader::Load(System.Reflection.Assembly):Microsoft.Extensions.DependencyModel.DependencyContext",
@@ -813,6 +921,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -834,6 +943,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -848,6 +958,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextLoader",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -864,6 +975,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextWriter::Write(Microsoft.Extensions.DependencyModel.DependencyContext,System.IO.Stream):System.Void",
@@ -880,6 +995,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextWriter",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -896,6 +1012,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextWriter",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -912,6 +1029,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -929,6 +1050,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -947,6 +1069,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -965,6 +1088,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -983,6 +1107,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1001,6 +1126,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1019,6 +1145,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1037,6 +1164,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1055,6 +1183,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1073,6 +1202,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1087,6 +1217,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1097,6 +1228,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 8,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1107,6 +1239,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 9,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.Library",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1123,6 +1256,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1140,6 +1277,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1158,6 +1296,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1176,6 +1315,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1190,6 +1330,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1200,6 +1341,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.ResourceAssembly",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1216,6 +1358,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.RuntimeAssembly::Create(System.String):Microsoft.Extensions.DependencyModel.RuntimeAssembly",
@@ -1232,6 +1378,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
@@ -1253,6 +1400,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1271,6 +1419,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1285,6 +1434,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssembly",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1301,6 +1451,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1318,6 +1472,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1336,6 +1491,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1354,6 +1510,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1368,6 +1525,7 @@
           "normalizedSignature": "constructor|(System.String,System.String[]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1378,6 +1536,7 @@
           "normalizedSignature": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1388,6 +1547,7 @@
           "normalizedSignature": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeFile,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1404,6 +1564,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1421,6 +1585,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1439,6 +1604,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1453,6 +1619,7 @@
           "normalizedSignature": "constructor|(System.String,System.String[]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1463,6 +1630,7 @@
           "normalizedSignature": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFallbacks",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1479,6 +1647,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1496,6 +1668,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1514,6 +1687,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1532,6 +1706,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1550,6 +1725,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1564,6 +1740,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1574,6 +1751,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeFile",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1590,6 +1768,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.Library",
+        "clrName": "Microsoft.Extensions.DependencyModel.Library"
+      },
       "methods": [],
       "properties": [
         {
@@ -1607,6 +1789,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1625,6 +1808,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1643,6 +1827,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1657,6 +1842,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 9,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1667,6 +1853,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 11,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1677,6 +1864,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.ResourceAssembly,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.Dependency,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 12,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.RuntimeLibrary",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1693,6 +1881,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1710,6 +1902,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1728,6 +1921,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1746,6 +1940,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         },
@@ -1764,6 +1959,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1778,6 +1974,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.TargetInfo",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
         }
@@ -1794,6 +1991,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.Extensions.DependencyModel.DependencyContextExtensions::GetDefaultNativeAssets(Microsoft.Extensions.DependencyModel.DependencyContext):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -1810,6 +2011,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -1829,6 +2031,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -1848,6 +2051,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -1867,6 +2071,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -1886,6 +2091,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -1905,6 +2111,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -1924,6 +2131,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -1943,6 +2151,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -1962,6 +2171,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -1981,6 +2191,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -2000,6 +2211,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -2019,6 +2231,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyModel.DependencyContextExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true

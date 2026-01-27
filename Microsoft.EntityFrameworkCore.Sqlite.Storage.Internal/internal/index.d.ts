@@ -5,10 +5,14 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
+import type { DbConnection } from "@tsonic/dotnet/System.Data.Common.js";
 import type { DbType } from "@tsonic/dotnet/System.Data.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int32, Nullable, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
 import type { MethodInfo } from "@tsonic/dotnet/System.Reflection.js";
 import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
@@ -17,7 +21,7 @@ import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/
 import type { IResettableService } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
 import type { DbLoggerCategory$Infrastructure } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import type { ByteArrayTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, GuidTypeMapping, IDatabaseCreator, IDbContextTransactionManager, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, StringTypeMapping, TimeOnlyTypeMapping, TypeMappingSourceDependencies, ULongTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { ByteArrayTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, GuidTypeMapping, IDatabaseCreator, IDbContextTransactionManager, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, StringTypeMapping, TimeOnlyTypeMapping, TypeMappingSourceDependencies, ULongTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface ISqliteRelationalConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
     CreateReadOnlyConnection(): ISqliteRelationalConnection;
@@ -26,12 +30,18 @@ export interface ISqliteRelationalConnection$instance extends IRelationalConnect
 
 export type ISqliteRelationalConnection = ISqliteRelationalConnection$instance;
 
-export interface SqliteByteArrayTypeMapping$instance extends ByteArrayTypeMapping {
+export abstract class SqliteByteArrayTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+}
+
+
+export interface SqliteByteArrayTypeMapping$instance extends SqliteByteArrayTypeMapping$protected, ByteArrayTypeMapping {
 }
 
 
 export const SqliteByteArrayTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteByteArrayTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteByteArrayTypeMapping;
     readonly Default: SqliteByteArrayTypeMapping;
 };
 
@@ -53,67 +63,109 @@ export const SqliteDatabaseCreator: {
 
 export type SqliteDatabaseCreator = SqliteDatabaseCreator$instance;
 
-export interface SqliteDateOnlyTypeMapping$instance extends DateOnlyTypeMapping {
+export abstract class SqliteDateOnlyTypeMapping$protected {
+    protected readonly SqlLiteralFormatString: string;
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+}
+
+
+export interface SqliteDateOnlyTypeMapping$instance extends SqliteDateOnlyTypeMapping$protected, DateOnlyTypeMapping {
 }
 
 
 export const SqliteDateOnlyTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteDateOnlyTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteDateOnlyTypeMapping;
     readonly Default: SqliteDateOnlyTypeMapping;
 };
 
 
 export type SqliteDateOnlyTypeMapping = SqliteDateOnlyTypeMapping$instance;
 
-export interface SqliteDateTimeOffsetTypeMapping$instance extends DateTimeOffsetTypeMapping {
+export abstract class SqliteDateTimeOffsetTypeMapping$protected {
+    protected readonly SqlLiteralFormatString: string;
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+}
+
+
+export interface SqliteDateTimeOffsetTypeMapping$instance extends SqliteDateTimeOffsetTypeMapping$protected, DateTimeOffsetTypeMapping {
 }
 
 
 export const SqliteDateTimeOffsetTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteDateTimeOffsetTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteDateTimeOffsetTypeMapping;
     readonly Default: SqliteDateTimeOffsetTypeMapping;
 };
 
 
 export type SqliteDateTimeOffsetTypeMapping = SqliteDateTimeOffsetTypeMapping$instance;
 
-export interface SqliteDateTimeTypeMapping$instance extends DateTimeTypeMapping {
+export abstract class SqliteDateTimeTypeMapping$protected {
+    protected readonly SqlLiteralFormatString: string;
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+}
+
+
+export interface SqliteDateTimeTypeMapping$instance extends SqliteDateTimeTypeMapping$protected, DateTimeTypeMapping {
 }
 
 
 export const SqliteDateTimeTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteDateTimeTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteDateTimeTypeMapping;
     readonly Default: SqliteDateTimeTypeMapping;
 };
 
 
 export type SqliteDateTimeTypeMapping = SqliteDateTimeTypeMapping$instance;
 
-export interface SqliteDecimalTypeMapping$instance extends DecimalTypeMapping {
+export abstract class SqliteDecimalTypeMapping$protected {
+    protected readonly SqlLiteralFormatString: string;
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+}
+
+
+export interface SqliteDecimalTypeMapping$instance extends SqliteDecimalTypeMapping$protected, DecimalTypeMapping {
 }
 
 
 export const SqliteDecimalTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteDecimalTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteDecimalTypeMapping;
     readonly Default: SqliteDecimalTypeMapping;
 };
 
 
 export type SqliteDecimalTypeMapping = SqliteDecimalTypeMapping$instance;
 
-export interface SqliteGuidTypeMapping$instance extends GuidTypeMapping {
+export abstract class SqliteGuidTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqliteGuidTypeMapping$instance extends SqliteGuidTypeMapping$protected, GuidTypeMapping {
 }
 
 
 export const SqliteGuidTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteGuidTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteGuidTypeMapping;
     readonly Default: SqliteGuidTypeMapping;
 };
 
 
 export type SqliteGuidTypeMapping = SqliteGuidTypeMapping$instance;
 
-export interface SqliteJsonTypeMapping$instance extends JsonTypeMapping {
+export abstract class SqliteJsonTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected EscapeSqlLiteral(literal: string): string;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqliteJsonTypeMapping$instance extends SqliteJsonTypeMapping$protected, JsonTypeMapping {
     CustomizeDataReaderExpression(expression: Expression): Expression;
     GetDataReaderMethod(): MethodInfo;
 }
@@ -121,13 +173,19 @@ export interface SqliteJsonTypeMapping$instance extends JsonTypeMapping {
 
 export const SqliteJsonTypeMapping: {
     new(storeType: string): SqliteJsonTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteJsonTypeMapping;
     readonly Default: SqliteJsonTypeMapping;
 };
 
 
 export type SqliteJsonTypeMapping = SqliteJsonTypeMapping$instance;
 
-export interface SqliteRelationalConnection$instance extends RelationalConnection {
+export abstract class SqliteRelationalConnection$protected {
+    protected CreateDbConnection(): DbConnection;
+}
+
+
+export interface SqliteRelationalConnection$instance extends SqliteRelationalConnection$protected, RelationalConnection {
     CreateReadOnlyConnection(): ISqliteRelationalConnection;
 }
 
@@ -160,31 +218,50 @@ export const SqliteSqlGenerationHelper: {
 
 export type SqliteSqlGenerationHelper = SqliteSqlGenerationHelper$instance;
 
-export interface SqliteStringTypeMapping$instance extends StringTypeMapping {
+export abstract class SqliteStringTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqliteStringTypeMapping$instance extends SqliteStringTypeMapping$protected, StringTypeMapping {
 }
 
 
 export const SqliteStringTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, unicode: boolean, size: Nullable<System_Internal.Int32>): SqliteStringTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteStringTypeMapping;
     readonly Default: SqliteStringTypeMapping;
 };
 
 
 export type SqliteStringTypeMapping = SqliteStringTypeMapping$instance;
 
-export interface SqliteTimeOnlyTypeMapping$instance extends TimeOnlyTypeMapping {
+export abstract class SqliteTimeOnlyTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqliteTimeOnlyTypeMapping$instance extends SqliteTimeOnlyTypeMapping$protected, TimeOnlyTypeMapping {
 }
 
 
 export const SqliteTimeOnlyTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteTimeOnlyTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteTimeOnlyTypeMapping;
     readonly Default: SqliteTimeOnlyTypeMapping;
 };
 
 
 export type SqliteTimeOnlyTypeMapping = SqliteTimeOnlyTypeMapping$instance;
 
-export interface SqliteTypeMappingSource$instance extends RelationalTypeMappingSource {
+export abstract class SqliteTypeMappingSource$protected {
+    protected FindMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+}
+
+
+export interface SqliteTypeMappingSource$instance extends SqliteTypeMappingSource$protected, RelationalTypeMappingSource {
 }
 
 
@@ -196,12 +273,19 @@ export const SqliteTypeMappingSource: {
 
 export type SqliteTypeMappingSource = SqliteTypeMappingSource$instance;
 
-export interface SqliteULongTypeMapping$instance extends ULongTypeMapping {
+export abstract class SqliteULongTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqliteULongTypeMapping$instance extends SqliteULongTypeMapping$protected, ULongTypeMapping {
 }
 
 
 export const SqliteULongTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqliteULongTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqliteULongTypeMapping;
     readonly Default: SqliteULongTypeMapping;
 };
 

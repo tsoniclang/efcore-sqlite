@@ -17,6 +17,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:System.Collections.Generic.CollectionExtensions::GetDefaultGroup(System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyModel.RuntimeAssetGroup,Microsoft.Extensions.DependencyModel,Version=10.0.0.1,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyModel.RuntimeAssetGroup",
@@ -33,6 +37,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Collections.Generic.CollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -52,6 +57,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Collections.Generic.CollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -71,6 +77,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Collections.Generic.CollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -90,6 +97,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Collections.Generic.CollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -109,6 +117,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Collections.Generic.CollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true
@@ -128,6 +137,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Collections.Generic.CollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": true

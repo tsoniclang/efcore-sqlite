@@ -7,10 +7,10 @@ import * as Internal from './Microsoft.EntityFrameworkCore.Migrations/internal/i
 
 // Cross-namespace type imports for constraints
 import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Boolean as ClrBoolean, Object as ClrObject } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { IModel, IRelationalAnnotationProvider } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
-import type { IMigrationsSqlGenerator, MigrationBuilder, MigrationCommand, MigrationsSqlGenerationOptions, MigrationsSqlGenerator, MigrationsSqlGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js';
-import type { MigrationOperation } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js';
+import type { IMigrationsSqlGenerator, MigrationBuilder, MigrationCommand, MigrationCommandListBuilder, MigrationsSqlGenerationOptions, MigrationsSqlGenerator, MigrationsSqlGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js';
+import type { AddCheckConstraintOperation, AddColumnOperation, AddForeignKeyOperation, AddPrimaryKeyOperation, AddUniqueConstraintOperation, AlterColumnOperation, AlterDatabaseOperation, AlterSequenceOperation, ColumnOperation, CreateSequenceOperation, CreateTableOperation, DropCheckConstraintOperation, DropColumnOperation, DropForeignKeyOperation, DropIndexOperation, DropPrimaryKeyOperation, DropSchemaOperation, DropSequenceOperation, DropUniqueConstraintOperation, EnsureSchemaOperation, MigrationOperation, RenameColumnOperation, RenameIndexOperation, RenameSequenceOperation, RenameTableOperation, RestartSequenceOperation } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { SqliteMigrationBuilderExtensions$instance as SqliteMigrationBuilderExtensions } from './Microsoft.EntityFrameworkCore.Migrations/internal/index.js';

@@ -6,12 +6,13 @@
 import * as Internal from './Microsoft.EntityFrameworkCore.Metadata.Conventions/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { String as ClrString, Void } from '@tsonic/dotnet/System.js';
+import type { Dictionary } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { Boolean as ClrBoolean, Nullable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { ModelBuilder } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IConventionPropertyBuilder } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js';
 import type { IProviderConventionSetBuilder, ProviderConventionSetBuilderDependencies, RelationalConventionSetBuilder, RelationalConventionSetBuilderDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.js';
 import type { ConventionSet, IConvention, IConventionContext, IEntityTypeAnnotationChangedConvention, IEntityTypeBaseTypeChangedConvention, IEntityTypePrimaryKeyChangedConvention, IForeignKeyAddedConvention, IForeignKeyOwnershipChangedConvention, IForeignKeyPropertiesChangedConvention, IForeignKeyRemovedConvention, IModelFinalizedConvention, IModelFinalizingConvention, IPropertyAnnotationChangedConvention, RelationalRuntimeModelConvention, RelationalValueGenerationConvention, SharedTableConvention, StoreGenerationConvention } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.js';
-import type { IConventionAnnotation } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
+import type { IConventionAnnotation, IConventionProperty, IProperty, RuntimeProperty, StoreObjectIdentifier, ValueGenerated } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { SqliteConventionSetBuilder as SqliteConventionSetBuilder } from './Microsoft.EntityFrameworkCore.Metadata.Conventions/internal/index.js';

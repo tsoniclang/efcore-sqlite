@@ -10,10 +10,11 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
+import type { ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
-import type { IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
+import type { ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
 
 export interface SqliteLegacyUpdateSqlGenerator$instance {
 }
@@ -26,7 +27,12 @@ export const SqliteLegacyUpdateSqlGenerator: {
 
 export type SqliteLegacyUpdateSqlGenerator = SqliteLegacyUpdateSqlGenerator$instance;
 
-export interface SqliteModificationCommand$instance extends ModificationCommand {
+export abstract class SqliteModificationCommand$protected {
+    protected ProcessSinglePropertyJsonUpdate(parameters: ColumnModificationParameters): void;
+}
+
+
+export interface SqliteModificationCommand$instance extends SqliteModificationCommand$protected, ModificationCommand {
 }
 
 
@@ -38,7 +44,12 @@ export const SqliteModificationCommand: {
 
 export type SqliteModificationCommand = SqliteModificationCommand$instance;
 
-export interface SqliteModificationCommandBatchFactory$instance {
+export abstract class SqliteModificationCommandBatchFactory$protected {
+    protected readonly Dependencies: ModificationCommandBatchFactoryDependencies;
+}
+
+
+export interface SqliteModificationCommandBatchFactory$instance extends SqliteModificationCommandBatchFactory$protected {
     Create(): ModificationCommandBatch;
 }
 
@@ -63,7 +74,15 @@ export const SqliteModificationCommandFactory: {
 
 export type SqliteModificationCommandFactory = SqliteModificationCommandFactory$instance;
 
-export interface SqliteUpdateSqlGenerator$instance extends UpdateAndSelectSqlGenerator {
+export abstract class SqliteUpdateSqlGenerator$protected {
+    protected AppendIdentityWhereCondition(commandStringBuilder: StringBuilder, columnModification: IColumnModification): void;
+    protected AppendRowsAffectedWhereCondition(commandStringBuilder: StringBuilder, expectedRowsAffected: int): void;
+    protected AppendSelectAffectedCountCommand(commandStringBuilder: StringBuilder, name: string, schema: string, commandPosition: int): ResultSetMapping;
+    protected AppendUpdateColumnValue(updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string): void;
+}
+
+
+export interface SqliteUpdateSqlGenerator$instance extends SqliteUpdateSqlGenerator$protected, UpdateAndSelectSqlGenerator {
     AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     AppendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;

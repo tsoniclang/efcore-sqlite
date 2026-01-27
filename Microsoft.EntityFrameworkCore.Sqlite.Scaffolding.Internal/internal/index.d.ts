@@ -8,13 +8,13 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { DbConnection } from "@tsonic/dotnet/System.Data.Common.js";
-import type { String as ClrString } from "@tsonic/dotnet/System.js";
+import type { String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { MethodCallCodeFragment } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js";
 import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
 import type { DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 import * as Microsoft_EntityFrameworkCore_Scaffolding_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding.js";
 import type { DatabaseModelFactory, DatabaseModelFactoryOptions, IDatabaseModelFactory, IProviderConfigurationCodeGenerator, ProviderCodeGenerator, ProviderCodeGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding.js";
-import type { DatabaseModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding.Metadata.js";
+import type { DatabaseModel, DatabaseTable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding.Metadata.js";
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface SqliteCodeGenerator$instance extends ProviderCodeGenerator {
@@ -29,7 +29,12 @@ export const SqliteCodeGenerator: {
 
 export type SqliteCodeGenerator = SqliteCodeGenerator$instance;
 
-export interface SqliteDatabaseModelFactory$instance extends DatabaseModelFactory {
+export abstract class SqliteDatabaseModelFactory$protected {
+    protected InferClrTypes(connection: DbConnection, table: DatabaseTable): void;
+}
+
+
+export interface SqliteDatabaseModelFactory$instance extends SqliteDatabaseModelFactory$protected, DatabaseModelFactory {
     Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
     Create(connection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
 }

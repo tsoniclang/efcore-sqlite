@@ -228,8 +228,8 @@ export const collation_hook_info: {
 export type collation_hook_info = collation_hook_info$instance;
 
 export interface commit_hook_info$instance {
-    readonly _func: delegate_commit;
-    readonly _user_data: unknown;
+    _func: delegate_commit;
+    _user_data: unknown;
     call(): int;
 }
 
@@ -243,7 +243,7 @@ export const commit_hook_info: {
 export type commit_hook_info = commit_hook_info$instance;
 
 export interface EntryPointAttribute$instance extends Attribute {
-    readonly Name: string;
+    Name: string;
 }
 
 
@@ -396,7 +396,12 @@ export const rollback_hook_info: {
 
 export type rollback_hook_info = rollback_hook_info$instance;
 
-export interface SafeGCHandle$instance extends SafeHandle {
+export abstract class SafeGCHandle$protected {
+    protected ReleaseHandle(): boolean;
+}
+
+
+export interface SafeGCHandle$instance extends SafeGCHandle$protected, SafeHandle {
     readonly IsInvalid: boolean;
 }
 
@@ -408,7 +413,12 @@ export const SafeGCHandle: {
 
 export type SafeGCHandle = SafeGCHandle$instance;
 
-export interface sqlite3$instance extends SafeHandle {
+export abstract class sqlite3$protected {
+    protected ReleaseHandle(): boolean;
+}
+
+
+export interface sqlite3$instance extends sqlite3$protected, SafeHandle {
     readonly IsInvalid: boolean;
     enable_sqlite3_next_stmt(enabled: boolean): void;
     GetOrCreateExtra<T extends IDisposable>(f: Func<T>): T;
@@ -424,7 +434,12 @@ export const sqlite3: {
 
 export type sqlite3 = sqlite3$instance;
 
-export interface sqlite3_backup$instance extends SafeHandle {
+export abstract class sqlite3_backup$protected {
+    protected ReleaseHandle(): boolean;
+}
+
+
+export interface sqlite3_backup$instance extends sqlite3_backup$protected, SafeHandle {
     readonly IsInvalid: boolean;
     manual_close(): int;
 }
@@ -438,7 +453,12 @@ export const sqlite3_backup: {
 
 export type sqlite3_backup = sqlite3_backup$instance;
 
-export interface sqlite3_blob$instance extends SafeHandle {
+export abstract class sqlite3_blob$protected {
+    protected ReleaseHandle(): boolean;
+}
+
+
+export interface sqlite3_blob$instance extends sqlite3_blob$protected, SafeHandle {
     readonly IsInvalid: boolean;
     manual_close(): int;
 }
@@ -457,13 +477,18 @@ export interface sqlite3_context$instance {
 
 
 export const sqlite3_context: {
-    new(): sqlite3_context;
+    new(user_data: unknown): sqlite3_context;
 };
 
 
 export type sqlite3_context = sqlite3_context$instance;
 
-export interface sqlite3_snapshot$instance extends SafeHandle {
+export abstract class sqlite3_snapshot$protected {
+    protected ReleaseHandle(): boolean;
+}
+
+
+export interface sqlite3_snapshot$instance extends sqlite3_snapshot$protected, SafeHandle {
     readonly IsInvalid: boolean;
     manual_close(): void;
 }
@@ -476,7 +501,12 @@ export const sqlite3_snapshot: {
 
 export type sqlite3_snapshot = sqlite3_snapshot$instance;
 
-export interface sqlite3_stmt$instance extends SafeHandle {
+export abstract class sqlite3_stmt$protected {
+    protected ReleaseHandle(): boolean;
+}
+
+
+export interface sqlite3_stmt$instance extends sqlite3_stmt$protected, SafeHandle {
     readonly IsInvalid: boolean;
     manual_close(): int;
 }

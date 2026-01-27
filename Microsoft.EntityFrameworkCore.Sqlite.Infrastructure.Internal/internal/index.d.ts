@@ -5,17 +5,31 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Void } from "@tsonic/dotnet/System.js";
+import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { Boolean as ClrBoolean, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
 import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
 import type { DbContextOptionsExtensionInfo, IDbContextOptionsExtension, IModelValidator, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
 import type { DbLoggerCategory$Model$Validation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
-export interface SqliteModelValidator$instance extends RelationalModelValidator {
+export abstract class SqliteModelValidator$protected {
+    protected ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateNoSchemas(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateNoSequences(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateNoStoredProcedures(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+}
+
+
+export interface SqliteModelValidator$instance extends SqliteModelValidator$protected, RelationalModelValidator {
     Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
 }
 
@@ -27,7 +41,12 @@ export const SqliteModelValidator: {
 
 export type SqliteModelValidator = SqliteModelValidator$instance;
 
-export interface SqliteOptionsExtension$instance extends RelationalOptionsExtension {
+export abstract class SqliteOptionsExtension$protected {
+    protected Clone(): RelationalOptionsExtension;
+}
+
+
+export interface SqliteOptionsExtension$instance extends SqliteOptionsExtension$protected, RelationalOptionsExtension {
     readonly Info: DbContextOptionsExtensionInfo;
     readonly LoadSpatialite: boolean;
     ApplyServices(services: IServiceCollection): void;
@@ -37,6 +56,7 @@ export interface SqliteOptionsExtension$instance extends RelationalOptionsExtens
 
 export const SqliteOptionsExtension: {
     new(): SqliteOptionsExtension;
+    new(copyFrom: SqliteOptionsExtension): SqliteOptionsExtension;
 };
 
 

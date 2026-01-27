@@ -7,14 +7,21 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IAsyncDisposable, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
 import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryRepository, IMigrationsDatabaseLock, LockReleaseBehavior } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export interface SqliteHistoryRepository$instance extends HistoryRepository {
+export abstract class SqliteHistoryRepository$protected {
+    protected readonly ExistsSql: string;
+    protected readonly LockTableName: string;
+    protected InterpretExistsResult(value: unknown): boolean;
+}
+
+
+export interface SqliteHistoryRepository$instance extends SqliteHistoryRepository$protected, HistoryRepository {
     readonly LockReleaseBehavior: LockReleaseBehavior;
     AcquireDatabaseLock(): IMigrationsDatabaseLock;
     AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
