@@ -15,6 +15,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator",
+        "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator",
+          "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal.SqliteCodeGenerator::GenerateUseProvider(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
@@ -31,6 +41,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal.SqliteCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -47,6 +58,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGeneratorDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal.SqliteCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -63,6 +75,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory",
+        "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory",
+          "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal.SqliteDatabaseModelFactory::Create(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
@@ -79,6 +101,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal.SqliteDatabaseModelFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -98,6 +121,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal.SqliteDatabaseModelFactory",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal.SqliteDatabaseModelFactory::InferClrTypes(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseTable):System.Void",
+          "clrName": "InferClrTypes",
+          "metadataToken": 100663920,
+          "canonicalSignature": "(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseTable):System.Void",
+          "normalizedSignature": "InferClrTypes|(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseTable):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal.SqliteDatabaseModelFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -114,6 +158,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal.SqliteDatabaseModelFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }

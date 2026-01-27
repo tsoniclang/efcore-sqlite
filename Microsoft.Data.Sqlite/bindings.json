@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCacheMode",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCacheMode",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCacheMode",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCacheMode",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -77,6 +103,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -88,6 +136,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteOpenMode",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -99,6 +148,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteOpenMode",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -110,6 +160,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteOpenMode",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -121,6 +172,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteOpenMode",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -132,6 +184,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteOpenMode",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -150,6 +203,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -161,6 +236,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteType",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -172,6 +248,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteType",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -183,6 +260,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteType",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -194,6 +272,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteType",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -205,6 +284,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteType",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -223,6 +303,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.IO.Stream",
+        "clrName": "System.IO.Stream"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteBlob::Read(System.Byte[],System.Int32,System.Int32):System.Int32",
@@ -239,6 +333,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -258,6 +353,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -277,6 +373,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -296,6 +393,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -315,6 +413,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteBlob::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663318,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -334,6 +453,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -353,6 +473,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -374,6 +495,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -392,6 +514,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -410,6 +533,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -428,6 +552,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -446,6 +571,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -460,6 +586,7 @@
           "normalizedSignature": "constructor|(Microsoft.Data.Sqlite.SqliteConnection,System.String,System.String,System.Int64,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -470,6 +597,7 @@
           "normalizedSignature": "constructor|(Microsoft.Data.Sqlite.SqliteConnection,System.String,System.String,System.String,System.Int64,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteBlob",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -486,7 +614,49 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbCommand",
+        "clrName": "System.Data.Common.DbCommand"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.ComponentModel.Primitives:System.ComponentModel.IComponent",
+          "clrName": "System.ComponentModel.IComponent"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Data.Common:System.Data.IDbCommand",
+          "clrName": "System.Data.IDbCommand"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCommand::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663347,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCommand::CreateParameter():Microsoft.Data.Sqlite.SqliteParameter",
           "clrName": "CreateParameter",
@@ -502,6 +672,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCommand::CreateDbParameter():System.Data.Common.DbParameter",
+          "clrName": "CreateDbParameter",
+          "metadataToken": 100663349,
+          "canonicalSignature": "():System.Data.Common.DbParameter",
+          "normalizedSignature": "CreateDbParameter|():System.Data.Common.DbParameter|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -521,6 +712,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -540,6 +732,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -559,6 +752,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCommand::ExecuteDbDataReader(System.Data.CommandBehavior):System.Data.Common.DbDataReader",
+          "clrName": "ExecuteDbDataReader",
+          "metadataToken": 100663354,
+          "canonicalSignature": "(System.Data.CommandBehavior):System.Data.Common.DbDataReader",
+          "normalizedSignature": "ExecuteDbDataReader|(System.Data.CommandBehavior):System.Data.Common.DbDataReader|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -578,6 +792,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -597,6 +812,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -616,6 +832,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -635,6 +852,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCommand::ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Data.Common.DbDataReader,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "clrName": "ExecuteDbDataReaderAsync",
+          "metadataToken": 100663359,
+          "canonicalSignature": "(System.Data.CommandBehavior,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Data.Common.DbDataReader,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "normalizedSignature": "ExecuteDbDataReaderAsync|(System.Data.CommandBehavior,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Data.Common.DbDataReader,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -654,6 +892,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -673,6 +912,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -692,6 +932,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -713,6 +954,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -731,6 +973,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -749,6 +992,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite"
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCommand::DbConnection:System.Data.Common.DbConnection",
+          "clrName": "DbConnection",
+          "metadataToken": 385875977,
+          "canonicalSignature": ":System.Data.Common.DbConnection",
+          "normalizedSignature": "DbConnection|:System.Data.Common.DbConnection|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -767,6 +1030,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite"
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCommand::DbTransaction:System.Data.Common.DbTransaction",
+          "clrName": "DbTransaction",
+          "metadataToken": 385875979,
+          "canonicalSignature": ":System.Data.Common.DbTransaction",
+          "normalizedSignature": "DbTransaction|:System.Data.Common.DbTransaction|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -785,6 +1068,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite"
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCommand::DbParameterCollection:System.Data.Common.DbParameterCollection",
+          "clrName": "DbParameterCollection",
+          "metadataToken": 385875981,
+          "canonicalSignature": ":System.Data.Common.DbParameterCollection",
+          "normalizedSignature": "DbParameterCollection|:System.Data.Common.DbParameterCollection|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -803,6 +1106,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -821,6 +1125,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -839,6 +1144,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite"
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteCommand::DataReader:Microsoft.Data.Sqlite.SqliteDataReader",
+          "clrName": "DataReader",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":Microsoft.Data.Sqlite.SqliteDataReader",
+          "normalizedSignature": "DataReader|:Microsoft.Data.Sqlite.SqliteDataReader|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -853,6 +1178,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -863,6 +1189,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -873,6 +1200,7 @@
           "normalizedSignature": "constructor|(System.String,Microsoft.Data.Sqlite.SqliteConnection):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -883,6 +1211,7 @@
           "normalizedSignature": "constructor|(System.String,Microsoft.Data.Sqlite.SqliteConnection,Microsoft.Data.Sqlite.SqliteTransaction):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteCommand",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -899,6 +1228,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbConnection",
+        "clrName": "System.Data.Common.DbConnection"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.ComponentModel.Primitives:System.ComponentModel.IComponent",
+          "clrName": "System.ComponentModel.IComponent"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Data.Common:System.Data.IDbConnection",
+          "clrName": "System.Data.IDbConnection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteConnection::CreateAggregate(System.String,Func_2,System.Boolean):System.Void",
@@ -915,6 +1266,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -934,6 +1286,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -953,6 +1306,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -972,6 +1326,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -991,6 +1346,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1010,6 +1366,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1029,6 +1386,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1048,6 +1406,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1067,6 +1426,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1086,6 +1446,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1105,6 +1466,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1124,6 +1486,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1143,6 +1506,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1162,6 +1526,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1181,6 +1546,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1200,6 +1566,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1219,6 +1586,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1238,6 +1606,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1257,6 +1626,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1276,6 +1646,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1295,6 +1666,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1314,6 +1686,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1333,6 +1706,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1352,6 +1726,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1371,6 +1746,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1390,6 +1766,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1409,6 +1786,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1428,6 +1806,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1447,6 +1826,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1466,6 +1846,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1485,6 +1866,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1504,6 +1886,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1523,6 +1906,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1542,6 +1926,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1561,6 +1946,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1580,6 +1966,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1599,6 +1986,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1618,6 +2006,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1637,6 +2026,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1656,6 +2046,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1675,6 +2066,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1694,6 +2086,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1713,6 +2106,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1732,6 +2126,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1751,6 +2146,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1770,6 +2166,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1789,6 +2186,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1808,6 +2206,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1827,6 +2226,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1846,6 +2246,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1865,6 +2266,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1884,6 +2286,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1903,6 +2306,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1922,6 +2326,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1941,6 +2346,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1960,6 +2366,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1979,6 +2386,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -1998,6 +2406,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2017,6 +2426,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2036,6 +2446,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2055,6 +2466,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2074,6 +2486,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2093,6 +2506,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2112,6 +2526,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2131,6 +2546,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2150,6 +2566,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2169,6 +2586,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2188,6 +2606,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2207,6 +2626,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2226,6 +2646,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2245,6 +2666,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2264,6 +2686,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2283,6 +2706,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2302,6 +2726,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2321,6 +2746,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2340,6 +2766,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2359,6 +2786,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2378,6 +2806,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2397,6 +2826,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2416,6 +2846,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2435,6 +2866,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2454,6 +2886,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2473,6 +2906,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2492,6 +2926,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2511,6 +2946,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteConnection::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663475,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2530,6 +2986,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteConnection::CreateDbCommand():System.Data.Common.DbCommand",
+          "clrName": "CreateDbCommand",
+          "metadataToken": 100663477,
+          "canonicalSignature": "():System.Data.Common.DbCommand",
+          "normalizedSignature": "CreateDbCommand|():System.Data.Common.DbCommand|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2549,6 +3026,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2568,6 +3046,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2587,6 +3066,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2606,6 +3086,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteConnection::BeginDbTransaction(System.Data.IsolationLevel):System.Data.Common.DbTransaction",
+          "clrName": "BeginDbTransaction",
+          "metadataToken": 100663484,
+          "canonicalSignature": "(System.Data.IsolationLevel):System.Data.Common.DbTransaction",
+          "normalizedSignature": "BeginDbTransaction|(System.Data.IsolationLevel):System.Data.Common.DbTransaction|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2625,6 +3126,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2644,6 +3146,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2663,6 +3166,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2682,6 +3186,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2701,6 +3206,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2720,6 +3226,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2739,6 +3246,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2758,6 +3266,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2777,6 +3286,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2796,6 +3306,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -2817,6 +3328,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -2835,6 +3347,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -2853,6 +3366,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -2871,6 +3385,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -2889,6 +3404,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -2907,6 +3423,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -2925,6 +3442,45 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite"
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteConnection::DbProviderFactory:System.Data.Common.DbProviderFactory",
+          "clrName": "DbProviderFactory",
+          "metadataToken": 385875995,
+          "canonicalSignature": ":System.Data.Common.DbProviderFactory",
+          "normalizedSignature": "DbProviderFactory|:System.Data.Common.DbProviderFactory|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite"
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteConnection::Transaction:Microsoft.Data.Sqlite.SqliteTransaction",
+          "clrName": "Transaction",
+          "metadataToken": 385875996,
+          "canonicalSignature": ":Microsoft.Data.Sqlite.SqliteTransaction",
+          "normalizedSignature": "Transaction|:Microsoft.Data.Sqlite.SqliteTransaction|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -2939,6 +3495,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -2949,6 +3506,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -2965,6 +3523,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbConnectionStringBuilder",
+        "clrName": "System.Data.Common.DbConnectionStringBuilder"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IDictionary",
+          "clrName": "System.Collections.IDictionary"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.ComponentModel.TypeConverter:System.ComponentModel.ICustomTypeDescriptor",
+          "clrName": "System.ComponentModel.ICustomTypeDescriptor"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder::Clear():System.Void",
@@ -2981,6 +3561,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3000,6 +3581,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3019,6 +3601,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3038,6 +3621,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3057,6 +3641,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false,
@@ -3084,6 +3669,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3102,6 +3688,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3120,6 +3707,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3138,6 +3726,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3156,6 +3745,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3174,6 +3764,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3192,6 +3783,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3210,6 +3802,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3228,6 +3821,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3246,6 +3840,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3264,6 +3859,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3282,6 +3878,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -3296,6 +3893,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3306,6 +3904,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteConnectionStringBuilder",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -3322,6 +3921,32 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbDataReader",
+        "clrName": "System.Data.Common.DbDataReader"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Data.Common:System.Data.IDataReader",
+          "clrName": "System.Data.IDataReader"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Data.Common:System.Data.IDataRecord",
+          "clrName": "System.Data.IDataRecord"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteDataReader::GetEnumerator():System.Collections.IEnumerator",
@@ -3338,6 +3963,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3357,6 +3983,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3376,6 +4003,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3395,6 +4023,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteDataReader::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663596,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3414,6 +4063,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3433,6 +4083,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3452,6 +4103,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3471,6 +4123,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3490,6 +4143,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3509,6 +4163,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3528,6 +4183,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3547,6 +4203,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3566,6 +4223,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3585,6 +4243,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3604,6 +4263,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3623,6 +4283,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3642,6 +4303,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3661,6 +4323,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3680,6 +4343,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3699,6 +4363,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3718,6 +4383,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3737,6 +4403,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3756,6 +4423,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3775,6 +4443,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3794,6 +4463,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3813,6 +4483,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3832,6 +4503,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3851,6 +4523,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3870,6 +4543,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3889,6 +4563,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3908,6 +4583,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3927,6 +4603,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3946,6 +4623,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -3967,6 +4645,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -3985,6 +4664,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4003,6 +4683,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4021,6 +4702,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4039,6 +4721,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4057,6 +4740,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteDataReader",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -4076,6 +4760,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbException",
+        "clrName": "System.Data.Common.DbException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteException::ThrowExceptionForRC(System.Int32,SQLitePCL.sqlite3):System.Void",
@@ -4092,6 +4786,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteException",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4113,6 +4808,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteException",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4131,6 +4827,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteException",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -4145,6 +4842,7 @@
           "normalizedSignature": "constructor|(System.String,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteException",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4155,6 +4853,7 @@
           "normalizedSignature": "constructor|(System.String,System.Int32,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteException",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -4171,6 +4870,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbProviderFactory",
+        "clrName": "System.Data.Common.DbProviderFactory"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteFactory::CreateCommand():System.Data.Common.DbCommand",
@@ -4187,6 +4890,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteFactory",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4206,6 +4910,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteFactory",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4225,6 +4930,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteFactory",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4244,6 +4950,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteFactory",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4259,6 +4966,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteFactory",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -4277,6 +4985,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbParameter",
+        "clrName": "System.Data.Common.DbParameter"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Data.Common:System.Data.IDbDataParameter",
+          "clrName": "System.Data.IDbDataParameter"
+        },
+        {
+          "stableId": "System.Data.Common:System.Data.IDataParameter",
+          "clrName": "System.Data.IDataParameter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteParameter::ResetDbType():System.Void",
@@ -4293,6 +5015,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4312,6 +5035,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4333,6 +5057,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4351,6 +5076,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4369,6 +5095,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4387,6 +5114,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4405,6 +5133,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4423,6 +5152,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4441,6 +5171,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4459,6 +5190,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4477,6 +5209,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -4491,6 +5224,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4501,6 +5235,7 @@
           "normalizedSignature": "constructor|(System.String,System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4511,6 +5246,7 @@
           "normalizedSignature": "constructor|(System.String,Microsoft.Data.Sqlite.SqliteType):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4521,6 +5257,7 @@
           "normalizedSignature": "constructor|(System.String,Microsoft.Data.Sqlite.SqliteType,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -4531,6 +5268,7 @@
           "normalizedSignature": "constructor|(System.String,Microsoft.Data.Sqlite.SqliteType,System.Int32,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameter",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
@@ -4547,6 +5285,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbParameterCollection",
+        "clrName": "System.Data.Common.DbParameterCollection"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Data.Common:System.Data.IDataParameterCollection",
+          "clrName": "System.Data.IDataParameterCollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IList",
+          "clrName": "System.Collections.IList"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteParameterCollection::Add(System.Object):System.Int32",
@@ -4563,6 +5323,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4582,6 +5343,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4601,6 +5363,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4620,6 +5383,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4639,6 +5403,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4658,6 +5423,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4677,6 +5443,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4696,6 +5463,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4715,6 +5483,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4734,6 +5503,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4753,6 +5523,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4772,6 +5543,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4791,6 +5563,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4810,6 +5583,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4829,6 +5603,47 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteParameterCollection::GetParameter(System.Int32):System.Data.Common.DbParameter",
+          "clrName": "GetParameter",
+          "metadataToken": 100663725,
+          "canonicalSignature": "(System.Int32):System.Data.Common.DbParameter",
+          "normalizedSignature": "GetParameter|(System.Int32):System.Data.Common.DbParameter|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteParameterCollection::GetParameter(System.String):System.Data.Common.DbParameter",
+          "clrName": "GetParameter",
+          "metadataToken": 100663726,
+          "canonicalSignature": "(System.String):System.Data.Common.DbParameter",
+          "normalizedSignature": "GetParameter|(System.String):System.Data.Common.DbParameter|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4848,6 +5663,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4867,6 +5683,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4886,6 +5703,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4905,6 +5723,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4924,6 +5743,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4943,6 +5763,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4962,6 +5783,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -4981,6 +5803,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5000,6 +5823,47 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteParameterCollection::SetParameter(System.Int32,System.Data.Common.DbParameter):System.Void",
+          "clrName": "SetParameter",
+          "metadataToken": 100663736,
+          "canonicalSignature": "(System.Int32,System.Data.Common.DbParameter):System.Void",
+          "normalizedSignature": "SetParameter|(System.Int32,System.Data.Common.DbParameter):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteParameterCollection::SetParameter(System.String,System.Data.Common.DbParameter):System.Void",
+          "clrName": "SetParameter",
+          "metadataToken": 100663737,
+          "canonicalSignature": "(System.String,System.Data.Common.DbParameter):System.Void",
+          "normalizedSignature": "SetParameter|(System.String,System.Data.Common.DbParameter):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5019,6 +5883,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5038,6 +5903,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5057,6 +5923,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5076,6 +5943,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5097,6 +5965,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -5115,13 +5984,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteParameterCollection::.ctor():void",
+          "metadataToken": 100663703,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteParameterCollection",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteTransaction",
@@ -5134,6 +6016,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbTransaction",
+        "clrName": "System.Data.Common.DbTransaction"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Data.Common:System.Data.IDbTransaction",
+          "clrName": "System.Data.IDbTransaction"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteTransaction::Commit():System.Void",
@@ -5150,6 +6050,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5169,6 +6070,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5188,6 +6090,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5207,6 +6110,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5226,6 +6130,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteTransaction::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663766,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
           "declaringAssemblyName": "Microsoft.Data.Sqlite",
           "isExtensionMethod": false
@@ -5247,6 +6172,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
+          "declaringAssemblyName": "Microsoft.Data.Sqlite"
+        },
+        {
+          "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteTransaction::DbConnection:System.Data.Common.DbConnection",
+          "clrName": "DbConnection",
+          "metadataToken": 385876047,
+          "canonicalSignature": ":System.Data.Common.DbConnection",
+          "normalizedSignature": "DbConnection|:System.Data.Common.DbConnection|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -5265,6 +6210,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         },
@@ -5283,6 +6229,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sqlite.SqliteTransaction",
           "declaringAssemblyName": "Microsoft.Data.Sqlite"
         }

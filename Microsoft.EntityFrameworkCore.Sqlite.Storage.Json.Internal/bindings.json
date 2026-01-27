@@ -15,6 +15,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "typeArguments": [
+          "Byte[]"
+        ]
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Byte[]",
@@ -31,6 +38,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
@@ -56,6 +64,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -77,6 +86,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
@@ -95,6 +105,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -114,6 +125,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "typeArguments": [
+          "DateTimeOffset"
+        ]
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.DateTimeOffset",
@@ -130,6 +148,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
@@ -155,6 +174,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -176,6 +196,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
@@ -194,6 +215,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -213,6 +235,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "typeArguments": [
+          "DateTime"
+        ]
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.DateTime",
@@ -229,6 +258,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
@@ -254,6 +284,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -275,6 +306,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
@@ -293,6 +325,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -312,6 +345,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "typeArguments": [
+          "Decimal"
+        ]
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Decimal",
@@ -328,6 +368,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
@@ -353,6 +394,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -374,6 +416,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
@@ -392,6 +435,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -411,6 +455,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "typeArguments": [
+          "Guid"
+        ]
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Guid",
@@ -427,6 +478,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
@@ -452,6 +504,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -473,6 +526,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         },
@@ -491,6 +545,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }

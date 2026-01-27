@@ -18,6 +18,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.RelationalDbContextOptionsBuilder\u00602",
+        "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.RelationalDbContextOptionsBuilder\u00602",
+        "typeArguments": [
+          "SqliteDbContextOptionsBuilder",
+          "SqliteOptionsExtension"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -30,6 +44,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
         }
@@ -46,6 +61,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader::TryLoad(System.Data.Common.DbConnection):System.Boolean",
@@ -62,6 +81,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
@@ -81,6 +101,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SpatialiteLoader",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false

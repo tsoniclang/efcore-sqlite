@@ -94,7 +94,12 @@ export const DependencyContext: {
 
 export type DependencyContext = DependencyContext$instance;
 
-export interface DependencyContextJsonReader$instance {
+export abstract class DependencyContextJsonReader$protected {
+    protected Dispose(disposing: boolean): void;
+}
+
+
+export interface DependencyContextJsonReader$instance extends DependencyContextJsonReader$protected {
     Dispose(): void;
     Read(stream: Stream): DependencyContext;
 }

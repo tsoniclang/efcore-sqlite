@@ -6,11 +6,12 @@
 import * as Internal from './Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { Boolean as ClrBoolean, Void } from '@tsonic/dotnet/System.js';
+import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { Boolean as ClrBoolean, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { IDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
 import type { DbContextOptionsExtensionInfo, IDbContextOptionsExtension, IModelValidator, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
 import type { DbLoggerCategory$Model$Validation } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
-import type { IModel } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
+import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 import type { IServiceCollection } from '@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

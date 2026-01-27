@@ -5,22 +5,32 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
 import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import type { DbCommand } from "@tsonic/dotnet/System.Data.Common.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
-import type { Expression, ExpressionVisitor } from "@tsonic/dotnet/System.Linq.Expressions.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
+import type { BinaryExpression, Expression, ExpressionVisitor, LambdaExpression, MethodCallExpression, UnaryExpression } from "@tsonic/dotnet/System.Linq.Expressions.js";
 import type { MemberInfo, MethodInfo } from "@tsonic/dotnet/System.Reflection.js";
 import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
 import type { DbLoggerCategory$Query } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
+import type { IProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { EnumerableExpression, IAggregateMethodCallTranslator, IAggregateMethodCallTranslatorProvider, IMemberTranslator, IMemberTranslatorProvider, IMethodCallTranslator, IMethodCallTranslatorProvider, IPrintableExpression, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalQueryStringFactory, IRelationalQuotableExpression, IRelationalSqlTranslatingExpressionVisitorFactory, ISqlExpressionFactory, PathSegment, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalAggregateMethodCallTranslatorProvider, RelationalAggregateMethodCallTranslatorProviderDependencies, RelationalMemberTranslatorProvider, RelationalMemberTranslatorProviderDependencies, RelationalMethodCallTranslatorProvider, RelationalMethodCallTranslatorProviderDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, SqlExpressionFactory, SqlExpressionFactoryDependencies, SqlNullabilityProcessor } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
+import type { EnumerableExpression, ExpressionPrinter, IAggregateMethodCallTranslator, IAggregateMethodCallTranslatorProvider, IMemberTranslator, IMemberTranslatorProvider, IMethodCallTranslator, IMethodCallTranslatorProvider, IPrintableExpression, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalQueryStringFactory, IRelationalQuotableExpression, IRelationalSqlTranslatingExpressionVisitorFactory, ISqlExpressionFactory, JsonQueryExpression, ParametersCacheDecorator, PathSegment, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalAggregateMethodCallTranslatorProvider, RelationalAggregateMethodCallTranslatorProviderDependencies, RelationalMemberTranslatorProvider, RelationalMemberTranslatorProviderDependencies, RelationalMethodCallTranslatorProvider, RelationalMethodCallTranslatorProviderDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, ShapedQueryExpression, SqlExpressionFactory, SqlExpressionFactoryDependencies, SqlNullabilityProcessor } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
 import * as Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
-import type { ITableBasedExpression, SqlExpression, TableExpressionBase, TableValuedFunctionExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
+import type { ITableBasedExpression, JsonScalarExpression, SelectExpression, SetOperationBase, SqlBinaryExpression, SqlConstantExpression, SqlExpression, SqlFunctionExpression, SqlParameterExpression, SqlUnaryExpression, TableExpressionBase, TableValuedFunctionExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
 import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export interface GlobExpression$instance extends SqlExpression {
+export abstract class GlobExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface GlobExpression$instance extends GlobExpression$protected, SqlExpression {
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
     readonly TypeMapping: RelationalTypeMapping;
@@ -38,7 +48,13 @@ export const GlobExpression: {
 
 export type GlobExpression = GlobExpression$instance;
 
-export interface JsonEachExpression$instance extends TableValuedFunctionExpression {
+export abstract class JsonEachExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface JsonEachExpression$instance extends JsonEachExpression$protected, TableValuedFunctionExpression {
     readonly JsonExpression: SqlExpression;
     readonly Path: IReadOnlyList<PathSegment> | undefined;
     Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
@@ -57,7 +73,13 @@ export const JsonEachExpression: {
 
 export type JsonEachExpression = JsonEachExpression$instance;
 
-export interface RegexpExpression$instance extends SqlExpression {
+export abstract class RegexpExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface RegexpExpression$instance extends RegexpExpression$protected, SqlExpression {
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
     readonly TypeMapping: RelationalTypeMapping;
@@ -228,7 +250,12 @@ export const SqliteObjectToStringTranslator: {
 
 export type SqliteObjectToStringTranslator = SqliteObjectToStringTranslator$instance;
 
-export interface SqliteParameterBasedSqlProcessor$instance extends RelationalParameterBasedSqlProcessor {
+export abstract class SqliteParameterBasedSqlProcessor$protected {
+    protected ProcessSqlNullability(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
+}
+
+
+export interface SqliteParameterBasedSqlProcessor$instance extends SqliteParameterBasedSqlProcessor$protected, RelationalParameterBasedSqlProcessor {
 }
 
 
@@ -263,12 +290,28 @@ export const SqliteQueryableAggregateMethodTranslator: {
 
 export type SqliteQueryableAggregateMethodTranslator = SqliteQueryableAggregateMethodTranslator$instance;
 
-export interface SqliteQueryableMethodTranslatingExpressionVisitor$instance extends RelationalQueryableMethodTranslatingExpressionVisitor {
+export abstract class SqliteQueryableMethodTranslatingExpressionVisitor$protected {
+    protected CreateSubqueryVisitor(): QueryableMethodTranslatingExpressionVisitor;
+    protected GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression): SqlExpression | undefined;
+    protected IsNaturallyOrdered(selectExpression: SelectExpression): boolean;
+    protected TransformJsonQueryToTable(jsonQueryExpression: JsonQueryExpression): ShapedQueryExpression;
+    protected TranslateAny(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
+    protected TranslateCount(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
+    protected TranslateElementAtOrDefault(source: ShapedQueryExpression, index: Expression, returnDefault: boolean): ShapedQueryExpression | undefined;
+    protected TranslateOrderBy(source: ShapedQueryExpression, keySelector: LambdaExpression, ascending: boolean): ShapedQueryExpression | undefined;
+    protected TranslatePrimitiveCollection(sqlExpression: SqlExpression, property: IProperty, tableAlias: string): ShapedQueryExpression | undefined;
+    protected TranslateThenBy(source: ShapedQueryExpression, keySelector: LambdaExpression, ascending: boolean): ShapedQueryExpression | undefined;
+    protected TrySerializeScalarToJson(target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression): boolean;
+}
+
+
+export interface SqliteQueryableMethodTranslatingExpressionVisitor$instance extends SqliteQueryableMethodTranslatingExpressionVisitor$protected, RelationalQueryableMethodTranslatingExpressionVisitor {
 }
 
 
 export const SqliteQueryableMethodTranslatingExpressionVisitor: {
     new(dependencies: QueryableMethodTranslatingExpressionVisitorDependencies, relationalDependencies: RelationalQueryableMethodTranslatingExpressionVisitorDependencies, queryCompilationContext: RelationalQueryCompilationContext): SqliteQueryableMethodTranslatingExpressionVisitor;
+    new(parentVisitor: SqliteQueryableMethodTranslatingExpressionVisitor): SqliteQueryableMethodTranslatingExpressionVisitor;
     readonly JsonEachKeyColumnName: string;
     readonly JsonEachValueColumnName: string;
     ApplyJsonSqlConversion(expression: SqlExpression, sqlExpressionFactory: SqliteSqlExpressionFactory, typeMapping: RelationalTypeMapping, isNullable: boolean): SqlExpression;
@@ -277,7 +320,13 @@ export const SqliteQueryableMethodTranslatingExpressionVisitor: {
 
 export type SqliteQueryableMethodTranslatingExpressionVisitor = SqliteQueryableMethodTranslatingExpressionVisitor$instance;
 
-export interface SqliteQueryableMethodTranslatingExpressionVisitorFactory$instance {
+export abstract class SqliteQueryableMethodTranslatingExpressionVisitorFactory$protected {
+    protected readonly Dependencies: QueryableMethodTranslatingExpressionVisitorDependencies;
+    protected readonly RelationalDependencies: RelationalQueryableMethodTranslatingExpressionVisitorDependencies;
+}
+
+
+export interface SqliteQueryableMethodTranslatingExpressionVisitorFactory$instance extends SqliteQueryableMethodTranslatingExpressionVisitorFactory$protected {
     Create(queryCompilationContext: QueryCompilationContext): QueryableMethodTranslatingExpressionVisitor;
 }
 
@@ -302,7 +351,13 @@ export const SqliteQueryCompilationContext: {
 
 export type SqliteQueryCompilationContext = SqliteQueryCompilationContext$instance;
 
-export interface SqliteQueryCompilationContextFactory$instance {
+export abstract class SqliteQueryCompilationContextFactory$protected {
+    protected readonly Dependencies: QueryCompilationContextDependencies;
+    protected readonly RelationalDependencies: RelationalQueryCompilationContextDependencies;
+}
+
+
+export interface SqliteQueryCompilationContextFactory$instance extends SqliteQueryCompilationContextFactory$protected {
     Create(async: boolean): QueryCompilationContext;
     CreatePrecompiled(async: boolean): QueryCompilationContext;
 }
@@ -315,7 +370,20 @@ export const SqliteQueryCompilationContextFactory: {
 
 export type SqliteQueryCompilationContextFactory = SqliteQueryCompilationContextFactory$instance;
 
-export interface SqliteQuerySqlGenerator$instance extends QuerySqlGenerator {
+export abstract class SqliteQuerySqlGenerator$protected {
+    protected GenerateJsonEach(jsonEachExpression: JsonEachExpression): void;
+    protected GenerateLimitOffset(selectExpression: SelectExpression): void;
+    protected GenerateSetOperationOperand(setOperation: SetOperationBase, operand: SelectExpression): void;
+    protected GetOperator(binaryExpression: SqlBinaryExpression): string;
+    protected TryGetOperatorInfo(expression: SqlExpression, precedence: int, isAssociative: boolean): boolean;
+    protected VisitExtension(extensionExpression: Expression): Expression;
+    protected VisitJsonScalar(jsonScalarExpression: JsonScalarExpression): Expression;
+    protected VisitSqlConstant(sqlConstantExpression: SqlConstantExpression): Expression;
+    protected VisitSqlUnary(sqlUnaryExpression: SqlUnaryExpression): Expression;
+}
+
+
+export interface SqliteQuerySqlGenerator$instance extends SqliteQuerySqlGenerator$protected, QuerySqlGenerator {
 }
 
 
@@ -326,7 +394,12 @@ export const SqliteQuerySqlGenerator: {
 
 export type SqliteQuerySqlGenerator = SqliteQuerySqlGenerator$instance;
 
-export interface SqliteQuerySqlGeneratorFactory$instance {
+export abstract class SqliteQuerySqlGeneratorFactory$protected {
+    protected readonly Dependencies: QuerySqlGeneratorDependencies;
+}
+
+
+export interface SqliteQuerySqlGeneratorFactory$instance extends SqliteQuerySqlGeneratorFactory$protected {
     Create(): QuerySqlGenerator;
 }
 
@@ -350,7 +423,12 @@ export const SqliteQueryStringFactory: {
 
 export type SqliteQueryStringFactory = SqliteQueryStringFactory$instance;
 
-export interface SqliteQueryTranslationPostprocessor$instance extends RelationalQueryTranslationPostprocessor {
+export abstract class SqliteQueryTranslationPostprocessor$protected {
+    protected ProcessTypeMappings(expression: Expression): Expression;
+}
+
+
+export interface SqliteQueryTranslationPostprocessor$instance extends SqliteQueryTranslationPostprocessor$protected, RelationalQueryTranslationPostprocessor {
     Process(query: Expression): Expression;
 }
 
@@ -362,7 +440,13 @@ export const SqliteQueryTranslationPostprocessor: {
 
 export type SqliteQueryTranslationPostprocessor = SqliteQueryTranslationPostprocessor$instance;
 
-export interface SqliteQueryTranslationPostprocessorFactory$instance {
+export abstract class SqliteQueryTranslationPostprocessorFactory$protected {
+    protected readonly Dependencies: QueryTranslationPostprocessorDependencies;
+    protected readonly RelationalDependencies: RelationalQueryTranslationPostprocessorDependencies;
+}
+
+
+export interface SqliteQueryTranslationPostprocessorFactory$instance extends SqliteQueryTranslationPostprocessorFactory$protected {
     Create(queryCompilationContext: QueryCompilationContext): QueryTranslationPostprocessor;
 }
 
@@ -414,7 +498,17 @@ export const SqliteSqlExpressionFactory: {
 
 export type SqliteSqlExpressionFactory = SqliteSqlExpressionFactory$instance;
 
-export interface SqliteSqlNullabilityProcessor$instance extends SqlNullabilityProcessor {
+export abstract class SqliteSqlNullabilityProcessor$protected {
+    protected IsCollectionTable(table: TableExpressionBase, collection: Expression): boolean;
+    protected UpdateParameterCollection(table: TableExpressionBase, newCollectionParameter: SqlParameterExpression): TableExpressionBase;
+    protected VisitCustomSqlExpression(sqlExpression: SqlExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitGlob(globExpression: GlobExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitRegexp(regexpExpression: RegexpExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitSqlFunction(sqlFunctionExpression: SqlFunctionExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+}
+
+
+export interface SqliteSqlNullabilityProcessor$instance extends SqliteSqlNullabilityProcessor$protected, SqlNullabilityProcessor {
 }
 
 
@@ -425,7 +519,14 @@ export const SqliteSqlNullabilityProcessor: {
 
 export type SqliteSqlNullabilityProcessor = SqliteSqlNullabilityProcessor$instance;
 
-export interface SqliteSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
+export abstract class SqliteSqlTranslatingExpressionVisitor$protected {
+    protected VisitBinary(binaryExpression: BinaryExpression): Expression;
+    protected VisitMethodCall(methodCallExpression: MethodCallExpression): Expression;
+    protected VisitUnary(unaryExpression: UnaryExpression): Expression;
+}
+
+
+export interface SqliteSqlTranslatingExpressionVisitor$instance extends SqliteSqlTranslatingExpressionVisitor$protected, RelationalSqlTranslatingExpressionVisitor {
     GenerateGreatest(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
     GenerateLeast(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
 }
@@ -439,7 +540,12 @@ export const SqliteSqlTranslatingExpressionVisitor: {
 
 export type SqliteSqlTranslatingExpressionVisitor = SqliteSqlTranslatingExpressionVisitor$instance;
 
-export interface SqliteSqlTranslatingExpressionVisitorFactory$instance {
+export abstract class SqliteSqlTranslatingExpressionVisitorFactory$protected {
+    protected readonly Dependencies: RelationalSqlTranslatingExpressionVisitorDependencies;
+}
+
+
+export interface SqliteSqlTranslatingExpressionVisitorFactory$instance extends SqliteSqlTranslatingExpressionVisitorFactory$protected {
     Create(queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): RelationalSqlTranslatingExpressionVisitor;
 }
 
@@ -499,7 +605,13 @@ export const SqliteSubstrMethodTranslator: {
 
 export type SqliteSubstrMethodTranslator = SqliteSubstrMethodTranslator$instance;
 
-export interface SqliteTypeMappingPostprocessor$instance extends RelationalTypeMappingPostprocessor {
+export abstract class SqliteTypeMappingPostprocessor$protected {
+    protected ApplyTypeMappingsOnJsonEachExpression(jsonEachExpression: JsonEachExpression, inferredTypeMapping: RelationalTypeMapping): JsonEachExpression;
+    protected VisitExtension(expression: Expression): Expression;
+}
+
+
+export interface SqliteTypeMappingPostprocessor$instance extends SqliteTypeMappingPostprocessor$protected, RelationalTypeMappingPostprocessor {
 }
 
 
