@@ -29,14 +29,10 @@ export const SqliteCodeGenerator: {
 
 export type SqliteCodeGenerator = SqliteCodeGenerator$instance;
 
-export abstract class SqliteDatabaseModelFactory$protected {
-    protected InferClrTypes(connection: DbConnection, table: DatabaseTable): void;
-}
-
-
-export interface SqliteDatabaseModelFactory$instance extends SqliteDatabaseModelFactory$protected, DatabaseModelFactory {
+export interface SqliteDatabaseModelFactory$instance extends DatabaseModelFactory {
     Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
     Create(connection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
+    InferClrTypes(connection: DbConnection, table: DatabaseTable): void;
 }
 
 

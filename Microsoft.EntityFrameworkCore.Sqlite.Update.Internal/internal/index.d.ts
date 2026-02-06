@@ -27,12 +27,8 @@ export const SqliteLegacyUpdateSqlGenerator: {
 
 export type SqliteLegacyUpdateSqlGenerator = SqliteLegacyUpdateSqlGenerator$instance;
 
-export abstract class SqliteModificationCommand$protected {
-    protected ProcessSinglePropertyJsonUpdate(parameters: ColumnModificationParameters): void;
-}
-
-
-export interface SqliteModificationCommand$instance extends SqliteModificationCommand$protected, ModificationCommand {
+export interface SqliteModificationCommand$instance extends ModificationCommand {
+    ProcessSinglePropertyJsonUpdate(parameters: ColumnModificationParameters): void;
 }
 
 
@@ -44,12 +40,8 @@ export const SqliteModificationCommand: {
 
 export type SqliteModificationCommand = SqliteModificationCommand$instance;
 
-export abstract class SqliteModificationCommandBatchFactory$protected {
-    protected readonly Dependencies: ModificationCommandBatchFactoryDependencies;
-}
-
-
-export interface SqliteModificationCommandBatchFactory$instance extends SqliteModificationCommandBatchFactory$protected {
+export interface SqliteModificationCommandBatchFactory$instance {
+    readonly Dependencies: ModificationCommandBatchFactoryDependencies;
     Create(): ModificationCommandBatch;
 }
 
@@ -74,17 +66,13 @@ export const SqliteModificationCommandFactory: {
 
 export type SqliteModificationCommandFactory = SqliteModificationCommandFactory$instance;
 
-export abstract class SqliteUpdateSqlGenerator$protected {
-    protected AppendIdentityWhereCondition(commandStringBuilder: StringBuilder, columnModification: IColumnModification): void;
-    protected AppendRowsAffectedWhereCondition(commandStringBuilder: StringBuilder, expectedRowsAffected: int): void;
-    protected AppendSelectAffectedCountCommand(commandStringBuilder: StringBuilder, name: string, schema: string, commandPosition: int): ResultSetMapping;
-    protected AppendUpdateColumnValue(updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string): void;
-}
-
-
-export interface SqliteUpdateSqlGenerator$instance extends SqliteUpdateSqlGenerator$protected, UpdateAndSelectSqlGenerator {
+export interface SqliteUpdateSqlGenerator$instance extends UpdateAndSelectSqlGenerator {
     AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendIdentityWhereCondition(commandStringBuilder: StringBuilder, columnModification: IColumnModification): void;
     AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendRowsAffectedWhereCondition(commandStringBuilder: StringBuilder, expectedRowsAffected: int): void;
+    AppendSelectAffectedCountCommand(commandStringBuilder: StringBuilder, name: string, schema: string, commandPosition: int): ResultSetMapping;
+    AppendUpdateColumnValue(updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string): void;
     AppendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     GenerateNextSequenceValueOperation(name: string, schema: string): string;
 }

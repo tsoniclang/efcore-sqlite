@@ -14,21 +14,17 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efco
 import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryRepository, IMigrationsDatabaseLock, LockReleaseBehavior } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export abstract class SqliteHistoryRepository$protected {
-    protected readonly ExistsSql: string;
-    protected readonly LockTableName: string;
-    protected InterpretExistsResult(value: unknown): boolean;
-}
-
-
-export interface SqliteHistoryRepository$instance extends SqliteHistoryRepository$protected, HistoryRepository {
+export interface SqliteHistoryRepository$instance extends HistoryRepository {
+    readonly ExistsSql: string;
     readonly LockReleaseBehavior: LockReleaseBehavior;
+    readonly LockTableName: string;
     AcquireDatabaseLock(): IMigrationsDatabaseLock;
     AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
     GetBeginIfExistsScript(migrationId: string): string;
     GetBeginIfNotExistsScript(migrationId: string): string;
     GetCreateIfNotExistsScript(): string;
     GetEndIfScript(): string;
+    InterpretExistsResult(value: unknown): boolean;
 }
 
 

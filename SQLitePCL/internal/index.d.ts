@@ -396,13 +396,9 @@ export const rollback_hook_info: {
 
 export type rollback_hook_info = rollback_hook_info$instance;
 
-export abstract class SafeGCHandle$protected {
-    protected ReleaseHandle(): boolean;
-}
-
-
-export interface SafeGCHandle$instance extends SafeGCHandle$protected, SafeHandle {
+export interface SafeGCHandle$instance extends SafeHandle {
     readonly IsInvalid: boolean;
+    ReleaseHandle(): boolean;
 }
 
 
@@ -413,59 +409,44 @@ export const SafeGCHandle: {
 
 export type SafeGCHandle = SafeGCHandle$instance;
 
-export abstract class sqlite3$protected {
-    protected ReleaseHandle(): boolean;
-}
-
-
-export interface sqlite3$instance extends sqlite3$protected, SafeHandle {
+export interface sqlite3$instance extends SafeHandle {
     readonly IsInvalid: boolean;
     enable_sqlite3_next_stmt(enabled: boolean): void;
     GetOrCreateExtra<T extends IDisposable>(f: Func<T>): T;
     manual_close(): int;
     manual_close_v2(): int;
+    ReleaseHandle(): boolean;
 }
 
 
 export const sqlite3: {
-    new(): sqlite3;
 };
 
 
 export type sqlite3 = sqlite3$instance;
 
-export abstract class sqlite3_backup$protected {
-    protected ReleaseHandle(): boolean;
-}
-
-
-export interface sqlite3_backup$instance extends sqlite3_backup$protected, SafeHandle {
+export interface sqlite3_backup$instance extends SafeHandle {
     readonly IsInvalid: boolean;
     manual_close(): int;
+    ReleaseHandle(): boolean;
 }
 
 
 export const sqlite3_backup: {
-    new(): sqlite3_backup;
     From(p: nint): sqlite3_backup;
 };
 
 
 export type sqlite3_backup = sqlite3_backup$instance;
 
-export abstract class sqlite3_blob$protected {
-    protected ReleaseHandle(): boolean;
-}
-
-
-export interface sqlite3_blob$instance extends sqlite3_blob$protected, SafeHandle {
+export interface sqlite3_blob$instance extends SafeHandle {
     readonly IsInvalid: boolean;
     manual_close(): int;
+    ReleaseHandle(): boolean;
 }
 
 
 export const sqlite3_blob: {
-    new(): sqlite3_blob;
 };
 
 
@@ -476,44 +457,33 @@ export interface sqlite3_context$instance {
 }
 
 
-export const sqlite3_context: {
-    new(user_data: unknown): sqlite3_context;
+export const sqlite3_context: (abstract new(user_data: unknown) => sqlite3_context) & {
 };
 
 
 export type sqlite3_context = sqlite3_context$instance;
 
-export abstract class sqlite3_snapshot$protected {
-    protected ReleaseHandle(): boolean;
-}
-
-
-export interface sqlite3_snapshot$instance extends sqlite3_snapshot$protected, SafeHandle {
+export interface sqlite3_snapshot$instance extends SafeHandle {
     readonly IsInvalid: boolean;
     manual_close(): void;
+    ReleaseHandle(): boolean;
 }
 
 
 export const sqlite3_snapshot: {
-    new(): sqlite3_snapshot;
 };
 
 
 export type sqlite3_snapshot = sqlite3_snapshot$instance;
 
-export abstract class sqlite3_stmt$protected {
-    protected ReleaseHandle(): boolean;
-}
-
-
-export interface sqlite3_stmt$instance extends sqlite3_stmt$protected, SafeHandle {
+export interface sqlite3_stmt$instance extends SafeHandle {
     readonly IsInvalid: boolean;
     manual_close(): int;
+    ReleaseHandle(): boolean;
 }
 
 
 export const sqlite3_stmt: {
-    new(): sqlite3_stmt;
 };
 
 
