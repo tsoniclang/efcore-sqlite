@@ -9,20 +9,20 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DbCommand } from "@tsonic/dotnet/System.Data.Common.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { BinaryExpression, Expression, ExpressionVisitor, LambdaExpression, MethodCallExpression, UnaryExpression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { MemberInfo, MethodInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import type { DbLoggerCategory$Query } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { EnumerableExpression, ExpressionPrinter, IAggregateMethodCallTranslator, IAggregateMethodCallTranslatorProvider, IMemberTranslator, IMemberTranslatorProvider, IMethodCallTranslator, IMethodCallTranslatorProvider, IPrintableExpression, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalQueryStringFactory, IRelationalQuotableExpression, IRelationalSqlTranslatingExpressionVisitorFactory, ISqlExpressionFactory, JsonQueryExpression, ParametersCacheDecorator, PathSegment, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalAggregateMethodCallTranslatorProvider, RelationalAggregateMethodCallTranslatorProviderDependencies, RelationalMemberTranslatorProvider, RelationalMemberTranslatorProviderDependencies, RelationalMethodCallTranslatorProvider, RelationalMethodCallTranslatorProviderDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, ShapedQueryExpression, SqlExpressionFactory, SqlExpressionFactoryDependencies, SqlNullabilityProcessor } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import * as Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
-import type { ITableBasedExpression, JsonScalarExpression, SelectExpression, SetOperationBase, SqlBinaryExpression, SqlConstantExpression, SqlExpression, SqlFunctionExpression, SqlParameterExpression, SqlUnaryExpression, TableExpressionBase, TableValuedFunctionExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
-import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DbCommand } from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import type { BinaryExpression, Expression, ExpressionVisitor, LambdaExpression, MethodCallExpression, UnaryExpression } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { MemberInfo, MethodInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IDiagnosticsLogger_1 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import type { IProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions/internal/index.js";
+import type { ITableBasedExpression, JsonScalarExpression, SelectExpression, SetOperationBase, SqlBinaryExpression, SqlConstantExpression, SqlExpression, SqlFunctionExpression, SqlParameterExpression, SqlUnaryExpression, TableExpressionBase, TableValuedFunctionExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
+import type { EnumerableExpression, ExpressionPrinter, IAggregateMethodCallTranslator, IAggregateMethodCallTranslatorProvider, IMemberTranslator, IMemberTranslatorProvider, IMethodCallTranslator, IMethodCallTranslatorProvider, IPrintableExpression, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalQueryStringFactory, IRelationalQuotableExpression, IRelationalSqlTranslatingExpressionVisitorFactory, ISqlExpressionFactory, JsonQueryExpression, ParametersCacheDecorator, PathSegment, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalAggregateMethodCallTranslatorProvider, RelationalAggregateMethodCallTranslatorProviderDependencies, RelationalMemberTranslatorProvider, RelationalMemberTranslatorProviderDependencies, RelationalMethodCallTranslatorProvider, RelationalMethodCallTranslatorProviderDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, ShapedQueryExpression, SqlExpressionFactory, SqlExpressionFactoryDependencies, SqlNullabilityProcessor } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
+import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { DbLoggerCategory$Query } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface GlobExpression$instance extends SqlExpression {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
@@ -53,20 +53,20 @@ export interface JsonEachExpression$instance extends TableValuedFunctionExpressi
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_SqlExpressions_ITableBasedExpression: never;
 
     readonly JsonExpression: SqlExpression;
-    readonly Path: IReadOnlyList<PathSegment> | undefined;
+    readonly Path: IReadOnlyList_1<PathSegment> | undefined;
     Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
-    Update(jsonExpression: SqlExpression, path: IReadOnlyList<PathSegment>): JsonEachExpression;
+    Update(jsonExpression: SqlExpression, path: IReadOnlyList_1<PathSegment>): JsonEachExpression;
     VisitChildren(visitor: ExpressionVisitor): Expression;
     WithAlias(newAlias: string): JsonEachExpression;
 }
 
 
 export const JsonEachExpression: {
-    new(alias: string, jsonExpression: SqlExpression, path: IReadOnlyList<PathSegment>): JsonEachExpression;
+    new(alias: string, jsonExpression: SqlExpression, path: IReadOnlyList_1<PathSegment>): JsonEachExpression;
 };
 
 
@@ -111,7 +111,7 @@ export type SqliteAggregateMethodCallTranslatorProvider = SqliteAggregateMethodC
 export interface SqliteByteArrayMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -125,7 +125,7 @@ export type SqliteByteArrayMethodTranslator = SqliteByteArrayMethodTranslator$in
 export interface SqliteCharMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -139,7 +139,7 @@ export type SqliteCharMethodTranslator = SqliteCharMethodTranslator$instance;
 export interface SqliteDateOnlyMemberTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
-    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -153,7 +153,7 @@ export type SqliteDateOnlyMemberTranslator = SqliteDateOnlyMemberTranslator$inst
 export interface SqliteDateOnlyMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -167,7 +167,7 @@ export type SqliteDateOnlyMethodTranslator = SqliteDateOnlyMethodTranslator$inst
 export interface SqliteDateTimeMemberTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
-    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -181,7 +181,7 @@ export type SqliteDateTimeMemberTranslator = SqliteDateTimeMemberTranslator$inst
 export interface SqliteDateTimeMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -195,7 +195,7 @@ export type SqliteDateTimeMethodTranslator = SqliteDateTimeMethodTranslator$inst
 export interface SqliteGlobMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -209,7 +209,7 @@ export type SqliteGlobMethodTranslator = SqliteGlobMethodTranslator$instance;
 export interface SqliteHexMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -223,7 +223,7 @@ export type SqliteHexMethodTranslator = SqliteHexMethodTranslator$instance;
 export interface SqliteMathTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -263,7 +263,7 @@ export type SqliteMethodCallTranslatorProvider = SqliteMethodCallTranslatorProvi
 export interface SqliteObjectToStringTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -303,7 +303,7 @@ export type SqliteParameterBasedSqlProcessorFactory = SqliteParameterBasedSqlPro
 export interface SqliteQueryableAggregateMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
 
-    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -466,7 +466,7 @@ export type SqliteQueryTranslationPostprocessorFactory = SqliteQueryTranslationP
 export interface SqliteRandomTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -480,7 +480,7 @@ export type SqliteRandomTranslator = SqliteRandomTranslator$instance;
 export interface SqliteRegexMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -495,10 +495,10 @@ export interface SqliteSqlExpressionFactory$instance extends SqlExpressionFactor
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ISqlExpressionFactory: never;
 
     ApplyTypeMapping(sqlExpression: SqlExpression, typeMapping: RelationalTypeMapping): SqlExpression | undefined;
-    Date(returnType: Type, timestring: SqlExpression, modifiers?: IEnumerable<SqlExpression>, typeMapping?: RelationalTypeMapping): SqlExpression;
+    Date(returnType: Type, timestring: SqlExpression, modifiers?: IEnumerable_1<SqlExpression>, typeMapping?: RelationalTypeMapping): SqlExpression;
     Glob(match: SqlExpression, pattern: SqlExpression): GlobExpression;
     Regexp(match: SqlExpression, pattern: SqlExpression): RegexpExpression;
-    Strftime(returnType: Type, format: string, timestring: SqlExpression, modifiers?: IEnumerable<SqlExpression>, typeMapping?: RelationalTypeMapping): SqlExpression;
+    Strftime(returnType: Type, format: string, timestring: SqlExpression, modifiers?: IEnumerable_1<SqlExpression>, typeMapping?: RelationalTypeMapping): SqlExpression;
 }
 
 
@@ -527,8 +527,8 @@ export const SqliteSqlNullabilityProcessor: {
 export type SqliteSqlNullabilityProcessor = SqliteSqlNullabilityProcessor$instance;
 
 export interface SqliteSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
-    GenerateGreatest(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
-    GenerateLeast(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
+    GenerateGreatest(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression;
+    GenerateLeast(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression;
     VisitBinary(binaryExpression: BinaryExpression): Expression;
     VisitMethodCall(methodCallExpression: MethodCallExpression): Expression;
     VisitUnary(unaryExpression: UnaryExpression): Expression;
@@ -561,7 +561,7 @@ export type SqliteSqlTranslatingExpressionVisitorFactory = SqliteSqlTranslatingE
 export interface SqliteStringAggregateMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
 
-    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -575,7 +575,7 @@ export type SqliteStringAggregateMethodTranslator = SqliteStringAggregateMethodT
 export interface SqliteStringLengthTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
-    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -589,7 +589,7 @@ export type SqliteStringLengthTranslator = SqliteStringLengthTranslator$instance
 export interface SqliteStringMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 
@@ -603,7 +603,7 @@ export type SqliteStringMethodTranslator = SqliteStringMethodTranslator$instance
 export interface SqliteSubstrMethodTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
 

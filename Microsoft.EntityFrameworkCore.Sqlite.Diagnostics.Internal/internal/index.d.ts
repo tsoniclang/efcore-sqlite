@@ -6,10 +6,10 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Func, String as ClrString, Type } from "@tsonic/dotnet/System.js";
-import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import type { EventData, EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Func_3, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import type { EventData, EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
 
 export interface SqliteLoggingDefinitions$instance extends RelationalLoggingDefinitions {
     LogSchemaConfigured: EventDefinitionBase | undefined;
@@ -48,7 +48,7 @@ export interface TableRebuildEventData$instance extends EventData {
 
 
 export const TableRebuildEventData: {
-    new(eventDefinition: EventDefinitionBase, messageGenerator: Func<EventDefinitionBase, EventData, System_Internal.String>, operationType: Type, tableName: string): TableRebuildEventData;
+    new(eventDefinition: EventDefinitionBase, messageGenerator: Func_3<EventDefinitionBase, EventData, System_Internal.String>, operationType: Type, tableName: string): TableRebuildEventData;
 };
 
 
@@ -60,7 +60,7 @@ export interface UnexpectedConnectionTypeEventData$instance extends EventData {
 
 
 export const UnexpectedConnectionTypeEventData: {
-    new(eventDefinition: EventDefinitionBase, messageGenerator: Func<EventDefinitionBase, EventData, System_Internal.String>, connectionType: Type): UnexpectedConnectionTypeEventData;
+    new(eventDefinition: EventDefinitionBase, messageGenerator: Func_3<EventDefinitionBase, EventData, System_Internal.String>, connectionType: Type): UnexpectedConnectionTypeEventData;
 };
 
 

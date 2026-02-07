@@ -7,14 +7,14 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { SqliteDbContextOptionsBuilder } from "../../Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export abstract class SqliteServiceCollectionExtensions$instance {
     static AddEntityFrameworkSqlite(serviceCollection: IServiceCollection): IServiceCollection;
-    static AddSqlite<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, sqliteOptionsAction?: Action<SqliteDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
+    static AddSqlite<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder>, optionsAction?: Action_1<DbContextOptionsBuilder>): IServiceCollection;
 }
 
 

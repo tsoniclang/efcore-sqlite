@@ -9,19 +9,19 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { DbConnection } from "@tsonic/dotnet/System.Data.Common.js";
-import type { DbType } from "@tsonic/dotnet/System.Data.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { MethodInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
-import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IResettableService } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { DbLoggerCategory$Infrastructure } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import type { ByteArrayTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, GuidTypeMapping, IDatabaseCreator, IDbContextTransactionManager, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, StringTypeMapping, TimeOnlyTypeMapping, TypeMappingSourceDependencies, ULongTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { DbConnection } from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import type { DbType } from "@tsonic/dotnet/System.Data/internal/index.js";
+import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { MethodInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { StringBuilder } from "@tsonic/dotnet/System.Text/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int32, Nullable_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IDiagnosticsLogger_1 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IResettableService } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { ByteArrayTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, GuidTypeMapping, IDatabaseCreator, IDbContextTransactionManager, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, StringTypeMapping, TimeOnlyTypeMapping, TypeMappingSourceDependencies, ULongTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { DbLoggerCategory$Infrastructure } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface ISqliteRelationalConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_ISqliteRelationalConnection: never;
@@ -40,7 +40,7 @@ export interface SqliteByteArrayTypeMapping$instance extends ByteArrayTypeMappin
 
 
 export const SqliteByteArrayTypeMapping: {
-    new(storeType: string, dbType: Nullable<DbType>): SqliteByteArrayTypeMapping;
+    new(storeType: string, dbType: Nullable_1<DbType>): SqliteByteArrayTypeMapping;
     readonly Default: SqliteByteArrayTypeMapping;
 };
 
@@ -72,7 +72,7 @@ export interface SqliteDateOnlyTypeMapping$instance extends DateOnlyTypeMapping 
 
 
 export const SqliteDateOnlyTypeMapping: {
-    new(storeType: string, dbType: Nullable<DbType>): SqliteDateOnlyTypeMapping;
+    new(storeType: string, dbType: Nullable_1<DbType>): SqliteDateOnlyTypeMapping;
     readonly Default: SqliteDateOnlyTypeMapping;
 };
 
@@ -86,7 +86,7 @@ export interface SqliteDateTimeOffsetTypeMapping$instance extends DateTimeOffset
 
 
 export const SqliteDateTimeOffsetTypeMapping: {
-    new(storeType: string, dbType: Nullable<DbType>): SqliteDateTimeOffsetTypeMapping;
+    new(storeType: string, dbType: Nullable_1<DbType>): SqliteDateTimeOffsetTypeMapping;
     readonly Default: SqliteDateTimeOffsetTypeMapping;
 };
 
@@ -100,7 +100,7 @@ export interface SqliteDateTimeTypeMapping$instance extends DateTimeTypeMapping 
 
 
 export const SqliteDateTimeTypeMapping: {
-    new(storeType: string, dbType: Nullable<DbType>): SqliteDateTimeTypeMapping;
+    new(storeType: string, dbType: Nullable_1<DbType>): SqliteDateTimeTypeMapping;
     readonly Default: SqliteDateTimeTypeMapping;
 };
 
@@ -114,7 +114,7 @@ export interface SqliteDecimalTypeMapping$instance extends DecimalTypeMapping {
 
 
 export const SqliteDecimalTypeMapping: {
-    new(storeType: string, dbType: Nullable<DbType>): SqliteDecimalTypeMapping;
+    new(storeType: string, dbType: Nullable_1<DbType>): SqliteDecimalTypeMapping;
     readonly Default: SqliteDecimalTypeMapping;
 };
 
@@ -128,7 +128,7 @@ export interface SqliteGuidTypeMapping$instance extends GuidTypeMapping {
 
 
 export const SqliteGuidTypeMapping: {
-    new(storeType: string, dbType: Nullable<DbType>): SqliteGuidTypeMapping;
+    new(storeType: string, dbType: Nullable_1<DbType>): SqliteGuidTypeMapping;
     readonly Default: SqliteGuidTypeMapping;
 };
 
@@ -168,7 +168,7 @@ export interface SqliteRelationalConnection$instance extends RelationalConnectio
 
 
 export const SqliteRelationalConnection: {
-    new(dependencies: RelationalConnectionDependencies, rawSqlCommandBuilder: IRawSqlCommandBuilder, logger: IDiagnosticsLogger<DbLoggerCategory$Infrastructure>): SqliteRelationalConnection;
+    new(dependencies: RelationalConnectionDependencies, rawSqlCommandBuilder: IRawSqlCommandBuilder, logger: IDiagnosticsLogger_1<DbLoggerCategory$Infrastructure>): SqliteRelationalConnection;
 };
 
 
@@ -204,7 +204,7 @@ export interface SqliteStringTypeMapping$instance extends StringTypeMapping {
 
 
 export const SqliteStringTypeMapping: {
-    new(storeType: string, dbType: Nullable<DbType>, unicode: boolean, size: Nullable<System_Internal.Int32>): SqliteStringTypeMapping;
+    new(storeType: string, dbType: Nullable_1<DbType>, unicode: boolean, size: Nullable_1<System_Internal.Int32>): SqliteStringTypeMapping;
     readonly Default: SqliteStringTypeMapping;
 };
 
@@ -218,7 +218,7 @@ export interface SqliteTimeOnlyTypeMapping$instance extends TimeOnlyTypeMapping 
 
 
 export const SqliteTimeOnlyTypeMapping: {
-    new(storeType: string, dbType: Nullable<DbType>): SqliteTimeOnlyTypeMapping;
+    new(storeType: string, dbType: Nullable_1<DbType>): SqliteTimeOnlyTypeMapping;
     readonly Default: SqliteTimeOnlyTypeMapping;
 };
 
@@ -248,7 +248,7 @@ export interface SqliteULongTypeMapping$instance extends ULongTypeMapping {
 
 
 export const SqliteULongTypeMapping: {
-    new(storeType: string, dbType: Nullable<DbType>): SqliteULongTypeMapping;
+    new(storeType: string, dbType: Nullable_1<DbType>): SqliteULongTypeMapping;
     readonly Default: SqliteULongTypeMapping;
 };
 

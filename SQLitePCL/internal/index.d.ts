@@ -9,17 +9,17 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, Char, Double, Func, IAsyncResult, ICloneable, IDisposable, Int32, Int64, IntPtr, MulticastDelegate, Object as ClrObject, ReadOnlySpan, Span, String as ClrString, Type, UInt32, ValueType, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_InteropServices_Internal from "@tsonic/dotnet/System.Runtime.InteropServices.js";
-import type { GCHandleType, SafeHandle } from "@tsonic/dotnet/System.Runtime.InteropServices.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import * as System_Runtime_InteropServices_Internal from "@tsonic/dotnet/System.Runtime.InteropServices/internal/index.js";
+import type { GCHandleType, SafeHandle } from "@tsonic/dotnet/System.Runtime.InteropServices/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, Char, Double, Func_1, Func_4, IAsyncResult, ICloneable, IDisposable, Int32, Int64, IntPtr, MulticastDelegate, Object as ClrObject, ReadOnlySpan_1, Span_1, String as ClrString, Type, UInt32, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export type delegate_authorizer = (user_data: unknown, action_code: int, param0: utf8z, param1: utf8z, dbName: utf8z, inner_most_trigger_or_view: utf8z) => int;
 
 
-export type delegate_collation = (user_data: unknown, s1: ReadOnlySpan<System_Internal.Byte>, s2: ReadOnlySpan<System_Internal.Byte>) => int;
+export type delegate_collation = (user_data: unknown, s1: ReadOnlySpan_1<System_Internal.Byte>, s2: ReadOnlySpan_1<System_Internal.Byte>) => int;
 
 
 export type delegate_commit = (user_data: unknown) => int;
@@ -93,7 +93,7 @@ export interface ISQLite3Provider$instance {
     sqlite3_backup_init(destDb: sqlite3, destName: utf8z, sourceDb: sqlite3, sourceName: utf8z): sqlite3_backup;
     sqlite3_backup_remaining(backup: sqlite3_backup): int;
     sqlite3_backup_step(backup: sqlite3_backup, nPage: int): int;
-    sqlite3_bind_blob(stmt: sqlite3_stmt, index: int, blob: ReadOnlySpan<System_Internal.Byte>): int;
+    sqlite3_bind_blob(stmt: sqlite3_stmt, index: int, blob: ReadOnlySpan_1<System_Internal.Byte>): int;
     sqlite3_bind_double(stmt: sqlite3_stmt, index: int, val: double): int;
     sqlite3_bind_int64(stmt: sqlite3_stmt, index: int, val: long): int;
     sqlite3_bind_null(stmt: sqlite3_stmt, index: int): int;
@@ -102,13 +102,13 @@ export interface ISQLite3Provider$instance {
     sqlite3_bind_text(stmt: sqlite3_stmt, index: int, text: utf8z): int;
     sqlite3_blob_bytes(blob: sqlite3_blob): int;
     sqlite3_blob_open(db: sqlite3, db_utf8: utf8z, table_utf8: utf8z, col_utf8: utf8z, rowid: long, flags: int, blob: sqlite3_blob): int;
-    sqlite3_blob_read(blob: sqlite3_blob, b: Span<System_Internal.Byte>, offset: int): int;
+    sqlite3_blob_read(blob: sqlite3_blob, b: Span_1<System_Internal.Byte>, offset: int): int;
     sqlite3_blob_reopen(blob: sqlite3_blob, rowid: long): int;
-    sqlite3_blob_write(blob: sqlite3_blob, b: ReadOnlySpan<System_Internal.Byte>, offset: int): int;
+    sqlite3_blob_write(blob: sqlite3_blob, b: ReadOnlySpan_1<System_Internal.Byte>, offset: int): int;
     sqlite3_busy_timeout(db: sqlite3, ms: int): int;
     sqlite3_changes(db: sqlite3): int;
     sqlite3_close_v2(db: nint): int;
-    sqlite3_column_blob(stmt: sqlite3_stmt, index: int): ReadOnlySpan<System_Internal.Byte>;
+    sqlite3_column_blob(stmt: sqlite3_stmt, index: int): ReadOnlySpan_1<System_Internal.Byte>;
     sqlite3_column_double(stmt: sqlite3_stmt, index: int): double;
     sqlite3_column_int64(stmt: sqlite3_stmt, index: int): long;
     sqlite3_commit_hook(db: sqlite3, func: delegate_commit, v: unknown): void;
@@ -131,8 +131,8 @@ export interface ISQLite3Provider$instance {
     sqlite3_errstr(rc: int): utf8z;
     sqlite3_exec(db: sqlite3, sql: utf8z, callback: delegate_exec, user_data: unknown, errMsg: nint): int;
     sqlite3_interrupt(db: sqlite3): void;
-    sqlite3_key(db: sqlite3, key: ReadOnlySpan<System_Internal.Byte>): int;
-    sqlite3_key_v2(db: sqlite3, dbname: utf8z, key: ReadOnlySpan<System_Internal.Byte>): int;
+    sqlite3_key(db: sqlite3, key: ReadOnlySpan_1<System_Internal.Byte>): int;
+    sqlite3_key_v2(db: sqlite3, dbname: utf8z, key: ReadOnlySpan_1<System_Internal.Byte>): int;
     sqlite3_keyword_name(i: int, name: string): int;
     sqlite3_last_insert_rowid(db: sqlite3): long;
     sqlite3_libversion(): utf8z;
@@ -147,12 +147,12 @@ export interface ISQLite3Provider$instance {
     sqlite3_open(filename: utf8z, db: nint): int;
     sqlite3_open_v2(filename: utf8z, db: nint, flags: int, vfs: utf8z): int;
     sqlite3_prepare_v2(db: sqlite3, sql: utf8z, stmt: nint, remain: utf8z): int;
-    sqlite3_prepare_v2(db: sqlite3, sql: ReadOnlySpan<System_Internal.Byte>, stmt: nint, remain: ReadOnlySpan<System_Internal.Byte>): int;
+    sqlite3_prepare_v2(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, stmt: nint, remain: ReadOnlySpan_1<System_Internal.Byte>): int;
     sqlite3_prepare_v3(db: sqlite3, sql: utf8z, flags: uint, stmt: nint, remain: utf8z): int;
-    sqlite3_prepare_v3(db: sqlite3, sql: ReadOnlySpan<System_Internal.Byte>, flags: uint, stmt: nint, remain: ReadOnlySpan<System_Internal.Byte>): int;
+    sqlite3_prepare_v3(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, flags: uint, stmt: nint, remain: ReadOnlySpan_1<System_Internal.Byte>): int;
     sqlite3_profile(db: sqlite3, func: delegate_profile, v: unknown): void;
     sqlite3_progress_handler(db: sqlite3, instructions: int, func: delegate_progress, v: unknown): void;
-    sqlite3_result_blob(context: nint, val: ReadOnlySpan<System_Internal.Byte>): void;
+    sqlite3_result_blob(context: nint, val: ReadOnlySpan_1<System_Internal.Byte>): void;
     sqlite3_result_double(context: nint, val: double): void;
     sqlite3_result_error(context: nint, strErr: utf8z): void;
     sqlite3_result_int(context: nint, val: int): void;
@@ -175,7 +175,7 @@ export interface ISQLite3Provider$instance {
     sqlite3_threadsafe(): int;
     sqlite3_trace(db: sqlite3, func: delegate_trace, v: unknown): void;
     sqlite3_update_hook(db: sqlite3, func: delegate_update, v: unknown): void;
-    sqlite3_value_blob(p: nint): ReadOnlySpan<System_Internal.Byte>;
+    sqlite3_value_blob(p: nint): ReadOnlySpan_1<System_Internal.Byte>;
     sqlite3_value_double(p: nint): double;
     sqlite3_value_int64(p: nint): long;
     sqlite3_value_text(p: nint): utf8z;
@@ -197,7 +197,7 @@ export const utf8z: {
     FromIntPtr(p: nint): utf8z;
     FromPtr(p: ptr<byte>): utf8z;
     FromPtrLen(p: ptr<byte>, len: int): utf8z;
-    FromSpan(span: ReadOnlySpan<System_Internal.Byte>): utf8z;
+    FromSpan(span: ReadOnlySpan_1<System_Internal.Byte>): utf8z;
     FromString(s: string): utf8z;
     GetZeroTerminatedUTF8Bytes(value: string): byte[];
 };
@@ -219,7 +219,7 @@ export const authorizer_hook_info: {
 export type authorizer_hook_info = authorizer_hook_info$instance;
 
 export interface collation_hook_info$instance {
-    call(s1: ReadOnlySpan<System_Internal.Byte>, s2: ReadOnlySpan<System_Internal.Byte>): int;
+    call(s1: ReadOnlySpan_1<System_Internal.Byte>, s2: ReadOnlySpan_1<System_Internal.Byte>): int;
 }
 
 
@@ -322,7 +322,7 @@ export interface hook_handles$instance {
 
 
 export const hook_handles: {
-    new(f: Func<System_Internal.IntPtr, System_Internal.IntPtr, System_Internal.Int32, System_Internal.Boolean>): hook_handles;
+    new(f: Func_4<System_Internal.IntPtr, System_Internal.IntPtr, System_Internal.Int32, System_Internal.Boolean>): hook_handles;
 };
 
 
@@ -424,7 +424,7 @@ export interface sqlite3$instance extends SafeHandle {
 
     readonly IsInvalid: boolean;
     enable_sqlite3_next_stmt(enabled: boolean): void;
-    GetOrCreateExtra<T extends IDisposable>(f: Func<T>): T;
+    GetOrCreateExtra<T extends IDisposable>(f: Func_1<T>): T;
     manual_close(): int;
     manual_close_v2(): int;
     ReleaseHandle(): boolean;
@@ -835,7 +835,7 @@ export abstract class raw$instance {
     static sqlite3_backup_pagecount(backup: sqlite3_backup): int;
     static sqlite3_backup_remaining(backup: sqlite3_backup): int;
     static sqlite3_backup_step(backup: sqlite3_backup, nPage: int): int;
-    static sqlite3_bind_blob(stmt: sqlite3_stmt, index: int, blob: ReadOnlySpan<System_Internal.Byte>): int;
+    static sqlite3_bind_blob(stmt: sqlite3_stmt, index: int, blob: ReadOnlySpan_1<System_Internal.Byte>): int;
     static sqlite3_bind_double(stmt: sqlite3_stmt, index: int, val: double): int;
     static sqlite3_bind_int(stmt: sqlite3_stmt, index: int, val: int): int;
     static sqlite3_bind_int64(stmt: sqlite3_stmt, index: int, val: long): int;
@@ -845,23 +845,23 @@ export abstract class raw$instance {
     static sqlite3_bind_parameter_index(stmt: sqlite3_stmt, strName: string): int;
     static sqlite3_bind_parameter_name(stmt: sqlite3_stmt, index: int): utf8z;
     static sqlite3_bind_text(stmt: sqlite3_stmt, index: int, val: utf8z): int;
-    static sqlite3_bind_text(stmt: sqlite3_stmt, index: int, val: ReadOnlySpan<System_Internal.Byte>): int;
+    static sqlite3_bind_text(stmt: sqlite3_stmt, index: int, val: ReadOnlySpan_1<System_Internal.Byte>): int;
     static sqlite3_bind_text(stmt: sqlite3_stmt, index: int, val: string): int;
-    static sqlite3_bind_text16(stmt: sqlite3_stmt, index: int, val: ReadOnlySpan<System_Internal.Char>): int;
+    static sqlite3_bind_text16(stmt: sqlite3_stmt, index: int, val: ReadOnlySpan_1<System_Internal.Char>): int;
     static sqlite3_bind_zeroblob(stmt: sqlite3_stmt, index: int, size: int): int;
     static sqlite3_blob_bytes(blob: sqlite3_blob): int;
     static sqlite3_blob_close(blob: sqlite3_blob): int;
     static sqlite3_blob_open(db: sqlite3, db_utf8: utf8z, table_utf8: utf8z, col_utf8: utf8z, rowid: long, flags: int, blob: sqlite3_blob): int;
     static sqlite3_blob_open(db: sqlite3, sdb: string, table: string, col: string, rowid: long, flags: int, blob: sqlite3_blob): int;
-    static sqlite3_blob_read(blob: sqlite3_blob, b: Span<System_Internal.Byte>, offset: int): int;
+    static sqlite3_blob_read(blob: sqlite3_blob, b: Span_1<System_Internal.Byte>, offset: int): int;
     static sqlite3_blob_reopen(blob: sqlite3_blob, rowid: long): int;
-    static sqlite3_blob_write(blob: sqlite3_blob, b: ReadOnlySpan<System_Internal.Byte>, offset: int): int;
+    static sqlite3_blob_write(blob: sqlite3_blob, b: ReadOnlySpan_1<System_Internal.Byte>, offset: int): int;
     static sqlite3_busy_timeout(db: sqlite3, ms: int): int;
     static sqlite3_changes(db: sqlite3): int;
     static sqlite3_clear_bindings(stmt: sqlite3_stmt): int;
     static sqlite3_close(db: sqlite3): int;
     static sqlite3_close_v2(db: sqlite3): int;
-    static sqlite3_column_blob(stmt: sqlite3_stmt, index: int): ReadOnlySpan<System_Internal.Byte>;
+    static sqlite3_column_blob(stmt: sqlite3_stmt, index: int): ReadOnlySpan_1<System_Internal.Byte>;
     static sqlite3_column_bytes(stmt: sqlite3_stmt, index: int): int;
     static sqlite3_column_count(stmt: sqlite3_stmt): int;
     static sqlite3_column_database_name(stmt: sqlite3_stmt, index: int): utf8z;
@@ -916,8 +916,8 @@ export abstract class raw$instance {
     static sqlite3_hard_heap_limit64(n: long): long;
     static sqlite3_initialize(): int;
     static sqlite3_interrupt(db: sqlite3): void;
-    static sqlite3_key(db: sqlite3, k: ReadOnlySpan<System_Internal.Byte>): int;
-    static sqlite3_key_v2(db: sqlite3, name: utf8z, k: ReadOnlySpan<System_Internal.Byte>): int;
+    static sqlite3_key(db: sqlite3, k: ReadOnlySpan_1<System_Internal.Byte>): int;
+    static sqlite3_key_v2(db: sqlite3, name: utf8z, k: ReadOnlySpan_1<System_Internal.Byte>): int;
     static sqlite3_keyword_count(): int;
     static sqlite3_keyword_name(i: int, name: string): int;
     static sqlite3_last_insert_rowid(db: sqlite3): long;
@@ -938,26 +938,26 @@ export abstract class raw$instance {
     static sqlite3_open_v2(filename: string, db: sqlite3, flags: int, vfs: string): int;
     static sqlite3_prepare_v2(db: sqlite3, sql: utf8z, stmt: sqlite3_stmt, tail: utf8z): int;
     static sqlite3_prepare_v2(db: sqlite3, sql: utf8z, stmt: sqlite3_stmt): int;
-    static sqlite3_prepare_v2(db: sqlite3, sql: ReadOnlySpan<System_Internal.Byte>, stmt: sqlite3_stmt, tail: ReadOnlySpan<System_Internal.Byte>): int;
-    static sqlite3_prepare_v2(db: sqlite3, sql: ReadOnlySpan<System_Internal.Byte>, stmt: sqlite3_stmt): int;
+    static sqlite3_prepare_v2(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, stmt: sqlite3_stmt, tail: ReadOnlySpan_1<System_Internal.Byte>): int;
+    static sqlite3_prepare_v2(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, stmt: sqlite3_stmt): int;
     static sqlite3_prepare_v2(db: sqlite3, sql: string, stmt: sqlite3_stmt, tail: string): int;
     static sqlite3_prepare_v2(db: sqlite3, sql: string, stmt: sqlite3_stmt): int;
     static sqlite3_prepare_v3(db: sqlite3, sql: utf8z, flags: uint, stmt: sqlite3_stmt, tail: utf8z): int;
     static sqlite3_prepare_v3(db: sqlite3, sql: utf8z, flags: uint, stmt: sqlite3_stmt): int;
-    static sqlite3_prepare_v3(db: sqlite3, sql: ReadOnlySpan<System_Internal.Byte>, flags: uint, stmt: sqlite3_stmt, tail: ReadOnlySpan<System_Internal.Byte>): int;
-    static sqlite3_prepare_v3(db: sqlite3, sql: ReadOnlySpan<System_Internal.Byte>, flags: uint, stmt: sqlite3_stmt): int;
+    static sqlite3_prepare_v3(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, flags: uint, stmt: sqlite3_stmt, tail: ReadOnlySpan_1<System_Internal.Byte>): int;
+    static sqlite3_prepare_v3(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, flags: uint, stmt: sqlite3_stmt): int;
     static sqlite3_prepare_v3(db: sqlite3, sql: string, flags: uint, stmt: sqlite3_stmt, tail: string): int;
     static sqlite3_prepare_v3(db: sqlite3, sql: string, flags: uint, stmt: sqlite3_stmt): int;
     static sqlite3_profile(db: sqlite3, f: delegate_profile, v: unknown): void;
     static sqlite3_profile(db: sqlite3, f: strdelegate_profile, v: unknown): void;
     static sqlite3_progress_handler(db: sqlite3, instructions: int, func: delegate_progress, v: unknown): void;
-    static sqlite3_rekey(db: sqlite3, k: ReadOnlySpan<System_Internal.Byte>): int;
-    static sqlite3_rekey_v2(db: sqlite3, name: utf8z, k: ReadOnlySpan<System_Internal.Byte>): int;
+    static sqlite3_rekey(db: sqlite3, k: ReadOnlySpan_1<System_Internal.Byte>): int;
+    static sqlite3_rekey_v2(db: sqlite3, name: utf8z, k: ReadOnlySpan_1<System_Internal.Byte>): int;
     static sqlite3_reset(stmt: sqlite3_stmt): int;
-    static sqlite3_result_blob(context: sqlite3_context, val: ReadOnlySpan<System_Internal.Byte>): void;
+    static sqlite3_result_blob(context: sqlite3_context, val: ReadOnlySpan_1<System_Internal.Byte>): void;
     static sqlite3_result_double(context: sqlite3_context, val: double): void;
     static sqlite3_result_error(context: sqlite3_context, val: utf8z): void;
-    static sqlite3_result_error(context: sqlite3_context, val: ReadOnlySpan<System_Internal.Byte>): void;
+    static sqlite3_result_error(context: sqlite3_context, val: ReadOnlySpan_1<System_Internal.Byte>): void;
     static sqlite3_result_error(context: sqlite3_context, val: string): void;
     static sqlite3_result_error_code(context: sqlite3_context, code: int): void;
     static sqlite3_result_error_nomem(context: sqlite3_context): void;
@@ -966,7 +966,7 @@ export abstract class raw$instance {
     static sqlite3_result_int64(context: sqlite3_context, val: long): void;
     static sqlite3_result_null(context: sqlite3_context): void;
     static sqlite3_result_text(context: sqlite3_context, val: utf8z): void;
-    static sqlite3_result_text(context: sqlite3_context, val: ReadOnlySpan<System_Internal.Byte>): void;
+    static sqlite3_result_text(context: sqlite3_context, val: ReadOnlySpan_1<System_Internal.Byte>): void;
     static sqlite3_result_text(context: sqlite3_context, val: string): void;
     static sqlite3_result_zeroblob(context: sqlite3_context, n: int): void;
     static sqlite3_rollback_hook(db: sqlite3, f: delegate_rollback, v: unknown): void;
@@ -997,7 +997,7 @@ export abstract class raw$instance {
     static sqlite3_update_hook(db: sqlite3, f: delegate_update, v: unknown): void;
     static sqlite3_update_hook(db: sqlite3, f: strdelegate_update, v: unknown): void;
     static sqlite3_user_data(context: sqlite3_context): unknown;
-    static sqlite3_value_blob(val: sqlite3_value): ReadOnlySpan<System_Internal.Byte>;
+    static sqlite3_value_blob(val: sqlite3_value): ReadOnlySpan_1<System_Internal.Byte>;
     static sqlite3_value_bytes(val: sqlite3_value): int;
     static sqlite3_value_double(val: sqlite3_value): double;
     static sqlite3_value_int(val: sqlite3_value): int;
@@ -1008,7 +1008,7 @@ export abstract class raw$instance {
     static sqlite3_wal_checkpoint(db: sqlite3, dbName: string): int;
     static sqlite3_wal_checkpoint_v2(db: sqlite3, dbName: string, eMode: int, logSize: int, framesCheckPointed: int): int;
     static sqlite3_win32_set_directory(typ: int, path: string): int;
-    static utf8_span_to_string(p: ReadOnlySpan<System_Internal.Byte>): string;
+    static utf8_span_to_string(p: ReadOnlySpan_1<System_Internal.Byte>): string;
 }
 
 

@@ -9,14 +9,14 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Byte, DateTime, DateTimeOffset, Decimal, Guid, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json.js";
-import * as Microsoft_EntityFrameworkCore_Storage_Json_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json.js";
-import type { JsonValueReaderWriter, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json.js";
+import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Byte, DateTime, DateTimeOffset, Decimal, Guid, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Storage_Json_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
+import type { JsonValueReaderWriter_1, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
 
-export interface SqliteJsonByteArrayReaderWriter$instance extends JsonValueReaderWriter<byte[]> {
+export interface SqliteJsonByteArrayReaderWriter$instance extends JsonValueReaderWriter_1<byte[]> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): byte[];
     ToJsonTyped(writer: Utf8JsonWriter, value: byte[]): void;
@@ -30,7 +30,7 @@ export const SqliteJsonByteArrayReaderWriter: {
 
 export type SqliteJsonByteArrayReaderWriter = SqliteJsonByteArrayReaderWriter$instance;
 
-export interface SqliteJsonDateTimeOffsetReaderWriter$instance extends JsonValueReaderWriter<DateTimeOffset> {
+export interface SqliteJsonDateTimeOffsetReaderWriter$instance extends JsonValueReaderWriter_1<DateTimeOffset> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTimeOffset;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
@@ -44,7 +44,7 @@ export const SqliteJsonDateTimeOffsetReaderWriter: {
 
 export type SqliteJsonDateTimeOffsetReaderWriter = SqliteJsonDateTimeOffsetReaderWriter$instance;
 
-export interface SqliteJsonDateTimeReaderWriter$instance extends JsonValueReaderWriter<DateTime> {
+export interface SqliteJsonDateTimeReaderWriter$instance extends JsonValueReaderWriter_1<DateTime> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
@@ -58,7 +58,7 @@ export const SqliteJsonDateTimeReaderWriter: {
 
 export type SqliteJsonDateTimeReaderWriter = SqliteJsonDateTimeReaderWriter$instance;
 
-export interface SqliteJsonDecimalReaderWriter$instance extends JsonValueReaderWriter<System_Internal.Decimal> {
+export interface SqliteJsonDecimalReaderWriter$instance extends JsonValueReaderWriter_1<System_Internal.Decimal> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): decimal;
     ToJsonTyped(writer: Utf8JsonWriter, value: decimal): void;
@@ -72,7 +72,7 @@ export const SqliteJsonDecimalReaderWriter: {
 
 export type SqliteJsonDecimalReaderWriter = SqliteJsonDecimalReaderWriter$instance;
 
-export interface SqliteJsonGuidReaderWriter$instance extends JsonValueReaderWriter<Guid> {
+export interface SqliteJsonGuidReaderWriter$instance extends JsonValueReaderWriter_1<Guid> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): Guid;
     ToJsonTyped(writer: Utf8JsonWriter, value: Guid): void;

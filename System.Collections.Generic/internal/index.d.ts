@@ -7,17 +7,17 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { RuntimeAssetGroup, RuntimeFile } from "../../Microsoft.Extensions.DependencyModel/internal/index.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class CollectionExtensions$instance {
-    static GetDefaultAssets(self: IEnumerable<RuntimeAssetGroup>): IEnumerable<System_Internal.String>;
-    static GetDefaultGroup(self: IEnumerable<RuntimeAssetGroup>): RuntimeAssetGroup | undefined;
-    static GetDefaultRuntimeFileAssets(self: IEnumerable<RuntimeAssetGroup>): IEnumerable<RuntimeFile>;
-    static GetRuntimeAssets(self: IEnumerable<RuntimeAssetGroup>, runtime: string): IEnumerable<System_Internal.String>;
-    static GetRuntimeFileAssets(self: IEnumerable<RuntimeAssetGroup>, runtime: string): IEnumerable<RuntimeFile>;
-    static GetRuntimeGroup(self: IEnumerable<RuntimeAssetGroup>, runtime: string): RuntimeAssetGroup | undefined;
+    static GetDefaultAssets(self: IEnumerable_1<RuntimeAssetGroup>): IEnumerable_1<System_Internal.String>;
+    static GetDefaultGroup(self: IEnumerable_1<RuntimeAssetGroup>): RuntimeAssetGroup | undefined;
+    static GetDefaultRuntimeFileAssets(self: IEnumerable_1<RuntimeAssetGroup>): IEnumerable_1<RuntimeFile>;
+    static GetRuntimeAssets(self: IEnumerable_1<RuntimeAssetGroup>, runtime: string): IEnumerable_1<System_Internal.String>;
+    static GetRuntimeFileAssets(self: IEnumerable_1<RuntimeAssetGroup>, runtime: string): IEnumerable_1<RuntimeFile>;
+    static GetRuntimeGroup(self: IEnumerable_1<RuntimeAssetGroup>, runtime: string): RuntimeAssetGroup | undefined;
 }
 
 
