@@ -94,12 +94,8 @@ export const DependencyContext: {
 
 export type DependencyContext = DependencyContext$instance;
 
-export abstract class DependencyContextJsonReader$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface DependencyContextJsonReader$instance extends DependencyContextJsonReader$protected {
+export interface DependencyContextJsonReader$instance {
+    Dispose(disposing: boolean): void;
     Dispose(): void;
     Read(stream: Stream): DependencyContext;
 }
@@ -149,7 +145,7 @@ export interface Library$instance {
     readonly Hash: string | undefined;
     readonly HashPath: string | undefined;
     readonly Name: string;
-    readonly Path: string;
+    readonly Path: string | undefined;
     readonly RuntimeStoreManifestName: string | undefined;
     readonly Serviceable: boolean;
     readonly Type: string;
@@ -197,7 +193,7 @@ export type RuntimeAssembly = RuntimeAssembly$instance;
 
 export interface RuntimeAssetGroup$instance {
     readonly AssetPaths: IReadOnlyList<System_Internal.String>;
-    readonly Runtime: string;
+    readonly Runtime: string | undefined;
     readonly RuntimeFiles: IReadOnlyList<RuntimeFile>;
 }
 
@@ -260,7 +256,7 @@ export type RuntimeLibrary = RuntimeLibrary$instance;
 export interface TargetInfo$instance {
     readonly Framework: string;
     readonly IsPortable: boolean;
-    readonly Runtime: string;
+    readonly Runtime: string | undefined;
     readonly RuntimeSignature: string | undefined;
 }
 

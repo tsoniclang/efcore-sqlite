@@ -34,12 +34,8 @@ export const SqliteConventionSetBuilder: {
 
 export type SqliteConventionSetBuilder = SqliteConventionSetBuilder$instance;
 
-export abstract class SqliteRuntimeModelConvention$protected {
-    protected ProcessPropertyAnnotations(annotations: Dictionary<System_Internal.String, unknown>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
-}
-
-
-export interface SqliteRuntimeModelConvention$instance extends SqliteRuntimeModelConvention$protected, RelationalRuntimeModelConvention {
+export interface SqliteRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+    ProcessPropertyAnnotations(annotations: Dictionary<System_Internal.String, unknown>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
 }
 
 
@@ -50,12 +46,8 @@ export const SqliteRuntimeModelConvention: {
 
 export type SqliteRuntimeModelConvention = SqliteRuntimeModelConvention$instance;
 
-export abstract class SqliteSharedTableConvention$protected {
-    protected readonly CheckConstraintsUniqueAcrossTables: boolean;
-}
-
-
-export interface SqliteSharedTableConvention$instance extends SqliteSharedTableConvention$protected, SharedTableConvention {
+export interface SqliteSharedTableConvention$instance extends SharedTableConvention {
+    readonly CheckConstraintsUniqueAcrossTables: boolean;
 }
 
 
@@ -66,13 +58,9 @@ export const SqliteSharedTableConvention: {
 
 export type SqliteSharedTableConvention = SqliteSharedTableConvention$instance;
 
-export abstract class SqliteStoreGenerationConvention$protected {
-    protected Validate(property: IConventionProperty, storeObject: StoreObjectIdentifier): void;
-}
-
-
-export interface SqliteStoreGenerationConvention$instance extends SqliteStoreGenerationConvention$protected, StoreGenerationConvention {
+export interface SqliteStoreGenerationConvention$instance extends StoreGenerationConvention {
     ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    Validate(property: IConventionProperty, storeObject: StoreObjectIdentifier): void;
 }
 
 
@@ -83,12 +71,8 @@ export const SqliteStoreGenerationConvention: {
 
 export type SqliteStoreGenerationConvention = SqliteStoreGenerationConvention$instance;
 
-export abstract class SqliteValueGenerationConvention$protected {
-    protected GetValueGenerated(property: IConventionProperty): Nullable<ValueGenerated>;
-}
-
-
-export interface SqliteValueGenerationConvention$instance extends SqliteValueGenerationConvention$protected, RelationalValueGenerationConvention {
+export interface SqliteValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+    GetValueGenerated(property: IConventionProperty): Nullable<ValueGenerated>;
     ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 

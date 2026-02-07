@@ -17,13 +17,9 @@ import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.I
 import type { IColumn, IProperty, IRelationalModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
-export abstract class SqliteAnnotationCodeGenerator$protected {
-    protected IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
-}
-
-
-export interface SqliteAnnotationCodeGenerator$instance extends SqliteAnnotationCodeGenerator$protected, AnnotationCodeGenerator {
+export interface SqliteAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
     GenerateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
+    IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
 }
 
 

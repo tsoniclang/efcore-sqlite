@@ -51,17 +51,13 @@ export enum SqliteType {
 }
 
 
-export abstract class SqliteBlob$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface SqliteBlob$instance extends SqliteBlob$protected, Stream {
+export interface SqliteBlob$instance extends Stream {
     readonly CanRead: boolean;
     readonly CanSeek: boolean;
     readonly CanWrite: boolean;
     readonly Length: long;
     Position: long;
+    Dispose(disposing: boolean): void;
     Flush(): void;
     Read(buffer: byte[], offset: int, count: int): int;
     Read(buffer: Span<System_Internal.Byte>): int;
@@ -80,31 +76,30 @@ export const SqliteBlob: {
 
 export type SqliteBlob = SqliteBlob$instance;
 
-export abstract class SqliteCommand$protected {
-    protected DataReader: SqliteDataReader | undefined;
-    protected DbConnection: DbConnection | undefined;
-    protected readonly DbParameterCollection: DbParameterCollection;
-    protected DbTransaction: DbTransaction | undefined;
-    protected CreateDbParameter(): DbParameter;
-    protected Dispose(disposing: boolean): void;
-    protected ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
-    protected ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task<DbDataReader>;
-}
-
-
-export interface SqliteCommand$instance extends SqliteCommand$protected, DbCommand {
+export interface SqliteCommand$instance extends DbCommand {
     CommandText: string;
     CommandTimeout: int;
     CommandType: CommandType;
     get Connection(): SqliteConnection | undefined;
-    set Connection(value: SqliteConnection);
+    set Connection(value: SqliteConnection | undefined);
+    get DataReader(): SqliteDataReader | undefined;
+    set DataReader(value: SqliteDataReader | undefined);
+    get DbConnection(): DbConnection | undefined;
+    set DbConnection(value: DbConnection | undefined);
+    readonly DbParameterCollection: DbParameterCollection;
+    get DbTransaction(): DbTransaction | undefined;
+    set DbTransaction(value: DbTransaction | undefined);
     DesignTimeVisible: boolean;
     readonly Parameters: SqliteParameterCollection;
     get Transaction(): SqliteTransaction | undefined;
-    set Transaction(value: SqliteTransaction);
+    set Transaction(value: SqliteTransaction | undefined);
     UpdatedRowSource: UpdateRowSource;
     Cancel(): void;
+    CreateDbParameter(): DbParameter;
     CreateParameter(): SqliteParameter;
+    Dispose(disposing: boolean): void;
+    ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
+    ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task<DbDataReader>;
     ExecuteNonQuery(): int;
     ExecuteReader(): SqliteDataReader;
     ExecuteReader(behavior: CommandBehavior): SqliteDataReader;
@@ -127,25 +122,20 @@ export const SqliteCommand: {
 
 export type SqliteCommand = SqliteCommand$instance;
 
-export abstract class SqliteConnection$protected {
-    protected readonly DbProviderFactory: DbProviderFactory;
-    protected Transaction: SqliteTransaction | undefined;
-    protected BeginDbTransaction(isolationLevel: IsolationLevel): DbTransaction;
-    protected CreateDbCommand(): DbCommand;
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface SqliteConnection$instance extends SqliteConnection$protected, DbConnection {
+export interface SqliteConnection$instance extends DbConnection {
     ConnectionString: string;
     readonly Database: string;
     readonly DataSource: string;
+    readonly DbProviderFactory: DbProviderFactory;
     DefaultTimeout: int;
     readonly Handle: sqlite3 | undefined;
     readonly ServerVersion: string;
     readonly State: ConnectionState;
+    get Transaction(): SqliteTransaction | undefined;
+    set Transaction(value: SqliteTransaction | undefined);
     BackupDatabase(destination: SqliteConnection): void;
     BackupDatabase(destination: SqliteConnection, destinationName: string, sourceName: string): void;
+    BeginDbTransaction(isolationLevel: IsolationLevel): DbTransaction;
     BeginTransaction(): SqliteTransaction;
     BeginTransaction(deferred: boolean): SqliteTransaction;
     BeginTransaction(isolationLevel: IsolationLevel): SqliteTransaction;
@@ -203,6 +193,7 @@ export interface SqliteConnection$instance extends SqliteConnection$protected, D
     CreateCollation(name: string, comparison: Comparison<System_Internal.String>): void;
     CreateCollation<T>(name: string, state: T, comparison: Func<T, System_Internal.String, System_Internal.String, System_Internal.Int32>): void;
     CreateCommand(): SqliteCommand;
+    CreateDbCommand(): DbCommand;
     CreateFunction<TResult>(name: string, function_: Func<TResult>, isDeterministic?: boolean): void;
     CreateFunction<T1, TResult>(name: string, function_: Func<T1, TResult>, isDeterministic?: boolean): void;
     CreateFunction<T1, T2, TResult>(name: string, function_: Func<T1, T2, TResult>, isDeterministic?: boolean): void;
@@ -236,6 +227,7 @@ export interface SqliteConnection$instance extends SqliteConnection$protected, D
     CreateFunction<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>(name: string, state: TState, function_: Func<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>, isDeterministic?: boolean): void;
     CreateFunction<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>(name: string, state: TState, function_: Func<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>, isDeterministic?: boolean): void;
     CreateFunction<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>(name: string, state: TState, function_: Func<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>, isDeterministic?: boolean): void;
+    Dispose(disposing: boolean): void;
     EnableExtensions(enable?: boolean): void;
     GetSchema(): DataTable;
     GetSchema(collectionName: string): DataTable;
@@ -260,8 +252,7 @@ export interface SqliteConnectionStringBuilder$instance extends DbConnectionStri
     DataSource: string;
     DefaultTimeout: int;
     ForeignKeys: Nullable<System_Internal.Boolean>;
-    get Item(): unknown | undefined;
-    set Item(value: unknown);
+    [keyword: string]: unknown | undefined;
     readonly Keys: ICollection;
     Mode: SqliteOpenMode;
     Password: string;
@@ -269,7 +260,7 @@ export interface SqliteConnectionStringBuilder$instance extends DbConnectionStri
     RecursiveTriggers: boolean;
     readonly Values: ICollection;
     get Vfs(): string | undefined;
-    set Vfs(value: string);
+    set Vfs(value: string | undefined);
     Clear(): void;
     ContainsKey(keyword: string): boolean;
     Remove(keyword: string): boolean;
@@ -286,12 +277,7 @@ export const SqliteConnectionStringBuilder: {
 
 export type SqliteConnectionStringBuilder = SqliteConnectionStringBuilder$instance;
 
-export abstract class SqliteDataReader$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface SqliteDataReader$instance extends SqliteDataReader$protected, DbDataReader {
+export interface SqliteDataReader$instance extends DbDataReader {
     readonly Depth: int;
     readonly FieldCount: int;
     readonly Handle: sqlite3_stmt | undefined;
@@ -299,6 +285,7 @@ export interface SqliteDataReader$instance extends SqliteDataReader$protected, D
     readonly IsClosed: boolean;
     readonly RecordsAffected: int;
     Close(): void;
+    Dispose(disposing: boolean): void;
     get_Item(name: string): unknown;
     get_Item(ordinal: int): unknown;
     GetBoolean(ordinal: int): boolean;
@@ -335,7 +322,6 @@ export interface SqliteDataReader$instance extends SqliteDataReader$protected, D
 
 
 export const SqliteDataReader: {
-    new(): SqliteDataReader;
 };
 
 
@@ -365,7 +351,6 @@ export interface SqliteFactory$instance extends DbProviderFactory {
 
 
 export const SqliteFactory: {
-    new(): SqliteFactory;
     readonly Instance: SqliteFactory;
 };
 
@@ -382,7 +367,7 @@ export interface SqliteParameter$instance extends DbParameter {
     SourceColumnNullMapping: boolean;
     SqliteType: SqliteType;
     get Value(): unknown | undefined;
-    set Value(value: unknown);
+    set Value(value: unknown | undefined);
     ResetDbType(): void;
     ResetSqliteType(): void;
 }
@@ -399,15 +384,7 @@ export const SqliteParameter: {
 
 export type SqliteParameter = SqliteParameter$instance;
 
-export abstract class SqliteParameterCollection$protected {
-    protected GetParameter(index: int): DbParameter;
-    protected GetParameter(parameterName: string): DbParameter;
-    protected SetParameter(index: int, value: DbParameter): void;
-    protected SetParameter(parameterName: string, value: DbParameter): void;
-}
-
-
-export interface SqliteParameterCollection$instance extends SqliteParameterCollection$protected, DbParameterCollection {
+export interface SqliteParameterCollection$instance extends DbParameterCollection {
     readonly Count: int;
     readonly SyncRoot: unknown;
     Add(value: unknown): int;
@@ -427,6 +404,8 @@ export interface SqliteParameterCollection$instance extends SqliteParameterColle
     get_Item(index: int): SqliteParameter;
     get_Item(parameterName: string): SqliteParameter;
     GetEnumerator(): IEnumerator;
+    GetParameter(index: int): DbParameter;
+    GetParameter(parameterName: string): DbParameter;
     IndexOf(value: unknown): int;
     IndexOf(value: SqliteParameter): int;
     IndexOf(parameterName: string): int;
@@ -438,27 +417,24 @@ export interface SqliteParameterCollection$instance extends SqliteParameterColle
     RemoveAt(parameterName: string): void;
     set_Item(index: int, value: SqliteParameter): void;
     set_Item(parameterName: string, value: SqliteParameter): void;
+    SetParameter(index: int, value: DbParameter): void;
+    SetParameter(parameterName: string, value: DbParameter): void;
 }
 
 
-export const SqliteParameterCollection: {
-    new(): SqliteParameterCollection;
+export const SqliteParameterCollection: (abstract new() => SqliteParameterCollection) & {
 };
 
 
 export type SqliteParameterCollection = SqliteParameterCollection$instance;
 
-export abstract class SqliteTransaction$protected {
-    protected readonly DbConnection: DbConnection | undefined;
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface SqliteTransaction$instance extends SqliteTransaction$protected, DbTransaction {
+export interface SqliteTransaction$instance extends DbTransaction {
     readonly Connection: SqliteConnection | undefined;
+    readonly DbConnection: DbConnection | undefined;
     readonly IsolationLevel: IsolationLevel;
     readonly SupportsSavepoints: boolean;
     Commit(): void;
+    Dispose(disposing: boolean): void;
     Release(savepointName: string): void;
     Rollback(): void;
     Rollback(savepointName: string): void;
@@ -467,7 +443,6 @@ export interface SqliteTransaction$instance extends SqliteTransaction$protected,
 
 
 export const SqliteTransaction: {
-    new(): SqliteTransaction;
 };
 
 

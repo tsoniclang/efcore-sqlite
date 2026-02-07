@@ -24,7 +24,6 @@ export interface SqliteJsonByteArrayReaderWriter$instance extends JsonValueReade
 
 
 export const SqliteJsonByteArrayReaderWriter: {
-    new(): SqliteJsonByteArrayReaderWriter;
     readonly Instance: SqliteJsonByteArrayReaderWriter;
 };
 
@@ -39,7 +38,6 @@ export interface SqliteJsonDateTimeOffsetReaderWriter$instance extends JsonValue
 
 
 export const SqliteJsonDateTimeOffsetReaderWriter: {
-    new(): SqliteJsonDateTimeOffsetReaderWriter;
     readonly Instance: SqliteJsonDateTimeOffsetReaderWriter;
 };
 
@@ -54,7 +52,6 @@ export interface SqliteJsonDateTimeReaderWriter$instance extends JsonValueReader
 
 
 export const SqliteJsonDateTimeReaderWriter: {
-    new(): SqliteJsonDateTimeReaderWriter;
     readonly Instance: SqliteJsonDateTimeReaderWriter;
 };
 
@@ -69,7 +66,6 @@ export interface SqliteJsonDecimalReaderWriter$instance extends JsonValueReaderW
 
 
 export const SqliteJsonDecimalReaderWriter: {
-    new(): SqliteJsonDecimalReaderWriter;
     readonly Instance: SqliteJsonDecimalReaderWriter;
 };
 
@@ -84,7 +80,6 @@ export interface SqliteJsonGuidReaderWriter$instance extends JsonValueReaderWrit
 
 
 export const SqliteJsonGuidReaderWriter: {
-    new(): SqliteJsonGuidReaderWriter;
     readonly Instance: SqliteJsonGuidReaderWriter;
 };
 
