@@ -16,6 +16,8 @@ import type { IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbCont
 import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 
 export interface SqliteDbContextOptionsBuilder$instance extends RelationalDbContextOptionsBuilder<SqliteDbContextOptionsBuilder, SqliteOptionsExtension> {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
+
 }
 
 

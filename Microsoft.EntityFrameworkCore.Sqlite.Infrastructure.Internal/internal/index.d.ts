@@ -20,6 +20,8 @@ import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface SqliteModelValidator$instance extends RelationalModelValidator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
+
     Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
     ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
     ValidateNoSchemas(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
@@ -38,6 +40,8 @@ export const SqliteModelValidator: {
 export type SqliteModelValidator = SqliteModelValidator$instance;
 
 export interface SqliteOptionsExtension$instance extends RelationalOptionsExtension {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
+
     readonly Info: DbContextOptionsExtensionInfo;
     readonly LoadSpatialite: boolean;
     ApplyServices(services: IServiceCollection): void;

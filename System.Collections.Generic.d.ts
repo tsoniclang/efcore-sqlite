@@ -12,3 +12,6 @@ import type { Object as ClrObject, String as ClrString } from '@tsonic/dotnet/Sy
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { CollectionExtensions$instance as CollectionExtensions } from './System.Collections.Generic/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_System_Collections_Generic as ExtensionMethods } from './__internal/extensions/index.js';
+

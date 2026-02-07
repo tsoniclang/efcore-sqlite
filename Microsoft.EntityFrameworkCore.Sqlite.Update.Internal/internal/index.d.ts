@@ -28,6 +28,10 @@ export const SqliteLegacyUpdateSqlGenerator: {
 export type SqliteLegacyUpdateSqlGenerator = SqliteLegacyUpdateSqlGenerator$instance;
 
 export interface SqliteModificationCommand$instance extends ModificationCommand {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommand: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_INonTrackedModificationCommand: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IReadOnlyModificationCommand: never;
+
     ProcessSinglePropertyJsonUpdate(parameters: ColumnModificationParameters): void;
 }
 
@@ -41,6 +45,8 @@ export const SqliteModificationCommand: {
 export type SqliteModificationCommand = SqliteModificationCommand$instance;
 
 export interface SqliteModificationCommandBatchFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandBatchFactory: never;
+
     readonly Dependencies: ModificationCommandBatchFactoryDependencies;
     Create(): ModificationCommandBatch;
 }
@@ -54,6 +60,8 @@ export const SqliteModificationCommandBatchFactory: {
 export type SqliteModificationCommandBatchFactory = SqliteModificationCommandBatchFactory$instance;
 
 export interface SqliteModificationCommandFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandFactory: never;
+
     CreateModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
     CreateNonTrackedModificationCommand(modificationCommandParameters: NonTrackedModificationCommandParameters): INonTrackedModificationCommand;
 }
@@ -67,6 +75,8 @@ export const SqliteModificationCommandFactory: {
 export type SqliteModificationCommandFactory = SqliteModificationCommandFactory$instance;
 
 export interface SqliteUpdateSqlGenerator$instance extends UpdateAndSelectSqlGenerator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IUpdateSqlGenerator: never;
+
     AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     AppendIdentityWhereCondition(commandStringBuilder: StringBuilder, columnModification: IColumnModification): void;
     AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;

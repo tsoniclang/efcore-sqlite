@@ -14,13 +14,19 @@ import type { Boolean as ClrBoolean, IDisposable, IEquatable, Int32, Nullable, O
 import type { Assembly, AssemblyName } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface IDependencyContextReader$instance extends IDisposable {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_IDependencyContextReader: never;
+
     Read(stream: Stream): DependencyContext;
 }
 
 
+export interface IDependencyContextReader$instance extends System_Internal.IDisposable {}
+
 export type IDependencyContextReader = IDependencyContextReader$instance;
 
 export interface Dependency$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Name: string;
     readonly Version: string;
     Equals(other: Dependency): boolean;
@@ -95,6 +101,9 @@ export const DependencyContext: {
 export type DependencyContext = DependencyContext$instance;
 
 export interface DependencyContextJsonReader$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_IDependencyContextReader: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(disposing: boolean): void;
     Dispose(): void;
     Read(stream: Stream): DependencyContext;
