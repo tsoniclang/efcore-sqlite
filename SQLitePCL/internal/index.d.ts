@@ -77,6 +77,8 @@ export type strdelegate_update = (user_data: unknown, type: int, database: strin
 
 
 export interface IGetFunctionPointer$instance {
+    readonly __tsonic_iface_SQLitePCL_IGetFunctionPointer: never;
+
     GetFunctionPointer(name: string): nint;
 }
 
@@ -84,6 +86,8 @@ export interface IGetFunctionPointer$instance {
 export type IGetFunctionPointer = IGetFunctionPointer$instance;
 
 export interface ISQLite3Provider$instance {
+    readonly __tsonic_iface_SQLitePCL_ISQLite3Provider: never;
+
     GetNativeLibraryName(): string;
     sqlite3__vfs__delete(vfs: utf8z, pathname: utf8z, syncDir: int): int;
     sqlite3_backup_init(destDb: sqlite3, destName: utf8z, sourceDb: sqlite3, sourceName: utf8z): sqlite3_backup;
@@ -284,6 +288,8 @@ export const function_hook_info: {
 export type function_hook_info = function_hook_info$instance;
 
 export interface hook_handle$instance extends SafeGCHandle {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     ForDispose(): IDisposable;
 }
 
@@ -296,6 +302,8 @@ export const hook_handle: {
 export type hook_handle = hook_handle$instance;
 
 export interface hook_handles$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     update: IDisposable;
     rollback: IDisposable;
     commit: IDisposable;
@@ -397,6 +405,8 @@ export const rollback_hook_info: {
 export type rollback_hook_info = rollback_hook_info$instance;
 
 export interface SafeGCHandle$instance extends SafeHandle {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IsInvalid: boolean;
     ReleaseHandle(): boolean;
 }
@@ -410,6 +420,8 @@ export const SafeGCHandle: {
 export type SafeGCHandle = SafeGCHandle$instance;
 
 export interface sqlite3$instance extends SafeHandle {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IsInvalid: boolean;
     enable_sqlite3_next_stmt(enabled: boolean): void;
     GetOrCreateExtra<T extends IDisposable>(f: Func<T>): T;
@@ -426,6 +438,8 @@ export const sqlite3: {
 export type sqlite3 = sqlite3$instance;
 
 export interface sqlite3_backup$instance extends SafeHandle {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IsInvalid: boolean;
     manual_close(): int;
     ReleaseHandle(): boolean;
@@ -440,6 +454,8 @@ export const sqlite3_backup: {
 export type sqlite3_backup = sqlite3_backup$instance;
 
 export interface sqlite3_blob$instance extends SafeHandle {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IsInvalid: boolean;
     manual_close(): int;
     ReleaseHandle(): boolean;
@@ -464,6 +480,8 @@ export const sqlite3_context: (abstract new(user_data: unknown) => sqlite3_conte
 export type sqlite3_context = sqlite3_context$instance;
 
 export interface sqlite3_snapshot$instance extends SafeHandle {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IsInvalid: boolean;
     manual_close(): void;
     ReleaseHandle(): boolean;
@@ -477,6 +495,8 @@ export const sqlite3_snapshot: {
 export type sqlite3_snapshot = sqlite3_snapshot$instance;
 
 export interface sqlite3_stmt$instance extends SafeHandle {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IsInvalid: boolean;
     manual_close(): int;
     ReleaseHandle(): boolean;
@@ -501,6 +521,8 @@ export const sqlite3_value: {
 export type sqlite3_value = sqlite3_value$instance;
 
 export interface SQLite3Provider_e_sqlite3$instance {
+    readonly __tsonic_iface_SQLitePCL_ISQLite3Provider: never;
+
 }
 
 

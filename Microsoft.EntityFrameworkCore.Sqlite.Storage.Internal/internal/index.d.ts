@@ -24,9 +24,13 @@ import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/
 import type { ByteArrayTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, GuidTypeMapping, IDatabaseCreator, IDbContextTransactionManager, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, StringTypeMapping, TimeOnlyTypeMapping, TypeMappingSourceDependencies, ULongTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface ISqliteRelationalConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_ISqliteRelationalConnection: never;
+
     CreateReadOnlyConnection(): ISqliteRelationalConnection;
 }
 
+
+export interface ISqliteRelationalConnection$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.IResettableService, Microsoft_EntityFrameworkCore_Storage_Internal.IDbContextTransactionManager, Microsoft_EntityFrameworkCore_Storage_Internal.IRelationalConnection, Microsoft_EntityFrameworkCore_Storage_Internal.IRelationalTransactionManager, System_Internal.IAsyncDisposable, System_Internal.IDisposable {}
 
 export type ISqliteRelationalConnection = ISqliteRelationalConnection$instance;
 
@@ -44,6 +48,9 @@ export const SqliteByteArrayTypeMapping: {
 export type SqliteByteArrayTypeMapping = SqliteByteArrayTypeMapping$instance;
 
 export interface SqliteDatabaseCreator$instance extends RelationalDatabaseCreator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDatabaseCreator: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalDatabaseCreator: never;
+
     Create(): void;
     Delete(): void;
     Exists(): boolean;
@@ -146,6 +153,15 @@ export const SqliteJsonTypeMapping: {
 export type SqliteJsonTypeMapping = SqliteJsonTypeMapping$instance;
 
 export interface SqliteRelationalConnection$instance extends RelationalConnection {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IResettableService: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_ISqliteRelationalConnection: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDbContextTransactionManager: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalConnection: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalTransactionManager: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ITransactionEnlistmentManager: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     CreateDbConnection(): DbConnection;
     CreateReadOnlyConnection(): ISqliteRelationalConnection;
 }
@@ -160,12 +176,14 @@ export interface __SqliteRelationalConnection$views {
     As_ISqliteRelationalConnection(): ISqliteRelationalConnection$instance;
 }
 
-export interface SqliteRelationalConnection$instance extends ISqliteRelationalConnection$instance {}
+export interface SqliteRelationalConnection$instance extends ISqliteRelationalConnection$instance, Microsoft_EntityFrameworkCore_Storage_Internal.ITransactionEnlistmentManager {}
 
 export type SqliteRelationalConnection = SqliteRelationalConnection$instance & __SqliteRelationalConnection$views;
 
 
 export interface SqliteSqlGenerationHelper$instance extends RelationalSqlGenerationHelper {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ISqlGenerationHelper: never;
+
     readonly StartTransactionStatement: string;
     DelimitIdentifier(name: string, schema: string): string;
     DelimitIdentifier(builder: StringBuilder, name: string, schema: string): void;
@@ -208,6 +226,9 @@ export const SqliteTimeOnlyTypeMapping: {
 export type SqliteTimeOnlyTypeMapping = SqliteTimeOnlyTypeMapping$instance;
 
 export interface SqliteTypeMappingSource$instance extends RelationalTypeMappingSource {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalTypeMappingSource: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ITypeMappingSource: never;
+
     FindMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
 }
 

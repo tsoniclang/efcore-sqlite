@@ -15,6 +15,8 @@ import type { IMigrationsSqlGenerator, MigrationBuilder, MigrationCommand, Migra
 import type { AddCheckConstraintOperation, AddColumnOperation, AddForeignKeyOperation, AddPrimaryKeyOperation, AddUniqueConstraintOperation, AlterColumnOperation, AlterDatabaseOperation, AlterSequenceOperation, ColumnOperation, CreateSequenceOperation, CreateTableOperation, DropCheckConstraintOperation, DropColumnOperation, DropForeignKeyOperation, DropIndexOperation, DropPrimaryKeyOperation, DropSchemaOperation, DropSequenceOperation, DropUniqueConstraintOperation, EnsureSchemaOperation, MigrationOperation, RenameColumnOperation, RenameIndexOperation, RenameSequenceOperation, RenameTableOperation, RestartSequenceOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
 
 export interface SqliteMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsSqlGenerator: never;
+
     ColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
     ComputedColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
     CreateTableColumns(operation: CreateTableOperation, model: IModel, builder: MigrationCommandListBuilder): void;

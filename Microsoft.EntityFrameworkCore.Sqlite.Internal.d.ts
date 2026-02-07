@@ -16,3 +16,6 @@ import type { IEntityType, IKey, IReadOnlyProperty, IReadOnlySequence } from '@t
 export { SqliteLoggerExtensions$instance as SqliteLoggerExtensions } from './Microsoft.EntityFrameworkCore.Sqlite.Internal/internal/index.js';
 export { SqliteStrings$instance as SqliteStrings } from './Microsoft.EntityFrameworkCore.Sqlite.Internal/internal/index.js';
 export { SqliteResources$instance as SqliteResources } from './Microsoft.EntityFrameworkCore.Sqlite.Internal/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal as ExtensionMethods } from './__internal/extensions/index.js';
+

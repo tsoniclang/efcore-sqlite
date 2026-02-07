@@ -21,6 +21,8 @@ import type { ConventionSet, IConvention, IConventionContext, IEntityTypeAnnotat
 import type { IConventionAnnotation, IConventionProperty, IProperty, RuntimeProperty, StoreObjectIdentifier, ValueGenerated } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export interface SqliteConventionSetBuilder$instance extends RelationalConventionSetBuilder {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_IProviderConventionSetBuilder: never;
+
     CreateConventionSet(): ConventionSet;
 }
 
@@ -35,6 +37,9 @@ export const SqliteConventionSetBuilder: {
 export type SqliteConventionSetBuilder = SqliteConventionSetBuilder$instance;
 
 export interface SqliteRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizedConvention: never;
+
     ProcessPropertyAnnotations(annotations: Dictionary<System_Internal.String, unknown>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
 }
 
@@ -47,6 +52,9 @@ export const SqliteRuntimeModelConvention: {
 export type SqliteRuntimeModelConvention = SqliteRuntimeModelConvention$instance;
 
 export interface SqliteSharedTableConvention$instance extends SharedTableConvention {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
+
     readonly CheckConstraintsUniqueAcrossTables: boolean;
 }
 
@@ -59,6 +67,10 @@ export const SqliteSharedTableConvention: {
 export type SqliteSharedTableConvention = SqliteSharedTableConvention$instance;
 
 export interface SqliteStoreGenerationConvention$instance extends StoreGenerationConvention {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
+
     ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
     Validate(property: IConventionProperty, storeObject: StoreObjectIdentifier): void;
 }
@@ -72,6 +84,16 @@ export const SqliteStoreGenerationConvention: {
 export type SqliteStoreGenerationConvention = SqliteStoreGenerationConvention$instance;
 
 export interface SqliteValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeAnnotationChangedConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeBaseTypeChangedConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypePrimaryKeyChangedConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IForeignKeyAddedConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IForeignKeyOwnershipChangedConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IForeignKeyPropertiesChangedConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IForeignKeyRemovedConvention: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
+
     GetValueGenerated(property: IConventionProperty): Nullable<ValueGenerated>;
     ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }

@@ -15,3 +15,6 @@ import type { AddCheckConstraintOperation, AddColumnOperation, AddForeignKeyOper
 // Public API exports (curated - no internal $instance/$views leakage)
 export { SqliteMigrationBuilderExtensions$instance as SqliteMigrationBuilderExtensions } from './Microsoft.EntityFrameworkCore.Migrations/internal/index.js';
 export { SqliteMigrationsSqlGenerator as SqliteMigrationsSqlGenerator } from './Microsoft.EntityFrameworkCore.Migrations/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_EntityFrameworkCore_Migrations as ExtensionMethods } from './__internal/extensions/index.js';
+

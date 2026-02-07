@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface ICompilationAssemblyResolver$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
+
     TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 
@@ -19,6 +21,8 @@ export interface ICompilationAssemblyResolver$instance {
 export type ICompilationAssemblyResolver = ICompilationAssemblyResolver$instance;
 
 export interface AppBaseCompilationAssemblyResolver$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
+
     TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 
@@ -39,6 +43,8 @@ export type AppBaseCompilationAssemblyResolver = AppBaseCompilationAssemblyResol
 
 
 export interface CompositeCompilationAssemblyResolver$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
+
     TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 
@@ -71,6 +77,8 @@ export const DotNetReferenceAssembliesPathResolver: {
 export type DotNetReferenceAssembliesPathResolver = DotNetReferenceAssembliesPathResolver$instance;
 
 export interface PackageCompilationAssemblyResolver$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
+
     TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 
@@ -91,6 +99,8 @@ export type PackageCompilationAssemblyResolver = PackageCompilationAssemblyResol
 
 
 export interface ReferenceAssemblyPathResolver$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
+
     TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List<System_Internal.String>): boolean;
 }
 

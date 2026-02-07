@@ -4,34 +4,309 @@
 // For each namespace with extension methods, this file exports an ExtensionMethods_<Namespace> helper.
 
 // Import namespace modules for cross-namespace type references
+import * as Microsoft_EntityFrameworkCore from "../../Microsoft.EntityFrameworkCore/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Diagnostics from "../../Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure from "../../Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata from "../../Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata_Builders from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Migrations from "../../Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
+import * as Microsoft_Extensions_DependencyInjection from "../../Microsoft.Extensions.DependencyInjection/internal/index.js";
 import * as Microsoft_Extensions_DependencyModel from "../../Microsoft.Extensions.DependencyModel/internal/index.js";
+import * as System from "@tsonic/dotnet/System/internal/index.js";
+import * as System_Collections_Generic from "../../System.Collections.Generic/internal/index.js";
+import * as System_Data_Common from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import * as System_Reflection from "@tsonic/dotnet/System.Reflection/internal/index.js";
 
 // Import primitive type aliases
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import CLR type aliases for generic type arguments
-import * as System_Internal from "../../System/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 
 // Import unsafe type markers
 import type { ptr } from '@tsonic/core/types.js';
 
+export interface __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder {
+  UseSqlite(sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlite(connectionString: string, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlite(connection: System_Data_Common.DbConnection, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlite(connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_1<T> {
+  UseSqlite(sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseSqlite(connectionString: string, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseSqlite(connection: System_Data_Common.DbConnection, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseSqlite(connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_DbFunctions {
+  Glob(matchExpression: string, pattern: string): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Hex(bytes: byte[]): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
+  Unhex(value: string): ExtensionMethods_Microsoft_EntityFrameworkCore<byte[] | undefined>;
+  Unhex(value: string, ignoreChars: string): ExtensionMethods_Microsoft_EntityFrameworkCore<byte[] | undefined>;
+  Substr(bytes: byte[], startIndex: int): ExtensionMethods_Microsoft_EntityFrameworkCore<byte[]>;
+  Substr(bytes: byte[], startIndex: int, length: int): ExtensionMethods_Microsoft_EntityFrameworkCore<byte[]>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_DatabaseFacade {
+  IsSqlite(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ColumnBuilder {
+  UseAutoincrement(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder {
+  UseAutoincrement(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  HasSrid(srid: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder_1<T> {
+  UseAutoincrement(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<T>>;
+  HasSrid(srid: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeBuilder {
+  UseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  UseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  CanUseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  CanUseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionPropertyBuilder {
+  HasValueGenerationStrategy(strategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  CanSetValueGenerationStrategy(strategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasSrid(srid: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  CanSetSrid(srid: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder {
+  UseSqlReturningClause(useSqlReturningClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder_2<T1, T2> {
+  UseSqlReturningClause(useSqlReturningClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<T1, T2>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder {
+  UseAutoincrement(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  HasSrid(srid: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder_1<T> {
+  UseAutoincrement(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<T>>;
+  HasSrid(srid: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder {
+  UseSqlReturningClause(useSqlReturningClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder_1<T> {
+  UseSqlReturningClause(useSqlReturningClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_TableBuilder {
+  UseSqlReturningClause(useSqlReturningClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_TableBuilder_1<T> {
+  UseSqlReturningClause(useSqlReturningClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionEntityType {
+  UseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetUseSqlReturningClauseConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  GetUseSqlReturningClauseConfigurationSource(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  UseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeMappingFragment {
+  UseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetUseSqlReturningClauseConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionProperty {
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>>;
+  GetValueGenerationStrategyConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  GetValueGenerationStrategyConfigurationSource(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetSrid(value: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetSridConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionRelationalPropertyOverrides {
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>>;
+  GetValueGenerationStrategyConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableEntityType {
+  UseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  UseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableEntityTypeMappingFragment {
+  UseSqlReturningClause(useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableProperty {
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetSrid(value: System.Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableRelationalPropertyOverrides {
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityType {
+  IsSqlReturningClauseUsed(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsSqlReturningClauseUsed(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityTypeMappingFragment {
+  IsSqlReturningClauseUsed(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyProperty {
+  GetValueGenerationStrategy(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>;
+  GetValueGenerationStrategy(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>;
+  GetDefaultValueGenerationStrategy(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>;
+  GetSrid(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetSrid(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyRelationalPropertyOverrides {
+  GetValueGenerationStrategy(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ITable {
+  IsSqlReturningClauseUsed(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder {
+  IsSqlite(): ExtensionMethods_Microsoft_EntityFrameworkCore_Migrations<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_Sqlite_Internal_IDiagnosticsLogger_1<T> {
+  SchemaConfiguredWarning(entityType: Microsoft_EntityFrameworkCore_Metadata.IEntityType, schema: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  SequenceConfiguredWarning(sequence: Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  ColumnFound(tableName: string, columnName: string, dataTypeName: string, notNull: boolean, defaultValue: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  SchemasNotSupportedWarning(): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  ForeignKeyReferencesMissingTableWarning(id: string, tableName: string, principalTableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  TableFound(tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  MissingTableWarning(tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  ForeignKeyPrincipalColumnMissingWarning(foreignKeyName: string, tableName: string, principalColumnName: string, principalTableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  IndexFound(indexName: string, tableName: string, unique: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  ForeignKeyFound(tableName: string, id: long, principalTableName: string, deleteAction: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  PrimaryKeyFound(primaryKeyName: string, tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  UniqueConstraintFound(uniqueConstraintName: string, tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  UnexpectedConnectionTypeWarning(connectionType: System.Type): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  TableRebuildPendingWarning(operationType: System.Type, tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  CompositeKeyWithValueGeneration(key: Microsoft_EntityFrameworkCore_Metadata.IKey): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  ConflictingValueGenerationStrategiesWarning(sqliteValueGenerationStrategy: Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy, otherValueGenerationStrategy: string, property: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  InferringTypes(tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  OutOfRangeWarning(columnName: string, tableName: string, type: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+  FormatWarning(columnName: string, tableName: string, type: string): ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<void>;
+}
+
+export interface __Ext_Microsoft_Extensions_DependencyInjection_IServiceCollection {
+  AddSqlite<TContext>(connectionString: string, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder>, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddEntityFrameworkSqlite(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+}
+
 export interface __Ext_Microsoft_Extensions_DependencyModel_DependencyContext {
-  GetDefaultNativeAssets(): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
-  GetDefaultNativeRuntimeFileAssets(): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
-  GetRuntimeNativeAssets(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
-  GetRuntimeNativeRuntimeFileAssets(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
-  GetDefaultAssemblyNames(): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
-  GetRuntimeAssemblyNames(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
+  GetDefaultNativeAssets(): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<System_Internal.String>>;
+  GetDefaultNativeRuntimeFileAssets(): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+  GetRuntimeNativeAssets(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<System_Internal.String>>;
+  GetRuntimeNativeRuntimeFileAssets(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+  GetDefaultAssemblyNames(): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<System_Reflection.AssemblyName>>;
+  GetRuntimeAssemblyNames(runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<System_Reflection.AssemblyName>>;
 }
 
 export interface __Ext_Microsoft_Extensions_DependencyModel_RuntimeLibrary {
-  GetDefaultNativeAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
-  GetDefaultNativeRuntimeFileAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
-  GetRuntimeNativeAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<System_Internal.String>>;
-  GetRuntimeNativeRuntimeFileAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
-  GetDefaultAssemblyNames(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
-  GetRuntimeAssemblyNames(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<IEnumerable_1<AssemblyName>>;
+  GetDefaultNativeAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<System_Internal.String>>;
+  GetDefaultNativeRuntimeFileAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+  GetRuntimeNativeAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<System_Internal.String>>;
+  GetRuntimeNativeRuntimeFileAssets(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+  GetDefaultAssemblyNames(context: Microsoft_Extensions_DependencyModel.DependencyContext): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<System_Reflection.AssemblyName>>;
+  GetRuntimeAssemblyNames(context: Microsoft_Extensions_DependencyModel.DependencyContext, runtimeIdentifier: string): ExtensionMethods_Microsoft_Extensions_DependencyModel<System_Collections_Generic.IEnumerable_1<System_Reflection.AssemblyName>>;
 }
+
+export interface __Ext_SQLitePCL_ReadOnlySpan_1<T> {
+  utf8_span_to_string(): ExtensionMethods_SQLitePCL<string>;
+}
+
+export interface __Ext_System_Collections_Generic_IEnumerable_1<T> {
+  GetDefaultGroup(): ExtensionMethods_System_Collections_Generic<Microsoft_Extensions_DependencyModel.RuntimeAssetGroup | undefined>;
+  GetRuntimeGroup(runtime: string): ExtensionMethods_System_Collections_Generic<Microsoft_Extensions_DependencyModel.RuntimeAssetGroup | undefined>;
+  GetDefaultAssets(): ExtensionMethods_System_Collections_Generic<System_Collections_Generic.IEnumerable_1<System_Internal.String>>;
+  GetRuntimeAssets(runtime: string): ExtensionMethods_System_Collections_Generic<System_Collections_Generic.IEnumerable_1<System_Internal.String>>;
+  GetDefaultRuntimeFileAssets(): ExtensionMethods_System_Collections_Generic<System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+  GetRuntimeFileAssets(runtime: string): ExtensionMethods_System_Collections_Generic<System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_DependencyModel.RuntimeFile>>;
+}
+
+// Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore
+export type ExtensionMethods_Microsoft_EntityFrameworkCore<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_EntityFrameworkCore.DbContextOptionsBuilder ? __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore.DbFunctions ? __Ext_Microsoft_EntityFrameworkCore_DbFunctions : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Infrastructure.DatabaseFacade ? __Ext_Microsoft_EntityFrameworkCore_DatabaseFacade : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityType : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeMappingFragment : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionProperty ? __Ext_Microsoft_EntityFrameworkCore_IConventionProperty : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IConventionRelationalPropertyOverrides : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType ? __Ext_Microsoft_EntityFrameworkCore_IMutableEntityType : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IMutableEntityTypeMappingFragment : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableProperty ? __Ext_Microsoft_EntityFrameworkCore_IMutableProperty : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IMutableRelationalPropertyOverrides : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityType : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityTypeMappingFragment : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyProperty : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyRelationalPropertyOverrides : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.ITable ? __Ext_Microsoft_EntityFrameworkCore_ITable : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder ? __Ext_Microsoft_EntityFrameworkCore_ColumnBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionPropertyBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<infer T0, infer T1> ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder_2<T0, T1> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder ? __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder ? __Ext_Microsoft_EntityFrameworkCore_TableBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_TableBuilder_1<T0> : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.Migrations
+export type ExtensionMethods_Microsoft_EntityFrameworkCore_Migrations<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_EntityFrameworkCore_Migrations.MigrationBuilder ? __Ext_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.Sqlite.Internal
+export type ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_Sqlite_Internal_IDiagnosticsLogger_1<T0> : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection
+export type ExtensionMethods_Microsoft_Extensions_DependencyInjection<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceCollection : {})
+  );
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyModel
 export type ExtensionMethods_Microsoft_Extensions_DependencyModel<TShape> =
@@ -40,5 +315,22 @@ export type ExtensionMethods_Microsoft_Extensions_DependencyModel<TShape> =
   : TShape & (
     (TShape extends Microsoft_Extensions_DependencyModel.DependencyContext ? __Ext_Microsoft_Extensions_DependencyModel_DependencyContext : {}) &
     (TShape extends Microsoft_Extensions_DependencyModel.RuntimeLibrary ? __Ext_Microsoft_Extensions_DependencyModel_RuntimeLibrary : {})
+  );
+
+// Generic helper type for extension methods in namespace: SQLitePCL
+export type ExtensionMethods_SQLitePCL<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System.ReadOnlySpan_1<infer T0> ? __Ext_SQLitePCL_ReadOnlySpan_1<T0> : {})
+  );
+
+// Generic helper type for extension methods in namespace: System.Collections.Generic
+export type ExtensionMethods_System_Collections_Generic<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System_Collections_Generic.IEnumerable_1<infer T0> ? __Ext_System_Collections_Generic_IEnumerable_1<T0> : {}) &
+    (TShape extends (infer T)[] ? __Ext_System_Collections_Generic_IEnumerable_1<T> : {})
   );
 

@@ -27,3 +27,6 @@ export { SqlitePropertyBuilderExtensions$instance as SqlitePropertyBuilderExtens
 export { SqlitePropertyExtensions$instance as SqlitePropertyExtensions } from './Microsoft.EntityFrameworkCore/internal/index.js';
 export { SqliteTableBuilderExtensions$instance as SqliteTableBuilderExtensions } from './Microsoft.EntityFrameworkCore/internal/index.js';
 export { SqliteTableExtensions$instance as SqliteTableExtensions } from './Microsoft.EntityFrameworkCore/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_EntityFrameworkCore as ExtensionMethods } from './__internal/extensions/index.js';
+

@@ -62,3 +62,6 @@ export { authorizer_hook_info as authorizer_hook_info } from './SQLitePCL/intern
 export { EntryPointAttribute as EntryPointAttribute } from './SQLitePCL/internal/index.js';
 export type IGetFunctionPointer = Internal.IGetFunctionPointer;
 export { SQLite3Provider_e_sqlite3 as SQLite3Provider_e_sqlite3 } from './SQLitePCL/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_SQLitePCL as ExtensionMethods } from './__internal/extensions/index.js';
+

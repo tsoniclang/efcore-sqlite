@@ -25,6 +25,9 @@ import type { ITableBasedExpression, JsonScalarExpression, SelectExpression, Set
 import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface GlobExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
     readonly TypeMapping: RelationalTypeMapping;
@@ -45,6 +48,10 @@ export const GlobExpression: {
 export type GlobExpression = GlobExpression$instance;
 
 export interface JsonEachExpression$instance extends TableValuedFunctionExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_SqlExpressions_ITableBasedExpression: never;
+
     readonly JsonExpression: SqlExpression;
     readonly Path: IReadOnlyList<PathSegment> | undefined;
     Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
@@ -66,6 +73,9 @@ export const JsonEachExpression: {
 export type JsonEachExpression = JsonEachExpression$instance;
 
 export interface RegexpExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
     readonly TypeMapping: RelationalTypeMapping;
@@ -86,6 +96,8 @@ export const RegexpExpression: {
 export type RegexpExpression = RegexpExpression$instance;
 
 export interface SqliteAggregateMethodCallTranslatorProvider$instance extends RelationalAggregateMethodCallTranslatorProvider {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslatorProvider: never;
+
 }
 
 
@@ -97,6 +109,8 @@ export const SqliteAggregateMethodCallTranslatorProvider: {
 export type SqliteAggregateMethodCallTranslatorProvider = SqliteAggregateMethodCallTranslatorProvider$instance;
 
 export interface SqliteByteArrayMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -109,6 +123,8 @@ export const SqliteByteArrayMethodTranslator: {
 export type SqliteByteArrayMethodTranslator = SqliteByteArrayMethodTranslator$instance;
 
 export interface SqliteCharMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -121,6 +137,8 @@ export const SqliteCharMethodTranslator: {
 export type SqliteCharMethodTranslator = SqliteCharMethodTranslator$instance;
 
 export interface SqliteDateOnlyMemberTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
+
     Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -133,6 +151,8 @@ export const SqliteDateOnlyMemberTranslator: {
 export type SqliteDateOnlyMemberTranslator = SqliteDateOnlyMemberTranslator$instance;
 
 export interface SqliteDateOnlyMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -145,6 +165,8 @@ export const SqliteDateOnlyMethodTranslator: {
 export type SqliteDateOnlyMethodTranslator = SqliteDateOnlyMethodTranslator$instance;
 
 export interface SqliteDateTimeMemberTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
+
     Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -157,6 +179,8 @@ export const SqliteDateTimeMemberTranslator: {
 export type SqliteDateTimeMemberTranslator = SqliteDateTimeMemberTranslator$instance;
 
 export interface SqliteDateTimeMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -169,6 +193,8 @@ export const SqliteDateTimeMethodTranslator: {
 export type SqliteDateTimeMethodTranslator = SqliteDateTimeMethodTranslator$instance;
 
 export interface SqliteGlobMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -181,6 +207,8 @@ export const SqliteGlobMethodTranslator: {
 export type SqliteGlobMethodTranslator = SqliteGlobMethodTranslator$instance;
 
 export interface SqliteHexMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -193,6 +221,8 @@ export const SqliteHexMethodTranslator: {
 export type SqliteHexMethodTranslator = SqliteHexMethodTranslator$instance;
 
 export interface SqliteMathTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -205,6 +235,8 @@ export const SqliteMathTranslator: {
 export type SqliteMathTranslator = SqliteMathTranslator$instance;
 
 export interface SqliteMemberTranslatorProvider$instance extends RelationalMemberTranslatorProvider {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslatorProvider: never;
+
 }
 
 
@@ -216,6 +248,8 @@ export const SqliteMemberTranslatorProvider: {
 export type SqliteMemberTranslatorProvider = SqliteMemberTranslatorProvider$instance;
 
 export interface SqliteMethodCallTranslatorProvider$instance extends RelationalMethodCallTranslatorProvider {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslatorProvider: never;
+
 }
 
 
@@ -227,6 +261,8 @@ export const SqliteMethodCallTranslatorProvider: {
 export type SqliteMethodCallTranslatorProvider = SqliteMethodCallTranslatorProvider$instance;
 
 export interface SqliteObjectToStringTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -251,6 +287,8 @@ export const SqliteParameterBasedSqlProcessor: {
 export type SqliteParameterBasedSqlProcessor = SqliteParameterBasedSqlProcessor$instance;
 
 export interface SqliteParameterBasedSqlProcessorFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalParameterBasedSqlProcessorFactory: never;
+
     Create(parameters: RelationalParameterBasedSqlProcessorParameters): RelationalParameterBasedSqlProcessor;
 }
 
@@ -263,6 +301,8 @@ export const SqliteParameterBasedSqlProcessorFactory: {
 export type SqliteParameterBasedSqlProcessorFactory = SqliteParameterBasedSqlProcessorFactory$instance;
 
 export interface SqliteQueryableAggregateMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
+
     Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -300,6 +340,8 @@ export const SqliteQueryableMethodTranslatingExpressionVisitor: {
 export type SqliteQueryableMethodTranslatingExpressionVisitor = SqliteQueryableMethodTranslatingExpressionVisitor$instance;
 
 export interface SqliteQueryableMethodTranslatingExpressionVisitorFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IQueryableMethodTranslatingExpressionVisitorFactory: never;
+
     readonly Dependencies: QueryableMethodTranslatingExpressionVisitorDependencies;
     readonly RelationalDependencies: RelationalQueryableMethodTranslatingExpressionVisitorDependencies;
     Create(queryCompilationContext: QueryCompilationContext): QueryableMethodTranslatingExpressionVisitor;
@@ -327,6 +369,8 @@ export const SqliteQueryCompilationContext: {
 export type SqliteQueryCompilationContext = SqliteQueryCompilationContext$instance;
 
 export interface SqliteQueryCompilationContextFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IQueryCompilationContextFactory: never;
+
     readonly Dependencies: QueryCompilationContextDependencies;
     readonly RelationalDependencies: RelationalQueryCompilationContextDependencies;
     Create(async: boolean): QueryCompilationContext;
@@ -362,6 +406,8 @@ export const SqliteQuerySqlGenerator: {
 export type SqliteQuerySqlGenerator = SqliteQuerySqlGenerator$instance;
 
 export interface SqliteQuerySqlGeneratorFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IQuerySqlGeneratorFactory: never;
+
     readonly Dependencies: QuerySqlGeneratorDependencies;
     Create(): QuerySqlGenerator;
 }
@@ -375,6 +421,8 @@ export const SqliteQuerySqlGeneratorFactory: {
 export type SqliteQuerySqlGeneratorFactory = SqliteQuerySqlGeneratorFactory$instance;
 
 export interface SqliteQueryStringFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQueryStringFactory: never;
+
     Create(command: DbCommand): string;
 }
 
@@ -400,6 +448,8 @@ export const SqliteQueryTranslationPostprocessor: {
 export type SqliteQueryTranslationPostprocessor = SqliteQueryTranslationPostprocessor$instance;
 
 export interface SqliteQueryTranslationPostprocessorFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IQueryTranslationPostprocessorFactory: never;
+
     readonly Dependencies: QueryTranslationPostprocessorDependencies;
     readonly RelationalDependencies: RelationalQueryTranslationPostprocessorDependencies;
     Create(queryCompilationContext: QueryCompilationContext): QueryTranslationPostprocessor;
@@ -414,6 +464,8 @@ export const SqliteQueryTranslationPostprocessorFactory: {
 export type SqliteQueryTranslationPostprocessorFactory = SqliteQueryTranslationPostprocessorFactory$instance;
 
 export interface SqliteRandomTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -426,6 +478,8 @@ export const SqliteRandomTranslator: {
 export type SqliteRandomTranslator = SqliteRandomTranslator$instance;
 
 export interface SqliteRegexMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -438,6 +492,8 @@ export const SqliteRegexMethodTranslator: {
 export type SqliteRegexMethodTranslator = SqliteRegexMethodTranslator$instance;
 
 export interface SqliteSqlExpressionFactory$instance extends SqlExpressionFactory {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ISqlExpressionFactory: never;
+
     ApplyTypeMapping(sqlExpression: SqlExpression, typeMapping: RelationalTypeMapping): SqlExpression | undefined;
     Date(returnType: Type, timestring: SqlExpression, modifiers?: IEnumerable<SqlExpression>, typeMapping?: RelationalTypeMapping): SqlExpression;
     Glob(match: SqlExpression, pattern: SqlExpression): GlobExpression;
@@ -488,6 +544,8 @@ export const SqliteSqlTranslatingExpressionVisitor: {
 export type SqliteSqlTranslatingExpressionVisitor = SqliteSqlTranslatingExpressionVisitor$instance;
 
 export interface SqliteSqlTranslatingExpressionVisitorFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalSqlTranslatingExpressionVisitorFactory: never;
+
     readonly Dependencies: RelationalSqlTranslatingExpressionVisitorDependencies;
     Create(queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): RelationalSqlTranslatingExpressionVisitor;
 }
@@ -501,6 +559,8 @@ export const SqliteSqlTranslatingExpressionVisitorFactory: {
 export type SqliteSqlTranslatingExpressionVisitorFactory = SqliteSqlTranslatingExpressionVisitorFactory$instance;
 
 export interface SqliteStringAggregateMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
+
     Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -513,6 +573,8 @@ export const SqliteStringAggregateMethodTranslator: {
 export type SqliteStringAggregateMethodTranslator = SqliteStringAggregateMethodTranslator$instance;
 
 export interface SqliteStringLengthTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
+
     Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -525,6 +587,8 @@ export const SqliteStringLengthTranslator: {
 export type SqliteStringLengthTranslator = SqliteStringLengthTranslator$instance;
 
 export interface SqliteStringMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
@@ -537,6 +601,8 @@ export const SqliteStringMethodTranslator: {
 export type SqliteStringMethodTranslator = SqliteStringMethodTranslator$instance;
 
 export interface SqliteSubstrMethodTranslator$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
+
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList<SqlExpression>, logger: IDiagnosticsLogger<DbLoggerCategory$Query>): SqlExpression | undefined;
 }
 
