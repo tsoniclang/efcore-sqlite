@@ -259,10 +259,13 @@ type __TsonicPreferExt<A, B> = Omit<A, keyof B> & B;
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore
 type __TsonicExtSurface_Microsoft_EntityFrameworkCore<TShape> =
   (
-    __TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<(TShape extends Microsoft_EntityFrameworkCore.DbContextOptionsBuilder ? __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder : {}), (TShape extends Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_1<T0> : {})>, (TShape extends Microsoft_EntityFrameworkCore.DbFunctions ? __Ext_Microsoft_EntityFrameworkCore_DbFunctions : {})>, (TShape extends Microsoft_EntityFrameworkCore_Infrastructure.DatabaseFacade ? __Ext_Microsoft_EntityFrameworkCore_DatabaseFacade : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityType : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeMappingFragment : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionProperty ? __Ext_Microsoft_EntityFrameworkCore_IConventionProperty : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IConventionRelationalPropertyOverrides : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType ? __Ext_Microsoft_EntityFrameworkCore_IMutableEntityType : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IMutableEntityTypeMappingFragment : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableProperty ? __Ext_Microsoft_EntityFrameworkCore_IMutableProperty : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IMutableRelationalPropertyOverrides : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityType : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityTypeMappingFragment : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyProperty : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyRelationalPropertyOverrides : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata.ITable ? __Ext_Microsoft_EntityFrameworkCore_ITable : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder ? __Ext_Microsoft_EntityFrameworkCore_ColumnBuilder : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder_1<T0> : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeBuilder : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionPropertyBuilder : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<infer T0, infer T1> ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder_2<T0, T1> : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder_1<T0> : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder ? __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder_1<T0> : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder ? __Ext_Microsoft_EntityFrameworkCore_TableBuilder : {})>, (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_TableBuilder_1<T0> : {})>
+    (TShape extends Microsoft_EntityFrameworkCore.DbContextOptionsBuilder ? __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder : {}) & (TShape extends Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_1<T0> : {}) & (TShape extends Microsoft_EntityFrameworkCore.DbFunctions ? __Ext_Microsoft_EntityFrameworkCore_DbFunctions : {}) & (TShape extends Microsoft_EntityFrameworkCore_Infrastructure.DatabaseFacade ? __Ext_Microsoft_EntityFrameworkCore_DatabaseFacade : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityType : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeMappingFragment : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionProperty ? __Ext_Microsoft_EntityFrameworkCore_IConventionProperty : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IConventionRelationalPropertyOverrides : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType ? __Ext_Microsoft_EntityFrameworkCore_IMutableEntityType : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IMutableEntityTypeMappingFragment : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableProperty ? __Ext_Microsoft_EntityFrameworkCore_IMutableProperty : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IMutableRelationalPropertyOverrides : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityType : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityTypeMappingFragment : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyProperty : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyRelationalPropertyOverrides : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata.ITable ? __Ext_Microsoft_EntityFrameworkCore_ITable : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder ? __Ext_Microsoft_EntityFrameworkCore_ColumnBuilder : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder_1<T0> : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeBuilder : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionPropertyBuilder : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<infer T0, infer T1> ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder_2<T0, T1> : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder_1<T0> : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder ? __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder_1<T0> : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder ? __Ext_Microsoft_EntityFrameworkCore_TableBuilder : {}) & (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_TableBuilder_1<T0> : {})
   );
 
-type __TsonicExtApplier_Microsoft_EntityFrameworkCore = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_EntityFrameworkCore<TShape>;
+interface __TsonicExtApplier_Microsoft_EntityFrameworkCore {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_EntityFrameworkCore<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_EntityFrameworkCore<TShape> =
   TShape extends null | undefined ? TShape
@@ -275,7 +278,10 @@ type __TsonicExtSurface_Microsoft_EntityFrameworkCore_Migrations<TShape> =
     (TShape extends Microsoft_EntityFrameworkCore_Migrations.MigrationBuilder ? __Ext_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder : {})
   );
 
-type __TsonicExtApplier_Microsoft_EntityFrameworkCore_Migrations = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_EntityFrameworkCore_Migrations<TShape>;
+interface __TsonicExtApplier_Microsoft_EntityFrameworkCore_Migrations {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_EntityFrameworkCore_Migrations<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_EntityFrameworkCore_Migrations<TShape> =
   TShape extends null | undefined ? TShape
@@ -288,7 +294,10 @@ type __TsonicExtSurface_Microsoft_EntityFrameworkCore_Sqlite_Internal<TShape> =
     (TShape extends Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_Sqlite_Internal_IDiagnosticsLogger_1<T0> : {})
   );
 
-type __TsonicExtApplier_Microsoft_EntityFrameworkCore_Sqlite_Internal = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_EntityFrameworkCore_Sqlite_Internal<TShape>;
+interface __TsonicExtApplier_Microsoft_EntityFrameworkCore_Sqlite_Internal {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_EntityFrameworkCore_Sqlite_Internal<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<TShape> =
   TShape extends null | undefined ? TShape
@@ -301,7 +310,10 @@ type __TsonicExtSurface_Microsoft_Extensions_DependencyInjection<TShape> =
     (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceCollection : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_DependencyInjection = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_DependencyInjection<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_DependencyInjection {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_DependencyInjection<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_DependencyInjection<TShape> =
   TShape extends null | undefined ? TShape
@@ -311,10 +323,13 @@ export type ExtensionMethods_Microsoft_Extensions_DependencyInjection<TShape> =
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyModel
 type __TsonicExtSurface_Microsoft_Extensions_DependencyModel<TShape> =
   (
-    __TsonicPreferExt<(TShape extends Microsoft_Extensions_DependencyModel.DependencyContext ? __Ext_Microsoft_Extensions_DependencyModel_DependencyContext : {}), (TShape extends Microsoft_Extensions_DependencyModel.RuntimeLibrary ? __Ext_Microsoft_Extensions_DependencyModel_RuntimeLibrary : {})>
+    (TShape extends Microsoft_Extensions_DependencyModel.DependencyContext ? __Ext_Microsoft_Extensions_DependencyModel_DependencyContext : {}) & (TShape extends Microsoft_Extensions_DependencyModel.RuntimeLibrary ? __Ext_Microsoft_Extensions_DependencyModel_RuntimeLibrary : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_DependencyModel = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_DependencyModel<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_DependencyModel {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_DependencyModel<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_DependencyModel<TShape> =
   TShape extends null | undefined ? TShape
@@ -327,7 +342,10 @@ type __TsonicExtSurface_SQLitePCL<TShape> =
     (TShape extends System.ReadOnlySpan_1<infer T0> ? __Ext_SQLitePCL_ReadOnlySpan_1<T0> : {})
   );
 
-type __TsonicExtApplier_SQLitePCL = <TShape>(shape: TShape) => __TsonicExtSurface_SQLitePCL<TShape>;
+interface __TsonicExtApplier_SQLitePCL {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_SQLitePCL<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_SQLitePCL<TShape> =
   TShape extends null | undefined ? TShape
@@ -337,10 +355,13 @@ export type ExtensionMethods_SQLitePCL<TShape> =
 // Generic helper type for extension methods in namespace: System.Collections.Generic
 type __TsonicExtSurface_System_Collections_Generic<TShape> =
   (
-    __TsonicPreferExt<(TShape extends System_Collections_Generic.IEnumerable_1<infer T0> ? __Ext_System_Collections_Generic_IEnumerable_1<T0> : {}), (TShape extends (infer T)[] ? __Ext_System_Collections_Generic_IEnumerable_1<T> : {})>
+    (TShape extends System_Collections_Generic.IEnumerable_1<infer T0> ? __Ext_System_Collections_Generic_IEnumerable_1<T0> : {}) & (TShape extends (infer T)[] ? __Ext_System_Collections_Generic_IEnumerable_1<T> : {})
   );
 
-type __TsonicExtApplier_System_Collections_Generic = <TShape>(shape: TShape) => __TsonicExtSurface_System_Collections_Generic<TShape>;
+interface __TsonicExtApplier_System_Collections_Generic {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_System_Collections_Generic<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_System_Collections_Generic<TShape> =
   TShape extends null | undefined ? TShape
