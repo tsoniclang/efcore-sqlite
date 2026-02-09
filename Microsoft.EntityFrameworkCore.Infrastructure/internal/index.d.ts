@@ -8,14 +8,14 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Microsoft_EntityFrameworkCore_Sqlite_Infrastructure_Internal_Internal from "../../Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal/internal/index.js";
 import type { SqliteOptionsExtension } from "../../Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal/internal/index.js";
-import type { DbConnection } from "@tsonic/dotnet/System.Data.Common.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
-import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
+import type { DbConnection } from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbContextOptionsBuilder_2 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export interface SqliteDbContextOptionsBuilder$instance extends RelationalDbContextOptionsBuilder<SqliteDbContextOptionsBuilder, SqliteOptionsExtension> {
+export interface SqliteDbContextOptionsBuilder$instance extends RelationalDbContextOptionsBuilder_2<SqliteDbContextOptionsBuilder, SqliteOptionsExtension> {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
 
 }

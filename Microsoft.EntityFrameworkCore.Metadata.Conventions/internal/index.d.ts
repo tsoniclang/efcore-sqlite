@@ -10,15 +10,15 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Dictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Boolean as ClrBoolean, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IConventionPropertyBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js";
-import * as Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.js";
-import type { IProviderConventionSetBuilder, ProviderConventionSetBuilderDependencies, RelationalConventionSetBuilder, RelationalConventionSetBuilderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.js";
-import * as Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.js";
-import type { ConventionSet, IConvention, IConventionContext, IEntityTypeAnnotationChangedConvention, IEntityTypeBaseTypeChangedConvention, IEntityTypePrimaryKeyChangedConvention, IForeignKeyAddedConvention, IForeignKeyOwnershipChangedConvention, IForeignKeyPropertiesChangedConvention, IForeignKeyRemovedConvention, IModelFinalizedConvention, IModelFinalizingConvention, IPropertyAnnotationChangedConvention, RelationalRuntimeModelConvention, RelationalValueGenerationConvention, SharedTableConvention, StoreGenerationConvention } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.js";
-import type { IConventionAnnotation, IConventionProperty, IProperty, RuntimeProperty, StoreObjectIdentifier, ValueGenerated } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { Dictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Boolean as ClrBoolean, Nullable_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IConventionPropertyBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure/internal/index.js";
+import type { IProviderConventionSetBuilder, ProviderConventionSetBuilderDependencies, RelationalConventionSetBuilder, RelationalConventionSetBuilderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions/internal/index.js";
+import type { ConventionSet, IConvention, IConventionContext_1, IEntityTypeAnnotationChangedConvention, IEntityTypeBaseTypeChangedConvention, IEntityTypePrimaryKeyChangedConvention, IForeignKeyAddedConvention, IForeignKeyOwnershipChangedConvention, IForeignKeyPropertiesChangedConvention, IForeignKeyRemovedConvention, IModelFinalizedConvention, IModelFinalizingConvention, IPropertyAnnotationChangedConvention, RelationalRuntimeModelConvention, RelationalValueGenerationConvention, SharedTableConvention, StoreGenerationConvention } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions/internal/index.js";
+import type { IConventionAnnotation, IConventionProperty, IProperty, RuntimeProperty, StoreObjectIdentifier, ValueGenerated } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import type { ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface SqliteConventionSetBuilder$instance extends RelationalConventionSetBuilder {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_IProviderConventionSetBuilder: never;
@@ -40,7 +40,7 @@ export interface SqliteRuntimeModelConvention$instance extends RelationalRuntime
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizedConvention: never;
 
-    ProcessPropertyAnnotations(annotations: Dictionary<System_Internal.String, unknown>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
+    ProcessPropertyAnnotations(annotations: Dictionary_2<System_Internal.String, unknown>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
 }
 
 
@@ -71,7 +71,7 @@ export interface SqliteStoreGenerationConvention$instance extends StoreGeneratio
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
 
-    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext_1<IConventionAnnotation>): void;
     Validate(property: IConventionProperty, storeObject: StoreObjectIdentifier): void;
 }
 
@@ -94,8 +94,8 @@ export interface SqliteValueGenerationConvention$instance extends RelationalValu
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IForeignKeyRemovedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
 
-    GetValueGenerated(property: IConventionProperty): Nullable<ValueGenerated>;
-    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    GetValueGenerated(property: IConventionProperty): Nullable_1<ValueGenerated>;
+    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext_1<IConventionAnnotation>): void;
 }
 
 
