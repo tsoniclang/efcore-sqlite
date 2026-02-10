@@ -25,6 +25,8 @@ export interface IDependencyContextReader$instance extends System_Internal.IDisp
 export type IDependencyContextReader = IDependencyContextReader$instance;
 
 export interface Dependency$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Dependency: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Name: string;
@@ -43,6 +45,8 @@ export const Dependency: {
 export type Dependency = Dependency$instance;
 
 export interface CompilationLibrary$instance extends Library {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_CompilationLibrary: never;
+
     readonly Assemblies: IReadOnlyList_1<System_Internal.String>;
     ResolveReferencePaths(): IEnumerable_1<System_Internal.String>;
     ResolveReferencePaths(...customResolvers: ICompilationAssemblyResolver[]): IEnumerable_1<System_Internal.String>;
@@ -58,6 +62,8 @@ export const CompilationLibrary: {
 export type CompilationLibrary = CompilationLibrary$instance;
 
 export interface CompilationOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_CompilationOptions: never;
+
     readonly AllowUnsafe: Nullable_1<System_Internal.Boolean>;
     readonly DebugType: string | undefined;
     readonly Defines: IReadOnlyList_1<string | undefined>;
@@ -82,6 +88,8 @@ export const CompilationOptions: {
 export type CompilationOptions = CompilationOptions$instance;
 
 export interface DependencyContext$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_DependencyContext: never;
+
     readonly CompilationOptions: CompilationOptions;
     readonly CompileLibraries: IReadOnlyList_1<CompilationLibrary>;
     readonly RuntimeGraph: IReadOnlyList_1<RuntimeFallbacks>;
@@ -101,6 +109,8 @@ export const DependencyContext: {
 export type DependencyContext = DependencyContext$instance;
 
 export interface DependencyContextJsonReader$instance extends IDependencyContextReader$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_DependencyContextJsonReader: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_IDependencyContextReader: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -123,6 +133,8 @@ export type DependencyContextJsonReader = DependencyContextJsonReader$instance &
 
 
 export interface DependencyContextLoader$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_DependencyContextLoader: never;
+
     Load(assembly: Assembly): DependencyContext | undefined;
 }
 
@@ -136,6 +148,8 @@ export const DependencyContextLoader: {
 export type DependencyContextLoader = DependencyContextLoader$instance;
 
 export interface DependencyContextWriter$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_DependencyContextWriter: never;
+
     Write(context: DependencyContext, stream: Stream): void;
 }
 
@@ -148,6 +162,8 @@ export const DependencyContextWriter: {
 export type DependencyContextWriter = DependencyContextWriter$instance;
 
 export interface Library$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Library: never;
+
     readonly Dependencies: IReadOnlyList_1<Dependency>;
     readonly Hash: string | undefined;
     readonly HashPath: string | undefined;
@@ -170,6 +186,8 @@ export const Library: {
 export type Library = Library$instance;
 
 export interface ResourceAssembly$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_ResourceAssembly: never;
+
     Locale: string;
     readonly LocalPath: string | undefined;
     Path: string;
@@ -185,6 +203,8 @@ export const ResourceAssembly: {
 export type ResourceAssembly = ResourceAssembly$instance;
 
 export interface RuntimeAssembly$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_RuntimeAssembly: never;
+
     readonly Name: AssemblyName;
     readonly Path: string;
 }
@@ -199,6 +219,8 @@ export const RuntimeAssembly: {
 export type RuntimeAssembly = RuntimeAssembly$instance;
 
 export interface RuntimeAssetGroup$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_RuntimeAssetGroup: never;
+
     readonly AssetPaths: IReadOnlyList_1<System_Internal.String>;
     readonly Runtime: string | undefined;
     readonly RuntimeFiles: IReadOnlyList_1<RuntimeFile>;
@@ -215,6 +237,8 @@ export const RuntimeAssetGroup: {
 export type RuntimeAssetGroup = RuntimeAssetGroup$instance;
 
 export interface RuntimeFallbacks$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_RuntimeFallbacks: never;
+
     Fallbacks: IReadOnlyList_1<string | undefined>;
     Runtime: string;
 }
@@ -229,6 +253,8 @@ export const RuntimeFallbacks: {
 export type RuntimeFallbacks = RuntimeFallbacks$instance;
 
 export interface RuntimeFile$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_RuntimeFile: never;
+
     readonly AssemblyVersion: string | undefined;
     readonly FileVersion: string | undefined;
     readonly LocalPath: string | undefined;
@@ -245,6 +271,8 @@ export const RuntimeFile: {
 export type RuntimeFile = RuntimeFile$instance;
 
 export interface RuntimeLibrary$instance extends Library {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_RuntimeLibrary: never;
+
     readonly NativeLibraryGroups: IReadOnlyList_1<RuntimeAssetGroup>;
     readonly ResourceAssemblies: IReadOnlyList_1<ResourceAssembly>;
     readonly RuntimeAssemblyGroups: IReadOnlyList_1<RuntimeAssetGroup>;
@@ -261,6 +289,8 @@ export const RuntimeLibrary: {
 export type RuntimeLibrary = RuntimeLibrary$instance;
 
 export interface TargetInfo$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_TargetInfo: never;
+
     readonly Framework: string;
     readonly IsPortable: boolean;
     readonly Runtime: string | undefined;

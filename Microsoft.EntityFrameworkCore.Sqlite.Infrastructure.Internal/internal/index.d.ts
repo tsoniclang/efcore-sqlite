@@ -20,6 +20,8 @@ import type { DbLoggerCategory$Model$Validation } from "@tsonic/efcore/Microsoft
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export interface SqliteModelValidator$instance extends RelationalModelValidator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Infrastructure_Internal_SqliteModelValidator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
     Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
@@ -40,6 +42,8 @@ export const SqliteModelValidator: {
 export type SqliteModelValidator = SqliteModelValidator$instance;
 
 export interface SqliteOptionsExtension$instance extends RelationalOptionsExtension {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Infrastructure_Internal_SqliteOptionsExtension: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
 
     readonly Info: DbContextOptionsExtensionInfo;

@@ -52,6 +52,8 @@ export enum SqliteType {
 
 
 export interface SqliteBlob$instance extends Stream {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteBlob: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -80,6 +82,8 @@ export const SqliteBlob: {
 export type SqliteBlob = SqliteBlob$instance;
 
 export interface SqliteCommand$instance extends DbCommand {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteCommand: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbCommand: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -131,6 +135,8 @@ export const SqliteCommand: {
 export type SqliteCommand = SqliteCommand$instance;
 
 export interface SqliteConnection$instance extends DbConnection {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteConnection: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbConnection: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -261,6 +267,8 @@ export const SqliteConnection: {
 export type SqliteConnection = SqliteConnection$instance;
 
 export interface SqliteConnectionStringBuilder$instance extends DbConnectionStringBuilder {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteConnectionStringBuilder: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IDictionary: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -270,7 +278,6 @@ export interface SqliteConnectionStringBuilder$instance extends DbConnectionStri
     DataSource: string;
     DefaultTimeout: int;
     ForeignKeys: Nullable_1<System_Internal.Boolean>;
-    [keyword: string]: unknown | undefined;
     readonly Keys: ICollection;
     Mode: SqliteOpenMode;
     Password: string;
@@ -293,9 +300,11 @@ export const SqliteConnectionStringBuilder: {
 };
 
 
-export type SqliteConnectionStringBuilder = SqliteConnectionStringBuilder$instance;
+export type SqliteConnectionStringBuilder = SqliteConnectionStringBuilder$instance & { [keyword: string]: unknown | undefined; };
 
 export interface SqliteDataReader$instance extends DbDataReader {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteDataReader: never;
+
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Data_IDataReader: never;
     readonly __tsonic_iface_System_Data_IDataRecord: never;
@@ -352,6 +361,8 @@ export const SqliteDataReader: {
 export type SqliteDataReader = SqliteDataReader$instance;
 
 export interface SqliteException$instance extends DbException {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly SqliteErrorCode: int;
@@ -369,6 +380,8 @@ export const SqliteException: {
 export type SqliteException = SqliteException$instance;
 
 export interface SqliteFactory$instance extends DbProviderFactory {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteFactory: never;
+
     CreateCommand(): DbCommand;
     CreateConnection(): DbConnection;
     CreateConnectionStringBuilder(): DbConnectionStringBuilder;
@@ -384,6 +397,8 @@ export const SqliteFactory: {
 export type SqliteFactory = SqliteFactory$instance;
 
 export interface SqliteParameter$instance extends DbParameter {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteParameter: never;
+
     readonly __tsonic_iface_System_Data_IDataParameter: never;
     readonly __tsonic_iface_System_Data_IDbDataParameter: never;
 
@@ -414,6 +429,8 @@ export const SqliteParameter: {
 export type SqliteParameter = SqliteParameter$instance;
 
 export interface SqliteParameterCollection$instance extends DbParameterCollection {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteParameterCollection: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
@@ -463,6 +480,8 @@ export const SqliteParameterCollection: (abstract new() => SqliteParameterCollec
 export type SqliteParameterCollection = SqliteParameterCollection$instance;
 
 export interface SqliteTransaction$instance extends DbTransaction {
+    readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteTransaction: never;
+
     readonly __tsonic_iface_System_Data_IDbTransaction: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;

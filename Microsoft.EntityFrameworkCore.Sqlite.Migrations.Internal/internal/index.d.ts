@@ -15,6 +15,8 @@ import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryReposito
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
 export interface SqliteHistoryRepository$instance extends HistoryRepository {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Migrations_Internal_SqliteHistoryRepository: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
 
     readonly ExistsSql: string;
@@ -38,6 +40,8 @@ export const SqliteHistoryRepository: {
 export type SqliteHistoryRepository = SqliteHistoryRepository$instance;
 
 export interface SqliteMigrationDatabaseLock$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Migrations_Internal_SqliteMigrationDatabaseLock: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsDatabaseLock: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
