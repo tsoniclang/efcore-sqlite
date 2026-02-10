@@ -18,6 +18,8 @@ import type { IColumn, IProperty, IRelationalModel } from "@tsonic/efcore/Micros
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export interface SqliteAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Design_Internal_SqliteAnnotationCodeGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IAnnotationCodeGenerator: never;
 
     GenerateFluentApiCalls(property: IProperty, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
@@ -33,6 +35,8 @@ export const SqliteAnnotationCodeGenerator: {
 export type SqliteAnnotationCodeGenerator = SqliteAnnotationCodeGenerator$instance;
 
 export interface SqliteCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Design_Internal_SqliteCSharpRuntimeAnnotationCodeGenerator: never;
+
     Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
     Generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
     Generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
@@ -47,6 +51,8 @@ export const SqliteCSharpRuntimeAnnotationCodeGenerator: {
 export type SqliteCSharpRuntimeAnnotationCodeGenerator = SqliteCSharpRuntimeAnnotationCodeGenerator$instance;
 
 export interface SqliteDesignTimeServices$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Design_Internal_SqliteDesignTimeServices: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IDesignTimeServices: never;
 
     ConfigureDesignTimeServices(serviceCollection: IServiceCollection): void;

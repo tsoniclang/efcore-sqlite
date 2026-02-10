@@ -17,6 +17,8 @@ import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/M
 import type { ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update/internal/index.js";
 
 export interface SqliteLegacyUpdateSqlGenerator$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Update_Internal_SqliteLegacyUpdateSqlGenerator: never;
+
 }
 
 
@@ -28,6 +30,8 @@ export const SqliteLegacyUpdateSqlGenerator: {
 export type SqliteLegacyUpdateSqlGenerator = SqliteLegacyUpdateSqlGenerator$instance;
 
 export interface SqliteModificationCommand$instance extends ModificationCommand {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Update_Internal_SqliteModificationCommand: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommand: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_INonTrackedModificationCommand: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IReadOnlyModificationCommand: never;
@@ -45,6 +49,8 @@ export const SqliteModificationCommand: {
 export type SqliteModificationCommand = SqliteModificationCommand$instance;
 
 export interface SqliteModificationCommandBatchFactory$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Update_Internal_SqliteModificationCommandBatchFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandBatchFactory: never;
 
     readonly Dependencies: ModificationCommandBatchFactoryDependencies;
@@ -60,6 +66,8 @@ export const SqliteModificationCommandBatchFactory: {
 export type SqliteModificationCommandBatchFactory = SqliteModificationCommandBatchFactory$instance;
 
 export interface SqliteModificationCommandFactory$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Update_Internal_SqliteModificationCommandFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandFactory: never;
 
     CreateModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
@@ -75,6 +83,8 @@ export const SqliteModificationCommandFactory: {
 export type SqliteModificationCommandFactory = SqliteModificationCommandFactory$instance;
 
 export interface SqliteUpdateSqlGenerator$instance extends UpdateAndSelectSqlGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Update_Internal_SqliteUpdateSqlGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IUpdateSqlGenerator: never;
 
     AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
