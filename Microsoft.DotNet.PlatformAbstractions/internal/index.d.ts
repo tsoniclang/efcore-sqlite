@@ -11,6 +11,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface HashCodeCombiner$instance {
+    readonly __tsonic_type_Microsoft_DotNet_PlatformAbstractions_HashCodeCombiner: never;
+
     readonly CombinedHash: int;
     Add(i: int): void;
     Add(s: string): void;

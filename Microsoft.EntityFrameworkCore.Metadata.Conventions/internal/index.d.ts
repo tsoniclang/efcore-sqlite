@@ -21,6 +21,8 @@ import type { IConventionAnnotation, IConventionProperty, IProperty, RuntimeProp
 import type { ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface SqliteConventionSetBuilder$instance extends RelationalConventionSetBuilder {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteConventionSetBuilder: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_IProviderConventionSetBuilder: never;
 
     CreateConventionSet(): ConventionSet;
@@ -37,6 +39,8 @@ export const SqliteConventionSetBuilder: {
 export type SqliteConventionSetBuilder = SqliteConventionSetBuilder$instance;
 
 export interface SqliteRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteRuntimeModelConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizedConvention: never;
 
@@ -52,6 +56,8 @@ export const SqliteRuntimeModelConvention: {
 export type SqliteRuntimeModelConvention = SqliteRuntimeModelConvention$instance;
 
 export interface SqliteSharedTableConvention$instance extends SharedTableConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteSharedTableConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
 
@@ -67,6 +73,8 @@ export const SqliteSharedTableConvention: {
 export type SqliteSharedTableConvention = SqliteSharedTableConvention$instance;
 
 export interface SqliteStoreGenerationConvention$instance extends StoreGenerationConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteStoreGenerationConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
@@ -84,6 +92,8 @@ export const SqliteStoreGenerationConvention: {
 export type SqliteStoreGenerationConvention = SqliteStoreGenerationConvention$instance;
 
 export interface SqliteValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteValueGenerationConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeAnnotationChangedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeBaseTypeChangedConvention: never;

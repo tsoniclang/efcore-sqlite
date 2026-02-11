@@ -35,6 +35,8 @@ export interface ISqliteRelationalConnection$instance extends Microsoft_EntityFr
 export type ISqliteRelationalConnection = ISqliteRelationalConnection$instance;
 
 export interface SqliteByteArrayTypeMapping$instance extends ByteArrayTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteByteArrayTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
 }
 
@@ -48,6 +50,8 @@ export const SqliteByteArrayTypeMapping: {
 export type SqliteByteArrayTypeMapping = SqliteByteArrayTypeMapping$instance;
 
 export interface SqliteDatabaseCreator$instance extends RelationalDatabaseCreator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteDatabaseCreator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDatabaseCreator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalDatabaseCreator: never;
 
@@ -66,6 +70,8 @@ export const SqliteDatabaseCreator: {
 export type SqliteDatabaseCreator = SqliteDatabaseCreator$instance;
 
 export interface SqliteDateOnlyTypeMapping$instance extends DateOnlyTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteDateOnlyTypeMapping: never;
+
     readonly SqlLiteralFormatString: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
 }
@@ -80,6 +86,8 @@ export const SqliteDateOnlyTypeMapping: {
 export type SqliteDateOnlyTypeMapping = SqliteDateOnlyTypeMapping$instance;
 
 export interface SqliteDateTimeOffsetTypeMapping$instance extends DateTimeOffsetTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteDateTimeOffsetTypeMapping: never;
+
     readonly SqlLiteralFormatString: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
 }
@@ -94,6 +102,8 @@ export const SqliteDateTimeOffsetTypeMapping: {
 export type SqliteDateTimeOffsetTypeMapping = SqliteDateTimeOffsetTypeMapping$instance;
 
 export interface SqliteDateTimeTypeMapping$instance extends DateTimeTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteDateTimeTypeMapping: never;
+
     readonly SqlLiteralFormatString: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
 }
@@ -108,6 +118,8 @@ export const SqliteDateTimeTypeMapping: {
 export type SqliteDateTimeTypeMapping = SqliteDateTimeTypeMapping$instance;
 
 export interface SqliteDecimalTypeMapping$instance extends DecimalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteDecimalTypeMapping: never;
+
     readonly SqlLiteralFormatString: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
 }
@@ -122,6 +134,8 @@ export const SqliteDecimalTypeMapping: {
 export type SqliteDecimalTypeMapping = SqliteDecimalTypeMapping$instance;
 
 export interface SqliteGuidTypeMapping$instance extends GuidTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteGuidTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }
@@ -136,6 +150,8 @@ export const SqliteGuidTypeMapping: {
 export type SqliteGuidTypeMapping = SqliteGuidTypeMapping$instance;
 
 export interface SqliteJsonTypeMapping$instance extends JsonTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteJsonTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     CustomizeDataReaderExpression(expression: Expression): Expression;
     EscapeSqlLiteral(literal: string): string;
@@ -153,6 +169,8 @@ export const SqliteJsonTypeMapping: {
 export type SqliteJsonTypeMapping = SqliteJsonTypeMapping$instance;
 
 export interface SqliteRelationalConnection$instance extends RelationalConnection, ISqliteRelationalConnection$instance, Microsoft_EntityFrameworkCore_Storage_Internal.ITransactionEnlistmentManager {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteRelationalConnection: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IResettableService: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_ISqliteRelationalConnection: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDbContextTransactionManager: never;
@@ -180,6 +198,8 @@ export type SqliteRelationalConnection = SqliteRelationalConnection$instance & _
 
 
 export interface SqliteSqlGenerationHelper$instance extends RelationalSqlGenerationHelper {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteSqlGenerationHelper: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ISqlGenerationHelper: never;
 
     readonly StartTransactionStatement: string;
@@ -196,6 +216,8 @@ export const SqliteSqlGenerationHelper: {
 export type SqliteSqlGenerationHelper = SqliteSqlGenerationHelper$instance;
 
 export interface SqliteStringTypeMapping$instance extends StringTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteStringTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }
@@ -210,6 +232,8 @@ export const SqliteStringTypeMapping: {
 export type SqliteStringTypeMapping = SqliteStringTypeMapping$instance;
 
 export interface SqliteTimeOnlyTypeMapping$instance extends TimeOnlyTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteTimeOnlyTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }
@@ -224,6 +248,8 @@ export const SqliteTimeOnlyTypeMapping: {
 export type SqliteTimeOnlyTypeMapping = SqliteTimeOnlyTypeMapping$instance;
 
 export interface SqliteTypeMappingSource$instance extends RelationalTypeMappingSource {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteTypeMappingSource: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalTypeMappingSource: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ITypeMappingSource: never;
 
@@ -240,6 +266,8 @@ export const SqliteTypeMappingSource: {
 export type SqliteTypeMappingSource = SqliteTypeMappingSource$instance;
 
 export interface SqliteULongTypeMapping$instance extends ULongTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteULongTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }

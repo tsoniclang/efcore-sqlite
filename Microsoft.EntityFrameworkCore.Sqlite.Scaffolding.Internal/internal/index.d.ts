@@ -18,6 +18,8 @@ import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.Enti
 import type { DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface SqliteCodeGenerator$instance extends ProviderCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Scaffolding_Internal_SqliteCodeGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IProviderConfigurationCodeGenerator: never;
 
     GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
@@ -32,6 +34,8 @@ export const SqliteCodeGenerator: {
 export type SqliteCodeGenerator = SqliteCodeGenerator$instance;
 
 export interface SqliteDatabaseModelFactory$instance extends DatabaseModelFactory {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Scaffolding_Internal_SqliteDatabaseModelFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IDatabaseModelFactory: never;
 
     Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;

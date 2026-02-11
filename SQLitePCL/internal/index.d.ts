@@ -187,6 +187,8 @@ export interface ISQLite3Provider$instance {
 export type ISQLite3Provider = ISQLite3Provider$instance;
 
 export interface utf8z$instance {
+    readonly __tsonic_type_SQLitePCL_utf8z: never;
+
     GetPinnableReference(): byte;
     utf8_to_string(): string;
 }
@@ -206,6 +208,8 @@ export const utf8z: {
 export type utf8z = utf8z$instance;
 
 export interface authorizer_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_authorizer_hook_info: never;
+
     call(action_code: int, param0: utf8z, param1: utf8z, dbName: utf8z, inner_most_trigger_or_view: utf8z): int;
 }
 
@@ -219,6 +223,8 @@ export const authorizer_hook_info: {
 export type authorizer_hook_info = authorizer_hook_info$instance;
 
 export interface collation_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_collation_hook_info: never;
+
     call(s1: ReadOnlySpan_1<System_Internal.Byte>, s2: ReadOnlySpan_1<System_Internal.Byte>): int;
 }
 
@@ -232,6 +238,8 @@ export const collation_hook_info: {
 export type collation_hook_info = collation_hook_info$instance;
 
 export interface commit_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_commit_hook_info: never;
+
     _func: delegate_commit;
     _user_data: unknown;
     call(): int;
@@ -247,6 +255,8 @@ export const commit_hook_info: {
 export type commit_hook_info = commit_hook_info$instance;
 
 export interface EntryPointAttribute$instance extends Attribute {
+    readonly __tsonic_type_SQLitePCL_EntryPointAttribute: never;
+
     Name: string;
 }
 
@@ -259,6 +269,8 @@ export const EntryPointAttribute: {
 export type EntryPointAttribute = EntryPointAttribute$instance;
 
 export interface exec_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_exec_hook_info: never;
+
     call(n: int, values_ptr: nint, names_ptr: nint): int;
 }
 
@@ -272,6 +284,8 @@ export const exec_hook_info: {
 export type exec_hook_info = exec_hook_info$instance;
 
 export interface function_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_function_hook_info: never;
+
     call_final(context: nint, agg_context: nint): void;
     call_scalar(context: nint, num_args: int, argsptr: nint): void;
     call_step(context: nint, agg_context: nint, num_args: int, argsptr: nint): void;
@@ -288,6 +302,8 @@ export const function_hook_info: {
 export type function_hook_info = function_hook_info$instance;
 
 export interface hook_handle$instance extends SafeGCHandle {
+    readonly __tsonic_type_SQLitePCL_hook_handle: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     ForDispose(): IDisposable;
@@ -302,6 +318,8 @@ export const hook_handle: {
 export type hook_handle = hook_handle$instance;
 
 export interface hook_handles$instance {
+    readonly __tsonic_type_SQLitePCL_hook_handles: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     update: IDisposable;
@@ -329,6 +347,8 @@ export const hook_handles: {
 export type hook_handles = hook_handles$instance;
 
 export interface log_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_log_hook_info: never;
+
     call(rc: int, msg: utf8z): void;
 }
 
@@ -342,6 +362,8 @@ export const log_hook_info: {
 export type log_hook_info = log_hook_info$instance;
 
 export interface MonoPInvokeCallbackAttribute$instance extends Attribute {
+    readonly __tsonic_type_SQLitePCL_MonoPInvokeCallbackAttribute: never;
+
 }
 
 
@@ -353,6 +375,8 @@ export const MonoPInvokeCallbackAttribute: {
 export type MonoPInvokeCallbackAttribute = MonoPInvokeCallbackAttribute$instance;
 
 export interface PreserveAttribute$instance extends Attribute {
+    readonly __tsonic_type_SQLitePCL_PreserveAttribute: never;
+
     AllMembers: boolean;
     Conditional: boolean;
 }
@@ -366,6 +390,8 @@ export const PreserveAttribute: {
 export type PreserveAttribute = PreserveAttribute$instance;
 
 export interface profile_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_profile_hook_info: never;
+
     call(s: utf8z, elapsed: long): void;
 }
 
@@ -379,6 +405,8 @@ export const profile_hook_info: {
 export type profile_hook_info = profile_hook_info$instance;
 
 export interface progress_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_progress_hook_info: never;
+
     call(): int;
 }
 
@@ -392,6 +420,8 @@ export const progress_hook_info: {
 export type progress_hook_info = progress_hook_info$instance;
 
 export interface rollback_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_rollback_hook_info: never;
+
     call(): void;
 }
 
@@ -405,6 +435,8 @@ export const rollback_hook_info: {
 export type rollback_hook_info = rollback_hook_info$instance;
 
 export interface SafeGCHandle$instance extends SafeHandle {
+    readonly __tsonic_type_SQLitePCL_SafeGCHandle: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly IsInvalid: boolean;
@@ -420,6 +452,8 @@ export const SafeGCHandle: {
 export type SafeGCHandle = SafeGCHandle$instance;
 
 export interface sqlite3$instance extends SafeHandle {
+    readonly __tsonic_type_SQLitePCL_sqlite3: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly IsInvalid: boolean;
@@ -438,6 +472,8 @@ export const sqlite3: {
 export type sqlite3 = sqlite3$instance;
 
 export interface sqlite3_backup$instance extends SafeHandle {
+    readonly __tsonic_type_SQLitePCL_sqlite3_backup: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly IsInvalid: boolean;
@@ -454,6 +490,8 @@ export const sqlite3_backup: {
 export type sqlite3_backup = sqlite3_backup$instance;
 
 export interface sqlite3_blob$instance extends SafeHandle {
+    readonly __tsonic_type_SQLitePCL_sqlite3_blob: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly IsInvalid: boolean;
@@ -469,6 +507,8 @@ export const sqlite3_blob: {
 export type sqlite3_blob = sqlite3_blob$instance;
 
 export interface sqlite3_context$instance {
+    readonly __tsonic_type_SQLitePCL_sqlite3_context: never;
+
     state: unknown;
 }
 
@@ -480,6 +520,8 @@ export const sqlite3_context: (abstract new(user_data: unknown) => sqlite3_conte
 export type sqlite3_context = sqlite3_context$instance;
 
 export interface sqlite3_snapshot$instance extends SafeHandle {
+    readonly __tsonic_type_SQLitePCL_sqlite3_snapshot: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly IsInvalid: boolean;
@@ -495,6 +537,8 @@ export const sqlite3_snapshot: {
 export type sqlite3_snapshot = sqlite3_snapshot$instance;
 
 export interface sqlite3_stmt$instance extends SafeHandle {
+    readonly __tsonic_type_SQLitePCL_sqlite3_stmt: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly IsInvalid: boolean;
@@ -510,6 +554,8 @@ export const sqlite3_stmt: {
 export type sqlite3_stmt = sqlite3_stmt$instance;
 
 export interface sqlite3_value$instance {
+    readonly __tsonic_type_SQLitePCL_sqlite3_value: never;
+
 }
 
 
@@ -521,6 +567,8 @@ export const sqlite3_value: {
 export type sqlite3_value = sqlite3_value$instance;
 
 export interface SQLite3Provider_e_sqlite3$instance extends ISQLite3Provider$instance {
+    readonly __tsonic_type_SQLitePCL_SQLite3Provider_e_sqlite3: never;
+
     readonly __tsonic_iface_SQLitePCL_ISQLite3Provider: never;
 
 }
@@ -539,6 +587,8 @@ export type SQLite3Provider_e_sqlite3 = SQLite3Provider_e_sqlite3$instance & __S
 
 
 export interface trace_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_trace_hook_info: never;
+
     call(s: utf8z): void;
 }
 
@@ -552,6 +602,8 @@ export const trace_hook_info: {
 export type trace_hook_info = trace_hook_info$instance;
 
 export interface update_hook_info$instance {
+    readonly __tsonic_type_SQLitePCL_update_hook_info: never;
+
     call(typ: int, db: utf8z, tbl: utf8z, rowid: long): void;
 }
 
