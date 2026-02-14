@@ -44,11 +44,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteComplexTypePropertyBuilderExtensions::UseAutoincrement(ComplexTypePropertyBuilder_1):ComplexTypePropertyBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteComplexTypePropertyBuilderExtensions::UseAutoincrement(Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]]):Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]]",
           "clrName": "UseAutoincrement",
           "metadataToken": 100663380,
-          "canonicalSignature": "(ComplexTypePropertyBuilder_1):ComplexTypePropertyBuilder_1",
-          "normalizedSignature": "UseAutoincrement|(ComplexTypePropertyBuilder_1):ComplexTypePropertyBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]]):Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]]",
+          "normalizedSignature": "UseAutoincrement|(Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]]):Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -84,11 +84,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteComplexTypePropertyBuilderExtensions::HasSrid(ComplexTypePropertyBuilder_1,System.Int32):ComplexTypePropertyBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteComplexTypePropertyBuilderExtensions::HasSrid(Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]],System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]]",
           "clrName": "HasSrid",
           "metadataToken": 100663382,
-          "canonicalSignature": "(ComplexTypePropertyBuilder_1,System.Int32):ComplexTypePropertyBuilder_1",
-          "normalizedSignature": "HasSrid|(ComplexTypePropertyBuilder_1,System.Int32):ComplexTypePropertyBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]],System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]]",
+          "normalizedSignature": "HasSrid|(Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]],System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.ComplexTypePropertyBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -248,11 +248,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions::UseSqlite(DbContextOptionsBuilder_1,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions::UseSqlite(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]",
           "clrName": "UseSqlite",
           "metadataToken": 100663388,
-          "canonicalSignature": "(DbContextOptionsBuilder_1,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1",
-          "normalizedSignature": "UseSqlite|(DbContextOptionsBuilder_1,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]",
+          "normalizedSignature": "UseSqlite|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -268,11 +268,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions::UseSqlite(DbContextOptionsBuilder_1,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions::UseSqlite(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]",
           "clrName": "UseSqlite",
           "metadataToken": 100663389,
-          "canonicalSignature": "(DbContextOptionsBuilder_1,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1",
-          "normalizedSignature": "UseSqlite|(DbContextOptionsBuilder_1,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]",
+          "normalizedSignature": "UseSqlite|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -288,11 +288,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions::UseSqlite(DbContextOptionsBuilder_1,System.Data.Common.DbConnection,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions::UseSqlite(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.Data.Common.DbConnection,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]",
           "clrName": "UseSqlite",
           "metadataToken": 100663390,
-          "canonicalSignature": "(DbContextOptionsBuilder_1,System.Data.Common.DbConnection,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1",
-          "normalizedSignature": "UseSqlite|(DbContextOptionsBuilder_1,System.Data.Common.DbConnection,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.Data.Common.DbConnection,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]",
+          "normalizedSignature": "UseSqlite|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.Data.Common.DbConnection,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -308,11 +308,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions::UseSqlite(DbContextOptionsBuilder_1,System.Data.Common.DbConnection,System.Boolean,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions::UseSqlite(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.Data.Common.DbConnection,System.Boolean,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]",
           "clrName": "UseSqlite",
           "metadataToken": 100663391,
-          "canonicalSignature": "(DbContextOptionsBuilder_1,System.Data.Common.DbConnection,System.Boolean,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1",
-          "normalizedSignature": "UseSqlite|(DbContextOptionsBuilder_1,System.Data.Common.DbConnection,System.Boolean,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):DbContextOptionsBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.Data.Common.DbConnection,System.Boolean,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]",
+          "normalizedSignature": "UseSqlite|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]],System.Data.Common.DbConnection,System.Boolean,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.Sqlite,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.DbContextOptionsBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -934,11 +934,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqlitePropertyBuilderExtensions::UseAutoincrement(PropertyBuilder_1):PropertyBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqlitePropertyBuilderExtensions::UseAutoincrement(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]]):Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]]",
           "clrName": "UseAutoincrement",
           "metadataToken": 100663417,
-          "canonicalSignature": "(PropertyBuilder_1):PropertyBuilder_1",
-          "normalizedSignature": "UseAutoincrement|(PropertyBuilder_1):PropertyBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]]):Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]]",
+          "normalizedSignature": "UseAutoincrement|(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]]):Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -1034,11 +1034,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqlitePropertyBuilderExtensions::HasSrid(PropertyBuilder_1,System.Int32):PropertyBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqlitePropertyBuilderExtensions::HasSrid(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]],System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]]",
           "clrName": "HasSrid",
           "metadataToken": 100663422,
-          "canonicalSignature": "(PropertyBuilder_1,System.Int32):PropertyBuilder_1",
-          "normalizedSignature": "HasSrid|(PropertyBuilder_1,System.Int32):PropertyBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]],System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]]",
+          "normalizedSignature": "HasSrid|(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]],System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -1548,11 +1548,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteTableBuilderExtensions::UseSqlReturningClause(TableBuilder_1,System.Boolean):TableBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteTableBuilderExtensions::UseSqlReturningClause(Microsoft.EntityFrameworkCore.Metadata.Builders.TableBuilder_1[[!!0]],System.Boolean):Microsoft.EntityFrameworkCore.Metadata.Builders.TableBuilder_1[[!!0]]",
           "clrName": "UseSqlReturningClause",
           "metadataToken": 100663447,
-          "canonicalSignature": "(TableBuilder_1,System.Boolean):TableBuilder_1",
-          "normalizedSignature": "UseSqlReturningClause|(TableBuilder_1,System.Boolean):TableBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.TableBuilder_1[[!!0]],System.Boolean):Microsoft.EntityFrameworkCore.Metadata.Builders.TableBuilder_1[[!!0]]",
+          "normalizedSignature": "UseSqlReturningClause|(Microsoft.EntityFrameworkCore.Metadata.Builders.TableBuilder_1[[!!0]],System.Boolean):Microsoft.EntityFrameworkCore.Metadata.Builders.TableBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -1588,11 +1588,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteTableBuilderExtensions::UseSqlReturningClause(SplitTableBuilder_1,System.Boolean):SplitTableBuilder_1",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteTableBuilderExtensions::UseSqlReturningClause(Microsoft.EntityFrameworkCore.Metadata.Builders.SplitTableBuilder_1[[!!0]],System.Boolean):Microsoft.EntityFrameworkCore.Metadata.Builders.SplitTableBuilder_1[[!!0]]",
           "clrName": "UseSqlReturningClause",
           "metadataToken": 100663449,
-          "canonicalSignature": "(SplitTableBuilder_1,System.Boolean):SplitTableBuilder_1",
-          "normalizedSignature": "UseSqlReturningClause|(SplitTableBuilder_1,System.Boolean):SplitTableBuilder_1|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.SplitTableBuilder_1[[!!0]],System.Boolean):Microsoft.EntityFrameworkCore.Metadata.Builders.SplitTableBuilder_1[[!!0]]",
+          "normalizedSignature": "UseSqlReturningClause|(Microsoft.EntityFrameworkCore.Metadata.Builders.SplitTableBuilder_1[[!!0]],System.Boolean):Microsoft.EntityFrameworkCore.Metadata.Builders.SplitTableBuilder_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -1628,11 +1628,11 @@
           "isExtensionMethod": true
         },
         {
-          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteTableBuilderExtensions::UseSqlReturningClause(OwnedNavigationTableBuilder_2,System.Boolean):OwnedNavigationTableBuilder_2",
+          "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.SqliteTableBuilderExtensions::UseSqlReturningClause(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTableBuilder_2[[!!0],[!!1]],System.Boolean):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTableBuilder_2[[!!0],[!!1]]",
           "clrName": "UseSqlReturningClause",
           "metadataToken": 100663451,
-          "canonicalSignature": "(OwnedNavigationTableBuilder_2,System.Boolean):OwnedNavigationTableBuilder_2",
-          "normalizedSignature": "UseSqlReturningClause|(OwnedNavigationTableBuilder_2,System.Boolean):OwnedNavigationTableBuilder_2|static=true",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTableBuilder_2[[!!0],[!!1]],System.Boolean):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTableBuilder_2[[!!0],[!!1]]",
+          "normalizedSignature": "UseSqlReturningClause|(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTableBuilder_2[[!!0],[!!1]],System.Boolean):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTableBuilder_2[[!!0],[!!1]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 2,
