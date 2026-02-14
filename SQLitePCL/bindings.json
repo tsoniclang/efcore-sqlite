@@ -5738,11 +5738,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "SQLitePCLRaw.core:SQLitePCL.sqlite3::GetOrCreateExtra(System.Func_1[[!!0]]):!!0",
+          "stableId": "SQLitePCLRaw.core:SQLitePCL.sqlite3::GetOrCreateExtra(Func_1):T",
           "clrName": "GetOrCreateExtra",
           "metadataToken": 100663559,
-          "canonicalSignature": "(System.Func_1[[!!0]]):!!0",
-          "normalizedSignature": "GetOrCreateExtra|(System.Func_1[[!!0]]):!!0|static=false",
+          "canonicalSignature": "(Func_1):T",
+          "normalizedSignature": "GetOrCreateExtra|(Func_1):T|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,

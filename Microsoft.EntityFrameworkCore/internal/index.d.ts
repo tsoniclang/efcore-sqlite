@@ -100,12 +100,12 @@ export abstract class SqlitePropertyBuilderExtensions$instance {
     static CanSetSrid(propertyBuilder: IConventionPropertyBuilder, srid: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
     static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, strategy: Nullable_1<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
     static HasSrid(propertyBuilder: IConventionPropertyBuilder, srid: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static HasSrid<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, srid: int): PropertyBuilder_1<TProperty>;
     static HasSrid(propertyBuilder: PropertyBuilder, srid: int): PropertyBuilder;
+    static HasSrid<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, srid: int): PropertyBuilder_1<TProperty>;
     static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, strategy: Nullable_1<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
     static UseAutoincrement(columnBuilder: ColumnBuilder): ColumnBuilder;
-    static UseAutoincrement<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
     static UseAutoincrement(propertyBuilder: PropertyBuilder): PropertyBuilder;
+    static UseAutoincrement<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
 }
 
 
@@ -136,12 +136,12 @@ export abstract class SqlitePropertyExtensions$instance {
 export type SqlitePropertyExtensions = SqlitePropertyExtensions$instance;
 
 export abstract class SqliteTableBuilderExtensions$instance {
-    static UseSqlReturningClause<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
     static UseSqlReturningClause(tableBuilder: OwnedNavigationTableBuilder, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder;
-    static UseSqlReturningClause<TEntity>(tableBuilder: SplitTableBuilder_1<TEntity>, useSqlReturningClause?: boolean): SplitTableBuilder_1<TEntity>;
     static UseSqlReturningClause(tableBuilder: SplitTableBuilder, useSqlReturningClause?: boolean): SplitTableBuilder;
-    static UseSqlReturningClause<TEntity>(tableBuilder: TableBuilder_1<TEntity>, useSqlReturningClause?: boolean): TableBuilder_1<TEntity>;
     static UseSqlReturningClause(tableBuilder: TableBuilder, useSqlReturningClause?: boolean): TableBuilder;
+    static UseSqlReturningClause<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static UseSqlReturningClause<TEntity>(tableBuilder: SplitTableBuilder_1<TEntity>, useSqlReturningClause?: boolean): SplitTableBuilder_1<TEntity>;
+    static UseSqlReturningClause<TEntity>(tableBuilder: TableBuilder_1<TEntity>, useSqlReturningClause?: boolean): TableBuilder_1<TEntity>;
 }
 
 

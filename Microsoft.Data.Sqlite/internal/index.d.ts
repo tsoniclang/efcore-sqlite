@@ -177,7 +177,6 @@ export interface SqliteConnection$instance extends DbConnection {
     CreateAggregate<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate>(name: string, func: Func_15<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate>, isDeterministic?: boolean): void;
     CreateAggregate<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate>(name: string, func: Func_16<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate>, isDeterministic?: boolean): void;
     CreateAggregate<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate>(name: string, func: Func_17<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate>, isDeterministic?: boolean): void;
-    CreateAggregate<TAccumulate>(name: string, func: Func_3<TAccumulate, unknown[], TAccumulate>, isDeterministic?: boolean): void;
     CreateAggregate<TAccumulate>(name: string, seed: TAccumulate, func: Func_2<TAccumulate, TAccumulate>, isDeterministic?: boolean): void;
     CreateAggregate<T1, TAccumulate>(name: string, seed: TAccumulate, func: Func_3<TAccumulate, T1, TAccumulate>, isDeterministic?: boolean): void;
     CreateAggregate<T1, T2, TAccumulate>(name: string, seed: TAccumulate, func: Func_4<TAccumulate, T1, T2, TAccumulate>, isDeterministic?: boolean): void;
@@ -194,7 +193,6 @@ export interface SqliteConnection$instance extends DbConnection {
     CreateAggregate<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate>(name: string, seed: TAccumulate, func: Func_15<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate>, isDeterministic?: boolean): void;
     CreateAggregate<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate>(name: string, seed: TAccumulate, func: Func_16<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate>, isDeterministic?: boolean): void;
     CreateAggregate<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate>(name: string, seed: TAccumulate, func: Func_17<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate>, isDeterministic?: boolean): void;
-    CreateAggregate<TAccumulate>(name: string, seed: TAccumulate, func: Func_3<TAccumulate, unknown[], TAccumulate>, isDeterministic?: boolean): void;
     CreateAggregate<TAccumulate, TResult>(name: string, seed: TAccumulate, func: Func_2<TAccumulate, TAccumulate>, resultSelector: Func_2<TAccumulate, TResult>, isDeterministic?: boolean): void;
     CreateAggregate<T1, TAccumulate, TResult>(name: string, seed: TAccumulate, func: Func_3<TAccumulate, T1, TAccumulate>, resultSelector: Func_2<TAccumulate, TResult>, isDeterministic?: boolean): void;
     CreateAggregate<T1, T2, TAccumulate, TResult>(name: string, seed: TAccumulate, func: Func_4<TAccumulate, T1, T2, TAccumulate>, resultSelector: Func_2<TAccumulate, TResult>, isDeterministic?: boolean): void;
@@ -211,7 +209,6 @@ export interface SqliteConnection$instance extends DbConnection {
     CreateAggregate<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate, TResult>(name: string, seed: TAccumulate, func: Func_15<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate>, resultSelector: Func_2<TAccumulate, TResult>, isDeterministic?: boolean): void;
     CreateAggregate<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate, TResult>(name: string, seed: TAccumulate, func: Func_16<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate>, resultSelector: Func_2<TAccumulate, TResult>, isDeterministic?: boolean): void;
     CreateAggregate<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate, TResult>(name: string, seed: TAccumulate, func: Func_17<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate>, resultSelector: Func_2<TAccumulate, TResult>, isDeterministic?: boolean): void;
-    CreateAggregate<TAccumulate, TResult>(name: string, seed: TAccumulate, func: Func_3<TAccumulate, unknown[], TAccumulate>, resultSelector: Func_2<TAccumulate, TResult>, isDeterministic?: boolean): void;
     CreateCollation(name: string, comparison: Comparison_1<System_Internal.String>): void;
     CreateCollation<T>(name: string, state: T, comparison: Func_4<T, System_Internal.String, System_Internal.String, System_Internal.Int32>): void;
     CreateCommand(): SqliteCommand;
@@ -233,7 +230,6 @@ export interface SqliteConnection$instance extends DbConnection {
     CreateFunction<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>(name: string, function_: Func_15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>, isDeterministic?: boolean): void;
     CreateFunction<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>(name: string, function_: Func_16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>, isDeterministic?: boolean): void;
     CreateFunction<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult>(name: string, function_: Func_17<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult>, isDeterministic?: boolean): void;
-    CreateFunction<TResult>(name: string, function_: Func_2<unknown[], TResult>, isDeterministic?: boolean): void;
     CreateFunction<TState, TResult>(name: string, state: TState, function_: Func_2<TState, TResult>, isDeterministic?: boolean): void;
     CreateFunction<TState, T1, TResult>(name: string, state: TState, function_: Func_3<TState, T1, TResult>, isDeterministic?: boolean): void;
     CreateFunction<TState, T1, T2, TResult>(name: string, state: TState, function_: Func_4<TState, T1, T2, TResult>, isDeterministic?: boolean): void;
@@ -250,7 +246,6 @@ export interface SqliteConnection$instance extends DbConnection {
     CreateFunction<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>(name: string, state: TState, function_: Func_15<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>, isDeterministic?: boolean): void;
     CreateFunction<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>(name: string, state: TState, function_: Func_16<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>, isDeterministic?: boolean): void;
     CreateFunction<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>(name: string, state: TState, function_: Func_17<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>, isDeterministic?: boolean): void;
-    CreateFunction<TState, TResult>(name: string, state: TState, function_: Func_3<TState, unknown[], TResult>, isDeterministic?: boolean): void;
     Dispose(disposing: boolean): void;
     EnableExtensions(enable?: boolean): void;
     GetSchema(): DataTable;
