@@ -277,7 +277,8 @@ export interface SqliteConnectionStringBuilder$instance extends DbConnectionStri
     Cache: SqliteCacheMode;
     DataSource: string;
     DefaultTimeout: int;
-    ForeignKeys: Nullable_1<System_Internal.Boolean>;
+    get ForeignKeys(): Nullable_1<System_Internal.Boolean>;
+    set ForeignKeys(value: Nullable_1<System_Internal.Boolean> | boolean);
     readonly Keys: ICollection;
     Mode: SqliteOpenMode;
     Password: string;
