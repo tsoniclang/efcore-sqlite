@@ -2,11 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal
 // Assembly: Microsoft.EntityFrameworkCore.Sqlite
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -16,7 +14,7 @@ import type { IDiagnosticsLogger_1 } from "@tsonic/efcore/Microsoft.EntityFramew
 import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
 import type { DbContextOptionsExtensionInfo, IDbContextOptionsExtension, IModelValidator, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
 import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
-import type { DbLoggerCategory$Model$Validation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { DbLoggerCategory_Model_Validation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export interface SqliteModelValidator$instance extends RelationalModelValidator {
@@ -24,13 +22,13 @@ export interface SqliteModelValidator$instance extends RelationalModelValidator 
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
-    Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
-    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
-    ValidateNoSchemas(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
-    ValidateNoSequences(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
-    ValidateNoStoredProcedures(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
-    ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
-    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateNoSchemas(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateNoSequences(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateNoStoredProcedures(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
 }
 
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.DependencyModel
 // Assembly: Microsoft.Extensions.DependencyModel
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ICompilationAssemblyResolver } from "../../Microsoft.Extensions.DependencyModel.Resolution/internal/index.js";
@@ -32,7 +33,7 @@ export interface Dependency$instance {
     readonly Name: string;
     readonly Version: string;
     Equals(other: Dependency): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
 }
 
@@ -54,8 +55,8 @@ export interface CompilationLibrary$instance extends Library {
 
 
 export const CompilationLibrary: {
-    new(type: string, name: string, version: string, hash: string, assemblies: IEnumerable_1<System_Internal.String>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean): CompilationLibrary;
-    new(type: string, name: string, version: string, hash: string, assemblies: IEnumerable_1<System_Internal.String>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string, hashPath: string): CompilationLibrary;
+    new(type: string, name: string, version: string, hash: string | null, assemblies: IEnumerable_1<System_Internal.String>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean): CompilationLibrary;
+    new(type: string, name: string, version: string, hash: string | null, assemblies: IEnumerable_1<System_Internal.String>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string | null, hashPath: string | null): CompilationLibrary;
 };
 
 
@@ -65,22 +66,22 @@ export interface CompilationOptions$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_CompilationOptions: never;
 
     readonly AllowUnsafe: Nullable_1<System_Internal.Boolean>;
-    readonly DebugType: string | undefined;
-    readonly Defines: IReadOnlyList_1<string | undefined>;
+    readonly DebugType: string | null;
+    readonly Defines: IReadOnlyList_1<string | null>;
     readonly DelaySign: Nullable_1<System_Internal.Boolean>;
     readonly EmitEntryPoint: Nullable_1<System_Internal.Boolean>;
     readonly GenerateXmlDocumentation: Nullable_1<System_Internal.Boolean>;
-    readonly KeyFile: string | undefined;
-    readonly LanguageVersion: string | undefined;
+    readonly KeyFile: string | null;
+    readonly LanguageVersion: string | null;
     readonly Optimize: Nullable_1<System_Internal.Boolean>;
-    readonly Platform: string | undefined;
+    readonly Platform: string | null;
     readonly PublicSign: Nullable_1<System_Internal.Boolean>;
     readonly WarningsAsErrors: Nullable_1<System_Internal.Boolean>;
 }
 
 
 export const CompilationOptions: {
-    new(defines: IEnumerable_1<System_Internal.String>, languageVersion: string, platform: string, allowUnsafe: Nullable_1<System_Internal.Boolean>, warningsAsErrors: Nullable_1<System_Internal.Boolean>, optimize: Nullable_1<System_Internal.Boolean>, keyFile: string, delaySign: Nullable_1<System_Internal.Boolean>, publicSign: Nullable_1<System_Internal.Boolean>, debugType: string, emitEntryPoint: Nullable_1<System_Internal.Boolean>, generateXmlDocumentation: Nullable_1<System_Internal.Boolean>): CompilationOptions;
+    new(defines: IEnumerable_1<string | null>, languageVersion: string | null, platform: string | null, allowUnsafe: Nullable_1<System_Internal.Boolean>, warningsAsErrors: Nullable_1<System_Internal.Boolean>, optimize: Nullable_1<System_Internal.Boolean>, keyFile: string | null, delaySign: Nullable_1<System_Internal.Boolean>, publicSign: Nullable_1<System_Internal.Boolean>, debugType: string | null, emitEntryPoint: Nullable_1<System_Internal.Boolean>, generateXmlDocumentation: Nullable_1<System_Internal.Boolean>): CompilationOptions;
     readonly Default: CompilationOptions;
 };
 
@@ -101,8 +102,8 @@ export interface DependencyContext$instance {
 
 export const DependencyContext: {
     new(target: TargetInfo, compilationOptions: CompilationOptions, compileLibraries: IEnumerable_1<CompilationLibrary>, runtimeLibraries: IEnumerable_1<RuntimeLibrary>, runtimeGraph: IEnumerable_1<RuntimeFallbacks>): DependencyContext;
-    readonly Default: DependencyContext | undefined;
-    Load(assembly: Assembly): DependencyContext | undefined;
+    readonly Default: DependencyContext | null;
+    Load(assembly: Assembly): DependencyContext | null;
 };
 
 
@@ -135,7 +136,7 @@ export type DependencyContextJsonReader = DependencyContextJsonReader$instance &
 export interface DependencyContextLoader$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_DependencyContextLoader: never;
 
-    Load(assembly: Assembly): DependencyContext | undefined;
+    Load(assembly: Assembly): DependencyContext | null;
 }
 
 
@@ -165,11 +166,11 @@ export interface Library$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Library: never;
 
     readonly Dependencies: IReadOnlyList_1<Dependency>;
-    readonly Hash: string | undefined;
-    readonly HashPath: string | undefined;
+    readonly Hash: string | null;
+    readonly HashPath: string | null;
     readonly Name: string;
-    readonly Path: string | undefined;
-    readonly RuntimeStoreManifestName: string | undefined;
+    readonly Path: string | null;
+    readonly RuntimeStoreManifestName: string | null;
     readonly Serviceable: boolean;
     readonly Type: string;
     readonly Version: string;
@@ -177,9 +178,9 @@ export interface Library$instance {
 
 
 export const Library: {
-    new(type: string, name: string, version: string, hash: string, dependencies: IEnumerable_1<Dependency>, serviceable: boolean): Library;
-    new(type: string, name: string, version: string, hash: string, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string, hashPath: string): Library;
-    new(type: string, name: string, version: string, hash: string, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string, hashPath: string, runtimeStoreManifestName: string): Library;
+    new(type: string, name: string, version: string, hash: string | null, dependencies: IEnumerable_1<Dependency>, serviceable: boolean): Library;
+    new(type: string, name: string, version: string, hash: string | null, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string | null, hashPath: string | null): Library;
+    new(type: string, name: string, version: string, hash: string | null, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string | null, hashPath: string | null, runtimeStoreManifestName: string | null): Library;
 };
 
 
@@ -189,14 +190,14 @@ export interface ResourceAssembly$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_ResourceAssembly: never;
 
     Locale: string;
-    readonly LocalPath: string | undefined;
+    readonly LocalPath: string | null;
     Path: string;
 }
 
 
 export const ResourceAssembly: {
     new(path: string, locale: string): ResourceAssembly;
-    new(path: string, locale: string, localPath: string): ResourceAssembly;
+    new(path: string, locale: string, localPath: string | null): ResourceAssembly;
 };
 
 
@@ -222,15 +223,15 @@ export interface RuntimeAssetGroup$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_RuntimeAssetGroup: never;
 
     readonly AssetPaths: IReadOnlyList_1<System_Internal.String>;
-    readonly Runtime: string | undefined;
+    readonly Runtime: string | null;
     readonly RuntimeFiles: IReadOnlyList_1<RuntimeFile>;
 }
 
 
 export const RuntimeAssetGroup: {
-    new(runtime: string, assetPaths: string[]): RuntimeAssetGroup;
-    new(runtime: string, assetPaths: IEnumerable_1<System_Internal.String>): RuntimeAssetGroup;
-    new(runtime: string, runtimeFiles: IEnumerable_1<RuntimeFile>): RuntimeAssetGroup;
+    new(runtime: string | null, assetPaths: string[]): RuntimeAssetGroup;
+    new(runtime: string | null, assetPaths: IEnumerable_1<System_Internal.String>): RuntimeAssetGroup;
+    new(runtime: string | null, runtimeFiles: IEnumerable_1<RuntimeFile>): RuntimeAssetGroup;
 };
 
 
@@ -239,14 +240,14 @@ export type RuntimeAssetGroup = RuntimeAssetGroup$instance;
 export interface RuntimeFallbacks$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_RuntimeFallbacks: never;
 
-    Fallbacks: IReadOnlyList_1<string | undefined>;
+    Fallbacks: IReadOnlyList_1<string | null>;
     Runtime: string;
 }
 
 
 export const RuntimeFallbacks: {
-    new(runtime: string, fallbacks: string[]): RuntimeFallbacks;
-    new(runtime: string, fallbacks: IEnumerable_1<System_Internal.String>): RuntimeFallbacks;
+    new(runtime: string, fallbacks: (string | null)[]): RuntimeFallbacks;
+    new(runtime: string, fallbacks: IEnumerable_1<string | null>): RuntimeFallbacks;
 };
 
 
@@ -255,16 +256,16 @@ export type RuntimeFallbacks = RuntimeFallbacks$instance;
 export interface RuntimeFile$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_RuntimeFile: never;
 
-    readonly AssemblyVersion: string | undefined;
-    readonly FileVersion: string | undefined;
-    readonly LocalPath: string | undefined;
+    readonly AssemblyVersion: string | null;
+    readonly FileVersion: string | null;
+    readonly LocalPath: string | null;
     readonly Path: string;
 }
 
 
 export const RuntimeFile: {
-    new(path: string, assemblyVersion: string, fileVersion: string): RuntimeFile;
-    new(path: string, assemblyVersion: string, fileVersion: string, localPath: string): RuntimeFile;
+    new(path: string, assemblyVersion: string | null, fileVersion: string | null): RuntimeFile;
+    new(path: string, assemblyVersion: string | null, fileVersion: string | null, localPath: string | null): RuntimeFile;
 };
 
 
@@ -280,9 +281,9 @@ export interface RuntimeLibrary$instance extends Library {
 
 
 export const RuntimeLibrary: {
-    new(type: string, name: string, version: string, hash: string, runtimeAssemblyGroups: IReadOnlyList_1<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList_1<RuntimeAssetGroup>, resourceAssemblies: IEnumerable_1<ResourceAssembly>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean): RuntimeLibrary;
-    new(type: string, name: string, version: string, hash: string, runtimeAssemblyGroups: IReadOnlyList_1<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList_1<RuntimeAssetGroup>, resourceAssemblies: IEnumerable_1<ResourceAssembly>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string, hashPath: string): RuntimeLibrary;
-    new(type: string, name: string, version: string, hash: string, runtimeAssemblyGroups: IReadOnlyList_1<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList_1<RuntimeAssetGroup>, resourceAssemblies: IEnumerable_1<ResourceAssembly>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string, hashPath: string, runtimeStoreManifestName: string): RuntimeLibrary;
+    new(type: string, name: string, version: string, hash: string | null, runtimeAssemblyGroups: IReadOnlyList_1<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList_1<RuntimeAssetGroup>, resourceAssemblies: IEnumerable_1<ResourceAssembly>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean): RuntimeLibrary;
+    new(type: string, name: string, version: string, hash: string | null, runtimeAssemblyGroups: IReadOnlyList_1<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList_1<RuntimeAssetGroup>, resourceAssemblies: IEnumerable_1<ResourceAssembly>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string | null, hashPath: string | null): RuntimeLibrary;
+    new(type: string, name: string, version: string, hash: string | null, runtimeAssemblyGroups: IReadOnlyList_1<RuntimeAssetGroup>, nativeLibraryGroups: IReadOnlyList_1<RuntimeAssetGroup>, resourceAssemblies: IEnumerable_1<ResourceAssembly>, dependencies: IEnumerable_1<Dependency>, serviceable: boolean, path: string | null, hashPath: string | null, runtimeStoreManifestName: string | null): RuntimeLibrary;
 };
 
 
@@ -293,13 +294,13 @@ export interface TargetInfo$instance {
 
     readonly Framework: string;
     readonly IsPortable: boolean;
-    readonly Runtime: string | undefined;
-    readonly RuntimeSignature: string | undefined;
+    readonly Runtime: string | null;
+    readonly RuntimeSignature: string | null;
 }
 
 
 export const TargetInfo: {
-    new(framework: string, runtime: string, runtimeSignature: string, isPortable: boolean): TargetInfo;
+    new(framework: string, runtime: string | null, runtimeSignature: string | null, isPortable: boolean): TargetInfo;
 };
 
 

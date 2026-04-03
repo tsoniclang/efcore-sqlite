@@ -2,8 +2,9 @@
 // Namespace: Microsoft.DotNet.PlatformAbstractions
 // Assembly: Microsoft.Extensions.DependencyModel
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IEqualityComparer_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -15,9 +16,9 @@ export interface HashCodeCombiner$instance {
 
     readonly CombinedHash: int;
     Add(i: int): void;
-    Add(s: string): void;
-    Add(o: unknown): void;
-    Add<TValue>(value: TValue, comparer: IEqualityComparer_1<TValue>): void;
+    Add(s: string | null): void;
+    Add(o: JsValue | null): void;
+    Add<TValue>(value: TValue | null, comparer: IEqualityComparer_1<TValue>): void;
 }
 
 

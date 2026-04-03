@@ -2,8 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.Sqlite.Scaffolding.Internal
 // Assembly: Microsoft.EntityFrameworkCore.Sqlite
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -15,14 +16,14 @@ import type { DatabaseModel, DatabaseTable } from "@tsonic/efcore/Microsoft.Enti
 import * as Microsoft_EntityFrameworkCore_Scaffolding_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding/internal/index.js";
 import type { DatabaseModelFactory, DatabaseModelFactoryOptions, IDatabaseModelFactory, IProviderConfigurationCodeGenerator, ProviderCodeGenerator, ProviderCodeGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding/internal/index.js";
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
-import type { DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { DbLoggerCategory_Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface SqliteCodeGenerator$instance extends ProviderCodeGenerator {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Scaffolding_Internal_SqliteCodeGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IProviderConfigurationCodeGenerator: never;
 
-    GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
+    GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment | null): MethodCallCodeFragment;
 }
 
 
@@ -45,7 +46,7 @@ export interface SqliteDatabaseModelFactory$instance extends DatabaseModelFactor
 
 
 export const SqliteDatabaseModelFactory: {
-    new(logger: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, typeMappingSource: IRelationalTypeMappingSource): SqliteDatabaseModelFactory;
+    new(logger: IDiagnosticsLogger_1<DbLoggerCategory_Scaffolding>, typeMappingSource: IRelationalTypeMappingSource): SqliteDatabaseModelFactory;
 };
 
 

@@ -9,7 +9,7 @@ import * as Internal from './Microsoft.EntityFrameworkCore.Sqlite.Internal/inter
 import type { SqliteValueGenerationStrategy } from './Microsoft.EntityFrameworkCore.Metadata/internal/index.js';
 import type { Boolean as ClrBoolean, Int64, Nullable, Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
 import type { EventDefinition, IDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
-import type { DbLoggerCategory$Infrastructure, DbLoggerCategory$Migrations, DbLoggerCategory$Model$Validation, DbLoggerCategory$Scaffolding } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
+import type { DbLoggerCategory_Infrastructure, DbLoggerCategory_Migrations, DbLoggerCategory_Model_Validation, DbLoggerCategory_Scaffolding } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IEntityType, IKey, IReadOnlyProperty, IReadOnlySequence } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
