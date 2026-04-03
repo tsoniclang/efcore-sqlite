@@ -10,7 +10,7 @@ import type { DbConnection } from '@tsonic/dotnet/System.Data.Common.js';
 import type { String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { MethodCallCodeFragment } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js';
 import type { IDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
-import type { DbLoggerCategory$Scaffolding } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
+import type { DbLoggerCategory_Scaffolding } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { DatabaseModelFactory, DatabaseModelFactoryOptions, IDatabaseModelFactory, IProviderConfigurationCodeGenerator, ProviderCodeGenerator, ProviderCodeGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding.js';
 import type { DatabaseModel, DatabaseTable } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding.Metadata.js';
 import type { IRelationalTypeMappingSource } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';

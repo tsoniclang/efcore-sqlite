@@ -2,8 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal
 // Assembly: Microsoft.EntityFrameworkCore.Sqlite
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { Task_1, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
@@ -28,7 +29,7 @@ export interface SqliteHistoryRepository$instance extends HistoryRepository {
     GetBeginIfNotExistsScript(migrationId: string): string;
     GetCreateIfNotExistsScript(): string;
     GetEndIfScript(): string;
-    InterpretExistsResult(value: unknown): boolean;
+    InterpretExistsResult(value: JsValue | null): boolean;
 }
 
 

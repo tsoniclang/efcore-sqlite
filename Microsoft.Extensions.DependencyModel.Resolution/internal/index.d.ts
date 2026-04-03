@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.DependencyModel.Resolution
 // Assembly: Microsoft.Extensions.DependencyModel
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { CompilationLibrary } from "../../Microsoft.Extensions.DependencyModel/internal/index.js";
@@ -14,7 +15,7 @@ import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } 
 export interface ICompilationAssemblyResolver$instance {
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
 
-    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String> | null): boolean;
 }
 
 
@@ -25,7 +26,7 @@ export interface AppBaseCompilationAssemblyResolver$instance extends ICompilatio
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
 
-    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String> | null): boolean;
 }
 
 
@@ -47,7 +48,7 @@ export interface CompositeCompilationAssemblyResolver$instance extends ICompilat
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
 
-    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String> | null): boolean;
 }
 
 
@@ -72,7 +73,7 @@ export interface DotNetReferenceAssembliesPathResolver$instance {
 export const DotNetReferenceAssembliesPathResolver: {
     new(): DotNetReferenceAssembliesPathResolver;
     readonly DotNetReferenceAssembliesPathEnv: string;
-    Resolve(): string | undefined;
+    Resolve(): string | null;
 };
 
 
@@ -83,7 +84,7 @@ export interface PackageCompilationAssemblyResolver$instance extends ICompilatio
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
 
-    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String> | null): boolean;
 }
 
 
@@ -105,13 +106,13 @@ export interface ReferenceAssemblyPathResolver$instance extends ICompilationAsse
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
 
-    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String>): boolean;
+    TryResolveAssemblyPaths(library: CompilationLibrary, assemblies: List_1<System_Internal.String> | null): boolean;
 }
 
 
 export const ReferenceAssemblyPathResolver: {
     new(): ReferenceAssemblyPathResolver;
-    new(defaultReferenceAssembliesPath: string, fallbackSearchPaths: string[]): ReferenceAssemblyPathResolver;
+    new(defaultReferenceAssembliesPath: string | null, fallbackSearchPaths: string[]): ReferenceAssemblyPathResolver;
 };
 
 

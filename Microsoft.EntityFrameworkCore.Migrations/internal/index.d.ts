@@ -2,8 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.Migrations
 // Assembly: Microsoft.EntityFrameworkCore.Relational, Microsoft.EntityFrameworkCore.Sqlite
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -19,34 +20,34 @@ export interface SqliteMigrationsSqlGenerator$instance extends MigrationsSqlGene
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsSqlGenerator: never;
 
-    ColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    ComputedColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    CreateTableColumns(operation: CreateTableOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operations: IReadOnlyList_1<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList_1<MigrationCommand>;
-    Generate(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: AddColumnOperation, model: IModel, builder: MigrationCommandListBuilder, terminate: boolean): void;
-    Generate(operation: DropIndexOperation, model: IModel, builder: MigrationCommandListBuilder, terminate: boolean): void;
-    Generate(operation: RenameIndexOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: RenameTableOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: RenameColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: CreateTableOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: AddForeignKeyOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: AddPrimaryKeyOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: AddUniqueConstraintOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: AddCheckConstraintOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: DropColumnOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: DropForeignKeyOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: DropPrimaryKeyOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: DropUniqueConstraintOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: DropCheckConstraintOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: AlterColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: EnsureSchemaOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: DropSchemaOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: RestartSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: CreateSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: RenameSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: AlterSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    Generate(operation: DropSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    ColumnDefinition(schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    ComputedColumnDefinition(schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    CreateTableColumns(operation: CreateTableOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operations: IReadOnlyList_1<MigrationOperation>, model?: IModel | null, options?: MigrationsSqlGenerationOptions): IReadOnlyList_1<MigrationCommand>;
+    Generate(operation: AlterDatabaseOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: AddColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate: boolean): void;
+    Generate(operation: DropIndexOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate: boolean): void;
+    Generate(operation: RenameIndexOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: RenameTableOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: RenameColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: CreateTableOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: AddForeignKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: AddPrimaryKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: AddUniqueConstraintOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: AddCheckConstraintOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: DropColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: DropForeignKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: DropPrimaryKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: DropUniqueConstraintOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: DropCheckConstraintOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: AlterColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: EnsureSchemaOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: DropSchemaOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: RestartSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: CreateSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: RenameSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: AlterSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    Generate(operation: DropSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
 }
 
 

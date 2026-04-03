@@ -2,8 +2,9 @@
 // Namespace: System.Collections.Generic
 // Assembly: Microsoft.Extensions.DependencyModel, System.Collections, System.Private.CoreLib
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { RuntimeAssetGroup, RuntimeFile } from "../../Microsoft.Extensions.DependencyModel/internal/index.js";
@@ -13,11 +14,11 @@ import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/Sy
 
 export abstract class CollectionExtensions$instance {
     static GetDefaultAssets(self: IEnumerable_1<RuntimeAssetGroup>): IEnumerable_1<System_Internal.String>;
-    static GetDefaultGroup(self: IEnumerable_1<RuntimeAssetGroup>): RuntimeAssetGroup | undefined;
+    static GetDefaultGroup(self: IEnumerable_1<RuntimeAssetGroup>): RuntimeAssetGroup | null;
     static GetDefaultRuntimeFileAssets(self: IEnumerable_1<RuntimeAssetGroup>): IEnumerable_1<RuntimeFile>;
     static GetRuntimeAssets(self: IEnumerable_1<RuntimeAssetGroup>, runtime: string): IEnumerable_1<System_Internal.String>;
     static GetRuntimeFileAssets(self: IEnumerable_1<RuntimeAssetGroup>, runtime: string): IEnumerable_1<RuntimeFile>;
-    static GetRuntimeGroup(self: IEnumerable_1<RuntimeAssetGroup>, runtime: string): RuntimeAssetGroup | undefined;
+    static GetRuntimeGroup(self: IEnumerable_1<RuntimeAssetGroup>, runtime: string): RuntimeAssetGroup | null;
 }
 
 

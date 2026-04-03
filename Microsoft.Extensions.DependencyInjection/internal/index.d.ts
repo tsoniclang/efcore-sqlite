@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.DependencyInjection
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Sqlite, Microsoft.Extensions.Caching.Memory, Microsoft.Extensions.DependencyInjection, Microsoft.Extensions.DependencyInjection.Abstractions, Microsoft.Extensions.Logging, Microsoft.Extensions.Options
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { SqliteDbContextOptionsBuilder } from "../../Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
@@ -14,7 +15,7 @@ import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.
 
 export abstract class SqliteServiceCollectionExtensions$instance {
     static AddEntityFrameworkSqlite(serviceCollection: IServiceCollection): IServiceCollection;
-    static AddSqlite<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder>, optionsAction?: Action_1<DbContextOptionsBuilder>): IServiceCollection;
+    static AddSqlite<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string | null, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
 }
 
 

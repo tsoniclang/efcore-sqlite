@@ -2,8 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.Sqlite.Diagnostics.Internal
 // Assembly: Microsoft.EntityFrameworkCore.Sqlite
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -14,25 +15,25 @@ import type { EventData, EventDefinitionBase, RelationalLoggingDefinitions } fro
 export interface SqliteLoggingDefinitions$instance extends RelationalLoggingDefinitions {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Diagnostics_Internal_SqliteLoggingDefinitions: never;
 
-    LogSchemaConfigured: EventDefinitionBase | undefined;
-    LogSequenceConfigured: EventDefinitionBase | undefined;
-    LogUsingSchemaSelectionsWarning: EventDefinitionBase | undefined;
-    LogFoundColumn: EventDefinitionBase | undefined;
-    LogFoundForeignKey: EventDefinitionBase | undefined;
-    LogForeignKeyScaffoldErrorPrincipalTableNotFound: EventDefinitionBase | undefined;
-    LogFoundTable: EventDefinitionBase | undefined;
-    LogMissingTable: EventDefinitionBase | undefined;
-    LogPrincipalColumnNotFound: EventDefinitionBase | undefined;
-    LogFoundIndex: EventDefinitionBase | undefined;
-    LogFoundPrimaryKey: EventDefinitionBase | undefined;
-    LogFoundUniqueConstraint: EventDefinitionBase | undefined;
-    LogUnexpectedConnectionType: EventDefinitionBase | undefined;
-    LogTableRebuildPendingWarning: EventDefinitionBase | undefined;
-    LogCompositeKeyWithValueGeneration: EventDefinitionBase | undefined;
-    LogConflictingValueGenerationStrategies: EventDefinitionBase | undefined;
-    LogInferringTypes: EventDefinitionBase | undefined;
-    LogOutOfRangeWarning: EventDefinitionBase | undefined;
-    LogFormatWarning: EventDefinitionBase | undefined;
+    LogSchemaConfigured: EventDefinitionBase | null;
+    LogSequenceConfigured: EventDefinitionBase | null;
+    LogUsingSchemaSelectionsWarning: EventDefinitionBase | null;
+    LogFoundColumn: EventDefinitionBase | null;
+    LogFoundForeignKey: EventDefinitionBase | null;
+    LogForeignKeyScaffoldErrorPrincipalTableNotFound: EventDefinitionBase | null;
+    LogFoundTable: EventDefinitionBase | null;
+    LogMissingTable: EventDefinitionBase | null;
+    LogPrincipalColumnNotFound: EventDefinitionBase | null;
+    LogFoundIndex: EventDefinitionBase | null;
+    LogFoundPrimaryKey: EventDefinitionBase | null;
+    LogFoundUniqueConstraint: EventDefinitionBase | null;
+    LogUnexpectedConnectionType: EventDefinitionBase | null;
+    LogTableRebuildPendingWarning: EventDefinitionBase | null;
+    LogCompositeKeyWithValueGeneration: EventDefinitionBase | null;
+    LogConflictingValueGenerationStrategies: EventDefinitionBase | null;
+    LogInferringTypes: EventDefinitionBase | null;
+    LogOutOfRangeWarning: EventDefinitionBase | null;
+    LogFormatWarning: EventDefinitionBase | null;
 }
 
 
@@ -47,12 +48,12 @@ export interface TableRebuildEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Diagnostics_Internal_TableRebuildEventData: never;
 
     readonly OperationType: Type;
-    readonly TableName: string | undefined;
+    readonly TableName: string | null;
 }
 
 
 export const TableRebuildEventData: {
-    new(eventDefinition: EventDefinitionBase, messageGenerator: Func_3<EventDefinitionBase, EventData, System_Internal.String>, operationType: Type, tableName: string): TableRebuildEventData;
+    new(eventDefinition: EventDefinitionBase, messageGenerator: Func_3<EventDefinitionBase, EventData, System_Internal.String>, operationType: Type, tableName: string | null): TableRebuildEventData;
 };
 
 

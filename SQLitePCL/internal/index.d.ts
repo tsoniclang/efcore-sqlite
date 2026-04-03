@@ -2,11 +2,9 @@
 // Namespace: SQLitePCL
 // Assembly: SQLitePCLRaw.batteries_v2, SQLitePCLRaw.core, SQLitePCLRaw.provider.e_sqlite3
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Runtime_InteropServices_Internal from "@tsonic/dotnet/System.Runtime.InteropServices/internal/index.js";
@@ -16,64 +14,64 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, Char, Double, Func_1, Func_4, IAsyncResult, ICloneable, IDisposable, Int32, Int64, IntPtr, MulticastDelegate, Object as ClrObject, ReadOnlySpan_1, Span_1, String as ClrString, Type, UInt32, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export type delegate_authorizer = (user_data: unknown, action_code: int, param0: utf8z, param1: utf8z, dbName: utf8z, inner_most_trigger_or_view: utf8z) => int;
+export type delegate_authorizer = (user_data: JsValue, action_code: int, param0: utf8z, param1: utf8z, dbName: utf8z, inner_most_trigger_or_view: utf8z) => int;
 
 
-export type delegate_collation = (user_data: unknown, s1: ReadOnlySpan_1<System_Internal.Byte>, s2: ReadOnlySpan_1<System_Internal.Byte>) => int;
+export type delegate_collation = (user_data: JsValue, s1: ReadOnlySpan_1<System_Internal.Byte>, s2: ReadOnlySpan_1<System_Internal.Byte>) => int;
 
 
-export type delegate_commit = (user_data: unknown) => int;
+export type delegate_commit = (user_data: JsValue) => int;
 
 
-export type delegate_exec = (user_data: unknown, values: nint[], names: nint[]) => int;
+export type delegate_exec = (user_data: JsValue, values: nint[], names: nint[]) => int;
 
 
-export type delegate_function_aggregate_final = (ctx: sqlite3_context, user_data: unknown) => void;
+export type delegate_function_aggregate_final = (ctx: sqlite3_context, user_data: JsValue) => void;
 
 
-export type delegate_function_aggregate_step = (ctx: sqlite3_context, user_data: unknown, args: sqlite3_value[]) => void;
+export type delegate_function_aggregate_step = (ctx: sqlite3_context, user_data: JsValue, args: sqlite3_value[]) => void;
 
 
-export type delegate_function_scalar = (ctx: sqlite3_context, user_data: unknown, args: sqlite3_value[]) => void;
+export type delegate_function_scalar = (ctx: sqlite3_context, user_data: JsValue, args: sqlite3_value[]) => void;
 
 
-export type delegate_log = (user_data: unknown, errorCode: int, msg: utf8z) => void;
+export type delegate_log = (user_data: JsValue, errorCode: int, msg: utf8z) => void;
 
 
-export type delegate_profile = (user_data: unknown, statement: utf8z, ns: long) => void;
+export type delegate_profile = (user_data: JsValue, statement: utf8z, ns: long) => void;
 
 
-export type delegate_progress = (user_data: unknown) => int;
+export type delegate_progress = (user_data: JsValue) => int;
 
 
-export type delegate_rollback = (user_data: unknown) => void;
+export type delegate_rollback = (user_data: JsValue) => void;
 
 
-export type delegate_trace = (user_data: unknown, statement: utf8z) => void;
+export type delegate_trace = (user_data: JsValue, statement: utf8z) => void;
 
 
-export type delegate_update = (user_data: unknown, type: int, database: utf8z, table: utf8z, rowid: long) => void;
+export type delegate_update = (user_data: JsValue, type: int, database: utf8z, table: utf8z, rowid: long) => void;
 
 
-export type strdelegate_authorizer = (user_data: unknown, action_code: int, param0: string, param1: string, dbName: string, inner_most_trigger_or_view: string) => int;
+export type strdelegate_authorizer = (user_data: JsValue, action_code: int, param0: string, param1: string, dbName: string, inner_most_trigger_or_view: string) => int;
 
 
-export type strdelegate_collation = (user_data: unknown, s1: string, s2: string) => int;
+export type strdelegate_collation = (user_data: JsValue, s1: string, s2: string) => int;
 
 
-export type strdelegate_exec = (user_data: unknown, values: string[], names: string[]) => int;
+export type strdelegate_exec = (user_data: JsValue, values: string[], names: string[]) => int;
 
 
-export type strdelegate_log = (user_data: unknown, errorCode: int, msg: string) => void;
+export type strdelegate_log = (user_data: JsValue, errorCode: int, msg: string) => void;
 
 
-export type strdelegate_profile = (user_data: unknown, statement: string, ns: long) => void;
+export type strdelegate_profile = (user_data: JsValue, statement: string, ns: long) => void;
 
 
-export type strdelegate_trace = (user_data: unknown, s: string) => void;
+export type strdelegate_trace = (user_data: JsValue, s: string) => void;
 
 
-export type strdelegate_update = (user_data: unknown, type: int, database: string, table: string, rowid: long) => void;
+export type strdelegate_update = (user_data: JsValue, type: int, database: string, table: string, rowid: long) => void;
 
 
 export interface IGetFunctionPointer$instance {
@@ -111,13 +109,13 @@ export interface ISQLite3Provider$instance {
     sqlite3_column_blob(stmt: sqlite3_stmt, index: int): ReadOnlySpan_1<System_Internal.Byte>;
     sqlite3_column_double(stmt: sqlite3_stmt, index: int): double;
     sqlite3_column_int64(stmt: sqlite3_stmt, index: int): long;
-    sqlite3_commit_hook(db: sqlite3, func: delegate_commit, v: unknown): void;
+    sqlite3_commit_hook(db: sqlite3, func: delegate_commit, v: JsValue): void;
     sqlite3_complete(sql: utf8z): int;
     sqlite3_config(op: int, val: int): int;
-    sqlite3_config_log(func: delegate_log, v: unknown): int;
-    sqlite3_create_collation(db: sqlite3, name: byte[], v: unknown, func: delegate_collation): int;
-    sqlite3_create_function(db: sqlite3, name: byte[], nArg: int, flags: int, v: unknown, func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final): int;
-    sqlite3_create_function(db: sqlite3, name: byte[], nArg: int, flags: int, v: unknown, func: delegate_function_scalar): int;
+    sqlite3_config_log(func: delegate_log, v: JsValue): int;
+    sqlite3_create_collation(db: sqlite3, name: byte[], v: JsValue, func: delegate_collation): int;
+    sqlite3_create_function(db: sqlite3, name: byte[], nArg: int, flags: int, v: JsValue, func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final): int;
+    sqlite3_create_function(db: sqlite3, name: byte[], nArg: int, flags: int, v: JsValue, func: delegate_function_scalar): int;
     sqlite3_db_config(db: sqlite3, op: int, val: utf8z): int;
     sqlite3_db_config(db: sqlite3, op: int, val: int, result: int): int;
     sqlite3_db_config(db: sqlite3, op: int, ptr: nint, int0: int, int1: int): int;
@@ -129,7 +127,7 @@ export interface ISQLite3Provider$instance {
     sqlite3_enable_shared_cache(enable: int): int;
     sqlite3_errmsg(db: sqlite3): utf8z;
     sqlite3_errstr(rc: int): utf8z;
-    sqlite3_exec(db: sqlite3, sql: utf8z, callback: delegate_exec, user_data: unknown, errMsg: nint): int;
+    sqlite3_exec(db: sqlite3, sql: utf8z, callback: delegate_exec, user_data: JsValue, errMsg: nint): int;
     sqlite3_interrupt(db: sqlite3): void;
     sqlite3_key(db: sqlite3, key: ReadOnlySpan_1<System_Internal.Byte>): int;
     sqlite3_key_v2(db: sqlite3, dbname: utf8z, key: ReadOnlySpan_1<System_Internal.Byte>): int;
@@ -150,16 +148,16 @@ export interface ISQLite3Provider$instance {
     sqlite3_prepare_v2(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, stmt: nint, remain: ReadOnlySpan_1<System_Internal.Byte>): int;
     sqlite3_prepare_v3(db: sqlite3, sql: utf8z, flags: uint, stmt: nint, remain: utf8z): int;
     sqlite3_prepare_v3(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, flags: uint, stmt: nint, remain: ReadOnlySpan_1<System_Internal.Byte>): int;
-    sqlite3_profile(db: sqlite3, func: delegate_profile, v: unknown): void;
-    sqlite3_progress_handler(db: sqlite3, instructions: int, func: delegate_progress, v: unknown): void;
+    sqlite3_profile(db: sqlite3, func: delegate_profile, v: JsValue): void;
+    sqlite3_progress_handler(db: sqlite3, instructions: int, func: delegate_progress, v: JsValue): void;
     sqlite3_result_blob(context: nint, val: ReadOnlySpan_1<System_Internal.Byte>): void;
     sqlite3_result_double(context: nint, val: double): void;
     sqlite3_result_error(context: nint, strErr: utf8z): void;
     sqlite3_result_int(context: nint, val: int): void;
     sqlite3_result_int64(context: nint, val: long): void;
-    sqlite3_rollback_hook(db: sqlite3, func: delegate_rollback, v: unknown): void;
+    sqlite3_rollback_hook(db: sqlite3, func: delegate_rollback, v: JsValue): void;
     sqlite3_serialize(db: sqlite3, schema: utf8z, size: long, flags: int): nint;
-    sqlite3_set_authorizer(db: sqlite3, authorizer: delegate_authorizer, user_data: unknown): int;
+    sqlite3_set_authorizer(db: sqlite3, authorizer: delegate_authorizer, user_data: JsValue): int;
     sqlite3_snapshot_cmp(p1: sqlite3_snapshot, p2: sqlite3_snapshot): int;
     sqlite3_snapshot_free(snap: nint): void;
     sqlite3_snapshot_get(db: sqlite3, schema: utf8z, snap: nint): int;
@@ -173,8 +171,8 @@ export interface ISQLite3Provider$instance {
     sqlite3_strnicmp(p: nint, q: nint, n: int): int;
     sqlite3_table_column_metadata(db: sqlite3, dbName: utf8z, tblName: utf8z, colName: utf8z, dataType: utf8z, collSeq: utf8z, notNull: int, primaryKey: int, autoInc: int): int;
     sqlite3_threadsafe(): int;
-    sqlite3_trace(db: sqlite3, func: delegate_trace, v: unknown): void;
-    sqlite3_update_hook(db: sqlite3, func: delegate_update, v: unknown): void;
+    sqlite3_trace(db: sqlite3, func: delegate_trace, v: JsValue): void;
+    sqlite3_update_hook(db: sqlite3, func: delegate_update, v: JsValue): void;
     sqlite3_value_blob(p: nint): ReadOnlySpan_1<System_Internal.Byte>;
     sqlite3_value_double(p: nint): double;
     sqlite3_value_int64(p: nint): long;
@@ -215,7 +213,7 @@ export interface authorizer_hook_info$instance {
 
 
 export const authorizer_hook_info: {
-    new(func: delegate_authorizer, v: unknown): authorizer_hook_info;
+    new(func: delegate_authorizer, v: JsValue): authorizer_hook_info;
     from_ptr(p: nint): authorizer_hook_info;
 };
 
@@ -230,7 +228,7 @@ export interface collation_hook_info$instance {
 
 
 export const collation_hook_info: {
-    new(func: delegate_collation, v: unknown): collation_hook_info;
+    new(func: delegate_collation, v: JsValue): collation_hook_info;
     from_ptr(p: nint): collation_hook_info;
 };
 
@@ -241,13 +239,13 @@ export interface commit_hook_info$instance {
     readonly __tsonic_type_SQLitePCL_commit_hook_info: never;
 
     _func: delegate_commit;
-    _user_data: unknown;
+    _user_data: JsValue;
     call(): int;
 }
 
 
 export const commit_hook_info: {
-    new(func: delegate_commit, v: unknown): commit_hook_info;
+    new(func: delegate_commit, v: JsValue): commit_hook_info;
     from_ptr(p: nint): commit_hook_info;
 };
 
@@ -276,7 +274,7 @@ export interface exec_hook_info$instance {
 
 
 export const exec_hook_info: {
-    new(func: delegate_exec, v: unknown): exec_hook_info;
+    new(func: delegate_exec, v: JsValue): exec_hook_info;
     from_ptr(p: nint): exec_hook_info;
 };
 
@@ -293,8 +291,8 @@ export interface function_hook_info$instance {
 
 
 export const function_hook_info: {
-    new(func_scalar: delegate_function_scalar, user_data: unknown): function_hook_info;
-    new(func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final, user_data: unknown): function_hook_info;
+    new(func_scalar: delegate_function_scalar, user_data: JsValue): function_hook_info;
+    new(func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final, user_data: JsValue): function_hook_info;
     from_ptr(p: nint): function_hook_info;
 };
 
@@ -311,7 +309,7 @@ export interface hook_handle$instance extends SafeGCHandle {
 
 
 export const hook_handle: {
-    new(target: unknown): hook_handle;
+    new(target: JsValue): hook_handle;
 };
 
 
@@ -354,7 +352,7 @@ export interface log_hook_info$instance {
 
 
 export const log_hook_info: {
-    new(func: delegate_log, v: unknown): log_hook_info;
+    new(func: delegate_log, v: JsValue): log_hook_info;
     from_ptr(p: nint): log_hook_info;
 };
 
@@ -397,7 +395,7 @@ export interface profile_hook_info$instance {
 
 
 export const profile_hook_info: {
-    new(func: delegate_profile, v: unknown): profile_hook_info;
+    new(func: delegate_profile, v: JsValue): profile_hook_info;
     from_ptr(p: nint): profile_hook_info;
 };
 
@@ -412,7 +410,7 @@ export interface progress_hook_info$instance {
 
 
 export const progress_hook_info: {
-    new(func: delegate_progress, v: unknown): progress_hook_info;
+    new(func: delegate_progress, v: JsValue): progress_hook_info;
     from_ptr(p: nint): progress_hook_info;
 };
 
@@ -427,7 +425,7 @@ export interface rollback_hook_info$instance {
 
 
 export const rollback_hook_info: {
-    new(func: delegate_rollback, v: unknown): rollback_hook_info;
+    new(func: delegate_rollback, v: JsValue): rollback_hook_info;
     from_ptr(p: nint): rollback_hook_info;
 };
 
@@ -445,7 +443,7 @@ export interface SafeGCHandle$instance extends SafeHandle {
 
 
 export const SafeGCHandle: {
-    new(v: unknown, typ: GCHandleType): SafeGCHandle;
+    new(v: JsValue, typ: GCHandleType): SafeGCHandle;
 };
 
 
@@ -509,11 +507,11 @@ export type sqlite3_blob = sqlite3_blob$instance;
 export interface sqlite3_context$instance {
     readonly __tsonic_type_SQLitePCL_sqlite3_context: never;
 
-    state: unknown;
+    state: JsValue;
 }
 
 
-export const sqlite3_context: (abstract new(user_data: unknown) => sqlite3_context) & {
+export const sqlite3_context: (abstract new(user_data: JsValue) => sqlite3_context) & {
 };
 
 
@@ -594,7 +592,7 @@ export interface trace_hook_info$instance {
 
 
 export const trace_hook_info: {
-    new(func: delegate_trace, v: unknown): trace_hook_info;
+    new(func: delegate_trace, v: JsValue): trace_hook_info;
     from_ptr(p: nint): trace_hook_info;
 };
 
@@ -609,7 +607,7 @@ export interface update_hook_info$instance {
 
 
 export const update_hook_info: {
-    new(func: delegate_update, v: unknown): update_hook_info;
+    new(func: delegate_update, v: JsValue): update_hook_info;
     from_ptr(p: nint): update_hook_info;
 };
 
@@ -877,7 +875,7 @@ export abstract class raw$instance {
     static GetNativeLibraryName(): string;
     static internal_sqlite3_finalize(stmt: nint): int;
     static SetProvider(imp: ISQLite3Provider): void;
-    static sqlite3__create_collation_utf8(db: sqlite3, name: string, v: unknown, f: delegate_collation): int;
+    static sqlite3__create_collation_utf8(db: sqlite3, name: string, v: JsValue, f: delegate_collation): int;
     static sqlite3__vfs__delete(vfs: utf8z, pathname: utf8z, syncdir: int): int;
     static sqlite3__vfs__delete(vfs: string, pathname: string, syncdir: int): int;
     static sqlite3_backup_finish(backup: sqlite3_backup): int;
@@ -924,7 +922,7 @@ export abstract class raw$instance {
     static sqlite3_column_table_name(stmt: sqlite3_stmt, index: int): utf8z;
     static sqlite3_column_text(stmt: sqlite3_stmt, index: int): utf8z;
     static sqlite3_column_type(stmt: sqlite3_stmt, index: int): int;
-    static sqlite3_commit_hook(db: sqlite3, f: delegate_commit, v: unknown): void;
+    static sqlite3_commit_hook(db: sqlite3, f: delegate_commit, v: JsValue): void;
     static sqlite3_compileoption_get(n: int): utf8z;
     static sqlite3_compileoption_used(s: utf8z): int;
     static sqlite3_compileoption_used(s: string): int;
@@ -932,13 +930,13 @@ export abstract class raw$instance {
     static sqlite3_complete(sql: string): int;
     static sqlite3_config(op: int, val: int): int;
     static sqlite3_config(op: int): int;
-    static sqlite3_config_log(f: delegate_log, v: unknown): int;
-    static sqlite3_config_log(f: strdelegate_log, v: unknown): int;
-    static sqlite3_create_collation(db: sqlite3, name: string, v: unknown, f: strdelegate_collation): int;
-    static sqlite3_create_function(db: sqlite3, name: string, nArg: int, flags: int, v: unknown, func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final): int;
-    static sqlite3_create_function(db: sqlite3, name: string, nArg: int, flags: int, v: unknown, func: delegate_function_scalar): int;
-    static sqlite3_create_function(db: sqlite3, name: string, nArg: int, v: unknown, func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final): int;
-    static sqlite3_create_function(db: sqlite3, name: string, nArg: int, v: unknown, func: delegate_function_scalar): int;
+    static sqlite3_config_log(f: delegate_log, v: JsValue): int;
+    static sqlite3_config_log(f: strdelegate_log, v: JsValue): int;
+    static sqlite3_create_collation(db: sqlite3, name: string, v: JsValue, f: strdelegate_collation): int;
+    static sqlite3_create_function(db: sqlite3, name: string, nArg: int, flags: int, v: JsValue, func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final): int;
+    static sqlite3_create_function(db: sqlite3, name: string, nArg: int, flags: int, v: JsValue, func: delegate_function_scalar): int;
+    static sqlite3_create_function(db: sqlite3, name: string, nArg: int, v: JsValue, func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final): int;
+    static sqlite3_create_function(db: sqlite3, name: string, nArg: int, v: JsValue, func: delegate_function_scalar): int;
     static sqlite3_data_count(stmt: sqlite3_stmt): int;
     static sqlite3_db_config(db: sqlite3, op: int, val: utf8z): int;
     static sqlite3_db_config(db: sqlite3, op: int, val: int, result: int): int;
@@ -955,7 +953,7 @@ export abstract class raw$instance {
     static sqlite3_errcode(db: sqlite3): int;
     static sqlite3_errmsg(db: sqlite3): utf8z;
     static sqlite3_errstr(rc: int): utf8z;
-    static sqlite3_exec(db: sqlite3, sql: string, callback: strdelegate_exec, user_data: unknown, errMsg: string): int;
+    static sqlite3_exec(db: sqlite3, sql: string, callback: strdelegate_exec, user_data: JsValue, errMsg: string): int;
     static sqlite3_exec(db: sqlite3, sql: string, errMsg: string): int;
     static sqlite3_exec(db: sqlite3, sql: string): int;
     static sqlite3_extended_errcode(db: sqlite3): int;
@@ -998,9 +996,9 @@ export abstract class raw$instance {
     static sqlite3_prepare_v3(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, flags: uint, stmt: sqlite3_stmt): int;
     static sqlite3_prepare_v3(db: sqlite3, sql: string, flags: uint, stmt: sqlite3_stmt, tail: string): int;
     static sqlite3_prepare_v3(db: sqlite3, sql: string, flags: uint, stmt: sqlite3_stmt): int;
-    static sqlite3_profile(db: sqlite3, f: delegate_profile, v: unknown): void;
-    static sqlite3_profile(db: sqlite3, f: strdelegate_profile, v: unknown): void;
-    static sqlite3_progress_handler(db: sqlite3, instructions: int, func: delegate_progress, v: unknown): void;
+    static sqlite3_profile(db: sqlite3, f: delegate_profile, v: JsValue): void;
+    static sqlite3_profile(db: sqlite3, f: strdelegate_profile, v: JsValue): void;
+    static sqlite3_progress_handler(db: sqlite3, instructions: int, func: delegate_progress, v: JsValue): void;
     static sqlite3_rekey(db: sqlite3, k: ReadOnlySpan_1<System_Internal.Byte>): int;
     static sqlite3_rekey_v2(db: sqlite3, name: utf8z, k: ReadOnlySpan_1<System_Internal.Byte>): int;
     static sqlite3_reset(stmt: sqlite3_stmt): int;
@@ -1019,10 +1017,10 @@ export abstract class raw$instance {
     static sqlite3_result_text(context: sqlite3_context, val: ReadOnlySpan_1<System_Internal.Byte>): void;
     static sqlite3_result_text(context: sqlite3_context, val: string): void;
     static sqlite3_result_zeroblob(context: sqlite3_context, n: int): void;
-    static sqlite3_rollback_hook(db: sqlite3, f: delegate_rollback, v: unknown): void;
+    static sqlite3_rollback_hook(db: sqlite3, f: delegate_rollback, v: JsValue): void;
     static sqlite3_serialize(db: sqlite3, schema: string, size: long, flags: int): nint;
-    static sqlite3_set_authorizer(db: sqlite3, f: delegate_authorizer, user_data: unknown): int;
-    static sqlite3_set_authorizer(db: sqlite3, f: strdelegate_authorizer, user_data: unknown): int;
+    static sqlite3_set_authorizer(db: sqlite3, f: delegate_authorizer, user_data: JsValue): int;
+    static sqlite3_set_authorizer(db: sqlite3, f: strdelegate_authorizer, user_data: JsValue): int;
     static sqlite3_shutdown(): int;
     static sqlite3_snapshot_cmp(p1: sqlite3_snapshot, p2: sqlite3_snapshot): int;
     static sqlite3_snapshot_free(snap: sqlite3_snapshot): void;
@@ -1042,11 +1040,11 @@ export abstract class raw$instance {
     static sqlite3_table_column_metadata(db: sqlite3, dbName: string, tblName: string, colName: string, dataType: string, collSeq: string, notNull: int, primaryKey: int, autoInc: int): int;
     static sqlite3_threadsafe(): int;
     static sqlite3_total_changes(db: sqlite3): int;
-    static sqlite3_trace(db: sqlite3, f: delegate_trace, v: unknown): void;
-    static sqlite3_trace(db: sqlite3, f: strdelegate_trace, v: unknown): void;
-    static sqlite3_update_hook(db: sqlite3, f: delegate_update, v: unknown): void;
-    static sqlite3_update_hook(db: sqlite3, f: strdelegate_update, v: unknown): void;
-    static sqlite3_user_data(context: sqlite3_context): unknown;
+    static sqlite3_trace(db: sqlite3, f: delegate_trace, v: JsValue): void;
+    static sqlite3_trace(db: sqlite3, f: strdelegate_trace, v: JsValue): void;
+    static sqlite3_update_hook(db: sqlite3, f: delegate_update, v: JsValue): void;
+    static sqlite3_update_hook(db: sqlite3, f: strdelegate_update, v: JsValue): void;
+    static sqlite3_user_data(context: sqlite3_context): JsValue;
     static sqlite3_value_blob(val: sqlite3_value): ReadOnlySpan_1<System_Internal.Byte>;
     static sqlite3_value_bytes(val: sqlite3_value): int;
     static sqlite3_value_double(val: sqlite3_value): double;
