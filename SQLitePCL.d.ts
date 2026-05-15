@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './SQLitePCL/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, Char, Double, Func, IAsyncResult, ICloneable, IDisposable, Int32, Int64, IntPtr, MulticastDelegate, Object as ClrObject, ReadOnlySpan, Span, String as ClrString, Type, UInt32, ValueType, Void } from '@tsonic/dotnet/System.js';
 import type { GCHandleType, SafeHandle } from '@tsonic/dotnet/System.Runtime.InteropServices.js';

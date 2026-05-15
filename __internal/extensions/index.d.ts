@@ -18,7 +18,7 @@ import * as System_Data_Common from "@tsonic/dotnet/System.Data.Common/internal/
 import * as System_Reflection from "@tsonic/dotnet/System.Reflection/internal/index.js";
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import sticky extension scope helper
@@ -53,10 +53,10 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   GetValueGenerationStrategyConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionRelationalPropertyOverrides): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   Glob(this: Microsoft_EntityFrameworkCore.DbFunctions, matchExpression: string, pattern: string): Rewrap<this, boolean>;
   HasSrid(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, srid: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
-  HasSrid<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, srid: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
+  HasSrid<TProperty extends unknown>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, srid: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
   HasSrid(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, srid: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
   HasSrid(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, srid: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
-  HasSrid<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, srid: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
+  HasSrid<TProperty extends unknown>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, srid: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
   HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, strategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
   Hex(this: Microsoft_EntityFrameworkCore.DbFunctions, bytes: byte[]): Rewrap<this, string>;
   IsSqlReturningClauseUsed(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, boolean>;
@@ -78,9 +78,9 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   Unhex(this: Microsoft_EntityFrameworkCore.DbFunctions, value: string, ignoreChars: string): Rewrap<this, byte[] | null>;
   UseAutoincrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder>;
   UseAutoincrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
-  UseAutoincrement<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
+  UseAutoincrement<TProperty extends unknown>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
   UseAutoincrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
-  UseAutoincrement<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
+  UseAutoincrement<TProperty extends unknown>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
   UseSqlReturningClause(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   UseSqlReturningClause(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   UseSqlReturningClause(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityTypeMappingFragment, useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
@@ -90,24 +90,24 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   UseSqlReturningClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
   UseSqlReturningClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, useSqlReturningClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
   UseSqlReturningClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder, useSqlReturningClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder>;
-  UseSqlReturningClause<TOwnerEntity, TDependentEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlReturningClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>>;
+  UseSqlReturningClause<TOwnerEntity extends (object | null), TDependentEntity extends (object | null)>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlReturningClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>>;
   UseSqlReturningClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder, useSqlReturningClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder>;
-  UseSqlReturningClause<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<TEntity>, useSqlReturningClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<TEntity>>;
+  UseSqlReturningClause<TEntity extends (object | null)>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<TEntity>, useSqlReturningClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<TEntity>>;
   UseSqlReturningClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder, useSqlReturningClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder>;
-  UseSqlReturningClause<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<TEntity>, useSqlReturningClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<TEntity>>;
+  UseSqlReturningClause<TEntity extends (object | null)>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<TEntity>, useSqlReturningClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<TEntity>>;
   UseSqlite(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
   UseSqlite(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connectionString: string | null, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
   UseSqlite(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
   UseSqlite(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseSqlite<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseSqlite<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string | null, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseSqlite<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseSqlite<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseSqlite<TContext extends unknown & Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseSqlite<TContext extends unknown & Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string | null, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseSqlite<TContext extends unknown & Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseSqlite<TContext extends unknown & Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore;
 }
 
@@ -123,7 +123,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore_Migrations {
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.Migrations
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore_Migrations {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore_Migrations;
 }
 
@@ -157,7 +157,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal {
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.Sqlite.Internal
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore_Sqlite_Internal {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal;
 }
 
@@ -169,12 +169,12 @@ export type ExtensionMethods_Microsoft_EntityFrameworkCore_Sqlite_Internal<TShap
 // Extension method table for namespace: Microsoft.Extensions.DependencyInjection
 interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddEntityFrameworkSqlite(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddSqlite<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string | null, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSqlite<TContext extends unknown & Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string | null, sqliteOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqliteDbContextOptionsBuilder> | null, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection
 interface __TsonicExtApplier_Microsoft_Extensions_DependencyInjection {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_DependencyInjection;
 }
 
@@ -201,7 +201,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyModel {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyModel
 interface __TsonicExtApplier_Microsoft_Extensions_DependencyModel {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_DependencyModel;
 }
 
@@ -217,7 +217,7 @@ interface __TsonicExtMethods_SQLitePCL {
 
 // Generic helper type for extension methods in namespace: SQLitePCL
 interface __TsonicExtApplier_SQLitePCL {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_SQLitePCL;
 }
 
@@ -238,13 +238,13 @@ interface __TsonicExtMethods_System_Collections_Generic {
 
 // Generic helper type for extension methods in namespace: System.Collections.Generic
 interface __TsonicExtApplier_System_Collections_Generic {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_System_Collections_Generic;
 }
 
 export type ExtensionMethods_System_Collections_Generic<TShape> =
   TShape extends null | undefined ? TShape
   : TShape extends void ? void
-  : TShape extends (infer T)[] ? (TShape & System_Collections_Generic.IEnumerable_1<T> & __TsonicWithExt<TShape, "System.Collections.Generic", __TsonicExtApplier_System_Collections_Generic> & __TsonicExtMethods_System_Collections_Generic)
+  : TShape extends (infer T extends unknown)[] ? (TShape & System_Collections_Generic.IEnumerable_1<T> & __TsonicWithExt<TShape, "System.Collections.Generic", __TsonicExtApplier_System_Collections_Generic> & __TsonicExtMethods_System_Collections_Generic)
   : TShape & __TsonicWithExt<TShape, "System.Collections.Generic", __TsonicExtApplier_System_Collections_Generic> & __TsonicExtMethods_System_Collections_Generic;
 

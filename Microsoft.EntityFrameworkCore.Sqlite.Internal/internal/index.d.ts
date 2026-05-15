@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore.Sqlite
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -70,13 +70,13 @@ export abstract class SqliteStrings$instance {
     static readonly ExecuteUpdateJsonPartialUpdateDoesNotSupportUlong: string;
     static readonly MigrationScriptGenerationNotSupported: string;
     static readonly SequencesNotSupported: string;
-    static AggregateOperationNotSupported(aggregateOperator: JsValue | null, type: JsValue | null): string;
-    static DuplicateColumnNameSridMismatch(entityType1: JsValue | null, property1: JsValue | null, entityType2: JsValue | null, property2: JsValue | null, columnName: JsValue | null, table: JsValue | null): string;
-    static IncompatibleSqlReturningClauseMismatch(table: JsValue | null, entityType: JsValue | null, otherEntityType: JsValue | null, entityTypeWithSqlReturningClause: JsValue | null, entityTypeWithoutSqlReturningClause: JsValue | null): string;
-    static InvalidMigrationOperation(operation: JsValue | null): string;
-    static OrderByNotSupported(type: JsValue | null): string;
-    static QueryingIntoJsonCollectionsNotSupported(sqliteVersion: JsValue | null): string;
-    static StoredProceduresNotSupported(entityType: JsValue | null): string;
+    static AggregateOperationNotSupported(aggregateOperator: unknown | null, type: unknown | null): string;
+    static DuplicateColumnNameSridMismatch(entityType1: unknown | null, property1: unknown | null, entityType2: unknown | null, property2: unknown | null, columnName: unknown | null, table: unknown | null): string;
+    static IncompatibleSqlReturningClauseMismatch(table: unknown | null, entityType: unknown | null, otherEntityType: unknown | null, entityTypeWithSqlReturningClause: unknown | null, entityTypeWithoutSqlReturningClause: unknown | null): string;
+    static InvalidMigrationOperation(operation: unknown | null): string;
+    static OrderByNotSupported(type: unknown | null): string;
+    static QueryingIntoJsonCollectionsNotSupported(sqliteVersion: unknown | null): string;
+    static StoredProceduresNotSupported(entityType: unknown | null): string;
 }
 
 
