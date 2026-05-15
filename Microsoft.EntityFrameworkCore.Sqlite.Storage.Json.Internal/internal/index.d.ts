@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore.Sqlite
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -18,7 +18,7 @@ export interface SqliteJsonByteArrayReaderWriter$instance extends JsonValueReade
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonByteArrayReaderWriter: never;
 
     readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: JsValue | null): byte[];
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): byte[];
     ToJsonTyped(writer: Utf8JsonWriter, value: byte[]): void;
 }
 
@@ -34,7 +34,7 @@ export interface SqliteJsonDateTimeOffsetReaderWriter$instance extends JsonValue
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonDateTimeOffsetReaderWriter: never;
 
     readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: JsValue | null): DateTimeOffset;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateTimeOffset;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
 }
 
@@ -50,7 +50,7 @@ export interface SqliteJsonDateTimeReaderWriter$instance extends JsonValueReader
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonDateTimeReaderWriter: never;
 
     readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: JsValue | null): DateTime;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateTime;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
 }
 
@@ -66,7 +66,7 @@ export interface SqliteJsonDecimalReaderWriter$instance extends JsonValueReaderW
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonDecimalReaderWriter: never;
 
     readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: JsValue | null): decimal;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): decimal;
     ToJsonTyped(writer: Utf8JsonWriter, value: decimal): void;
 }
 
@@ -82,7 +82,7 @@ export interface SqliteJsonGuidReaderWriter$instance extends JsonValueReaderWrit
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonGuidReaderWriter: never;
 
     readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: JsValue | null): Guid;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): Guid;
     ToJsonTyped(writer: Utf8JsonWriter, value: Guid): void;
 }
 

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Abstractions, Microsoft.EntityFrameworkCore.Relational, Microsoft.EntityFrameworkCore.Sqlite
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -18,9 +18,9 @@ import type { ConfigurationSource, IConventionEntityType, IConventionEntityTypeM
 import type { DbContext, DbContextOptionsBuilder, DbContextOptionsBuilder_1, DbFunctions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export abstract class SqliteComplexTypePropertyBuilderExtensions$instance {
-    static HasSrid<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, srid: int): ComplexTypePropertyBuilder_1<TProperty>;
+    static HasSrid<TProperty extends unknown>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, srid: int): ComplexTypePropertyBuilder_1<TProperty>;
     static HasSrid(propertyBuilder: ComplexTypePropertyBuilder, srid: int): ComplexTypePropertyBuilder;
-    static UseAutoincrement<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>): ComplexTypePropertyBuilder_1<TProperty>;
+    static UseAutoincrement<TProperty extends unknown>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>): ComplexTypePropertyBuilder_1<TProperty>;
     static UseAutoincrement(propertyBuilder: ComplexTypePropertyBuilder): ComplexTypePropertyBuilder;
 }
 
@@ -35,10 +35,10 @@ export abstract class SqliteDatabaseFacadeExtensions$instance {
 export type SqliteDatabaseFacadeExtensions = SqliteDatabaseFacadeExtensions$instance;
 
 export abstract class SqliteDbContextOptionsBuilderExtensions$instance {
-    static UseSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseSqlite<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlite<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlite<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlite<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlite<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static UseSqlite(optionsBuilder: DbContextOptionsBuilder, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseSqlite(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseSqlite(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
@@ -99,11 +99,11 @@ export abstract class SqlitePropertyBuilderExtensions$instance {
     static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, strategy: Nullable_1<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
     static HasSrid(propertyBuilder: IConventionPropertyBuilder, srid: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
     static HasSrid(propertyBuilder: PropertyBuilder, srid: int): PropertyBuilder;
-    static HasSrid<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, srid: int): PropertyBuilder_1<TProperty>;
+    static HasSrid<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, srid: int): PropertyBuilder_1<TProperty>;
     static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, strategy: Nullable_1<SqliteValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
     static UseAutoincrement(columnBuilder: ColumnBuilder): ColumnBuilder;
     static UseAutoincrement(propertyBuilder: PropertyBuilder): PropertyBuilder;
-    static UseAutoincrement<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
+    static UseAutoincrement<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
 }
 
 
@@ -137,9 +137,9 @@ export abstract class SqliteTableBuilderExtensions$instance {
     static UseSqlReturningClause(tableBuilder: OwnedNavigationTableBuilder, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder;
     static UseSqlReturningClause(tableBuilder: SplitTableBuilder, useSqlReturningClause?: boolean): SplitTableBuilder;
     static UseSqlReturningClause(tableBuilder: TableBuilder, useSqlReturningClause?: boolean): TableBuilder;
-    static UseSqlReturningClause<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    static UseSqlReturningClause<TEntity>(tableBuilder: SplitTableBuilder_1<TEntity>, useSqlReturningClause?: boolean): SplitTableBuilder_1<TEntity>;
-    static UseSqlReturningClause<TEntity>(tableBuilder: TableBuilder_1<TEntity>, useSqlReturningClause?: boolean): TableBuilder_1<TEntity>;
+    static UseSqlReturningClause<TOwnerEntity extends (object | null), TDependentEntity extends (object | null)>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlReturningClause?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static UseSqlReturningClause<TEntity extends (object | null)>(tableBuilder: SplitTableBuilder_1<TEntity>, useSqlReturningClause?: boolean): SplitTableBuilder_1<TEntity>;
+    static UseSqlReturningClause<TEntity extends (object | null)>(tableBuilder: TableBuilder_1<TEntity>, useSqlReturningClause?: boolean): TableBuilder_1<TEntity>;
 }
 
 

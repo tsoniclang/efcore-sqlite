@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore.Sqlite
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -135,7 +135,7 @@ export interface SqliteGuidTypeMapping$instance extends GuidTypeMapping {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteGuidTypeMapping: never;
 
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: JsValue): string;
+    GenerateNonNullSqlLiteral(value: unknown): string;
 }
 
 
@@ -153,7 +153,7 @@ export interface SqliteJsonTypeMapping$instance extends JsonTypeMapping {
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     CustomizeDataReaderExpression(expression: Expression): Expression;
     EscapeSqlLiteral(literal: string): string;
-    GenerateNonNullSqlLiteral(value: JsValue): string;
+    GenerateNonNullSqlLiteral(value: unknown): string;
     GetDataReaderMethod(): MethodInfo;
 }
 
@@ -217,7 +217,7 @@ export interface SqliteStringTypeMapping$instance extends StringTypeMapping {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteStringTypeMapping: never;
 
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: JsValue): string;
+    GenerateNonNullSqlLiteral(value: unknown): string;
 }
 
 
@@ -233,7 +233,7 @@ export interface SqliteTimeOnlyTypeMapping$instance extends TimeOnlyTypeMapping 
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteTimeOnlyTypeMapping: never;
 
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: JsValue): string;
+    GenerateNonNullSqlLiteral(value: unknown): string;
 }
 
 
@@ -267,7 +267,7 @@ export interface SqliteULongTypeMapping$instance extends ULongTypeMapping {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Internal_SqliteULongTypeMapping: never;
 
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: JsValue): string;
+    GenerateNonNullSqlLiteral(value: unknown): string;
 }
 
 

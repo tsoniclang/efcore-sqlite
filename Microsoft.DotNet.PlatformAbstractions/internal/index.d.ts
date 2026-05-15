@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.DependencyModel
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -17,8 +17,8 @@ export interface HashCodeCombiner$instance {
     readonly CombinedHash: int;
     Add(i: int): void;
     Add(s: string | null): void;
-    Add(o: JsValue | null): void;
-    Add<TValue>(value: TValue | null, comparer: IEqualityComparer_1<TValue>): void;
+    Add(o: unknown | null): void;
+    Add<TValue extends unknown>(value: TValue | null, comparer: IEqualityComparer_1<TValue>): void;
 }
 
 

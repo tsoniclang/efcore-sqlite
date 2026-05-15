@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore.Sqlite
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -31,7 +31,7 @@ export interface GlobExpression$instance extends SqlExpression {
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
     readonly TypeMapping: RelationalTypeMapping;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
@@ -57,7 +57,7 @@ export interface JsonEachExpression$instance extends TableValuedFunctionExpressi
     readonly JsonExpression: SqlExpression;
     readonly Path: IReadOnlyList_1<PathSegment> | null;
     Clone(alias: string | null, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
@@ -83,7 +83,7 @@ export interface RegexpExpression$instance extends SqlExpression {
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
     readonly TypeMapping: RelationalTypeMapping;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
