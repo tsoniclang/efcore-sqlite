@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,18 +17,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.HistoryRepository",
-        "clrName": "Microsoft.EntityFrameworkCore.Migrations.HistoryRepository"
+        "targetName": "Microsoft.EntityFrameworkCore.Migrations.HistoryRepository"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository",
-          "clrName": "Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository"
+          "targetName": "Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::InterpretExistsResult(System.Object):System.Boolean",
-          "clrName": "InterpretExistsResult",
+          "targetName": "InterpretExistsResult",
           "metadataToken": 100664125,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "InterpretExistsResult|(System.Object):System.Boolean|static=false",
@@ -42,13 +42,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::GetCreateIfNotExistsScript():System.String",
-          "clrName": "GetCreateIfNotExistsScript",
+          "targetName": "GetCreateIfNotExistsScript",
           "metadataToken": 100664126,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "GetCreateIfNotExistsScript|():System.String|static=false",
@@ -62,13 +62,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::GetBeginIfNotExistsScript(System.String):System.String",
-          "clrName": "GetBeginIfNotExistsScript",
+          "targetName": "GetBeginIfNotExistsScript",
           "metadataToken": 100664127,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "GetBeginIfNotExistsScript|(System.String):System.String|static=false",
@@ -82,13 +82,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::GetBeginIfExistsScript(System.String):System.String",
-          "clrName": "GetBeginIfExistsScript",
+          "targetName": "GetBeginIfExistsScript",
           "metadataToken": 100664128,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "GetBeginIfExistsScript|(System.String):System.String|static=false",
@@ -102,13 +102,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::GetEndIfScript():System.String",
-          "clrName": "GetEndIfScript",
+          "targetName": "GetEndIfScript",
           "metadataToken": 100664129,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "GetEndIfScript|():System.String|static=false",
@@ -122,13 +122,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::AcquireDatabaseLock():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
-          "clrName": "AcquireDatabaseLock",
+          "targetName": "AcquireDatabaseLock",
           "metadataToken": 100664131,
           "canonicalSignature": "():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
           "normalizedSignature": "AcquireDatabaseLock|():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock|static=false",
@@ -142,13 +142,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::AcquireDatabaseLockAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AcquireDatabaseLockAsync",
+          "targetName": "AcquireDatabaseLockAsync",
           "metadataToken": 100664132,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AcquireDatabaseLockAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -162,15 +162,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::ExistsSql:System.String",
-          "clrName": "ExistsSql",
+          "targetName": "ExistsSql",
           "metadataToken": 385876120,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ExistsSql|:System.String|static=false|accessor=get",
@@ -184,12 +184,12 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::LockTableName:System.String",
-          "clrName": "LockTableName",
+          "targetName": "LockTableName",
           "metadataToken": 385876121,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "LockTableName|:System.String|static=false|accessor=get",
@@ -203,12 +203,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository::LockReleaseBehavior:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior",
-          "clrName": "LockReleaseBehavior",
+          "targetName": "LockReleaseBehavior",
           "metadataToken": 385876122,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior",
           "normalizedSignature": "LockReleaseBehavior|:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior|static=false|accessor=get",
@@ -222,8 +222,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "fields": [],
@@ -237,15 +237,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -255,26 +255,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
-          "clrName": "Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock"
+          "targetName": "Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
-          "clrName": "System.IAsyncDisposable"
+          "targetName": "System.IAsyncDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100664141,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -288,13 +288,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock::DisposeAsync():System.Threading.Tasks.ValueTask",
-          "clrName": "DisposeAsync",
+          "targetName": "DisposeAsync",
           "metadataToken": 100664142,
           "canonicalSignature": "():System.Threading.Tasks.ValueTask",
           "normalizedSignature": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
@@ -308,15 +308,15 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock::HistoryRepository:Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository",
-          "clrName": "HistoryRepository",
+          "targetName": "HistoryRepository",
           "metadataToken": 385876123,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository",
           "normalizedSignature": "HistoryRepository|:Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository|static=false|accessor=get",
@@ -330,8 +330,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "fields": [],
@@ -345,8 +345,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteMigrationDatabaseLock",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ]
     }

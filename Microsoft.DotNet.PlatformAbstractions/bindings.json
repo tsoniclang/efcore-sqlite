@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
-      "clrName": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
-      "assemblyName": "Microsoft.Extensions.DependencyModel",
+      "targetName": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
+      "ownerIdentity": "Microsoft.Extensions.DependencyModel",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner::Add(System.Int32):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663332,
           "canonicalSignature": "(System.Int32):System.Void",
           "normalizedSignature": "Add|(System.Int32):System.Void|static=false",
@@ -36,13 +36,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
-          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "ownerQualifiedName": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
+          "ownerIdentity": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner::Add(System.String):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663333,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Add|(System.String):System.Void|static=false",
@@ -56,13 +56,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
-          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "ownerQualifiedName": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
+          "ownerIdentity": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner::Add(System.Object):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663334,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "Add|(System.Object):System.Void|static=false",
@@ -76,13 +76,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
-          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "ownerQualifiedName": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
+          "ownerIdentity": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner::Add(TValue,IEqualityComparer_1):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663335,
           "canonicalSignature": "(TValue,IEqualityComparer_1):System.Void",
           "normalizedSignature": "Add|(TValue,IEqualityComparer_1):System.Void|static=false",
@@ -96,13 +96,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
-          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "ownerQualifiedName": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
+          "ownerIdentity": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner::Start():Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
-          "clrName": "Start",
+          "targetName": "Start",
           "metadataToken": 100663336,
           "canonicalSignature": "():Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
           "normalizedSignature": "Start|():Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner|static=true",
@@ -116,15 +116,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
-          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel",
+          "ownerQualifiedName": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
+          "ownerIdentity": "Microsoft.Extensions.DependencyModel",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.DependencyModel:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner::CombinedHash:System.Int32",
-          "clrName": "CombinedHash",
+          "targetName": "CombinedHash",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "CombinedHash|:System.Int32|static=false|accessor=get",
@@ -138,8 +138,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
-          "declaringAssemblyName": "Microsoft.Extensions.DependencyModel"
+          "ownerQualifiedName": "Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner",
+          "ownerIdentity": "Microsoft.Extensions.DependencyModel"
         }
       ],
       "fields": [],

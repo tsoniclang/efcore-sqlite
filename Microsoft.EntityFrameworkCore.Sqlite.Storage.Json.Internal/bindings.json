@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,7 +17,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
-        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "targetName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
         "typeArguments": [
           "Byte[]"
         ]
@@ -25,7 +25,7 @@
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Byte[]",
-          "clrName": "FromJsonTyped",
+          "targetName": "FromJsonTyped",
           "metadataToken": 100663797,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Byte[]",
           "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Byte[]|static=false",
@@ -39,8 +39,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -51,7 +51,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter::ToJsonTyped(System.Text.Json.Utf8JsonWriter,System.Byte[]):System.Void",
-          "clrName": "ToJsonTyped",
+          "targetName": "ToJsonTyped",
           "metadataToken": 100663798,
           "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,System.Byte[]):System.Void",
           "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.Byte[]):System.Void|static=false",
@@ -65,15 +65,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter::Instance:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 385876078,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
           "normalizedSignature": "Instance|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter|static=true|accessor=get",
@@ -87,12 +87,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter::ConstructorExpression:System.Linq.Expressions.Expression",
-          "clrName": "ConstructorExpression",
+          "targetName": "ConstructorExpression",
           "metadataToken": 385876079,
           "canonicalSignature": ":System.Linq.Expressions.Expression",
           "normalizedSignature": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
@@ -106,8 +106,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonByteArrayReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "fields": [],
@@ -116,8 +116,8 @@
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -127,7 +127,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
-        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "targetName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
         "typeArguments": [
           "DateTimeOffset"
         ]
@@ -135,7 +135,7 @@
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.DateTimeOffset",
-          "clrName": "FromJsonTyped",
+          "targetName": "FromJsonTyped",
           "metadataToken": 100663803,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.DateTimeOffset",
           "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.DateTimeOffset|static=false",
@@ -149,8 +149,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -161,7 +161,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter::ToJsonTyped(System.Text.Json.Utf8JsonWriter,System.DateTimeOffset):System.Void",
-          "clrName": "ToJsonTyped",
+          "targetName": "ToJsonTyped",
           "metadataToken": 100663804,
           "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,System.DateTimeOffset):System.Void",
           "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.DateTimeOffset):System.Void|static=false",
@@ -175,15 +175,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter::Instance:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 385876080,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
           "normalizedSignature": "Instance|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter|static=true|accessor=get",
@@ -197,12 +197,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter::ConstructorExpression:System.Linq.Expressions.Expression",
-          "clrName": "ConstructorExpression",
+          "targetName": "ConstructorExpression",
           "metadataToken": 385876081,
           "canonicalSignature": ":System.Linq.Expressions.Expression",
           "normalizedSignature": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
@@ -216,8 +216,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeOffsetReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "fields": [],
@@ -226,8 +226,8 @@
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -237,7 +237,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
-        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "targetName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
         "typeArguments": [
           "DateTime"
         ]
@@ -245,7 +245,7 @@
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.DateTime",
-          "clrName": "FromJsonTyped",
+          "targetName": "FromJsonTyped",
           "metadataToken": 100663809,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.DateTime",
           "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.DateTime|static=false",
@@ -259,8 +259,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -271,7 +271,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter::ToJsonTyped(System.Text.Json.Utf8JsonWriter,System.DateTime):System.Void",
-          "clrName": "ToJsonTyped",
+          "targetName": "ToJsonTyped",
           "metadataToken": 100663810,
           "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,System.DateTime):System.Void",
           "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.DateTime):System.Void|static=false",
@@ -285,15 +285,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter::Instance:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 385876082,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
           "normalizedSignature": "Instance|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter|static=true|accessor=get",
@@ -307,12 +307,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter::ConstructorExpression:System.Linq.Expressions.Expression",
-          "clrName": "ConstructorExpression",
+          "targetName": "ConstructorExpression",
           "metadataToken": 385876083,
           "canonicalSignature": ":System.Linq.Expressions.Expression",
           "normalizedSignature": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
@@ -326,8 +326,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDateTimeReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "fields": [],
@@ -336,8 +336,8 @@
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -347,7 +347,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
-        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "targetName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
         "typeArguments": [
           "Decimal"
         ]
@@ -355,7 +355,7 @@
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Decimal",
-          "clrName": "FromJsonTyped",
+          "targetName": "FromJsonTyped",
           "metadataToken": 100663815,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Decimal",
           "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Decimal|static=false",
@@ -369,8 +369,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -381,7 +381,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter::ToJsonTyped(System.Text.Json.Utf8JsonWriter,System.Decimal):System.Void",
-          "clrName": "ToJsonTyped",
+          "targetName": "ToJsonTyped",
           "metadataToken": 100663816,
           "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,System.Decimal):System.Void",
           "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.Decimal):System.Void|static=false",
@@ -395,15 +395,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter::Instance:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 385876084,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
           "normalizedSignature": "Instance|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter|static=true|accessor=get",
@@ -417,12 +417,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter::ConstructorExpression:System.Linq.Expressions.Expression",
-          "clrName": "ConstructorExpression",
+          "targetName": "ConstructorExpression",
           "metadataToken": 385876085,
           "canonicalSignature": ":System.Linq.Expressions.Expression",
           "normalizedSignature": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
@@ -436,8 +436,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonDecimalReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "fields": [],
@@ -446,8 +446,8 @@
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -457,7 +457,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
-        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "targetName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
         "typeArguments": [
           "Guid"
         ]
@@ -465,7 +465,7 @@
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Guid",
-          "clrName": "FromJsonTyped",
+          "targetName": "FromJsonTyped",
           "metadataToken": 100663821,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Guid",
           "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Guid|static=false",
@@ -479,8 +479,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -491,7 +491,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter::ToJsonTyped(System.Text.Json.Utf8JsonWriter,System.Guid):System.Void",
-          "clrName": "ToJsonTyped",
+          "targetName": "ToJsonTyped",
           "metadataToken": 100663822,
           "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,System.Guid):System.Void",
           "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.Guid):System.Void|static=false",
@@ -505,15 +505,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter::Instance:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 385876086,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
           "normalizedSignature": "Instance|:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter|static=true|accessor=get",
@@ -527,12 +527,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter::ConstructorExpression:System.Linq.Expressions.Expression",
-          "clrName": "ConstructorExpression",
+          "targetName": "ConstructorExpression",
           "metadataToken": 385876087,
           "canonicalSignature": ":System.Linq.Expressions.Expression",
           "normalizedSignature": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
@@ -546,8 +546,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Json.Internal.SqliteJsonGuidReaderWriter",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "fields": [],

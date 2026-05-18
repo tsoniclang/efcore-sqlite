@@ -7,8 +7,8 @@
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-      "clrName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -18,18 +18,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerator",
-        "clrName": "Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerator"
+        "targetName": "Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerator"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.IMigrationsSqlGenerator",
-          "clrName": "Microsoft.EntityFrameworkCore.Migrations.IMigrationsSqlGenerator"
+          "targetName": "Microsoft.EntityFrameworkCore.Migrations.IMigrationsSqlGenerator"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerationOptions):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663735,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerationOptions):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Generate|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerationOptions):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -43,13 +43,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.AlterDatabaseOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663738,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.AlterDatabaseOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.AlterDatabaseOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -63,13 +63,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.AddColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663739,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.AddColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.AddColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void|static=false",
@@ -83,13 +83,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.DropIndexOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663740,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.DropIndexOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.DropIndexOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void|static=false",
@@ -103,13 +103,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameIndexOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663741,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameIndexOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameIndexOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -123,13 +123,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameTableOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663742,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameTableOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameTableOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -143,13 +143,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663743,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -163,13 +163,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.CreateTableOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663744,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.CreateTableOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.CreateTableOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void|static=false",
@@ -183,13 +183,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::CreateTableColumns(Microsoft.EntityFrameworkCore.Migrations.Operations.CreateTableOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "CreateTableColumns",
+          "targetName": "CreateTableColumns",
           "metadataToken": 100663745,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.CreateTableOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "CreateTableColumns|(Microsoft.EntityFrameworkCore.Migrations.Operations.CreateTableOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -203,13 +203,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::ColumnDefinition(System.String,System.String,System.String,Microsoft.EntityFrameworkCore.Migrations.Operations.ColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "ColumnDefinition",
+          "targetName": "ColumnDefinition",
           "metadataToken": 100663747,
           "canonicalSignature": "(System.String,System.String,System.String,Microsoft.EntityFrameworkCore.Migrations.Operations.ColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "ColumnDefinition|(System.String,System.String,System.String,Microsoft.EntityFrameworkCore.Migrations.Operations.ColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -223,13 +223,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.AddForeignKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663748,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.AddForeignKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.AddForeignKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void|static=false",
@@ -243,13 +243,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.AddPrimaryKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663749,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.AddPrimaryKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.AddPrimaryKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void|static=false",
@@ -263,13 +263,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.AddUniqueConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663750,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.AddUniqueConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.AddUniqueConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -283,13 +283,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.AddCheckConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663751,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.AddCheckConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.AddCheckConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -303,13 +303,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.DropColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663752,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.DropColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.DropColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void|static=false",
@@ -323,13 +323,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.DropForeignKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663753,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.DropForeignKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.DropForeignKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void|static=false",
@@ -343,13 +343,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.DropPrimaryKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663754,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.DropPrimaryKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.DropPrimaryKeyOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder,System.Boolean):System.Void|static=false",
@@ -363,13 +363,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.DropUniqueConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663755,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.DropUniqueConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.DropUniqueConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -383,13 +383,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.DropCheckConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663756,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.DropCheckConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.DropCheckConstraintOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -403,13 +403,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.AlterColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663757,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.AlterColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.AlterColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -423,13 +423,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::ComputedColumnDefinition(System.String,System.String,System.String,Microsoft.EntityFrameworkCore.Migrations.Operations.ColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "ComputedColumnDefinition",
+          "targetName": "ComputedColumnDefinition",
           "metadataToken": 100663758,
           "canonicalSignature": "(System.String,System.String,System.String,Microsoft.EntityFrameworkCore.Migrations.Operations.ColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "ComputedColumnDefinition|(System.String,System.String,System.String,Microsoft.EntityFrameworkCore.Migrations.Operations.ColumnOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -443,13 +443,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.EnsureSchemaOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663759,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.EnsureSchemaOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.EnsureSchemaOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -463,13 +463,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.DropSchemaOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663760,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.DropSchemaOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.DropSchemaOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -483,13 +483,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.RestartSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663761,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.RestartSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.RestartSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -503,13 +503,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.CreateSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663762,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.CreateSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.CreateSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -523,13 +523,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663763,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.RenameSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -543,13 +543,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.AlterSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663764,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.AlterSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.AlterSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -563,13 +563,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator::Generate(Microsoft.EntityFrameworkCore.Migrations.Operations.DropSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
-          "clrName": "Generate",
+          "targetName": "Generate",
           "metadataToken": 100663765,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.Operations.DropSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void",
           "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Migrations.Operations.DropSequenceOperation,Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationCommandListBuilder):System.Void|static=false",
@@ -583,8 +583,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
@@ -600,15 +600,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationsSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationBuilderExtensions",
-      "clrName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationBuilderExtensions",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationBuilderExtensions",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -618,12 +618,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationBuilderExtensions::IsSqlite(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder):System.Boolean",
-          "clrName": "IsSqlite",
+          "targetName": "IsSqlite",
           "metadataToken": 100663733,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder):System.Boolean",
           "normalizedSignature": "IsSqlite|(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder):System.Boolean|static=true",
@@ -637,8 +637,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.SqliteMigrationBuilderExtensions",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": true
         }
       ],
