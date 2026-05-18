@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteLegacyUpdateSqlGenerator",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteLegacyUpdateSqlGenerator",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteLegacyUpdateSqlGenerator",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,7 +17,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
@@ -32,15 +32,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteLegacyUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteLegacyUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -50,26 +50,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.ModificationCommand",
-        "clrName": "Microsoft.EntityFrameworkCore.Update.ModificationCommand"
+        "targetName": "Microsoft.EntityFrameworkCore.Update.ModificationCommand"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IModificationCommand",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IModificationCommand"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IModificationCommand"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand::ProcessSinglePropertyJsonUpdate(Microsoft.EntityFrameworkCore.Update.ColumnModificationParameters\u0026):System.Void",
-          "clrName": "ProcessSinglePropertyJsonUpdate",
+          "targetName": "ProcessSinglePropertyJsonUpdate",
           "metadataToken": 100663778,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.ColumnModificationParameters\u0026):System.Void",
           "normalizedSignature": "ProcessSinglePropertyJsonUpdate|(Microsoft.EntityFrameworkCore.Update.ColumnModificationParameters\u0026):System.Void|static=false",
@@ -83,8 +83,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -106,8 +106,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "parameterModifiers": [
             {
               "index": 0,
@@ -123,8 +123,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommand",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "parameterModifiers": [
             {
               "index": 0,
@@ -136,8 +136,8 @@
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -147,18 +147,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IModificationCommandBatchFactory",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandBatchFactory"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandBatchFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory::Create():Microsoft.EntityFrameworkCore.Update.ModificationCommandBatch",
-          "clrName": "Create",
+          "targetName": "Create",
           "metadataToken": 100663781,
           "canonicalSignature": "():Microsoft.EntityFrameworkCore.Update.ModificationCommandBatch",
           "normalizedSignature": "Create|():Microsoft.EntityFrameworkCore.Update.ModificationCommandBatch|static=false",
@@ -172,15 +172,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory::Dependencies:Microsoft.EntityFrameworkCore.Update.ModificationCommandBatchFactoryDependencies",
-          "clrName": "Dependencies",
+          "targetName": "Dependencies",
           "metadataToken": 385876077,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Update.ModificationCommandBatchFactoryDependencies",
           "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Update.ModificationCommandBatchFactoryDependencies|static=false|accessor=get",
@@ -194,8 +194,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ],
       "fields": [],
@@ -209,15 +209,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandBatchFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -227,18 +227,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IModificationCommandFactory",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandFactory"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory::CreateModificationCommand(Microsoft.EntityFrameworkCore.Update.ModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.IModificationCommand",
-          "clrName": "CreateModificationCommand",
+          "targetName": "CreateModificationCommand",
           "metadataToken": 100663782,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.ModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.IModificationCommand",
           "normalizedSignature": "CreateModificationCommand|(Microsoft.EntityFrameworkCore.Update.ModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.IModificationCommand|static=false",
@@ -252,8 +252,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -264,7 +264,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory::CreateNonTrackedModificationCommand(Microsoft.EntityFrameworkCore.Update.NonTrackedModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand",
-          "clrName": "CreateNonTrackedModificationCommand",
+          "targetName": "CreateNonTrackedModificationCommand",
           "metadataToken": 100663783,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.NonTrackedModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand",
           "normalizedSignature": "CreateNonTrackedModificationCommand|(Microsoft.EntityFrameworkCore.Update.NonTrackedModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand|static=false",
@@ -278,8 +278,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -301,15 +301,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteModificationCommandFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-      "clrName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-      "assemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -319,18 +319,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.UpdateAndSelectSqlGenerator",
-        "clrName": "Microsoft.EntityFrameworkCore.Update.UpdateAndSelectSqlGenerator"
+        "targetName": "Microsoft.EntityFrameworkCore.Update.UpdateAndSelectSqlGenerator"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator::AppendInsertOperation(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendInsertOperation",
+          "targetName": "AppendInsertOperation",
           "metadataToken": 100663786,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendInsertOperation|(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -344,8 +344,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -356,7 +356,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator::AppendUpdateOperation(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendUpdateOperation",
+          "targetName": "AppendUpdateOperation",
           "metadataToken": 100663787,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendUpdateOperation|(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -370,8 +370,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -382,7 +382,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator::AppendDeleteOperation(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendDeleteOperation",
+          "targetName": "AppendDeleteOperation",
           "metadataToken": 100663788,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendDeleteOperation|(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -396,8 +396,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -408,7 +408,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator::AppendIdentityWhereCondition(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IColumnModification):System.Void",
-          "clrName": "AppendIdentityWhereCondition",
+          "targetName": "AppendIdentityWhereCondition",
           "metadataToken": 100663789,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IColumnModification):System.Void",
           "normalizedSignature": "AppendIdentityWhereCondition|(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IColumnModification):System.Void|static=false",
@@ -422,13 +422,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator::AppendSelectAffectedCountCommand(System.Text.StringBuilder,System.String,System.String,System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendSelectAffectedCountCommand",
+          "targetName": "AppendSelectAffectedCountCommand",
           "metadataToken": 100663790,
           "canonicalSignature": "(System.Text.StringBuilder,System.String,System.String,System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendSelectAffectedCountCommand|(System.Text.StringBuilder,System.String,System.String,System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -442,13 +442,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator::AppendRowsAffectedWhereCondition(System.Text.StringBuilder,System.Int32):System.Void",
-          "clrName": "AppendRowsAffectedWhereCondition",
+          "targetName": "AppendRowsAffectedWhereCondition",
           "metadataToken": 100663791,
           "canonicalSignature": "(System.Text.StringBuilder,System.Int32):System.Void",
           "normalizedSignature": "AppendRowsAffectedWhereCondition|(System.Text.StringBuilder,System.Int32):System.Void|static=false",
@@ -462,13 +462,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator::GenerateNextSequenceValueOperation(System.String,System.String):System.String",
-          "clrName": "GenerateNextSequenceValueOperation",
+          "targetName": "GenerateNextSequenceValueOperation",
           "metadataToken": 100663792,
           "canonicalSignature": "(System.String,System.String):System.String",
           "normalizedSignature": "GenerateNextSequenceValueOperation|(System.String,System.String):System.String|static=false",
@@ -482,13 +482,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator::AppendUpdateColumnValue(Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Update.IColumnModification,System.Text.StringBuilder,System.String,System.String):System.Void",
-          "clrName": "AppendUpdateColumnValue",
+          "targetName": "AppendUpdateColumnValue",
           "metadataToken": 100663793,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Update.IColumnModification,System.Text.StringBuilder,System.String,System.String):System.Void",
           "normalizedSignature": "AppendUpdateColumnValue|(Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Update.IColumnModification,System.Text.StringBuilder,System.String,System.String):System.Void|static=false",
@@ -502,8 +502,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite",
           "isExtensionMethod": false
         }
       ],
@@ -519,8 +519,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.Sqlite"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Update.Internal.SqliteUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
         }
       ]
     }
