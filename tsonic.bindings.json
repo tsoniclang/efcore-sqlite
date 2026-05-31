@@ -1,6 +1,8 @@
 {
   "bindingVersion": 1,
   "packageName": "@tsonic/efcore-sqlite",
-  "packageVersion": "10.0.43",
-  "requiredTypeRoots": ["."]
+  "packageVersion": "10.0.44",
+  "requiredTypeRoots": [
+    "."
+  ]
 }
