@@ -21,7 +21,7 @@ export interface ICompilationAssemblyResolver$instance {
 
 export type ICompilationAssemblyResolver = ICompilationAssemblyResolver$instance;
 
-export interface AppBaseCompilationAssemblyResolver$instance extends ICompilationAssemblyResolver$instance {
+export interface AppBaseCompilationAssemblyResolver$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Resolution_AppBaseCompilationAssemblyResolver: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
@@ -43,7 +43,7 @@ export interface __AppBaseCompilationAssemblyResolver$views {
 export type AppBaseCompilationAssemblyResolver = AppBaseCompilationAssemblyResolver$instance & __AppBaseCompilationAssemblyResolver$views;
 
 
-export interface CompositeCompilationAssemblyResolver$instance extends ICompilationAssemblyResolver$instance {
+export interface CompositeCompilationAssemblyResolver$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Resolution_CompositeCompilationAssemblyResolver: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
@@ -79,7 +79,7 @@ export const DotNetReferenceAssembliesPathResolver: {
 
 export type DotNetReferenceAssembliesPathResolver = DotNetReferenceAssembliesPathResolver$instance;
 
-export interface PackageCompilationAssemblyResolver$instance extends ICompilationAssemblyResolver$instance {
+export interface PackageCompilationAssemblyResolver$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Resolution_PackageCompilationAssemblyResolver: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;
@@ -101,7 +101,7 @@ export interface __PackageCompilationAssemblyResolver$views {
 export type PackageCompilationAssemblyResolver = PackageCompilationAssemblyResolver$instance & __PackageCompilationAssemblyResolver$views;
 
 
-export interface ReferenceAssemblyPathResolver$instance extends ICompilationAssemblyResolver$instance {
+export interface ReferenceAssemblyPathResolver$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Resolution_ReferenceAssemblyPathResolver: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_Resolution_ICompilationAssemblyResolver: never;

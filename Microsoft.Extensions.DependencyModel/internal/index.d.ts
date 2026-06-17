@@ -14,26 +14,26 @@ import type { Assembly, AssemblyName } from "@tsonic/dotnet/System.Reflection/in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, IDisposable, IEquatable_1, Int32, Nullable_1, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IDependencyContextReader$instance extends IDisposable {
+export interface IDependencyContextReader$instance {
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_IDependencyContextReader: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     Read(stream: Stream): DependencyContext;
 }
 
 
-export interface IDependencyContextReader$instance extends System_Internal.IDisposable {}
-
 export type IDependencyContextReader = IDependencyContextReader$instance;
 
 export interface Dependency$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Dependency: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Name: string;
     readonly Version: string;
-    Equals(other: Dependency): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: Dependency): boolean;
     GetHashCode(): int;
 }
 
@@ -45,8 +45,9 @@ export const Dependency: {
 
 export type Dependency = Dependency$instance;
 
-export interface CompilationLibrary$instance extends Library {
+export interface CompilationLibrary$instance extends Library$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_CompilationLibrary: never;
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Library: never;
 
     readonly Assemblies: IReadOnlyList_1<System_Internal.String>;
     ResolveReferencePaths(): IEnumerable_1<System_Internal.String>;
@@ -109,14 +110,14 @@ export const DependencyContext: {
 
 export type DependencyContext = DependencyContext$instance;
 
-export interface DependencyContextJsonReader$instance extends IDependencyContextReader$instance {
+export interface DependencyContextJsonReader$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_DependencyContextJsonReader: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyModel_IDependencyContextReader: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Dispose(disposing: boolean): void;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     Read(stream: Stream): DependencyContext;
 }
 
@@ -271,7 +272,8 @@ export const RuntimeFile: {
 
 export type RuntimeFile = RuntimeFile$instance;
 
-export interface RuntimeLibrary$instance extends Library {
+export interface RuntimeLibrary$instance extends Library$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyModel_Library: never;
     readonly __tsonic_type_Microsoft_Extensions_DependencyModel_RuntimeLibrary: never;
 
     readonly NativeLibraryGroups: IReadOnlyList_1<RuntimeAssetGroup>;

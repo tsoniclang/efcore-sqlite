@@ -14,12 +14,13 @@ import type { Byte, DateTime, DateTimeOffset, Decimal, Guid, Object as ClrObject
 import * as Microsoft_EntityFrameworkCore_Storage_Json_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
 import type { JsonValueReaderWriter_1, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
 
-export interface SqliteJsonByteArrayReaderWriter$instance extends JsonValueReaderWriter_1<byte[]> {
+export interface SqliteJsonByteArrayReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<byte[]> {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonByteArrayReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): byte[];
-    ToJsonTyped(writer: Utf8JsonWriter, value: byte[]): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<byte[]>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => byte[]);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<byte[]>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: byte[]) => void);
 }
 
 
@@ -30,12 +31,13 @@ export const SqliteJsonByteArrayReaderWriter: {
 
 export type SqliteJsonByteArrayReaderWriter = SqliteJsonByteArrayReaderWriter$instance;
 
-export interface SqliteJsonDateTimeOffsetReaderWriter$instance extends JsonValueReaderWriter_1<DateTimeOffset> {
+export interface SqliteJsonDateTimeOffsetReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTimeOffset> {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonDateTimeOffsetReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateTimeOffset;
-    ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTimeOffset>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => DateTimeOffset);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTimeOffset>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: DateTimeOffset) => void);
 }
 
 
@@ -46,12 +48,13 @@ export const SqliteJsonDateTimeOffsetReaderWriter: {
 
 export type SqliteJsonDateTimeOffsetReaderWriter = SqliteJsonDateTimeOffsetReaderWriter$instance;
 
-export interface SqliteJsonDateTimeReaderWriter$instance extends JsonValueReaderWriter_1<DateTime> {
+export interface SqliteJsonDateTimeReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime> {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonDateTimeReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateTime;
-    ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => DateTime);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: DateTime) => void);
 }
 
 
@@ -62,12 +65,13 @@ export const SqliteJsonDateTimeReaderWriter: {
 
 export type SqliteJsonDateTimeReaderWriter = SqliteJsonDateTimeReaderWriter$instance;
 
-export interface SqliteJsonDecimalReaderWriter$instance extends JsonValueReaderWriter_1<System_Internal.Decimal> {
+export interface SqliteJsonDecimalReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<System_Internal.Decimal> {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonDecimalReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): decimal;
-    ToJsonTyped(writer: Utf8JsonWriter, value: decimal): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<System_Internal.Decimal>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => decimal);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<System_Internal.Decimal>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: decimal) => void);
 }
 
 
@@ -78,12 +82,13 @@ export const SqliteJsonDecimalReaderWriter: {
 
 export type SqliteJsonDecimalReaderWriter = SqliteJsonDecimalReaderWriter$instance;
 
-export interface SqliteJsonGuidReaderWriter$instance extends JsonValueReaderWriter_1<Guid> {
+export interface SqliteJsonGuidReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<Guid> {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Storage_Json_Internal_SqliteJsonGuidReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): Guid;
-    ToJsonTyped(writer: Utf8JsonWriter, value: Guid): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<Guid>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => Guid);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<Guid>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: Guid) => void);
 }
 
 

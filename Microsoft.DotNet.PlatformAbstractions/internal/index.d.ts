@@ -13,11 +13,12 @@ import type { Int32, Object as ClrObject, String as ClrString, ValueType, Void }
 
 export interface HashCodeCombiner$instance {
     readonly __tsonic_type_Microsoft_DotNet_PlatformAbstractions_HashCodeCombiner: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly CombinedHash: int;
     Add(i: int): void;
-    Add(s: string | null): void;
     Add(o: unknown | null): void;
+    Add(s: string | null): void;
     Add<TValue extends unknown>(value: TValue | null, comparer: IEqualityComparer_1<TValue>): void;
 }
 

@@ -17,18 +17,20 @@ import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from
 import type { DbLoggerCategory_Model_Validation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
-export interface SqliteModelValidator$instance extends RelationalModelValidator {
+export interface SqliteModelValidator$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_ModelValidator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_RelationalModelValidator: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Infrastructure_Internal_SqliteModelValidator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
-    Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    Validate: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["Validate"] & ((model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
+    ValidateCompatible: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateCompatible"] & ((property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
     ValidateNoSchemas(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
     ValidateNoSequences(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
     ValidateNoStoredProcedures(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateSharedTableCompatibility: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateSharedTableCompatibility"] & ((mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
+    ValidateValueGeneration: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateValueGeneration"] & ((entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
 }
 
 
@@ -39,15 +41,15 @@ export const SqliteModelValidator: {
 
 export type SqliteModelValidator = SqliteModelValidator$instance;
 
-export interface SqliteOptionsExtension$instance extends RelationalOptionsExtension {
+export interface SqliteOptionsExtension$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_RelationalOptionsExtension: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Infrastructure_Internal_SqliteOptionsExtension: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
 
-    readonly Info: DbContextOptionsExtensionInfo;
     readonly LoadSpatialite: boolean;
-    ApplyServices(services: IServiceCollection): void;
-    Clone(): RelationalOptionsExtension;
+    ApplyServices: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["ApplyServices"] & ((services: IServiceCollection) => void);
+    Clone: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["Clone"] & (() => RelationalOptionsExtension);
     WithLoadSpatialite(loadSpatialite: boolean): SqliteOptionsExtension;
 }
 

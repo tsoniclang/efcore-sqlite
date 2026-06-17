@@ -22,21 +22,22 @@ import type { EnumerableExpression, ExpressionPrinter, IAggregateMethodCallTrans
 import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 import type { DbLoggerCategory_Query } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export interface GlobExpression$instance extends SqlExpression {
+export interface GlobExpression$instance extends Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressions_SqlExpression: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_GlobExpression: never;
+    readonly __tsonic_type_System_Linq_Expressions_Expression: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
-    readonly TypeMapping: RelationalTypeMapping;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
-    Print(expressionPrinter: ExpressionPrinter): void;
-    Quote(): Expression;
+    Equals: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["Equals"] & ((obj: unknown | null) => boolean);
+    GetHashCode: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["GetHashCode"] & (() => int);
+    Print: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["Print"] & ((expressionPrinter: ExpressionPrinter) => void);
+    Quote: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["Quote"] & (() => Expression);
     Update(match: SqlExpression, pattern: SqlExpression): GlobExpression;
-    VisitChildren(visitor: ExpressionVisitor): Expression;
+    VisitChildren: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["VisitChildren"] & ((visitor: ExpressionVisitor) => Expression);
 }
 
 
@@ -47,8 +48,11 @@ export const GlobExpression: {
 
 export type GlobExpression = GlobExpression$instance;
 
-export interface JsonEachExpression$instance extends TableValuedFunctionExpression {
+export interface JsonEachExpression$instance extends Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.TableValuedFunctionExpression {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressions_TableExpressionBase: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressions_TableValuedFunctionExpression: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_JsonEachExpression: never;
+    readonly __tsonic_type_System_Linq_Expressions_Expression: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
@@ -56,14 +60,14 @@ export interface JsonEachExpression$instance extends TableValuedFunctionExpressi
 
     readonly JsonExpression: SqlExpression;
     readonly Path: IReadOnlyList_1<PathSegment> | null;
-    Clone(alias: string | null, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
-    Print(expressionPrinter: ExpressionPrinter): void;
-    Quote(): Expression;
-    Update(jsonExpression: SqlExpression, path: IReadOnlyList_1<PathSegment> | null): JsonEachExpression;
-    VisitChildren(visitor: ExpressionVisitor): Expression;
-    WithAlias(newAlias: string): JsonEachExpression;
+    Clone: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.TableValuedFunctionExpression["Clone"] & ((alias: string | null, cloningExpressionVisitor: ExpressionVisitor) => TableExpressionBase);
+    Equals: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.TableValuedFunctionExpression["Equals"] & ((obj: unknown | null) => boolean);
+    GetHashCode: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.TableValuedFunctionExpression["GetHashCode"] & (() => int);
+    Print: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.TableValuedFunctionExpression["Print"] & ((expressionPrinter: ExpressionPrinter) => void);
+    Quote: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.TableValuedFunctionExpression["Quote"] & (() => Expression);
+    Update: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.TableValuedFunctionExpression["Update"] & ((jsonExpression: SqlExpression, path: IReadOnlyList_1<PathSegment> | null) => JsonEachExpression);
+    VisitChildren: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.TableValuedFunctionExpression["VisitChildren"] & ((visitor: ExpressionVisitor) => Expression);
+    WithAlias: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.TableValuedFunctionExpression["WithAlias"] & ((newAlias: string) => JsonEachExpression);
 }
 
 
@@ -74,21 +78,22 @@ export const JsonEachExpression: {
 
 export type JsonEachExpression = JsonEachExpression$instance;
 
-export interface RegexpExpression$instance extends SqlExpression {
+export interface RegexpExpression$instance extends Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressions_SqlExpression: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_RegexpExpression: never;
+    readonly __tsonic_type_System_Linq_Expressions_Expression: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
-    readonly TypeMapping: RelationalTypeMapping;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
-    Print(expressionPrinter: ExpressionPrinter): void;
-    Quote(): Expression;
+    Equals: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["Equals"] & ((obj: unknown | null) => boolean);
+    GetHashCode: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["GetHashCode"] & (() => int);
+    Print: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["Print"] & ((expressionPrinter: ExpressionPrinter) => void);
+    Quote: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["Quote"] & (() => Expression);
     Update(match: SqlExpression, pattern: SqlExpression): RegexpExpression;
-    VisitChildren(visitor: ExpressionVisitor): Expression;
+    VisitChildren: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlExpression["VisitChildren"] & ((visitor: ExpressionVisitor) => Expression);
 }
 
 
@@ -99,7 +104,8 @@ export const RegexpExpression: {
 
 export type RegexpExpression = RegexpExpression$instance;
 
-export interface SqliteAggregateMethodCallTranslatorProvider$instance extends RelationalAggregateMethodCallTranslatorProvider {
+export interface SqliteAggregateMethodCallTranslatorProvider$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalAggregateMethodCallTranslatorProvider {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalAggregateMethodCallTranslatorProvider: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteAggregateMethodCallTranslatorProvider: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslatorProvider: never;
@@ -258,7 +264,8 @@ export const SqliteMathTranslator: {
 
 export type SqliteMathTranslator = SqliteMathTranslator$instance;
 
-export interface SqliteMemberTranslatorProvider$instance extends RelationalMemberTranslatorProvider {
+export interface SqliteMemberTranslatorProvider$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalMemberTranslatorProvider {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalMemberTranslatorProvider: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteMemberTranslatorProvider: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslatorProvider: never;
@@ -273,7 +280,8 @@ export const SqliteMemberTranslatorProvider: {
 
 export type SqliteMemberTranslatorProvider = SqliteMemberTranslatorProvider$instance;
 
-export interface SqliteMethodCallTranslatorProvider$instance extends RelationalMethodCallTranslatorProvider {
+export interface SqliteMethodCallTranslatorProvider$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalMethodCallTranslatorProvider {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalMethodCallTranslatorProvider: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteMethodCallTranslatorProvider: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslatorProvider: never;
@@ -304,10 +312,11 @@ export const SqliteObjectToStringTranslator: {
 
 export type SqliteObjectToStringTranslator = SqliteObjectToStringTranslator$instance;
 
-export interface SqliteParameterBasedSqlProcessor$instance extends RelationalParameterBasedSqlProcessor {
+export interface SqliteParameterBasedSqlProcessor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalParameterBasedSqlProcessor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalParameterBasedSqlProcessor: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteParameterBasedSqlProcessor: never;
 
-    ProcessSqlNullability(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
+    ProcessSqlNullability: Microsoft_EntityFrameworkCore_Query_Internal.RelationalParameterBasedSqlProcessor["ProcessSqlNullability"] & ((queryExpression: Expression, parametersDecorator: ParametersCacheDecorator) => Expression);
 }
 
 
@@ -350,20 +359,23 @@ export const SqliteQueryableAggregateMethodTranslator: {
 
 export type SqliteQueryableAggregateMethodTranslator = SqliteQueryableAggregateMethodTranslator$instance;
 
-export interface SqliteQueryableMethodTranslatingExpressionVisitor$instance extends RelationalQueryableMethodTranslatingExpressionVisitor {
+export interface SqliteQueryableMethodTranslatingExpressionVisitor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_QueryableMethodTranslatingExpressionVisitor: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalQueryableMethodTranslatingExpressionVisitor: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteQueryableMethodTranslatingExpressionVisitor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    CreateSubqueryVisitor(): QueryableMethodTranslatingExpressionVisitor;
-    GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression | null): SqlExpression | null;
-    IsNaturallyOrdered(selectExpression: SelectExpression): boolean;
-    TransformJsonQueryToTable(jsonQueryExpression: JsonQueryExpression): ShapedQueryExpression;
-    TranslateAny(source: ShapedQueryExpression, predicate: LambdaExpression | null): ShapedQueryExpression | null;
-    TranslateCount(source: ShapedQueryExpression, predicate: LambdaExpression | null): ShapedQueryExpression | null;
-    TranslateElementAtOrDefault(source: ShapedQueryExpression, index: Expression, returnDefault: boolean): ShapedQueryExpression | null;
-    TranslateOrderBy(source: ShapedQueryExpression, keySelector: LambdaExpression, ascending: boolean): ShapedQueryExpression | null;
-    TranslatePrimitiveCollection(sqlExpression: SqlExpression, property: IProperty | null, tableAlias: string): ShapedQueryExpression | null;
-    TranslateThenBy(source: ShapedQueryExpression, keySelector: LambdaExpression, ascending: boolean): ShapedQueryExpression | null;
-    TrySerializeScalarToJson(target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression | null): boolean;
+    CreateSubqueryVisitor: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["CreateSubqueryVisitor"] & (() => QueryableMethodTranslatingExpressionVisitor);
+    GenerateJsonPartialUpdateSetter: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["GenerateJsonPartialUpdateSetter"] & ((target: Expression, value: SqlExpression, existingSetterValue: SqlExpression | null) => SqlExpression | null);
+    IsNaturallyOrdered: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["IsNaturallyOrdered"] & ((selectExpression: SelectExpression) => boolean);
+    TransformJsonQueryToTable: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TransformJsonQueryToTable"] & ((jsonQueryExpression: JsonQueryExpression) => ShapedQueryExpression);
+    TranslateAny: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateAny"] & ((source: ShapedQueryExpression, predicate: LambdaExpression | null) => ShapedQueryExpression | null);
+    TranslateCount: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateCount"] & ((source: ShapedQueryExpression, predicate: LambdaExpression | null) => ShapedQueryExpression | null);
+    TranslateElementAtOrDefault: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateElementAtOrDefault"] & ((source: ShapedQueryExpression, index: Expression, returnDefault: boolean) => ShapedQueryExpression | null);
+    TranslateOrderBy: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateOrderBy"] & ((source: ShapedQueryExpression, keySelector: LambdaExpression, ascending: boolean) => ShapedQueryExpression | null);
+    TranslatePrimitiveCollection: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslatePrimitiveCollection"] & ((sqlExpression: SqlExpression, property: IProperty | null, tableAlias: string) => ShapedQueryExpression | null);
+    TranslateThenBy: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateThenBy"] & ((source: ShapedQueryExpression, keySelector: LambdaExpression, ascending: boolean) => ShapedQueryExpression | null);
+    TrySerializeScalarToJson: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TrySerializeScalarToJson"] & ((target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression | null) => boolean);
 }
 
 
@@ -395,10 +407,11 @@ export const SqliteQueryableMethodTranslatingExpressionVisitorFactory: {
 
 export type SqliteQueryableMethodTranslatingExpressionVisitorFactory = SqliteQueryableMethodTranslatingExpressionVisitorFactory$instance;
 
-export interface SqliteQueryCompilationContext$instance extends RelationalQueryCompilationContext {
+export interface SqliteQueryCompilationContext$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryCompilationContext {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_QueryCompilationContext: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalQueryCompilationContext: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteQueryCompilationContext: never;
 
-    readonly SupportsPrecompiledQuery: boolean;
 }
 
 
@@ -429,18 +442,21 @@ export const SqliteQueryCompilationContextFactory: {
 
 export type SqliteQueryCompilationContextFactory = SqliteQueryCompilationContextFactory$instance;
 
-export interface SqliteQuerySqlGenerator$instance extends QuerySqlGenerator {
+export interface SqliteQuerySqlGenerator$instance extends Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_QuerySqlGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressionVisitor: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteQuerySqlGenerator: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
     GenerateJsonEach(jsonEachExpression: JsonEachExpression): void;
-    GenerateLimitOffset(selectExpression: SelectExpression): void;
-    GenerateSetOperationOperand(setOperation: SetOperationBase, operand: SelectExpression): void;
-    GetOperator(binaryExpression: SqlBinaryExpression): string;
-    TryGetOperatorInfo(expression: SqlExpression, precedence: int, isAssociative: boolean): boolean;
-    VisitExtension(extensionExpression: Expression): Expression;
-    VisitJsonScalar(jsonScalarExpression: JsonScalarExpression): Expression;
-    VisitSqlConstant(sqlConstantExpression: SqlConstantExpression): Expression;
-    VisitSqlUnary(sqlUnaryExpression: SqlUnaryExpression): Expression;
+    GenerateLimitOffset: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GenerateLimitOffset"] & ((selectExpression: SelectExpression) => void);
+    GenerateSetOperationOperand: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GenerateSetOperationOperand"] & ((setOperation: SetOperationBase, operand: SelectExpression) => void);
+    GetOperator: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GetOperator"] & ((binaryExpression: SqlBinaryExpression) => string);
+    TryGetOperatorInfo: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["TryGetOperatorInfo"] & ((expression: SqlExpression, precedence: int, isAssociative: boolean) => boolean);
+    VisitExtension: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitExtension"] & ((extensionExpression: Expression) => Expression);
+    VisitJsonScalar: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitJsonScalar"] & ((jsonScalarExpression: JsonScalarExpression) => Expression);
+    VisitSqlConstant: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitSqlConstant"] & ((sqlConstantExpression: SqlConstantExpression) => Expression);
+    VisitSqlUnary: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitSqlUnary"] & ((sqlUnaryExpression: SqlUnaryExpression) => Expression);
 }
 
 
@@ -484,11 +500,13 @@ export const SqliteQueryStringFactory: {
 
 export type SqliteQueryStringFactory = SqliteQueryStringFactory$instance;
 
-export interface SqliteQueryTranslationPostprocessor$instance extends RelationalQueryTranslationPostprocessor {
+export interface SqliteQueryTranslationPostprocessor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryTranslationPostprocessor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_QueryTranslationPostprocessor: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalQueryTranslationPostprocessor: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteQueryTranslationPostprocessor: never;
 
-    Process(query: Expression): Expression;
-    ProcessTypeMappings(expression: Expression): Expression;
+    Process: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryTranslationPostprocessor["Process"] & ((query: Expression) => Expression);
+    ProcessTypeMappings: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryTranslationPostprocessor["ProcessTypeMappings"] & ((expression: Expression) => Expression);
 }
 
 
@@ -549,12 +567,13 @@ export const SqliteRegexMethodTranslator: {
 
 export type SqliteRegexMethodTranslator = SqliteRegexMethodTranslator$instance;
 
-export interface SqliteSqlExpressionFactory$instance extends SqlExpressionFactory {
+export interface SqliteSqlExpressionFactory$instance extends Microsoft_EntityFrameworkCore_Query_Internal.SqlExpressionFactory {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressionFactory: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteSqlExpressionFactory: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ISqlExpressionFactory: never;
 
-    ApplyTypeMapping(sqlExpression: SqlExpression | null, typeMapping: RelationalTypeMapping | null): SqlExpression | null;
+    ApplyTypeMapping: Microsoft_EntityFrameworkCore_Query_Internal.SqlExpressionFactory["ApplyTypeMapping"] & ((sqlExpression: SqlExpression | null, typeMapping: RelationalTypeMapping | null) => SqlExpression | null);
     Date(returnType: Type, timestring: SqlExpression, modifiers?: IEnumerable_1<SqlExpression> | null, typeMapping?: RelationalTypeMapping | null): SqlExpression;
     Glob(match: SqlExpression, pattern: SqlExpression): GlobExpression;
     Regexp(match: SqlExpression, pattern: SqlExpression): RegexpExpression;
@@ -569,15 +588,17 @@ export const SqliteSqlExpressionFactory: {
 
 export type SqliteSqlExpressionFactory = SqliteSqlExpressionFactory$instance;
 
-export interface SqliteSqlNullabilityProcessor$instance extends SqlNullabilityProcessor {
+export interface SqliteSqlNullabilityProcessor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlNullabilityProcessor: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteSqlNullabilityProcessor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    IsCollectionTable(table: TableExpressionBase, collection: Expression | null): boolean;
-    UpdateParameterCollection(table: TableExpressionBase, newCollectionParameter: SqlParameterExpression): TableExpressionBase;
-    VisitCustomSqlExpression(sqlExpression: SqlExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    IsCollectionTable: Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor["IsCollectionTable"] & ((table: TableExpressionBase, collection: Expression | null) => boolean);
+    UpdateParameterCollection: Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor["UpdateParameterCollection"] & ((table: TableExpressionBase, newCollectionParameter: SqlParameterExpression) => TableExpressionBase);
+    VisitCustomSqlExpression: Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor["VisitCustomSqlExpression"] & ((sqlExpression: SqlExpression, allowOptimizedExpansion: boolean, nullable: boolean) => SqlExpression);
     VisitGlob(globExpression: GlobExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
     VisitRegexp(regexpExpression: RegexpExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
-    VisitSqlFunction(sqlFunctionExpression: SqlFunctionExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    VisitSqlFunction: Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor["VisitSqlFunction"] & ((sqlFunctionExpression: SqlFunctionExpression, allowOptimizedExpansion: boolean, nullable: boolean) => SqlExpression);
 }
 
 
@@ -588,14 +609,16 @@ export const SqliteSqlNullabilityProcessor: {
 
 export type SqliteSqlNullabilityProcessor = SqliteSqlNullabilityProcessor$instance;
 
-export interface SqliteSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
+export interface SqliteSqlTranslatingExpressionVisitor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalSqlTranslatingExpressionVisitor: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteSqlTranslatingExpressionVisitor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    GenerateGreatest(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression;
-    GenerateLeast(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression;
-    VisitBinary(binaryExpression: BinaryExpression): Expression;
-    VisitMethodCall(methodCallExpression: MethodCallExpression): Expression;
-    VisitUnary(unaryExpression: UnaryExpression): Expression;
+    GenerateGreatest: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["GenerateGreatest"] & ((expressions: IReadOnlyList_1<SqlExpression>, resultType: Type) => SqlExpression);
+    GenerateLeast: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["GenerateLeast"] & ((expressions: IReadOnlyList_1<SqlExpression>, resultType: Type) => SqlExpression);
+    VisitBinary: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["VisitBinary"] & ((binaryExpression: BinaryExpression) => Expression);
+    VisitMethodCall: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["VisitMethodCall"] & ((methodCallExpression: MethodCallExpression) => Expression);
+    VisitUnary: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["VisitUnary"] & ((unaryExpression: UnaryExpression) => Expression);
 }
 
 
@@ -688,11 +711,13 @@ export const SqliteSubstrMethodTranslator: {
 
 export type SqliteSubstrMethodTranslator = SqliteSubstrMethodTranslator$instance;
 
-export interface SqliteTypeMappingPostprocessor$instance extends RelationalTypeMappingPostprocessor {
+export interface SqliteTypeMappingPostprocessor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalTypeMappingPostprocessor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalTypeMappingPostprocessor: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Query_Internal_SqliteTypeMappingPostprocessor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
     ApplyTypeMappingsOnJsonEachExpression(jsonEachExpression: JsonEachExpression, inferredTypeMapping: RelationalTypeMapping): JsonEachExpression;
-    VisitExtension(expression: Expression): Expression;
+    VisitExtension: Microsoft_EntityFrameworkCore_Query_Internal.RelationalTypeMappingPostprocessor["VisitExtension"] & ((expression: Expression) => Expression);
 }
 
 

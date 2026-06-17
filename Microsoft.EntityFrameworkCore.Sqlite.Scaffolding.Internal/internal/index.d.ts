@@ -18,12 +18,13 @@ import type { DatabaseModelFactory, DatabaseModelFactoryOptions, IDatabaseModelF
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 import type { DbLoggerCategory_Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export interface SqliteCodeGenerator$instance extends ProviderCodeGenerator {
+export interface SqliteCodeGenerator$instance extends Microsoft_EntityFrameworkCore_Scaffolding_Internal.ProviderCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Scaffolding_ProviderCodeGenerator: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Scaffolding_Internal_SqliteCodeGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IProviderConfigurationCodeGenerator: never;
 
-    GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment | null): MethodCallCodeFragment;
+    GenerateUseProvider: Microsoft_EntityFrameworkCore_Scaffolding_Internal.ProviderCodeGenerator["GenerateUseProvider"] & ((connectionString: string, providerOptions: MethodCallCodeFragment | null) => MethodCallCodeFragment);
 }
 
 
@@ -34,13 +35,13 @@ export const SqliteCodeGenerator: {
 
 export type SqliteCodeGenerator = SqliteCodeGenerator$instance;
 
-export interface SqliteDatabaseModelFactory$instance extends DatabaseModelFactory {
+export interface SqliteDatabaseModelFactory$instance extends Microsoft_EntityFrameworkCore_Scaffolding_Internal.DatabaseModelFactory {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Scaffolding_DatabaseModelFactory: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Scaffolding_Internal_SqliteDatabaseModelFactory: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IDatabaseModelFactory: never;
 
-    Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
-    Create(connection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
+    Create: Microsoft_EntityFrameworkCore_Scaffolding_Internal.DatabaseModelFactory["Create"] & ((connection: DbConnection, options: DatabaseModelFactoryOptions) => DatabaseModel) & ((connectionString: string, options: DatabaseModelFactoryOptions) => DatabaseModel);
     InferClrTypes(connection: DbConnection, table: DatabaseTable): void;
 }
 

@@ -143,17 +143,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663828,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteByteArrayTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }
         ]
       },
@@ -371,17 +360,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663838,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateOnlyTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }
         ]
       },
@@ -473,17 +451,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663844,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeOffsetTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }
@@ -579,17 +546,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663850,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDateTimeTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }
         ]
       },
@@ -681,17 +637,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663856,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDecimalTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }
@@ -786,17 +731,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663862,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteGuidTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }
@@ -951,17 +885,6 @@
             "isStatic": false,
             "parameterCount": 1,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663868,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteJsonTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }
@@ -1287,17 +1210,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663885,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteStringTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }
         ]
       },
@@ -1390,17 +1302,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663892,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteTimeOnlyTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }
@@ -1585,17 +1486,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.Sqlite:Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100663904,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteULongTypeMapping",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.Sqlite"
           }

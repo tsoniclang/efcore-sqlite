@@ -15,7 +15,7 @@ import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.
 
 export abstract class SqliteServiceCollectionExtensions$instance {
     static AddEntityFrameworkSqlite(serviceCollection: IServiceCollection): IServiceCollection;
-    static AddSqlite<TContext extends unknown & DbContext>(serviceCollection: IServiceCollection, connectionString: string | null, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
+    static AddSqlite<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(serviceCollection: IServiceCollection, connectionString: string | null, sqliteOptionsAction?: Action_1<SqliteDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
 }
 
 

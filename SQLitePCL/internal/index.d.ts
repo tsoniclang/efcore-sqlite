@@ -114,11 +114,11 @@ export interface ISQLite3Provider$instance {
     sqlite3_config(op: int, val: int): int;
     sqlite3_config_log(func: delegate_log, v: unknown): int;
     sqlite3_create_collation(db: sqlite3, name: byte[], v: unknown, func: delegate_collation): int;
-    sqlite3_create_function(db: sqlite3, name: byte[], nArg: int, flags: int, v: unknown, func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final): int;
     sqlite3_create_function(db: sqlite3, name: byte[], nArg: int, flags: int, v: unknown, func: delegate_function_scalar): int;
-    sqlite3_db_config(db: sqlite3, op: int, val: utf8z): int;
-    sqlite3_db_config(db: sqlite3, op: int, val: int, result: int): int;
+    sqlite3_create_function(db: sqlite3, name: byte[], nArg: int, flags: int, v: unknown, func_step: delegate_function_aggregate_step, func_final: delegate_function_aggregate_final): int;
     sqlite3_db_config(db: sqlite3, op: int, ptr: nint, int0: int, int1: int): int;
+    sqlite3_db_config(db: sqlite3, op: int, val: int, result: int): int;
+    sqlite3_db_config(db: sqlite3, op: int, val: utf8z): int;
     sqlite3_db_filename(db: sqlite3, att: utf8z): utf8z;
     sqlite3_db_handle(stmt: nint): nint;
     sqlite3_db_readonly(db: sqlite3, dbName: utf8z): int;
@@ -144,10 +144,10 @@ export interface ISQLite3Provider$instance {
     sqlite3_next_stmt(db: sqlite3, stmt: nint): nint;
     sqlite3_open(filename: utf8z, db: nint): int;
     sqlite3_open_v2(filename: utf8z, db: nint, flags: int, vfs: utf8z): int;
-    sqlite3_prepare_v2(db: sqlite3, sql: utf8z, stmt: nint, remain: utf8z): int;
     sqlite3_prepare_v2(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, stmt: nint, remain: ReadOnlySpan_1<System_Internal.Byte>): int;
-    sqlite3_prepare_v3(db: sqlite3, sql: utf8z, flags: uint, stmt: nint, remain: utf8z): int;
+    sqlite3_prepare_v2(db: sqlite3, sql: utf8z, stmt: nint, remain: utf8z): int;
     sqlite3_prepare_v3(db: sqlite3, sql: ReadOnlySpan_1<System_Internal.Byte>, flags: uint, stmt: nint, remain: ReadOnlySpan_1<System_Internal.Byte>): int;
+    sqlite3_prepare_v3(db: sqlite3, sql: utf8z, flags: uint, stmt: nint, remain: utf8z): int;
     sqlite3_profile(db: sqlite3, func: delegate_profile, v: unknown): void;
     sqlite3_progress_handler(db: sqlite3, instructions: int, func: delegate_progress, v: unknown): void;
     sqlite3_result_blob(context: nint, val: ReadOnlySpan_1<System_Internal.Byte>): void;
@@ -186,6 +186,7 @@ export type ISQLite3Provider = ISQLite3Provider$instance;
 
 export interface utf8z$instance {
     readonly __tsonic_type_SQLitePCL_utf8z: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     GetPinnableReference(): byte;
     utf8_to_string(): string;
@@ -238,8 +239,8 @@ export type collation_hook_info = collation_hook_info$instance;
 export interface commit_hook_info$instance {
     readonly __tsonic_type_SQLitePCL_commit_hook_info: never;
 
-    _func: delegate_commit;
-    _user_data: unknown;
+    readonly _func: delegate_commit;
+    readonly _user_data: unknown;
     call(): int;
 }
 
@@ -252,10 +253,11 @@ export const commit_hook_info: {
 
 export type commit_hook_info = commit_hook_info$instance;
 
-export interface EntryPointAttribute$instance extends Attribute {
+export interface EntryPointAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_SQLitePCL_EntryPointAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
-    Name: string;
+    readonly Name: string;
 }
 
 
@@ -299,8 +301,11 @@ export const function_hook_info: {
 
 export type function_hook_info = function_hook_info$instance;
 
-export interface hook_handle$instance extends SafeGCHandle {
+export interface hook_handle$instance extends SafeGCHandle$instance {
+    readonly __tsonic_type_SQLitePCL_SafeGCHandle: never;
     readonly __tsonic_type_SQLitePCL_hook_handle: never;
+    readonly __tsonic_type_System_Runtime_ConstrainedExecution_CriticalFinalizerObject: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_SafeHandle: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -359,8 +364,9 @@ export const log_hook_info: {
 
 export type log_hook_info = log_hook_info$instance;
 
-export interface MonoPInvokeCallbackAttribute$instance extends Attribute {
+export interface MonoPInvokeCallbackAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_SQLitePCL_MonoPInvokeCallbackAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -372,8 +378,9 @@ export const MonoPInvokeCallbackAttribute: {
 
 export type MonoPInvokeCallbackAttribute = MonoPInvokeCallbackAttribute$instance;
 
-export interface PreserveAttribute$instance extends Attribute {
+export interface PreserveAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_SQLitePCL_PreserveAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     AllMembers: boolean;
     Conditional: boolean;
@@ -432,13 +439,14 @@ export const rollback_hook_info: {
 
 export type rollback_hook_info = rollback_hook_info$instance;
 
-export interface SafeGCHandle$instance extends SafeHandle {
+export interface SafeGCHandle$instance extends System_Runtime_InteropServices_Internal.SafeHandle {
     readonly __tsonic_type_SQLitePCL_SafeGCHandle: never;
+    readonly __tsonic_type_System_Runtime_ConstrainedExecution_CriticalFinalizerObject: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_SafeHandle: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IsInvalid: boolean;
-    ReleaseHandle(): boolean;
+    ReleaseHandle: System_Runtime_InteropServices_Internal.SafeHandle["ReleaseHandle"] & (() => boolean);
 }
 
 
@@ -449,17 +457,18 @@ export const SafeGCHandle: {
 
 export type SafeGCHandle = SafeGCHandle$instance;
 
-export interface sqlite3$instance extends SafeHandle {
+export interface sqlite3$instance extends System_Runtime_InteropServices_Internal.SafeHandle {
     readonly __tsonic_type_SQLitePCL_sqlite3: never;
+    readonly __tsonic_type_System_Runtime_ConstrainedExecution_CriticalFinalizerObject: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_SafeHandle: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IsInvalid: boolean;
     enable_sqlite3_next_stmt(enabled: boolean): void;
-    GetOrCreateExtra<T extends (object | null) & IDisposable>(f: Func_1<T>): T;
+    GetOrCreateExtra<T extends (object | null) & { readonly __tsonic_iface_System_IDisposable: never }>(f: Func_1<T>): T;
     manual_close(): int;
     manual_close_v2(): int;
-    ReleaseHandle(): boolean;
+    ReleaseHandle: System_Runtime_InteropServices_Internal.SafeHandle["ReleaseHandle"] & (() => boolean);
 }
 
 
@@ -469,14 +478,15 @@ export const sqlite3: {
 
 export type sqlite3 = sqlite3$instance;
 
-export interface sqlite3_backup$instance extends SafeHandle {
+export interface sqlite3_backup$instance extends System_Runtime_InteropServices_Internal.SafeHandle {
     readonly __tsonic_type_SQLitePCL_sqlite3_backup: never;
+    readonly __tsonic_type_System_Runtime_ConstrainedExecution_CriticalFinalizerObject: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_SafeHandle: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IsInvalid: boolean;
     manual_close(): int;
-    ReleaseHandle(): boolean;
+    ReleaseHandle: System_Runtime_InteropServices_Internal.SafeHandle["ReleaseHandle"] & (() => boolean);
 }
 
 
@@ -487,14 +497,15 @@ export const sqlite3_backup: {
 
 export type sqlite3_backup = sqlite3_backup$instance;
 
-export interface sqlite3_blob$instance extends SafeHandle {
+export interface sqlite3_blob$instance extends System_Runtime_InteropServices_Internal.SafeHandle {
     readonly __tsonic_type_SQLitePCL_sqlite3_blob: never;
+    readonly __tsonic_type_System_Runtime_ConstrainedExecution_CriticalFinalizerObject: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_SafeHandle: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IsInvalid: boolean;
     manual_close(): int;
-    ReleaseHandle(): boolean;
+    ReleaseHandle: System_Runtime_InteropServices_Internal.SafeHandle["ReleaseHandle"] & (() => boolean);
 }
 
 
@@ -511,20 +522,21 @@ export interface sqlite3_context$instance {
 }
 
 
-export const sqlite3_context: (abstract new(user_data: unknown) => sqlite3_context) & {
+export const sqlite3_context: {
 };
 
 
 export type sqlite3_context = sqlite3_context$instance;
 
-export interface sqlite3_snapshot$instance extends SafeHandle {
+export interface sqlite3_snapshot$instance extends System_Runtime_InteropServices_Internal.SafeHandle {
     readonly __tsonic_type_SQLitePCL_sqlite3_snapshot: never;
+    readonly __tsonic_type_System_Runtime_ConstrainedExecution_CriticalFinalizerObject: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_SafeHandle: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IsInvalid: boolean;
     manual_close(): void;
-    ReleaseHandle(): boolean;
+    ReleaseHandle: System_Runtime_InteropServices_Internal.SafeHandle["ReleaseHandle"] & (() => boolean);
 }
 
 
@@ -534,14 +546,15 @@ export const sqlite3_snapshot: {
 
 export type sqlite3_snapshot = sqlite3_snapshot$instance;
 
-export interface sqlite3_stmt$instance extends SafeHandle {
+export interface sqlite3_stmt$instance extends System_Runtime_InteropServices_Internal.SafeHandle {
     readonly __tsonic_type_SQLitePCL_sqlite3_stmt: never;
+    readonly __tsonic_type_System_Runtime_ConstrainedExecution_CriticalFinalizerObject: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_SafeHandle: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IsInvalid: boolean;
     manual_close(): int;
-    ReleaseHandle(): boolean;
+    ReleaseHandle: System_Runtime_InteropServices_Internal.SafeHandle["ReleaseHandle"] & (() => boolean);
 }
 
 
@@ -564,7 +577,7 @@ export const sqlite3_value: {
 
 export type sqlite3_value = sqlite3_value$instance;
 
-export interface SQLite3Provider_e_sqlite3$instance extends ISQLite3Provider$instance {
+export interface SQLite3Provider_e_sqlite3$instance {
     readonly __tsonic_type_SQLitePCL_SQLite3Provider_e_sqlite3: never;
 
     readonly __tsonic_iface_SQLitePCL_ISQLite3Provider: never;

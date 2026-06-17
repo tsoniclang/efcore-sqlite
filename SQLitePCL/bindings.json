@@ -4545,12 +4545,12 @@
             "targetName": "_func",
             "metadataToken": 385875983,
             "canonicalSignature": ":SQLitePCL.delegate_commit",
-            "normalizedSignature": "_func|:SQLitePCL.delegate_commit|static=false|accessor=getset",
+            "normalizedSignature": "_func|:SQLitePCL.delegate_commit|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -4564,12 +4564,12 @@
             "targetName": "_user_data",
             "metadataToken": 385875984,
             "canonicalSignature": ":System.Object",
-            "normalizedSignature": "_user_data|:System.Object|static=false|accessor=getset",
+            "normalizedSignature": "_user_data|:System.Object|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -4617,12 +4617,12 @@
             "targetName": "Name",
             "metadataToken": 385875985,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Name|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -5998,28 +5998,7 @@
           "stableId": "System.Private.CoreLib:System.Object",
           "targetName": "System.Object"
         },
-        "methods": [
-          {
-            "stableId": "SQLitePCLRaw.core:SQLitePCL.sqlite3_context::set_context_ptr(System.IntPtr):System.Void",
-            "targetName": "set_context_ptr",
-            "metadataToken": 100663529,
-            "canonicalSignature": "(System.IntPtr):System.Void",
-            "normalizedSignature": "set_context_ptr|(System.IntPtr):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "SQLitePCL.sqlite3_context",
-            "ownerIdentity": "SQLitePCLRaw.core",
-            "isExtensionMethod": false
-          }
-        ],
+        "methods": [],
         "properties": [],
         "fields": [
           {
@@ -6036,19 +6015,7 @@
           }
         ],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "SQLitePCLRaw.core:SQLitePCL.sqlite3_context::.ctor(System.Object):void",
-            "metadataToken": 100663526,
-            "canonicalSignature": "(System.Object):void",
-            "normalizedSignature": "constructor|(System.Object):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "SQLitePCL.sqlite3_context",
-            "ownerIdentity": "SQLitePCLRaw.core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "SQLitePCLRaw.core:SQLitePCL.sqlite3_snapshot",
