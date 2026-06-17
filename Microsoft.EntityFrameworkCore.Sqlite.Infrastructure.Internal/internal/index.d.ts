@@ -58,4 +58,3 @@ export const SqliteOptionsExtension: {
 
 
 export type SqliteOptionsExtension = SqliteOptionsExtension$instance;
-

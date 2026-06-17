@@ -121,5 +121,3 @@ export interface __ReferenceAssemblyPathResolver$views {
 }
 
 export type ReferenceAssemblyPathResolver = ReferenceAssemblyPathResolver$instance & __ReferenceAssemblyPathResolver$views;
-
-

@@ -20,4 +20,3 @@ export abstract class SqliteServiceCollectionExtensions$instance {
 
 
 export type SqliteServiceCollectionExtensions = SqliteServiceCollectionExtensions$instance;
-

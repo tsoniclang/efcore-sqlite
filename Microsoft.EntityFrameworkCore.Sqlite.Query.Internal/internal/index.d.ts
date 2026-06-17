@@ -702,4 +702,3 @@ export const SqliteTypeMappingPostprocessor: {
 
 
 export type SqliteTypeMappingPostprocessor = SqliteTypeMappingPostprocessor$instance;
-

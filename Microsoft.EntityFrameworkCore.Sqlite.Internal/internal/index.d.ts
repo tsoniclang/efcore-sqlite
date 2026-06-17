@@ -81,4 +81,3 @@ export abstract class SqliteStrings$instance {
 
 
 export type SqliteStrings = SqliteStrings$instance;
-

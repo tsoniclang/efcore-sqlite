@@ -72,4 +72,3 @@ export const UnexpectedConnectionTypeEventData: {
 
 
 export type UnexpectedConnectionTypeEventData = UnexpectedConnectionTypeEventData$instance;
-

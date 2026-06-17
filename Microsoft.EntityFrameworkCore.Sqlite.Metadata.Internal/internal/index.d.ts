@@ -45,4 +45,3 @@ export abstract class SqliteAnnotationNames$instance {
 
 
 export type SqliteAnnotationNames = SqliteAnnotationNames$instance;
-

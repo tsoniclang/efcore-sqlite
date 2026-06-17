@@ -247,4 +247,3 @@ export type ExtensionMethods_System_Collections_Generic<TShape> =
   : TShape extends void ? void
   : TShape extends (infer T extends unknown)[] ? (TShape & System_Collections_Generic.IEnumerable_1<T> & __TsonicWithExt<TShape, "System.Collections.Generic", __TsonicExtApplier_System_Collections_Generic> & __TsonicExtMethods_System_Collections_Generic)
   : TShape & __TsonicWithExt<TShape, "System.Collections.Generic", __TsonicExtApplier_System_Collections_Generic> & __TsonicExtMethods_System_Collections_Generic;
-

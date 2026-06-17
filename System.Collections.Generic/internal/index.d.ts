@@ -23,4 +23,3 @@ export abstract class CollectionExtensions$instance {
 
 
 export type CollectionExtensions = CollectionExtensions$instance;
-

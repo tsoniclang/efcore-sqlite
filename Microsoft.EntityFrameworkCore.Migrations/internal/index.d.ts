@@ -64,4 +64,3 @@ export abstract class SqliteMigrationBuilderExtensions$instance {
 
 
 export type SqliteMigrationBuilderExtensions = SqliteMigrationBuilderExtensions$instance;
-

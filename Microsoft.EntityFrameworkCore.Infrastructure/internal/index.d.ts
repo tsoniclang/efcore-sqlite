@@ -38,4 +38,3 @@ export abstract class SpatialiteLoader$instance {
 
 
 export type SpatialiteLoader = SpatialiteLoader$instance;
-

@@ -102,4 +102,3 @@ export const SqliteUpdateSqlGenerator: {
 
 
 export type SqliteUpdateSqlGenerator = SqliteUpdateSqlGenerator$instance;
-

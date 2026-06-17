@@ -151,4 +151,3 @@ export abstract class SqliteTableExtensions$instance {
 
 
 export type SqliteTableExtensions = SqliteTableExtensions$instance;
-

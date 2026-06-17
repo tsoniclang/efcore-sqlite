@@ -503,4 +503,3 @@ export const SqliteTransaction: {
 
 
 export type SqliteTransaction = SqliteTransaction$instance;
-

@@ -278,4 +278,3 @@ export const SqliteULongTypeMapping: {
 
 
 export type SqliteULongTypeMapping = SqliteULongTypeMapping$instance;
-

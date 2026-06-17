@@ -14,5 +14,3 @@ export enum SqliteValueGenerationStrategy {
     None = 0,
     Autoincrement = 1
 }
-
-

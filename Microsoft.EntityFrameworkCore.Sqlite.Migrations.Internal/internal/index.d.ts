@@ -59,4 +59,3 @@ export const SqliteMigrationDatabaseLock: {
 
 
 export type SqliteMigrationDatabaseLock = SqliteMigrationDatabaseLock$instance;
-

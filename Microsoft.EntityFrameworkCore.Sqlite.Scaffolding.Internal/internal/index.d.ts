@@ -51,4 +51,3 @@ export const SqliteDatabaseModelFactory: {
 
 
 export type SqliteDatabaseModelFactory = SqliteDatabaseModelFactory$instance;
-
