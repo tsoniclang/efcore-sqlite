@@ -12,7 +12,9 @@ import type { Func_3, String as ClrString, Type } from "@tsonic/dotnet/System/in
 import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
 import type { EventData, EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
 
-export interface SqliteLoggingDefinitions$instance extends RelationalLoggingDefinitions {
+export interface SqliteLoggingDefinitions$instance extends Microsoft_EntityFrameworkCore_Diagnostics_Internal.RelationalLoggingDefinitions {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Diagnostics_LoggingDefinitions: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Diagnostics_RelationalLoggingDefinitions: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Diagnostics_Internal_SqliteLoggingDefinitions: never;
 
     LogSchemaConfigured: EventDefinitionBase | null;
@@ -44,7 +46,8 @@ export const SqliteLoggingDefinitions: {
 
 export type SqliteLoggingDefinitions = SqliteLoggingDefinitions$instance;
 
-export interface TableRebuildEventData$instance extends EventData {
+export interface TableRebuildEventData$instance extends Microsoft_EntityFrameworkCore_Diagnostics_Internal.EventData {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Diagnostics_EventData: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Diagnostics_Internal_TableRebuildEventData: never;
 
     readonly OperationType: Type;
@@ -59,7 +62,8 @@ export const TableRebuildEventData: {
 
 export type TableRebuildEventData = TableRebuildEventData$instance;
 
-export interface UnexpectedConnectionTypeEventData$instance extends EventData {
+export interface UnexpectedConnectionTypeEventData$instance extends Microsoft_EntityFrameworkCore_Diagnostics_Internal.EventData {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Diagnostics_EventData: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Diagnostics_Internal_UnexpectedConnectionTypeEventData: never;
 
     readonly ConnectionType: Type;

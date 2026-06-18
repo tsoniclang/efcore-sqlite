@@ -10,7 +10,9 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum SqliteValueGenerationStrategy {
-    None = 0,
-    Autoincrement = 1
-}
+export type SqliteValueGenerationStrategy = number & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_SqliteValueGenerationStrategy: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqliteValueGenerationStrategy: {
+    readonly None: SqliteValueGenerationStrategy;
+    readonly Autoincrement: SqliteValueGenerationStrategy;
+};

@@ -18,12 +18,14 @@ import type { ConventionSet, IConvention, IConventionContext_1, IEntityTypeAnnot
 import type { IConventionAnnotation, IConventionProperty, IProperty, RuntimeProperty, StoreObjectIdentifier, ValueGenerated } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 import type { ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export interface SqliteConventionSetBuilder$instance extends RelationalConventionSetBuilder {
+export interface SqliteConventionSetBuilder$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal.RelationalConventionSetBuilder {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_ProviderConventionSetBuilder: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_RelationalConventionSetBuilder: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteConventionSetBuilder: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_IProviderConventionSetBuilder: never;
 
-    CreateConventionSet(): ConventionSet;
+    CreateConventionSet: Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal.RelationalConventionSetBuilder["CreateConventionSet"] & (() => ConventionSet);
 }
 
 
@@ -36,13 +38,15 @@ export const SqliteConventionSetBuilder: {
 
 export type SqliteConventionSetBuilder = SqliteConventionSetBuilder$instance;
 
-export interface SqliteRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+export interface SqliteRuntimeModelConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_RelationalRuntimeModelConvention: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_RuntimeModelConvention: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteRuntimeModelConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizedConvention: never;
 
-    ProcessPropertyAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
+    ProcessPropertyAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessPropertyAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean) => void);
 }
 
 
@@ -53,13 +57,13 @@ export const SqliteRuntimeModelConvention: {
 
 export type SqliteRuntimeModelConvention = SqliteRuntimeModelConvention$instance;
 
-export interface SqliteSharedTableConvention$instance extends SharedTableConvention {
+export interface SqliteSharedTableConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.SharedTableConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SharedTableConvention: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteSharedTableConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
 
-    readonly CheckConstraintsUniqueAcrossTables: boolean;
 }
 
 
@@ -70,15 +74,16 @@ export const SqliteSharedTableConvention: {
 
 export type SqliteSharedTableConvention = SqliteSharedTableConvention$instance;
 
-export interface SqliteStoreGenerationConvention$instance extends StoreGenerationConvention {
+export interface SqliteStoreGenerationConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.StoreGenerationConvention {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteStoreGenerationConvention: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_StoreGenerationConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
 
-    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>): void;
-    Validate(property: IConventionProperty, storeObject: StoreObjectIdentifier): void;
+    ProcessPropertyAnnotationChanged: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.StoreGenerationConvention["ProcessPropertyAnnotationChanged"] & ((propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>) => void);
+    Validate: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.StoreGenerationConvention["Validate"] & ((property: IConventionProperty, storeObject: StoreObjectIdentifier) => void);
 }
 
 
@@ -89,8 +94,10 @@ export const SqliteStoreGenerationConvention: {
 
 export type SqliteStoreGenerationConvention = SqliteStoreGenerationConvention$instance;
 
-export interface SqliteValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+export interface SqliteValueGenerationConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_RelationalValueGenerationConvention: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqliteValueGenerationConvention: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_ValueGenerationConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeAnnotationChangedConvention: never;
@@ -102,8 +109,8 @@ export interface SqliteValueGenerationConvention$instance extends RelationalValu
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IForeignKeyRemovedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
 
-    GetValueGenerated(property: IConventionProperty): Nullable_1<ValueGenerated>;
-    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>): void;
+    GetValueGenerated: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention["GetValueGenerated"] & ((property: IConventionProperty) => Nullable_1<ValueGenerated>);
+    ProcessPropertyAnnotationChanged: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention["ProcessPropertyAnnotationChanged"] & ((propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>) => void);
 }
 
 

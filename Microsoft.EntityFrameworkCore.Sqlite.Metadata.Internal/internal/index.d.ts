@@ -14,13 +14,13 @@ import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.I
 import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 
-export interface SqliteAnnotationProvider$instance extends RelationalAnnotationProvider {
+export interface SqliteAnnotationProvider$instance extends Microsoft_EntityFrameworkCore_Metadata_Internal.RelationalAnnotationProvider {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_RelationalAnnotationProvider: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Metadata_Internal_SqliteAnnotationProvider: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IRelationalAnnotationProvider: never;
 
-    For(model: IRelationalModel, designTime: boolean): IEnumerable_1<IAnnotation>;
-    For(column: IColumn, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For: Microsoft_EntityFrameworkCore_Metadata_Internal.RelationalAnnotationProvider["For"] & ((column: IColumn, designTime: boolean) => IEnumerable_1<IAnnotation>) & ((model: IRelationalModel, designTime: boolean) => IEnumerable_1<IAnnotation>);
 }
 
 

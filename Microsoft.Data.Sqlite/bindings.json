@@ -5995,19 +5995,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteParameterCollection::.ctor():void",
-            "metadataToken": 100663703,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.Data.Sqlite.SqliteParameterCollection",
-            "ownerIdentity": "Microsoft.Data.Sqlite"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Data.Sqlite:Microsoft.Data.Sqlite.SqliteTransaction",

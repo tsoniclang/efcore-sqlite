@@ -15,21 +15,20 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efco
 import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryRepository, IMigrationsDatabaseLock, LockReleaseBehavior } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
-export interface SqliteHistoryRepository$instance extends HistoryRepository {
+export interface SqliteHistoryRepository$instance extends Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_HistoryRepository: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Migrations_Internal_SqliteHistoryRepository: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
 
-    readonly ExistsSql: string;
-    readonly LockReleaseBehavior: LockReleaseBehavior;
     readonly LockTableName: string;
-    AcquireDatabaseLock(): IMigrationsDatabaseLock;
-    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task_1<IMigrationsDatabaseLock>;
-    GetBeginIfExistsScript(migrationId: string): string;
-    GetBeginIfNotExistsScript(migrationId: string): string;
-    GetCreateIfNotExistsScript(): string;
-    GetEndIfScript(): string;
-    InterpretExistsResult(value: unknown | null): boolean;
+    AcquireDatabaseLock: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["AcquireDatabaseLock"] & (() => IMigrationsDatabaseLock);
+    AcquireDatabaseLockAsync: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["AcquireDatabaseLockAsync"] & ((cancellationToken?: CancellationToken) => Task_1<IMigrationsDatabaseLock>);
+    GetBeginIfExistsScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetBeginIfExistsScript"] & ((migrationId: string) => string);
+    GetBeginIfNotExistsScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetBeginIfNotExistsScript"] & ((migrationId: string) => string);
+    GetCreateIfNotExistsScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetCreateIfNotExistsScript"] & (() => string);
+    GetEndIfScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetEndIfScript"] & (() => string);
+    InterpretExistsResult: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["InterpretExistsResult"] & ((value: unknown | null) => boolean);
 }
 
 

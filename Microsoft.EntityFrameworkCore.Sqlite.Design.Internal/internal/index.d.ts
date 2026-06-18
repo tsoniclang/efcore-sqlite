@@ -18,13 +18,14 @@ import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.I
 import type { IColumn, IProperty, IRelationalModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
-export interface SqliteAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
+export interface SqliteAnnotationCodeGenerator$instance extends Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Design_AnnotationCodeGenerator: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Design_Internal_SqliteAnnotationCodeGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IAnnotationCodeGenerator: never;
 
-    GenerateFluentApiCalls(property: IProperty, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
-    IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
+    GenerateFluentApiCalls: Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator["GenerateFluentApiCalls"] & ((property: IProperty, annotations: IDictionary_2<System_Internal.String, IAnnotation>) => IReadOnlyList_1<MethodCallCodeFragment>);
+    IsHandledByConvention: Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator["IsHandledByConvention"] & ((property: IProperty, annotation: IAnnotation) => boolean);
 }
 
 
@@ -35,12 +36,12 @@ export const SqliteAnnotationCodeGenerator: {
 
 export type SqliteAnnotationCodeGenerator = SqliteAnnotationCodeGenerator$instance;
 
-export interface SqliteCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
+export interface SqliteCSharpRuntimeAnnotationCodeGenerator$instance extends Microsoft_EntityFrameworkCore_Design_Internal_Internal.RelationalCSharpRuntimeAnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Design_Internal_CSharpRuntimeAnnotationCodeGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Design_Internal_RelationalCSharpRuntimeAnnotationCodeGenerator: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Sqlite_Design_Internal_SqliteCSharpRuntimeAnnotationCodeGenerator: never;
 
-    Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate: Microsoft_EntityFrameworkCore_Design_Internal_Internal.RelationalCSharpRuntimeAnnotationCodeGenerator["Generate"] & ((column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void);
 }
 
 

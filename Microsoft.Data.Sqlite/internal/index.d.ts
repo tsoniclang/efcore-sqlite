@@ -26,48 +26,49 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Array as ClrArray, Boolean as ClrBoolean, Byte, Char, Comparison_1, DateTime, DateTimeOffset, Decimal, Double, Enum, Func_1, Func_10, Func_11, Func_12, Func_13, Func_14, Func_15, Func_16, Func_17, Func_2, Func_3, Func_4, Func_5, Func_6, Func_7, Func_8, Func_9, Guid, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlySpan_1, Single, Span_1, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum SqliteCacheMode {
-    Default = 0,
-    Private = 1,
-    Shared = 2
-}
+export type SqliteCacheMode = number & { readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteCacheMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqliteCacheMode: {
+    readonly Default: SqliteCacheMode;
+    readonly Private: SqliteCacheMode;
+    readonly Shared: SqliteCacheMode;
+};
 
 
-export enum SqliteOpenMode {
-    ReadWriteCreate = 0,
-    ReadWrite = 1,
-    ReadOnly = 2,
-    Memory = 3
-}
+export type SqliteOpenMode = number & { readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteOpenMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqliteOpenMode: {
+    readonly ReadWriteCreate: SqliteOpenMode;
+    readonly ReadWrite: SqliteOpenMode;
+    readonly ReadOnly: SqliteOpenMode;
+    readonly Memory: SqliteOpenMode;
+};
 
 
-export enum SqliteType {
-    Integer = 1,
-    Real = 2,
-    Text = 3,
-    Blob = 4
-}
+export type SqliteType = number & { readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqliteType: {
+    readonly Integer: SqliteType;
+    readonly Real: SqliteType;
+    readonly Text: SqliteType;
+    readonly Blob: SqliteType;
+};
 
 
-export interface SqliteBlob$instance extends Stream {
+export interface SqliteBlob$instance extends System_IO_Internal.Stream {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteBlob: never;
+    readonly __tsonic_type_System_IO_Stream: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly CanRead: boolean;
-    readonly CanSeek: boolean;
-    readonly CanWrite: boolean;
-    readonly Length: long;
-    Position: long;
-    Dispose(disposing: boolean): void;
-    Flush(): void;
-    Read(buffer: byte[], offset: int, count: int): int;
-    Read(buffer: Span_1<System_Internal.Byte>): int;
-    Seek(offset: long, origin: SeekOrigin): long;
-    SetLength(value: long): void;
-    Write(buffer: byte[], offset: int, count: int): void;
-    Write(buffer: ReadOnlySpan_1<System_Internal.Byte>): void;
+    Dispose: System_IO_Internal.Stream["Dispose"] & ((disposing: boolean) => void);
+    Flush: System_IO_Internal.Stream["Flush"] & (() => void);
+    Read: System_IO_Internal.Stream["Read"] & ((buffer: Span_1<System_Internal.Byte>) => int) & ((buffer: byte[], offset: int, count: int) => int);
+    Seek: System_IO_Internal.Stream["Seek"] & ((offset: long, origin: SeekOrigin) => long);
+    SetLength: System_IO_Internal.Stream["SetLength"] & ((value: long) => void);
+    Write: System_IO_Internal.Stream["Write"] & ((buffer: ReadOnlySpan_1<System_Internal.Byte>) => void) & ((buffer: byte[], offset: int, count: int) => void);
 }
 
 
@@ -79,46 +80,30 @@ export const SqliteBlob: {
 
 export type SqliteBlob = SqliteBlob$instance;
 
-export interface SqliteCommand$instance extends DbCommand {
+export interface SqliteCommand$instance extends System_Data_Common_Internal.DbCommand {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteCommand: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DbCommand: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbCommand: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    CommandText: string;
-    CommandTimeout: int;
-    CommandType: CommandType;
-    get Connection(): SqliteConnection | null;
-    set Connection(value: SqliteConnection | null);
     get DataReader(): SqliteDataReader | null;
     set DataReader(value: SqliteDataReader | null);
-    get DbConnection(): DbConnection | null;
-    set DbConnection(value: DbConnection | null);
-    readonly DbParameterCollection: DbParameterCollection;
-    get DbTransaction(): DbTransaction | null;
-    set DbTransaction(value: DbTransaction | null);
-    DesignTimeVisible: boolean;
-    readonly Parameters: SqliteParameterCollection;
-    get Transaction(): SqliteTransaction | null;
-    set Transaction(value: SqliteTransaction | null);
-    UpdatedRowSource: UpdateRowSource;
-    Cancel(): void;
-    CreateDbParameter(): DbParameter;
-    CreateParameter(): SqliteParameter;
-    Dispose(disposing: boolean): void;
-    ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
-    ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task_1<DbDataReader>;
-    ExecuteNonQuery(): int;
-    ExecuteReader(): SqliteDataReader;
-    ExecuteReader(behavior: CommandBehavior): SqliteDataReader;
-    ExecuteReaderAsync(): Task_1<SqliteDataReader>;
-    ExecuteReaderAsync(cancellationToken: CancellationToken): Task_1<SqliteDataReader>;
-    ExecuteReaderAsync(behavior: CommandBehavior): Task_1<SqliteDataReader>;
-    ExecuteReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task_1<SqliteDataReader>;
-    ExecuteScalar(): unknown | null;
-    Prepare(): void;
+    Cancel: System_Data_Common_Internal.DbCommand["Cancel"] & (() => void);
+    CreateDbParameter: System_Data_Common_Internal.DbCommand["CreateDbParameter"] & (() => DbParameter);
+    CreateParameter: System_Data_Common_Internal.DbCommand["CreateParameter"] & (() => SqliteParameter);
+    Dispose: System_Data_Common_Internal.DbCommand["Dispose"] & ((disposing: boolean) => void);
+    ExecuteDbDataReader: System_Data_Common_Internal.DbCommand["ExecuteDbDataReader"] & ((behavior: CommandBehavior) => DbDataReader);
+    ExecuteDbDataReaderAsync: System_Data_Common_Internal.DbCommand["ExecuteDbDataReaderAsync"] & ((behavior: CommandBehavior, cancellationToken: CancellationToken) => Task_1<DbDataReader>);
+    ExecuteNonQuery: System_Data_Common_Internal.DbCommand["ExecuteNonQuery"] & (() => int);
+    ExecuteReader: System_Data_Common_Internal.DbCommand["ExecuteReader"] & (() => SqliteDataReader) & ((behavior: CommandBehavior) => SqliteDataReader);
+    ExecuteReaderAsync: System_Data_Common_Internal.DbCommand["ExecuteReaderAsync"] & (() => Task_1<SqliteDataReader>) & ((behavior: CommandBehavior) => Task_1<SqliteDataReader>) & ((behavior: CommandBehavior, cancellationToken: CancellationToken) => Task_1<SqliteDataReader>) & ((cancellationToken: CancellationToken) => Task_1<SqliteDataReader>);
+    ExecuteScalar: System_Data_Common_Internal.DbCommand["ExecuteScalar"] & (() => unknown | null);
+    Prepare: System_Data_Common_Internal.DbCommand["Prepare"] & (() => void);
 }
 
 
@@ -132,125 +117,117 @@ export const SqliteCommand: {
 
 export type SqliteCommand = SqliteCommand$instance;
 
-export interface SqliteConnection$instance extends DbConnection {
+export interface SqliteConnection$instance extends System_Data_Common_Internal.DbConnection {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteConnection: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DbConnection: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbConnection: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    ConnectionString: string;
-    readonly Database: string;
-    readonly DataSource: string;
-    readonly DbProviderFactory: DbProviderFactory;
     DefaultTimeout: int;
     readonly Handle: sqlite3 | null;
-    readonly ServerVersion: string;
-    readonly State: ConnectionState;
     get Transaction(): SqliteTransaction | null;
     set Transaction(value: SqliteTransaction | null);
     BackupDatabase(destination: SqliteConnection): void;
     BackupDatabase(destination: SqliteConnection, destinationName: string, sourceName: string): void;
-    BeginDbTransaction(isolationLevel: IsolationLevel): DbTransaction;
-    BeginTransaction(): SqliteTransaction;
-    BeginTransaction(deferred: boolean): SqliteTransaction;
-    BeginTransaction(isolationLevel: IsolationLevel): SqliteTransaction;
-    BeginTransaction(isolationLevel: IsolationLevel, deferred: boolean): SqliteTransaction;
-    ChangeDatabase(databaseName: string): void;
-    Close(): void;
-    CreateAggregate<TAccumulate extends unknown>(name: string, func: Func_2<TAccumulate | null, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, TAccumulate extends unknown>(name: string, func: Func_3<TAccumulate | null, T1, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, TAccumulate extends unknown>(name: string, func: Func_4<TAccumulate | null, T1, T2, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, TAccumulate extends unknown>(name: string, func: Func_5<TAccumulate | null, T1, T2, T3, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TAccumulate extends unknown>(name: string, func: Func_6<TAccumulate | null, T1, T2, T3, T4, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TAccumulate extends unknown>(name: string, func: Func_7<TAccumulate | null, T1, T2, T3, T4, T5, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TAccumulate extends unknown>(name: string, func: Func_8<TAccumulate | null, T1, T2, T3, T4, T5, T6, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TAccumulate extends unknown>(name: string, func: Func_9<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TAccumulate extends unknown>(name: string, func: Func_10<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TAccumulate extends unknown>(name: string, func: Func_11<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TAccumulate extends unknown>(name: string, func: Func_12<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TAccumulate extends unknown>(name: string, func: Func_13<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TAccumulate extends unknown>(name: string, func: Func_14<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TAccumulate extends unknown>(name: string, func: Func_15<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TAccumulate extends unknown>(name: string, func: Func_16<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, T15 extends unknown, TAccumulate extends unknown>(name: string, func: Func_17<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_2<TAccumulate, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_3<TAccumulate, T1, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_4<TAccumulate, T1, T2, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_5<TAccumulate, T1, T2, T3, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_6<TAccumulate, T1, T2, T3, T4, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_7<TAccumulate, T1, T2, T3, T4, T5, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_8<TAccumulate, T1, T2, T3, T4, T5, T6, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_9<TAccumulate, T1, T2, T3, T4, T5, T6, T7, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_10<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_11<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_12<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_13<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_14<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_15<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_16<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, T15 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_17<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate> | null, isDeterministic?: boolean): void;
-    CreateAggregate<TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_2<TAccumulate, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_3<TAccumulate, T1, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_4<TAccumulate, T1, T2, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_5<TAccumulate, T1, T2, T3, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_6<TAccumulate, T1, T2, T3, T4, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_7<TAccumulate, T1, T2, T3, T4, T5, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_8<TAccumulate, T1, T2, T3, T4, T5, T6, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_9<TAccumulate, T1, T2, T3, T4, T5, T6, T7, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_10<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_11<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_12<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_13<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_14<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_15<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
-    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_16<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    BeginDbTransaction: System_Data_Common_Internal.DbConnection["BeginDbTransaction"] & ((isolationLevel: IsolationLevel) => DbTransaction);
+    BeginTransaction: System_Data_Common_Internal.DbConnection["BeginTransaction"] & (() => SqliteTransaction) & ((deferred: boolean) => SqliteTransaction) & ((isolationLevel: IsolationLevel) => SqliteTransaction) & ((isolationLevel: IsolationLevel, deferred: boolean) => SqliteTransaction);
+    ChangeDatabase: System_Data_Common_Internal.DbConnection["ChangeDatabase"] & ((databaseName: string) => void);
+    Close: System_Data_Common_Internal.DbConnection["Close"] & (() => void);
     CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, T15 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_17<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, T15 extends unknown, TAccumulate extends unknown>(name: string, func: Func_17<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, T15 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_17<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_16<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TAccumulate extends unknown>(name: string, func: Func_16<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_16<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_15<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TAccumulate extends unknown>(name: string, func: Func_15<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_15<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_14<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TAccumulate extends unknown>(name: string, func: Func_14<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_14<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_13<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TAccumulate extends unknown>(name: string, func: Func_13<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_13<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_12<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TAccumulate extends unknown>(name: string, func: Func_12<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_12<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_11<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TAccumulate extends unknown>(name: string, func: Func_11<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, T9, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_11<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, T9, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_10<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TAccumulate extends unknown>(name: string, func: Func_10<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, T8, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_10<TAccumulate, T1, T2, T3, T4, T5, T6, T7, T8, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_9<TAccumulate, T1, T2, T3, T4, T5, T6, T7, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TAccumulate extends unknown>(name: string, func: Func_9<TAccumulate | null, T1, T2, T3, T4, T5, T6, T7, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_9<TAccumulate, T1, T2, T3, T4, T5, T6, T7, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_8<TAccumulate, T1, T2, T3, T4, T5, T6, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TAccumulate extends unknown>(name: string, func: Func_8<TAccumulate | null, T1, T2, T3, T4, T5, T6, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_8<TAccumulate, T1, T2, T3, T4, T5, T6, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_7<TAccumulate, T1, T2, T3, T4, T5, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TAccumulate extends unknown>(name: string, func: Func_7<TAccumulate | null, T1, T2, T3, T4, T5, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_7<TAccumulate, T1, T2, T3, T4, T5, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_6<TAccumulate, T1, T2, T3, T4, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TAccumulate extends unknown>(name: string, func: Func_6<TAccumulate | null, T1, T2, T3, T4, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_6<TAccumulate, T1, T2, T3, T4, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_5<TAccumulate, T1, T2, T3, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, TAccumulate extends unknown>(name: string, func: Func_5<TAccumulate | null, T1, T2, T3, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, T3 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_5<TAccumulate, T1, T2, T3, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_4<TAccumulate, T1, T2, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, TAccumulate extends unknown>(name: string, func: Func_4<TAccumulate | null, T1, T2, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, T2 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_4<TAccumulate, T1, T2, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_3<TAccumulate, T1, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, TAccumulate extends unknown>(name: string, func: Func_3<TAccumulate | null, T1, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<T1 extends unknown, TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_3<TAccumulate, T1, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<TAccumulate extends unknown, TResult extends unknown>(name: string, seed: TAccumulate, func: Func_2<TAccumulate, TAccumulate> | null, resultSelector: Func_2<TAccumulate, TResult> | null, isDeterministic?: boolean): void;
+    CreateAggregate<TAccumulate extends unknown>(name: string, func: Func_2<TAccumulate | null, TAccumulate> | null, isDeterministic?: boolean): void;
+    CreateAggregate<TAccumulate extends unknown>(name: string, seed: TAccumulate, func: Func_2<TAccumulate, TAccumulate> | null, isDeterministic?: boolean): void;
     CreateCollation(name: string, comparison: Comparison_1<System_Internal.String> | null): void;
     CreateCollation<T extends unknown>(name: string, state: T, comparison: Func_4<T, System_Internal.String, System_Internal.String, System_Internal.Int32> | null): void;
-    CreateCommand(): SqliteCommand;
-    CreateDbCommand(): DbCommand;
-    CreateFunction<TResult extends unknown>(name: string, function_: Func_1<TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, TResult extends unknown>(name: string, function_: Func_2<T1, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, TResult extends unknown>(name: string, function_: Func_3<T1, T2, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, TResult extends unknown>(name: string, function_: Func_4<T1, T2, T3, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TResult extends unknown>(name: string, function_: Func_5<T1, T2, T3, T4, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TResult extends unknown>(name: string, function_: Func_6<T1, T2, T3, T4, T5, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TResult extends unknown>(name: string, function_: Func_7<T1, T2, T3, T4, T5, T6, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TResult extends unknown>(name: string, function_: Func_8<T1, T2, T3, T4, T5, T6, T7, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TResult extends unknown>(name: string, function_: Func_9<T1, T2, T3, T4, T5, T6, T7, T8, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TResult extends unknown>(name: string, function_: Func_10<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TResult extends unknown>(name: string, function_: Func_11<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TResult extends unknown>(name: string, function_: Func_12<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TResult extends unknown>(name: string, function_: Func_13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TResult extends unknown>(name: string, function_: Func_14<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TResult extends unknown>(name: string, function_: Func_15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, T15 extends unknown, TResult extends unknown>(name: string, function_: Func_16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult> | null, isDeterministic?: boolean): void;
+    CreateCommand: System_Data_Common_Internal.DbConnection["CreateCommand"] & (() => SqliteCommand);
+    CreateDbCommand: System_Data_Common_Internal.DbConnection["CreateDbCommand"] & (() => DbCommand);
     CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, T15 extends unknown, T16 extends unknown, TResult extends unknown>(name: string, function_: Func_17<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_2<TState, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_3<TState, T1, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_4<TState, T1, T2, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_5<TState, T1, T2, T3, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_6<TState, T1, T2, T3, T4, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_7<TState, T1, T2, T3, T4, T5, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_8<TState, T1, T2, T3, T4, T5, T6, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_9<TState, T1, T2, T3, T4, T5, T6, T7, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_10<TState, T1, T2, T3, T4, T5, T6, T7, T8, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_11<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_12<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_13<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_14<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_15<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult> | null, isDeterministic?: boolean): void;
-    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_16<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, T15 extends unknown, TResult extends unknown>(name: string, function_: Func_16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TResult extends unknown>(name: string, function_: Func_15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TResult extends unknown>(name: string, function_: Func_14<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TResult extends unknown>(name: string, function_: Func_13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TResult extends unknown>(name: string, function_: Func_12<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TResult extends unknown>(name: string, function_: Func_11<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TResult extends unknown>(name: string, function_: Func_10<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TResult extends unknown>(name: string, function_: Func_9<T1, T2, T3, T4, T5, T6, T7, T8, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TResult extends unknown>(name: string, function_: Func_8<T1, T2, T3, T4, T5, T6, T7, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TResult extends unknown>(name: string, function_: Func_7<T1, T2, T3, T4, T5, T6, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TResult extends unknown>(name: string, function_: Func_6<T1, T2, T3, T4, T5, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TResult extends unknown>(name: string, function_: Func_5<T1, T2, T3, T4, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, T3 extends unknown, TResult extends unknown>(name: string, function_: Func_4<T1, T2, T3, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, T2 extends unknown, TResult extends unknown>(name: string, function_: Func_3<T1, T2, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<T1 extends unknown, TResult extends unknown>(name: string, function_: Func_2<T1, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TResult extends unknown>(name: string, function_: Func_1<TResult> | null, isDeterministic?: boolean): void;
     CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, T15 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_17<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult> | null, isDeterministic?: boolean): void;
-    Dispose(disposing: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, T14 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_16<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_15<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_14<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_13<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_12<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_11<TState, T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_10<TState, T1, T2, T3, T4, T5, T6, T7, T8, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_9<TState, T1, T2, T3, T4, T5, T6, T7, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_8<TState, T1, T2, T3, T4, T5, T6, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_7<TState, T1, T2, T3, T4, T5, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_6<TState, T1, T2, T3, T4, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, T3 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_5<TState, T1, T2, T3, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, T2 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_4<TState, T1, T2, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, T1 extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_3<TState, T1, TResult> | null, isDeterministic?: boolean): void;
+    CreateFunction<TState extends unknown, TResult extends unknown>(name: string, state: TState, function_: Func_2<TState, TResult> | null, isDeterministic?: boolean): void;
+    Dispose: System_Data_Common_Internal.DbConnection["Dispose"] & ((disposing: boolean) => void);
     EnableExtensions(enable?: boolean): void;
-    GetSchema(): DataTable;
-    GetSchema(collectionName: string): DataTable;
-    GetSchema(collectionName: string, restrictionValues: (string | null)[]): DataTable;
+    GetSchema: System_Data_Common_Internal.DbConnection["GetSchema"] & (() => DataTable) & ((collectionName: string) => DataTable) & ((collectionName: string, restrictionValues: (string | null)[]) => DataTable);
     LoadExtension(file: string, proc?: string | null): void;
-    Open(): void;
+    Open: System_Data_Common_Internal.DbConnection["Open"] & (() => void);
 }
 
 
@@ -264,8 +241,9 @@ export const SqliteConnection: {
 
 export type SqliteConnection = SqliteConnection$instance;
 
-export interface SqliteConnectionStringBuilder$instance extends DbConnectionStringBuilder {
+export interface SqliteConnectionStringBuilder$instance extends System_Data_Common_Internal.DbConnectionStringBuilder {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteConnectionStringBuilder: never;
+    readonly __tsonic_type_System_Data_Common_DbConnectionStringBuilder: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IDictionary: never;
@@ -277,19 +255,17 @@ export interface SqliteConnectionStringBuilder$instance extends DbConnectionStri
     DefaultTimeout: int;
     get ForeignKeys(): Nullable_1<System_Internal.Boolean>;
     set ForeignKeys(value: Nullable_1<System_Internal.Boolean> | boolean);
-    readonly Keys: ICollection;
     Mode: SqliteOpenMode;
     Password: string;
     Pooling: boolean;
     RecursiveTriggers: boolean;
-    readonly Values: ICollection;
     get Vfs(): string | null;
     set Vfs(value: string | null);
-    Clear(): void;
-    ContainsKey(keyword: string): boolean;
-    Remove(keyword: string): boolean;
-    ShouldSerialize(keyword: string): boolean;
-    TryGetValue(keyword: string, value: unknown | null): boolean;
+    Clear: System_Data_Common_Internal.DbConnectionStringBuilder["Clear"] & (() => void);
+    ContainsKey: System_Data_Common_Internal.DbConnectionStringBuilder["ContainsKey"] & ((keyword: string) => boolean);
+    Remove: System_Data_Common_Internal.DbConnectionStringBuilder["Remove"] & ((keyword: string) => boolean);
+    ShouldSerialize: System_Data_Common_Internal.DbConnectionStringBuilder["ShouldSerialize"] & ((keyword: string) => boolean);
+    TryGetValue: System_Data_Common_Internal.DbConnectionStringBuilder["TryGetValue"] & ((keyword: string, value: unknown | null) => boolean);
 }
 
 
@@ -301,8 +277,10 @@ export const SqliteConnectionStringBuilder: {
 
 export type SqliteConnectionStringBuilder = SqliteConnectionStringBuilder$instance & { [keyword: string]: unknown | null; };
 
-export interface SqliteDataReader$instance extends DbDataReader {
+export interface SqliteDataReader$instance extends System_Data_Common_Internal.DbDataReader {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteDataReader: never;
+    readonly __tsonic_type_System_Data_Common_DbDataReader: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Data_IDataReader: never;
@@ -310,46 +288,40 @@ export interface SqliteDataReader$instance extends DbDataReader {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Depth: int;
-    readonly FieldCount: int;
     readonly Handle: sqlite3_stmt | null;
-    readonly HasRows: boolean;
-    readonly IsClosed: boolean;
-    readonly RecordsAffected: int;
-    Close(): void;
-    Dispose(disposing: boolean): void;
-    get_Item(name: string): unknown;
-    get_Item(ordinal: int): unknown;
-    GetBoolean(ordinal: int): boolean;
-    GetByte(ordinal: int): byte;
-    GetBytes(ordinal: int, dataOffset: long, buffer: byte[] | null, bufferOffset: int, length: int): long;
-    GetChar(ordinal: int): char;
-    GetChars(ordinal: int, dataOffset: long, buffer: char[] | null, bufferOffset: int, length: int): long;
-    GetDataTypeName(ordinal: int): string;
-    GetDateTime(ordinal: int): DateTime;
+    Close: System_Data_Common_Internal.DbDataReader["Close"] & (() => void);
+    Dispose: System_Data_Common_Internal.DbDataReader["Dispose"] & ((disposing: boolean) => void);
+    get_Item: System_Data_Common_Internal.DbDataReader["get_Item"] & ((name: string) => unknown) & ((ordinal: int) => unknown);
+    GetBoolean: System_Data_Common_Internal.DbDataReader["GetBoolean"] & ((ordinal: int) => boolean);
+    GetByte: System_Data_Common_Internal.DbDataReader["GetByte"] & ((ordinal: int) => byte);
+    GetBytes: System_Data_Common_Internal.DbDataReader["GetBytes"] & ((ordinal: int, dataOffset: long, buffer: byte[] | null, bufferOffset: int, length: int) => long);
+    GetChar: System_Data_Common_Internal.DbDataReader["GetChar"] & ((ordinal: int) => char);
+    GetChars: System_Data_Common_Internal.DbDataReader["GetChars"] & ((ordinal: int, dataOffset: long, buffer: char[] | null, bufferOffset: int, length: int) => long);
+    GetDataTypeName: System_Data_Common_Internal.DbDataReader["GetDataTypeName"] & ((ordinal: int) => string);
+    GetDateTime: System_Data_Common_Internal.DbDataReader["GetDateTime"] & ((ordinal: int) => DateTime);
     GetDateTimeOffset(ordinal: int): DateTimeOffset;
-    GetDecimal(ordinal: int): decimal;
-    GetDouble(ordinal: int): double;
-    GetEnumerator(): IEnumerator;
-    GetFieldType(ordinal: int): Type;
-    GetFieldValue<T extends unknown>(ordinal: int): T;
-    GetFloat(ordinal: int): float;
-    GetGuid(ordinal: int): Guid;
-    GetInt16(ordinal: int): short;
-    GetInt32(ordinal: int): int;
-    GetInt64(ordinal: int): long;
-    GetName(ordinal: int): string;
-    GetOrdinal(name: string): int;
-    GetSchemaTable(): DataTable;
-    GetStream(ordinal: int): Stream;
-    GetString(ordinal: int): string;
-    GetTextReader(ordinal: int): TextReader;
+    GetDecimal: System_Data_Common_Internal.DbDataReader["GetDecimal"] & ((ordinal: int) => decimal);
+    GetDouble: System_Data_Common_Internal.DbDataReader["GetDouble"] & ((ordinal: int) => double);
+    GetEnumerator: System_Data_Common_Internal.DbDataReader["GetEnumerator"] & (() => IEnumerator);
+    GetFieldType: System_Data_Common_Internal.DbDataReader["GetFieldType"] & ((ordinal: int) => Type);
+    GetFieldValue: System_Data_Common_Internal.DbDataReader["GetFieldValue"] & (<T extends unknown>(ordinal: int) => T);
+    GetFloat: System_Data_Common_Internal.DbDataReader["GetFloat"] & ((ordinal: int) => float);
+    GetGuid: System_Data_Common_Internal.DbDataReader["GetGuid"] & ((ordinal: int) => Guid);
+    GetInt16: System_Data_Common_Internal.DbDataReader["GetInt16"] & ((ordinal: int) => short);
+    GetInt32: System_Data_Common_Internal.DbDataReader["GetInt32"] & ((ordinal: int) => int);
+    GetInt64: System_Data_Common_Internal.DbDataReader["GetInt64"] & ((ordinal: int) => long);
+    GetName: System_Data_Common_Internal.DbDataReader["GetName"] & ((ordinal: int) => string);
+    GetOrdinal: System_Data_Common_Internal.DbDataReader["GetOrdinal"] & ((name: string) => int);
+    GetSchemaTable: System_Data_Common_Internal.DbDataReader["GetSchemaTable"] & (() => DataTable);
+    GetStream: System_Data_Common_Internal.DbDataReader["GetStream"] & ((ordinal: int) => Stream);
+    GetString: System_Data_Common_Internal.DbDataReader["GetString"] & ((ordinal: int) => string);
+    GetTextReader: System_Data_Common_Internal.DbDataReader["GetTextReader"] & ((ordinal: int) => TextReader);
     GetTimeSpan(ordinal: int): TimeSpan;
-    GetValue(ordinal: int): unknown;
-    GetValues(values: (unknown | null)[]): int;
-    IsDBNull(ordinal: int): boolean;
-    NextResult(): boolean;
-    Read(): boolean;
+    GetValue: System_Data_Common_Internal.DbDataReader["GetValue"] & ((ordinal: int) => unknown);
+    GetValues: System_Data_Common_Internal.DbDataReader["GetValues"] & ((values: (unknown | null)[]) => int);
+    IsDBNull: System_Data_Common_Internal.DbDataReader["IsDBNull"] & ((ordinal: int) => boolean);
+    NextResult: System_Data_Common_Internal.DbDataReader["NextResult"] & (() => boolean);
+    Read: System_Data_Common_Internal.DbDataReader["Read"] & (() => boolean);
 }
 
 
@@ -359,8 +331,12 @@ export const SqliteDataReader: {
 
 export type SqliteDataReader = SqliteDataReader$instance;
 
-export interface SqliteException$instance extends DbException {
+export interface SqliteException$instance extends System_Data_Common_Internal.DbException {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteException: never;
+    readonly __tsonic_type_System_Data_Common_DbException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_ExternalException: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -378,13 +354,14 @@ export const SqliteException: {
 
 export type SqliteException = SqliteException$instance;
 
-export interface SqliteFactory$instance extends DbProviderFactory {
+export interface SqliteFactory$instance extends System_Data_Common_Internal.DbProviderFactory {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteFactory: never;
+    readonly __tsonic_type_System_Data_Common_DbProviderFactory: never;
 
-    CreateCommand(): DbCommand;
-    CreateConnection(): DbConnection;
-    CreateConnectionStringBuilder(): DbConnectionStringBuilder;
-    CreateParameter(): DbParameter;
+    CreateCommand: System_Data_Common_Internal.DbProviderFactory["CreateCommand"] & (() => DbCommand);
+    CreateConnection: System_Data_Common_Internal.DbProviderFactory["CreateConnection"] & (() => DbConnection);
+    CreateConnectionStringBuilder: System_Data_Common_Internal.DbProviderFactory["CreateConnectionStringBuilder"] & (() => DbConnectionStringBuilder);
+    CreateParameter: System_Data_Common_Internal.DbProviderFactory["CreateParameter"] & (() => DbParameter);
 }
 
 
@@ -395,23 +372,16 @@ export const SqliteFactory: {
 
 export type SqliteFactory = SqliteFactory$instance;
 
-export interface SqliteParameter$instance extends DbParameter {
+export interface SqliteParameter$instance extends System_Data_Common_Internal.DbParameter {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteParameter: never;
+    readonly __tsonic_type_System_Data_Common_DbParameter: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Data_IDataParameter: never;
     readonly __tsonic_iface_System_Data_IDbDataParameter: never;
 
-    DbType: DbType;
-    Direction: ParameterDirection;
-    IsNullable: boolean;
-    ParameterName: string;
-    Size: int;
-    SourceColumn: string;
-    SourceColumnNullMapping: boolean;
     SqliteType: SqliteType;
-    get Value(): unknown | null;
-    set Value(value: unknown | null);
-    ResetDbType(): void;
+    ResetDbType: System_Data_Common_Internal.DbParameter["ResetDbType"] & (() => void);
     ResetSqliteType(): void;
 }
 
@@ -427,74 +397,54 @@ export const SqliteParameter: {
 
 export type SqliteParameter = SqliteParameter$instance;
 
-export interface SqliteParameterCollection$instance extends DbParameterCollection {
+export interface SqliteParameterCollection$instance extends System_Data_Common_Internal.DbParameterCollection {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteParameterCollection: never;
+    readonly __tsonic_type_System_Data_Common_DbParameterCollection: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
     readonly __tsonic_iface_System_Data_IDataParameterCollection: never;
 
-    readonly Count: int;
-    readonly SyncRoot: unknown;
-    Add(value: unknown): int;
-    Add(value: SqliteParameter): SqliteParameter;
-    Add(parameterName: string | null, type: SqliteType): SqliteParameter;
-    Add(parameterName: string | null, type: SqliteType, size: int): SqliteParameter;
-    Add(parameterName: string | null, type: SqliteType, size: int, sourceColumn: string | null): SqliteParameter;
-    AddRange(values: ClrArray): void;
-    AddRange(values: IEnumerable_1<SqliteParameter>): void;
+    Add: System_Data_Common_Internal.DbParameterCollection["Add"] & ((parameterName: string | null, type: SqliteType) => SqliteParameter) & ((parameterName: string | null, type: SqliteType, size: int) => SqliteParameter) & ((parameterName: string | null, type: SqliteType, size: int, sourceColumn: string | null) => SqliteParameter) & ((value: SqliteParameter) => SqliteParameter) & ((value: unknown) => int);
+    AddRange: System_Data_Common_Internal.DbParameterCollection["AddRange"] & ((values: ClrArray) => void) & ((values: IEnumerable_1<SqliteParameter>) => void);
     AddWithValue(parameterName: string | null, value: unknown | null): SqliteParameter;
-    Clear(): void;
-    Contains(value: unknown): boolean;
-    Contains(value: SqliteParameter): boolean;
-    Contains(value: string): boolean;
-    CopyTo(array: ClrArray, index: int): void;
-    CopyTo(array: SqliteParameter[], index: int): void;
-    get_Item(index: int): SqliteParameter;
-    get_Item(parameterName: string): SqliteParameter;
-    GetEnumerator(): IEnumerator;
-    GetParameter(index: int): DbParameter;
-    GetParameter(parameterName: string): DbParameter;
-    IndexOf(value: unknown): int;
-    IndexOf(value: SqliteParameter): int;
-    IndexOf(parameterName: string): int;
-    Insert(index: int, value: unknown): void;
-    Insert(index: int, value: SqliteParameter): void;
-    Remove(value: unknown): void;
-    Remove(value: SqliteParameter): void;
-    RemoveAt(index: int): void;
-    RemoveAt(parameterName: string): void;
-    set_Item(index: int, value: SqliteParameter): void;
-    set_Item(parameterName: string, value: SqliteParameter): void;
-    SetParameter(index: int, value: DbParameter): void;
-    SetParameter(parameterName: string, value: DbParameter): void;
+    Clear: System_Data_Common_Internal.DbParameterCollection["Clear"] & (() => void);
+    Contains: System_Data_Common_Internal.DbParameterCollection["Contains"] & ((value: SqliteParameter) => boolean) & ((value: string) => boolean) & ((value: unknown) => boolean);
+    CopyTo: System_Data_Common_Internal.DbParameterCollection["CopyTo"] & ((array: ClrArray, index: int) => void) & ((array: SqliteParameter[], index: int) => void);
+    get_Item: System_Data_Common_Internal.DbParameterCollection["get_Item"] & ((index: int) => SqliteParameter) & ((parameterName: string) => SqliteParameter);
+    GetEnumerator: System_Data_Common_Internal.DbParameterCollection["GetEnumerator"] & (() => IEnumerator);
+    GetParameter: System_Data_Common_Internal.DbParameterCollection["GetParameter"] & ((index: int) => DbParameter) & ((parameterName: string) => DbParameter);
+    IndexOf: System_Data_Common_Internal.DbParameterCollection["IndexOf"] & ((parameterName: string) => int) & ((value: SqliteParameter) => int) & ((value: unknown) => int);
+    Insert: System_Data_Common_Internal.DbParameterCollection["Insert"] & ((index: int, value: SqliteParameter) => void) & ((index: int, value: unknown) => void);
+    Remove: System_Data_Common_Internal.DbParameterCollection["Remove"] & ((value: SqliteParameter) => void) & ((value: unknown) => void);
+    RemoveAt: System_Data_Common_Internal.DbParameterCollection["RemoveAt"] & ((index: int) => void) & ((parameterName: string) => void);
+    set_Item: System_Data_Common_Internal.DbParameterCollection["set_Item"] & ((index: int, value: SqliteParameter) => void) & ((parameterName: string, value: SqliteParameter) => void);
+    SetParameter: System_Data_Common_Internal.DbParameterCollection["SetParameter"] & ((index: int, value: DbParameter) => void) & ((parameterName: string, value: DbParameter) => void);
 }
 
 
-export const SqliteParameterCollection: (abstract new() => SqliteParameterCollection) & {
+export const SqliteParameterCollection: {
 };
 
 
 export type SqliteParameterCollection = SqliteParameterCollection$instance;
 
-export interface SqliteTransaction$instance extends DbTransaction {
+export interface SqliteTransaction$instance extends System_Data_Common_Internal.DbTransaction {
     readonly __tsonic_type_Microsoft_Data_Sqlite_SqliteTransaction: never;
+    readonly __tsonic_type_System_Data_Common_DbTransaction: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Data_IDbTransaction: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Connection: SqliteConnection | null;
-    readonly DbConnection: DbConnection | null;
-    readonly IsolationLevel: IsolationLevel;
-    readonly SupportsSavepoints: boolean;
-    Commit(): void;
-    Dispose(disposing: boolean): void;
-    Release(savepointName: string): void;
-    Rollback(): void;
-    Rollback(savepointName: string): void;
-    Save(savepointName: string): void;
+    Commit: System_Data_Common_Internal.DbTransaction["Commit"] & (() => void);
+    Dispose: System_Data_Common_Internal.DbTransaction["Dispose"] & ((disposing: boolean) => void);
+    Release: System_Data_Common_Internal.DbTransaction["Release"] & ((savepointName: string) => void);
+    Rollback: System_Data_Common_Internal.DbTransaction["Rollback"] & (() => void) & ((savepointName: string) => void);
+    Save: System_Data_Common_Internal.DbTransaction["Save"] & ((savepointName: string) => void);
 }
 
 
